@@ -1,0 +1,10 @@
+*.DS_Store
+*.log
+*.xml
+*.apk
+*.xcodeproj
+*.pbxproj
+*.xcworkspace
+*-checkpoint.ipynb
+*.ipynb_checkpoints
+*.h5
