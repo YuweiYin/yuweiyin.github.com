@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Algorithm - Data Structure - Treap | YuweiYin</title>
+    <meta name="description" content="Homepage of YuweiYin">
+    <meta name="generator" content="VuePress 1.4.0">
+    <link rel="icon" href="/img/YuweiYin.jpeg">
+    
+    <link rel="preload" href="/assets/css/0.styles.2d4b740c.css" as="style"><link rel="preload" href="/assets/js/app.14fe4530.js" as="script"><link rel="preload" href="/assets/js/2.db22a8ef.js" as="script"><link rel="preload" href="/assets/js/19.8ee69771.js" as="script"><link rel="prefetch" href="/assets/js/10.00c8663c.js"><link rel="prefetch" href="/assets/js/100.653de43f.js"><link rel="prefetch" href="/assets/js/101.a482f773.js"><link rel="prefetch" href="/assets/js/102.2e515d28.js"><link rel="prefetch" href="/assets/js/103.c27dd3ab.js"><link rel="prefetch" href="/assets/js/104.fd0b0533.js"><link rel="prefetch" href="/assets/js/105.dbcde1e6.js"><link rel="prefetch" href="/assets/js/106.d6026db6.js"><link rel="prefetch" href="/assets/js/107.bd648cbd.js"><link rel="prefetch" href="/assets/js/108.3c18a191.js"><link rel="prefetch" href="/assets/js/109.a02df5b8.js"><link rel="prefetch" href="/assets/js/11.46dd5b64.js"><link rel="prefetch" href="/assets/js/110.27704b77.js"><link rel="prefetch" href="/assets/js/111.db41fb3f.js"><link rel="prefetch" href="/assets/js/112.faadf8e8.js"><link rel="prefetch" href="/assets/js/113.71871ea2.js"><link rel="prefetch" href="/assets/js/114.5d20c236.js"><link rel="prefetch" href="/assets/js/115.b4a83116.js"><link rel="prefetch" href="/assets/js/116.efa7a1bb.js"><link rel="prefetch" href="/assets/js/117.8feedd54.js"><link rel="prefetch" href="/assets/js/118.4f17f9ef.js"><link rel="prefetch" href="/assets/js/119.178008f1.js"><link rel="prefetch" href="/assets/js/12.6873d2a0.js"><link rel="prefetch" href="/assets/js/120.6194b680.js"><link rel="prefetch" href="/assets/js/121.868c91e8.js"><link rel="prefetch" href="/assets/js/122.41e98bd9.js"><link rel="prefetch" href="/assets/js/123.97af350e.js"><link rel="prefetch" href="/assets/js/124.42d6ea34.js"><link rel="prefetch" href="/assets/js/125.6577b727.js"><link rel="prefetch" href="/assets/js/126.51ca4f63.js"><link rel="prefetch" href="/assets/js/127.ad386d6d.js"><link rel="prefetch" href="/assets/js/128.f3f73513.js"><link rel="prefetch" href="/assets/js/129.e2bfcecc.js"><link rel="prefetch" href="/assets/js/13.5f926976.js"><link rel="prefetch" href="/assets/js/130.c747e182.js"><link rel="prefetch" href="/assets/js/131.9c07695c.js"><link rel="prefetch" href="/assets/js/132.49d0bad1.js"><link rel="prefetch" href="/assets/js/133.c637b59e.js"><link rel="prefetch" href="/assets/js/134.f9b3977d.js"><link rel="prefetch" href="/assets/js/135.84a32e03.js"><link rel="prefetch" href="/assets/js/136.796a2f62.js"><link rel="prefetch" href="/assets/js/137.c933c963.js"><link rel="prefetch" href="/assets/js/138.248d97c1.js"><link rel="prefetch" href="/assets/js/139.ac8c496a.js"><link rel="prefetch" href="/assets/js/14.d2002952.js"><link rel="prefetch" href="/assets/js/140.0e16d939.js"><link rel="prefetch" href="/assets/js/141.88e3f3b3.js"><link rel="prefetch" href="/assets/js/142.bd6b95c2.js"><link rel="prefetch" href="/assets/js/143.c47c5252.js"><link rel="prefetch" href="/assets/js/144.d0c883b0.js"><link rel="prefetch" href="/assets/js/145.570dfd73.js"><link rel="prefetch" href="/assets/js/146.36b089cf.js"><link rel="prefetch" href="/assets/js/147.0b951768.js"><link rel="prefetch" href="/assets/js/148.88fc7d3c.js"><link rel="prefetch" href="/assets/js/149.ed10af05.js"><link rel="prefetch" href="/assets/js/15.1a97cb6e.js"><link rel="prefetch" href="/assets/js/150.cbdff36b.js"><link rel="prefetch" href="/assets/js/151.9c0eb7ba.js"><link rel="prefetch" href="/assets/js/152.7dc41177.js"><link rel="prefetch" href="/assets/js/153.1508756e.js"><link rel="prefetch" href="/assets/js/154.ad36d0db.js"><link rel="prefetch" href="/assets/js/155.0368f854.js"><link rel="prefetch" href="/assets/js/156.0f53cd94.js"><link rel="prefetch" href="/assets/js/157.ee18ab66.js"><link rel="prefetch" href="/assets/js/158.5d026a79.js"><link rel="prefetch" href="/assets/js/159.779f856f.js"><link rel="prefetch" href="/assets/js/16.eefecae8.js"><link rel="prefetch" href="/assets/js/160.0b1c1f45.js"><link rel="prefetch" href="/assets/js/161.85d95ad9.js"><link rel="prefetch" href="/assets/js/162.59449dd0.js"><link rel="prefetch" href="/assets/js/163.e24d2529.js"><link rel="prefetch" href="/assets/js/164.4cde127c.js"><link rel="prefetch" href="/assets/js/165.ca2e26fc.js"><link rel="prefetch" href="/assets/js/166.3c55c39b.js"><link rel="prefetch" href="/assets/js/167.471ca40e.js"><link rel="prefetch" href="/assets/js/168.464f03ee.js"><link rel="prefetch" href="/assets/js/169.4e2a1e92.js"><link rel="prefetch" href="/assets/js/17.0b071e06.js"><link rel="prefetch" href="/assets/js/170.fe0c8ed0.js"><link rel="prefetch" href="/assets/js/171.0f397301.js"><link rel="prefetch" href="/assets/js/172.692ca3cf.js"><link rel="prefetch" href="/assets/js/173.a004ce16.js"><link rel="prefetch" href="/assets/js/174.0e4314e1.js"><link rel="prefetch" href="/assets/js/175.767154a7.js"><link rel="prefetch" href="/assets/js/176.f978d36f.js"><link rel="prefetch" href="/assets/js/177.f680ab69.js"><link rel="prefetch" href="/assets/js/178.74ff1f39.js"><link rel="prefetch" href="/assets/js/179.e222c693.js"><link rel="prefetch" href="/assets/js/18.0d772ac1.js"><link rel="prefetch" href="/assets/js/180.b2ea68ad.js"><link rel="prefetch" href="/assets/js/181.d322c2d5.js"><link rel="prefetch" href="/assets/js/182.d3449643.js"><link rel="prefetch" href="/assets/js/183.3b637ae3.js"><link rel="prefetch" href="/assets/js/184.e1c11880.js"><link rel="prefetch" href="/assets/js/185.c9db296d.js"><link rel="prefetch" href="/assets/js/186.cb5168db.js"><link rel="prefetch" href="/assets/js/187.abaeeff9.js"><link rel="prefetch" href="/assets/js/188.64f7c653.js"><link rel="prefetch" href="/assets/js/189.50a155df.js"><link rel="prefetch" href="/assets/js/190.e6dc1f59.js"><link rel="prefetch" href="/assets/js/191.24523cf3.js"><link rel="prefetch" href="/assets/js/192.c94d519a.js"><link rel="prefetch" href="/assets/js/193.10e0611a.js"><link rel="prefetch" href="/assets/js/194.753ff7ae.js"><link rel="prefetch" href="/assets/js/195.9cdcb514.js"><link rel="prefetch" href="/assets/js/196.1de08ad6.js"><link rel="prefetch" href="/assets/js/197.a65eb460.js"><link rel="prefetch" href="/assets/js/198.30c4246c.js"><link rel="prefetch" href="/assets/js/199.96bfa386.js"><link rel="prefetch" href="/assets/js/20.2bb4f562.js"><link rel="prefetch" href="/assets/js/200.2e5f7e7c.js"><link rel="prefetch" href="/assets/js/201.4291b639.js"><link rel="prefetch" href="/assets/js/202.04f709c9.js"><link rel="prefetch" href="/assets/js/203.a4e202a0.js"><link rel="prefetch" href="/assets/js/204.1e996494.js"><link rel="prefetch" href="/assets/js/205.91e75c18.js"><link rel="prefetch" href="/assets/js/206.3889af71.js"><link rel="prefetch" href="/assets/js/207.b0cc11ab.js"><link rel="prefetch" href="/assets/js/208.483473df.js"><link rel="prefetch" href="/assets/js/209.58e4e5b4.js"><link rel="prefetch" href="/assets/js/21.579b80ac.js"><link rel="prefetch" href="/assets/js/210.4b4527ae.js"><link rel="prefetch" href="/assets/js/211.47be02f0.js"><link rel="prefetch" href="/assets/js/212.cde14a02.js"><link rel="prefetch" href="/assets/js/213.f30be359.js"><link rel="prefetch" href="/assets/js/214.b557c8b9.js"><link rel="prefetch" href="/assets/js/215.04ca1e53.js"><link rel="prefetch" href="/assets/js/216.9a3571fa.js"><link rel="prefetch" href="/assets/js/217.3b38203d.js"><link rel="prefetch" href="/assets/js/218.5328da89.js"><link rel="prefetch" href="/assets/js/219.71e50aa5.js"><link rel="prefetch" href="/assets/js/22.61dcce9f.js"><link rel="prefetch" href="/assets/js/220.0158bab9.js"><link rel="prefetch" href="/assets/js/221.c1337a44.js"><link rel="prefetch" href="/assets/js/222.e852d875.js"><link rel="prefetch" href="/assets/js/223.0ceded48.js"><link rel="prefetch" href="/assets/js/224.91b88762.js"><link rel="prefetch" href="/assets/js/225.486dc28f.js"><link rel="prefetch" href="/assets/js/226.04db7665.js"><link rel="prefetch" href="/assets/js/227.221e7ad6.js"><link rel="prefetch" href="/assets/js/228.0ea5bbf6.js"><link rel="prefetch" href="/assets/js/229.640fab63.js"><link rel="prefetch" href="/assets/js/23.fea68b28.js"><link rel="prefetch" href="/assets/js/230.ea28b856.js"><link rel="prefetch" href="/assets/js/231.3626a4ca.js"><link rel="prefetch" href="/assets/js/232.152b4b6f.js"><link rel="prefetch" href="/assets/js/233.51bfaa5a.js"><link rel="prefetch" href="/assets/js/234.d1330ac3.js"><link rel="prefetch" href="/assets/js/235.fa758eed.js"><link rel="prefetch" href="/assets/js/236.c2425046.js"><link rel="prefetch" href="/assets/js/237.8c7cda6a.js"><link rel="prefetch" href="/assets/js/238.a7a9cc3f.js"><link rel="prefetch" href="/assets/js/239.95a30bf0.js"><link rel="prefetch" href="/assets/js/24.dc3f3e36.js"><link rel="prefetch" href="/assets/js/240.561d8566.js"><link rel="prefetch" href="/assets/js/241.a4697380.js"><link rel="prefetch" href="/assets/js/242.ca30ef3c.js"><link rel="prefetch" href="/assets/js/243.971c687d.js"><link rel="prefetch" href="/assets/js/244.19a007d6.js"><link rel="prefetch" href="/assets/js/245.0fbd8372.js"><link rel="prefetch" href="/assets/js/246.b883dbfd.js"><link rel="prefetch" href="/assets/js/247.1e4acda0.js"><link rel="prefetch" href="/assets/js/248.80026a52.js"><link rel="prefetch" href="/assets/js/249.b5575476.js"><link rel="prefetch" href="/assets/js/25.db38319d.js"><link rel="prefetch" href="/assets/js/250.add12656.js"><link rel="prefetch" href="/assets/js/251.a892f0d4.js"><link rel="prefetch" href="/assets/js/252.c8a2207f.js"><link rel="prefetch" href="/assets/js/253.1fbb3137.js"><link rel="prefetch" href="/assets/js/254.670756c2.js"><link rel="prefetch" href="/assets/js/255.b76e4a3c.js"><link rel="prefetch" href="/assets/js/256.dda67b49.js"><link rel="prefetch" href="/assets/js/257.1e8f7fbd.js"><link rel="prefetch" href="/assets/js/258.c6e41fb7.js"><link rel="prefetch" href="/assets/js/259.5c7f29f3.js"><link rel="prefetch" href="/assets/js/26.29042dc8.js"><link rel="prefetch" href="/assets/js/260.7f82e917.js"><link rel="prefetch" href="/assets/js/261.8bab068f.js"><link rel="prefetch" href="/assets/js/262.8fbd550c.js"><link rel="prefetch" href="/assets/js/263.e1439382.js"><link rel="prefetch" href="/assets/js/264.484fc4a1.js"><link rel="prefetch" href="/assets/js/265.c2f45ae4.js"><link rel="prefetch" href="/assets/js/266.751c1ece.js"><link rel="prefetch" href="/assets/js/267.a4547c40.js"><link rel="prefetch" href="/assets/js/268.90ab49ed.js"><link rel="prefetch" href="/assets/js/269.7528c9bf.js"><link rel="prefetch" href="/assets/js/27.339c8ee5.js"><link rel="prefetch" href="/assets/js/270.594523b2.js"><link rel="prefetch" href="/assets/js/271.f4038266.js"><link rel="prefetch" href="/assets/js/272.b986422a.js"><link rel="prefetch" href="/assets/js/273.24d65cf0.js"><link rel="prefetch" href="/assets/js/274.368d1f33.js"><link rel="prefetch" href="/assets/js/275.8629cf4e.js"><link rel="prefetch" href="/assets/js/276.c2e3333e.js"><link rel="prefetch" href="/assets/js/277.cb4d4a4f.js"><link rel="prefetch" href="/assets/js/278.0c233e76.js"><link rel="prefetch" href="/assets/js/279.45d5ffd2.js"><link rel="prefetch" href="/assets/js/28.14e3d7eb.js"><link rel="prefetch" href="/assets/js/280.678015c5.js"><link rel="prefetch" href="/assets/js/281.a7399190.js"><link rel="prefetch" href="/assets/js/282.b462029a.js"><link rel="prefetch" href="/assets/js/29.f3929e6f.js"><link rel="prefetch" href="/assets/js/3.b532e61f.js"><link rel="prefetch" href="/assets/js/30.2a6dceb0.js"><link rel="prefetch" href="/assets/js/31.22f7aea5.js"><link rel="prefetch" href="/assets/js/32.da5aa282.js"><link rel="prefetch" href="/assets/js/33.12992c20.js"><link rel="prefetch" href="/assets/js/34.54c3bd99.js"><link rel="prefetch" href="/assets/js/35.af47140b.js"><link rel="prefetch" href="/assets/js/36.b4d628a8.js"><link rel="prefetch" href="/assets/js/37.e3f866d9.js"><link rel="prefetch" href="/assets/js/38.5cdf6f52.js"><link rel="prefetch" href="/assets/js/39.78da2067.js"><link rel="prefetch" href="/assets/js/4.afea0107.js"><link rel="prefetch" href="/assets/js/40.3d2eb833.js"><link rel="prefetch" href="/assets/js/41.a6168573.js"><link rel="prefetch" href="/assets/js/42.ef2822c5.js"><link rel="prefetch" href="/assets/js/43.ac0c9a65.js"><link rel="prefetch" href="/assets/js/44.51b56a69.js"><link rel="prefetch" href="/assets/js/45.b671b771.js"><link rel="prefetch" href="/assets/js/46.67e3a319.js"><link rel="prefetch" href="/assets/js/47.1672d263.js"><link rel="prefetch" href="/assets/js/48.5188b115.js"><link rel="prefetch" href="/assets/js/49.30b3dd4e.js"><link rel="prefetch" href="/assets/js/5.eba8550f.js"><link rel="prefetch" href="/assets/js/50.d100f057.js"><link rel="prefetch" href="/assets/js/51.241d346d.js"><link rel="prefetch" href="/assets/js/52.cc14f98f.js"><link rel="prefetch" href="/assets/js/53.71fc0ca5.js"><link rel="prefetch" href="/assets/js/54.98f21b9e.js"><link rel="prefetch" href="/assets/js/55.8e09bb1a.js"><link rel="prefetch" href="/assets/js/56.70c77a93.js"><link rel="prefetch" href="/assets/js/57.e6086e9f.js"><link rel="prefetch" href="/assets/js/58.75a05c78.js"><link rel="prefetch" href="/assets/js/59.abfe2849.js"><link rel="prefetch" href="/assets/js/6.5ae47d8f.js"><link rel="prefetch" href="/assets/js/60.baa7c040.js"><link rel="prefetch" href="/assets/js/61.bd6b3469.js"><link rel="prefetch" href="/assets/js/62.4e730e4d.js"><link rel="prefetch" href="/assets/js/63.fedc20df.js"><link rel="prefetch" href="/assets/js/64.5e91a169.js"><link rel="prefetch" href="/assets/js/65.558a35ae.js"><link rel="prefetch" href="/assets/js/66.99197ed1.js"><link rel="prefetch" href="/assets/js/67.f16e4655.js"><link rel="prefetch" href="/assets/js/68.fd8d90bb.js"><link rel="prefetch" href="/assets/js/69.794dc92e.js"><link rel="prefetch" href="/assets/js/7.b6ab73c3.js"><link rel="prefetch" href="/assets/js/70.2bf4d367.js"><link rel="prefetch" href="/assets/js/71.40d40af2.js"><link rel="prefetch" href="/assets/js/72.fff1b238.js"><link rel="prefetch" href="/assets/js/73.5468ad06.js"><link rel="prefetch" href="/assets/js/74.0f87ad9a.js"><link rel="prefetch" href="/assets/js/75.d996b073.js"><link rel="prefetch" href="/assets/js/76.45528287.js"><link rel="prefetch" href="/assets/js/77.deea0122.js"><link rel="prefetch" href="/assets/js/78.d2b1ba02.js"><link rel="prefetch" href="/assets/js/79.dab55ede.js"><link rel="prefetch" href="/assets/js/8.ad743bf5.js"><link rel="prefetch" href="/assets/js/80.c4acd95f.js"><link rel="prefetch" href="/assets/js/81.14870eb3.js"><link rel="prefetch" href="/assets/js/82.b2a0413b.js"><link rel="prefetch" href="/assets/js/83.b0710579.js"><link rel="prefetch" href="/assets/js/84.d555db35.js"><link rel="prefetch" href="/assets/js/85.49564f7f.js"><link rel="prefetch" href="/assets/js/86.4870e45c.js"><link rel="prefetch" href="/assets/js/87.9cfce016.js"><link rel="prefetch" href="/assets/js/88.7c7bde46.js"><link rel="prefetch" href="/assets/js/89.05d19e0c.js"><link rel="prefetch" href="/assets/js/9.5a21f076.js"><link rel="prefetch" href="/assets/js/90.f02e6e5f.js"><link rel="prefetch" href="/assets/js/91.da2c9d44.js"><link rel="prefetch" href="/assets/js/92.4206ca2a.js"><link rel="prefetch" href="/assets/js/93.333975e3.js"><link rel="prefetch" href="/assets/js/94.dc19f6df.js"><link rel="prefetch" href="/assets/js/95.5e79c8ec.js"><link rel="prefetch" href="/assets/js/96.e6e27f77.js"><link rel="prefetch" href="/assets/js/97.989e9e4a.js"><link rel="prefetch" href="/assets/js/98.8ae375f0.js"><link rel="prefetch" href="/assets/js/99.36bba9b3.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.2d4b740c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">YuweiYin</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/home/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="文章" class="dropdown-title"><span class="title">文章</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/article/mathematics/" class="nav-link">
+  数学哲学
+</a></li><li class="dropdown-item"><!----> <a href="/article/physics/" class="nav-link">
+  物理宇宙
+</a></li><li class="dropdown-item"><!----> <a href="/article/info_technology/" class="nav-link router-link-active">
+  信息技术
+</a></li><li class="dropdown-item"><!----> <a href="/article/essay/" class="nav-link">
+  见闻随笔
+</a></li><li class="dropdown-item"><!----> <a href="/article/other/" class="nav-link">
+  其它系列
+</a></li><li class="dropdown-item"><!----> <a href="/article/reprint/" class="nav-link">
+  转载文章
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于
+</a></div><div class="nav-item"><a href="https://www.github.com/YuweiYin" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/home/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="文章" class="dropdown-title"><span class="title">文章</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/article/mathematics/" class="nav-link">
+  数学哲学
+</a></li><li class="dropdown-item"><!----> <a href="/article/physics/" class="nav-link">
+  物理宇宙
+</a></li><li class="dropdown-item"><!----> <a href="/article/info_technology/" class="nav-link router-link-active">
+  信息技术
+</a></li><li class="dropdown-item"><!----> <a href="/article/essay/" class="nav-link">
+  见闻随笔
+</a></li><li class="dropdown-item"><!----> <a href="/article/other/" class="nav-link">
+  其它系列
+</a></li><li class="dropdown-item"><!----> <a href="/article/reprint/" class="nav-link">
+  转载文章
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于
+</a></div><div class="nav-item"><a href="https://www.github.com/YuweiYin" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/article/info_technology/" class="sidebar-link">Information Technology</a></li><li><a href="/article/info_technology/computer_science/" class="sidebar-link">Computer Science</a></li><li><a href="/article/info_technology/algorithm/" class="sidebar-link">Algorithm</a></li><li><a href="/article/info_technology/artificial_intelligence/" class="sidebar-link">Artificial Intelligence</a></li><li><a href="/article/info_technology/web_crawler/" class="sidebar-link">Web Crawler</a></li><li><a href="/article/info_technology/web_frontend/" class="sidebar-link">Web Frontend</a></li><li><a href="/article/info_technology/web_backend/" class="sidebar-link">Web Backend</a></li><li><a href="/article/info_technology/web_security/" class="sidebar-link">Web Security</a></li><li><a href="/article/info_technology/system_management/" class="sidebar-link">System Management</a></li><li><a href="/article/info_technology/paper_notes/" class="sidebar-link">Paper Notes</a></li><li><a href="/article/info_technology/other/" class="sidebar-link">Other</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="algorithm-data-structure-treap"><a href="#algorithm-data-structure-treap" class="header-anchor">#</a> Algorithm - Data Structure - Treap</h1> <p>Create Date: 2020.05.08</p> <p>Last Update Date: 2020.05.08</p> <p>By <a href="https://yuweiyin.github.io/" target="_blank" rel="noopener noreferrer">YuweiYin<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="简介"><a href="#简介" class="header-anchor">#</a> 简介</h2> <p>堆树/树堆 Treap 是由 Seidel 和 Aragon 提出的。它是 LEDA 内字典的默认实现，LEDA 是一组精心实现的数据结构和算法。</p> <p>如果讲一个含 n 个元素的集合插入到一棵<a href="./binary-search-tree">二叉搜索树</a> (Binary Sort/Search Tree, BST) 中，所得到的树可能会相当不平衡，从而导致操作时间变为线性时间复杂度 O(n)。<strong>随机构造</strong>二叉搜索树是<strong>趋向于平衡的</strong>。因此，一般来说，要为一组固定的元素建立一棵平衡树，可以采用一种策略就是<strong>先随机排列</strong>这些元素，然后按照排列的顺序将它们插入到树中。</p> <p>但是，如果没法同时得到所有的元素，应该如何处理？如果一次收到一个元素，是否仍然能用它们来随机建立一棵二叉搜索树？</p> <p>一棵 Treap 树是一棵更改了结点排列方式的二叉搜索树。通常，树内的每个结点 x 都有一个关键字值 x.key，用于 BST 排序。另外，还要为每个结点指定 x.priority，它是一个独立选取的随机数。假设所有的优先级都是不同的，而且所有的关键字也是不同的。Treap 树的结点被排列成让关键字遵循二叉搜索树的性质，且优先级遵循最小堆顺序性质：</p> <ul><li>如果 v 是 u 的左孩子，则 v.key &lt; u.key</li> <li>如果 v 是 u 的右孩子，则 v.key &gt; u.key</li> <li>如果 v 是 u 的孩子，则 v.priority &gt; u.priority</li></ul> <p>这两个性质的结合就是这种树被称为 Treap 树的原因：它同时具有二叉搜索树和堆的特征。</p> <p><img src="/img/info_technology/algorithm/data_structure/treap-1.png" alt="treap-1"></p> <p>假设将已有相应关键字 key 的结点 x1, x2, ..., xn 插入到一棵 Treap 树内，得到的 Treap 树是通过将这些结点及其优先级（<strong>随机</strong>选取的值）顺序插入一棵正常的二叉搜索树形成的，即 xi.priority &lt; xj.priority 表示 xi 在 xj 之前被插入。</p> <p>可以证明：</p> <ul><li>给定一个已有的相应关键字 key 和优先级 priority（互异）的结点 x1, x2, ..., xn 组成的集合，存在唯一的一棵 Treap 树与这些结点相关联。</li> <li>Treap 树的期望高度是 O(log n)，因此在 Treap 内查找一个值所花的时间为 O(log n)。</li></ul> <p>要将一个新的结点插入到一个已存在的 Treap 树中，要做的第一件事就是将一个随机的优先级赋予这个新结点。然后调用 treap-insert 插入算法，其操作如图所示。</p> <p><img src="/img/info_technology/algorithm/data_structure/treap-2.png" alt="treap-2"></p> <p><img src="/img/info_technology/algorithm/data_structure/treap-3.png" alt="treap-3"></p> <p>可以证明：treap-insert 插入算法的期望运行时间是 O(log n)。当在一棵 Treap 树中插入一个结点时，执行旋转的期望次数小于 2。</p> <p>定义一棵 BST 的<strong>左脊柱</strong>（left spine）是从根结点到有最小关键字 key 的结点的简单路径。换句话说，左脊柱是从根结点开始只包含左边缘的简单路径。对称地，BST 的<strong>右脊柱</strong>（right spine）是从根结点开始只包含右边缘的简单路径。一条脊柱的长度是它包含的结点数目。</p> <p><img src="/img/info_technology/algorithm/data_structure/treap-4.png" alt="treap-4"></p> <h2 id="设计-细节"><a href="#设计-细节" class="header-anchor">#</a> 设计 &amp; 细节</h2> <h3 id="建立-treap-树"><a href="#建立-treap-树" class="header-anchor">#</a> 建立 Treap 树</h3> <p>以 kv_array 中的每个元素为 [key, value] 数组，构建树结点。树结点设计如下：</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">class</span> <span class="token class-name">TreeNode</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> key<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span> val<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span> priority<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>key <span class="token operator">=</span> key       <span class="token comment"># 键，按键构造 BST 树，并进行搜索/增添/删除</span>
+        self<span class="token punctuation">.</span>val <span class="token operator">=</span> val       <span class="token comment"># 值，树结点存储的值，可以为任意对象</span>
+        self<span class="token punctuation">.</span>priority <span class="token operator">=</span> priority   <span class="token comment"># 结点的优先级，用于构建最小堆</span>
+        self<span class="token punctuation">.</span>left <span class="token operator">=</span> <span class="token boolean">None</span>     <span class="token comment"># 左孩子指针</span>
+        self<span class="token punctuation">.</span>right <span class="token operator">=</span> <span class="token boolean">None</span>    <span class="token comment"># 右孩子指针</span>
+        self<span class="token punctuation">.</span>parent <span class="token operator">=</span> <span class="token boolean">None</span>   <span class="token comment"># 父结点指针</span>
+        self<span class="token punctuation">.</span>is_left <span class="token operator">=</span> <span class="token boolean">True</span>  <span class="token comment"># True 则表示自己是父结点的左孩子(默认)，否则为右孩子</span>
+</code></pre></div><p>Treap 类成员属性如下（这里利用的是最小堆，但最大堆也可以）：</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">class</span> <span class="token class-name">Treap</span><span class="token punctuation">:</span>
+    <span class="token comment"># 构造 Treap</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> kv_array<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>bst <span class="token operator">=</span> <span class="token boolean">None</span>             <span class="token comment"># 二叉搜索树结构，树根</span>
+        self<span class="token punctuation">.</span>inf <span class="token operator">=</span> <span class="token number">0x3f3f3f3f</span>       <span class="token comment"># 0..inf 是优先级的随机选择范围</span>
+        self<span class="token punctuation">.</span>used_priority <span class="token operator">=</span> <span class="token builtin">set</span><span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment"># 集合，存储当前已经使用过的优先级</span>
+        self<span class="token punctuation">.</span>sorted_key_list <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>   <span class="token comment"># 已排好序的 key 列表</span>
+</code></pre></div><p>与 <a href="avl-tree">AVL</a>、<a href="./red-black-tree">RBT</a> 树的建立方式相同，Treap 也是循环调用插入函数，逐步建立 Treap 树。时间复杂度 O(n)</p> <h3 id="搜索"><a href="#搜索" class="header-anchor">#</a> 搜索</h3> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">def</span> <span class="token function">treap_search</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> search_key<span class="token punctuation">)</span>
+</code></pre></div><h3 id="辅助操作：左旋"><a href="#辅助操作：左旋" class="header-anchor">#</a> 辅助操作：左旋</h3> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">def</span> <span class="token function">left_rotate</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> node_x<span class="token punctuation">)</span>
+</code></pre></div><ul><li>与 RBT 的左旋操作完全相同。只有 AVL 树在旋转时要维护结点的高度属性</li> <li>对 node 结点 x 而言，将 x 左旋，意味着：
+<ul><li>让 x 的右孩子 y (x.right) 成为 x 的父结点，且 x 等于 y.left。</li> <li>而 y 结点原本的左孩子变为新 x 的右孩子</li> <li>注意：如果将 BST 树根旋下来了，则需要更换树根</li></ul></li></ul> <h3 id="辅助操作：右旋"><a href="#辅助操作：右旋" class="header-anchor">#</a> 辅助操作：右旋</h3> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">def</span> <span class="token function">right_rotate</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> node_x<span class="token punctuation">)</span>
+</code></pre></div><ul><li>与 RBT 的右旋操作完全相同。只有 AVL 树在旋转时要维护结点的高度属性</li> <li>对 node 结点 x 而言，将 x 右旋，意味着：
+<ul><li>让 x 的左孩子 y (x.left) 成为 x 的父结点，且 x 等于 y.right。</li> <li>而 y 结点原本的右孩子变为新 x 的左孩子</li> <li>注意：如果将 BST 树根旋下来了，则需要更换树根</li></ul></li></ul> <h3 id="辅助操作：新建并返回具有随机优先级的结点"><a href="#辅助操作：新建并返回具有随机优先级的结点" class="header-anchor">#</a> 辅助操作：新建并返回具有随机优先级的结点</h3> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">def</span> <span class="token function">create_new_node</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> new_key<span class="token punctuation">,</span> new_val<span class="token punctuation">)</span>
+</code></pre></div><h3 id="辅助操作：插入结点后维护最小堆性质"><a href="#辅助操作：插入结点后维护最小堆性质" class="header-anchor">#</a> 辅助操作：插入结点后维护最小堆性质</h3> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">def</span> <span class="token function">_treap_priority_fixup</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> node<span class="token punctuation">)</span>
+</code></pre></div><ul><li>时间复杂度 O(log n) 与树高有关</li></ul> <h3 id="插入"><a href="#插入" class="header-anchor">#</a> 插入</h3> <ul><li>时间复杂度 O(log n) 与树高有关</li></ul> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">def</span> <span class="token function">treap_insert</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> insert_key<span class="token punctuation">,</span> insert_val<span class="token punctuation">)</span>
+</code></pre></div><h3 id="删除-rb-delete-key"><a href="#删除-rb-delete-key" class="header-anchor">#</a> 删除 rb_delete(key)</h3> <ul><li>时间复杂度 O(log n) 与树高有关</li></ul> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">def</span> <span class="token function">treap_delete</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> delete_key<span class="token punctuation">)</span>
+</code></pre></div><p>实际执行的删除函数，可能递归</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">def</span> <span class="token function">_treap_delete</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> root<span class="token punctuation">,</span> delete_key<span class="token punctuation">)</span>
+</code></pre></div><h3 id="最小值-min-bst-root"><a href="#最小值-min-bst-root" class="header-anchor">#</a> 最小值 min_bst(root)</h3> <ul><li>找到一棵以 root 为根的 BST/AVL 中的最小值结点（一路向左）</li> <li>时间复杂度 O(log n) 与树高有关</li></ul> <h3 id="最大值-max-bst-root"><a href="#最大值-max-bst-root" class="header-anchor">#</a> 最大值 max_bst(root)</h3> <ul><li>找到一棵以 root 为根的 BST/AVL 中的最大值结点（一路向右）</li> <li>时间复杂度 O(log n) 与树高有关</li></ul> <h3 id="前驱-predecessor-node"><a href="#前驱-predecessor-node" class="header-anchor">#</a> 前驱 predecessor(node)</h3> <ul><li>找到在 BST 中 node 结点的前驱结点，即：其左子树中的最大值</li> <li>时间复杂度 O(log n) 与树高有关</li></ul> <h3 id="后继-successor-node"><a href="#后继-successor-node" class="header-anchor">#</a> 后继 successor(node)</h3> <ul><li>找到在 BST 中 node 结点的后继结点，即：其右子树中的最小值</li> <li>时间复杂度 O(log n) 与树高有关</li></ul> <h3 id="检测是否为-bst-check-bst-root"><a href="#检测是否为-bst-check-bst-root" class="header-anchor">#</a> 检测是否为 BST check_bst(root)</h3> <ul><li>检查一棵以 root 为根的二叉树是否为 BST</li> <li>时间复杂度 O(n)</li></ul> <h2 id="代码范例"><a href="#代码范例" class="header-anchor">#</a> 代码范例</h2> <h3 id="python"><a href="#python" class="header-anchor">#</a> Python</h3> <p>Python 环境：Python 3.7</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token comment">#!/usr/bin/env python</span>
+<span class="token comment"># -*- coding:utf-8 -*-</span>
+<span class="token triple-quoted-string string">&quot;&quot;&quot;=================================================
+@Project : algorithm/data_structure
+@File    : treap.py
+@Author  : YuweiYin
+@Date    : 2020-05-08
+==================================================&quot;&quot;&quot;</span>
+
+<span class="token comment"># import gc</span>
+<span class="token keyword">import</span> sys
+<span class="token keyword">import</span> time
+<span class="token keyword">import</span> random
+
+<span class="token triple-quoted-string string">&quot;&quot;&quot;
+堆树 Treap
+
+参考资料：
+Introduction to Algorithm (aka CLRS) Third Edition - Chapter 13
+&quot;&quot;&quot;</span>
+
+
+<span class="token keyword">class</span> <span class="token class-name">TreeNode</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> key<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span> val<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span> priority<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>key <span class="token operator">=</span> key       <span class="token comment"># 键，按键构造 BST 树，并进行搜索/增添/删除</span>
+        self<span class="token punctuation">.</span>val <span class="token operator">=</span> val       <span class="token comment"># 值，树结点存储的值，可以为任意对象</span>
+        self<span class="token punctuation">.</span>priority <span class="token operator">=</span> priority   <span class="token comment"># 结点的优先级，用于构建最小堆</span>
+        self<span class="token punctuation">.</span>left <span class="token operator">=</span> <span class="token boolean">None</span>     <span class="token comment"># 左孩子指针</span>
+        self<span class="token punctuation">.</span>right <span class="token operator">=</span> <span class="token boolean">None</span>    <span class="token comment"># 右孩子指针</span>
+        self<span class="token punctuation">.</span>parent <span class="token operator">=</span> <span class="token boolean">None</span>   <span class="token comment"># 父结点指针</span>
+        self<span class="token punctuation">.</span>is_left <span class="token operator">=</span> <span class="token boolean">True</span>  <span class="token comment"># True 则表示自己是父结点的左孩子(默认)，否则为右孩子</span>
+
+
+<span class="token keyword">class</span> <span class="token class-name">Treap</span><span class="token punctuation">:</span>
+    <span class="token comment"># 构造 Treap（这里利用的是最小堆，但最大堆也可以）</span>
+    <span class="token comment"># 时间复杂度</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> kv_array<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>bst <span class="token operator">=</span> <span class="token boolean">None</span>             <span class="token comment"># 二叉搜索树结构，树根</span>
+        self<span class="token punctuation">.</span>inf <span class="token operator">=</span> <span class="token number">0x3f3f3f3f</span>       <span class="token comment"># 0..inf 是优先级的随机选择范围</span>
+        self<span class="token punctuation">.</span>used_priority <span class="token operator">=</span> <span class="token builtin">set</span><span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment"># 集合，存储当前已经使用过的优先级</span>
+        self<span class="token punctuation">.</span>sorted_key_list <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>   <span class="token comment"># 已排好序的 key 列表</span>
+
+        <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>kv_array<span class="token punctuation">,</span> <span class="token builtin">list</span><span class="token punctuation">)</span> <span class="token keyword">and</span> <span class="token builtin">len</span><span class="token punctuation">(</span>kv_array<span class="token punctuation">)</span> <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">:</span>
+            <span class="token comment"># 依次将 array 中的元素作为 key 值构造 TreeNode 并插入 BST</span>
+            <span class="token keyword">for</span> kv <span class="token keyword">in</span> kv_array<span class="token punctuation">:</span>
+                <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>kv<span class="token punctuation">,</span> <span class="token builtin">list</span><span class="token punctuation">)</span> <span class="token keyword">and</span> <span class="token builtin">len</span><span class="token punctuation">(</span>kv<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">2</span><span class="token punctuation">:</span>
+                    self<span class="token punctuation">.</span>treap_insert<span class="token punctuation">(</span>kv<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> kv<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+            <span class="token comment"># 中序遍历，获取 sorted_list 升序数组/列表</span>
+            self<span class="token punctuation">.</span>update_sorted_list<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token comment"># 中序遍历，将 BST 结点的 key 值（升序排列）存储于 sorted_list</span>
+    <span class="token comment"># 时间复杂度 O(n)</span>
+    <span class="token keyword">def</span> <span class="token function">inorder_traversal</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> root<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> root <span class="token keyword">is</span> <span class="token keyword">not</span> <span class="token boolean">None</span> <span class="token keyword">and</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>root<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            self<span class="token punctuation">.</span>inorder_traversal<span class="token punctuation">(</span>root<span class="token punctuation">.</span>left<span class="token punctuation">)</span>
+            self<span class="token punctuation">.</span>sorted_key_list<span class="token punctuation">.</span>append<span class="token punctuation">(</span>root<span class="token punctuation">.</span>key<span class="token punctuation">)</span>
+            self<span class="token punctuation">.</span>inorder_traversal<span class="token punctuation">(</span>root<span class="token punctuation">.</span>right<span class="token punctuation">)</span>
+
+    <span class="token comment"># 调用中序遍历，更新 sorted_list</span>
+    <span class="token keyword">def</span> <span class="token function">update_sorted_list</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>sorted_key_list <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+        self<span class="token punctuation">.</span>inorder_traversal<span class="token punctuation">(</span>self<span class="token punctuation">.</span>bst<span class="token punctuation">)</span>
+
+    <span class="token comment"># 获得 sorted_key_list</span>
+    <span class="token keyword">def</span> <span class="token function">get_sorted_key_list</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> self<span class="token punctuation">.</span>sorted_key_list
+
+    <span class="token comment"># 辅助操作：左旋。返回替代了 node 的新结点</span>
+    <span class="token comment"># 时间复杂度 O(1)</span>
+    <span class="token keyword">def</span> <span class="token function">left_rotate</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> node_x<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token comment"># 对 x 进行左旋，即让 x 的右孩子 y (x.right) 成为 x 的父结点，且 x 等于 y.left。</span>
+        <span class="token comment"># 而 y 结点原本的左孩子变为新 x 的右孩子</span>
+        <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>node_x<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span> <span class="token keyword">and</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>node_x<span class="token punctuation">.</span>right<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token comment"># 如果 x 是 BST 树根，那么树根要更换</span>
+            <span class="token keyword">if</span> node_x <span class="token operator">==</span> self<span class="token punctuation">.</span>bst<span class="token punctuation">:</span>
+                self<span class="token punctuation">.</span>bst <span class="token operator">=</span> node_x<span class="token punctuation">.</span>right
+
+            <span class="token comment"># 调整树结构</span>
+            node_y <span class="token operator">=</span> node_x<span class="token punctuation">.</span>right
+            node_y<span class="token punctuation">.</span>parent <span class="token operator">=</span> node_x<span class="token punctuation">.</span>parent  <span class="token comment"># 设置 node_y 的父结点（互相关联）</span>
+            <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>node_x<span class="token punctuation">.</span>parent<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                <span class="token keyword">if</span> node_x<span class="token punctuation">.</span>is_left<span class="token punctuation">:</span>
+                    node_x<span class="token punctuation">.</span>parent<span class="token punctuation">.</span>left <span class="token operator">=</span> node_y
+                <span class="token keyword">else</span><span class="token punctuation">:</span>
+                    node_x<span class="token punctuation">.</span>parent<span class="token punctuation">.</span>right <span class="token operator">=</span> node_y
+
+            node_x<span class="token punctuation">.</span>right <span class="token operator">=</span> node_y<span class="token punctuation">.</span>left  <span class="token comment"># y 结点原本的左孩子变为新 x 的右孩子</span>
+            <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>node_y<span class="token punctuation">.</span>left<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                node_y<span class="token punctuation">.</span>left<span class="token punctuation">.</span>parent <span class="token operator">=</span> node_x
+                node_y<span class="token punctuation">.</span>left<span class="token punctuation">.</span>is_left <span class="token operator">=</span> <span class="token boolean">False</span>
+
+            node_y<span class="token punctuation">.</span>left <span class="token operator">=</span> node_x
+            node_x<span class="token punctuation">.</span>parent <span class="token operator">=</span> node_y
+            node_x<span class="token punctuation">.</span>is_left <span class="token operator">=</span> <span class="token boolean">True</span>
+
+            <span class="token comment"># 返回替代了 node 的结点 node_y</span>
+            <span class="token keyword">return</span> node_y
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token boolean">None</span>
+
+    <span class="token comment"># 辅助操作：右旋。返回替代了 node 的新结点</span>
+    <span class="token comment"># 时间复杂度 O(1)</span>
+    <span class="token keyword">def</span> <span class="token function">right_rotate</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> node_x<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token comment"># 对 x 进行右旋，即让 x 的左孩子 y (x.left) 成为 x 的父结点，且 x 等于 y.right。</span>
+        <span class="token comment"># 而 y 结点原本的右孩子变为新 x 的左孩子</span>
+        <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>node_x<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span> <span class="token keyword">and</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>node_x<span class="token punctuation">.</span>left<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token comment"># 如果 x 是 BST 树根，那么树根要更换</span>
+            <span class="token keyword">if</span> node_x <span class="token operator">==</span> self<span class="token punctuation">.</span>bst<span class="token punctuation">:</span>
+                self<span class="token punctuation">.</span>bst <span class="token operator">=</span> node_x<span class="token punctuation">.</span>left
+
+            <span class="token comment"># 调整树结构</span>
+            node_y <span class="token operator">=</span> node_x<span class="token punctuation">.</span>left
+            node_y<span class="token punctuation">.</span>parent <span class="token operator">=</span> node_x<span class="token punctuation">.</span>parent  <span class="token comment"># 设置 node_y 的父结点（互相关联）</span>
+            <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>node_x<span class="token punctuation">.</span>parent<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                <span class="token keyword">if</span> node_x<span class="token punctuation">.</span>is_left<span class="token punctuation">:</span>
+                    node_x<span class="token punctuation">.</span>parent<span class="token punctuation">.</span>left <span class="token operator">=</span> node_y
+                <span class="token keyword">else</span><span class="token punctuation">:</span>
+                    node_x<span class="token punctuation">.</span>parent<span class="token punctuation">.</span>right <span class="token operator">=</span> node_y
+
+            node_x<span class="token punctuation">.</span>left <span class="token operator">=</span> node_y<span class="token punctuation">.</span>right  <span class="token comment"># y 结点原本的右孩子变为新 x 的左孩子</span>
+            <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>node_y<span class="token punctuation">.</span>right<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                node_y<span class="token punctuation">.</span>right<span class="token punctuation">.</span>parent <span class="token operator">=</span> node_x
+                node_y<span class="token punctuation">.</span>right<span class="token punctuation">.</span>is_left <span class="token operator">=</span> <span class="token boolean">True</span>
+
+            node_y<span class="token punctuation">.</span>right <span class="token operator">=</span> node_x
+            node_x<span class="token punctuation">.</span>parent <span class="token operator">=</span> node_y
+            node_x<span class="token punctuation">.</span>is_left <span class="token operator">=</span> <span class="token boolean">False</span>
+
+            <span class="token comment"># 返回替代了 node 的结点 node_y</span>
+            <span class="token keyword">return</span> node_y
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token boolean">None</span>
+
+    <span class="token comment"># 根据 key 值搜索结点</span>
+    <span class="token comment"># 如果搜索到了，则返回结点 TreeNode，如果搜索不到，则返回 None</span>
+    <span class="token keyword">def</span> <span class="token function">treap_search</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> search_key<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> <span class="token keyword">not</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>bst<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token comment"># 如果当前 BST 为空，则找不到</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'提示：搜索时，Treap 为空，无法找到目标元素。'</span><span class="token punctuation">)</span>
+            <span class="token keyword">return</span> <span class="token boolean">None</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            <span class="token comment"># 否则正常插入，先寻找应插入位置</span>
+            ptr <span class="token operator">=</span> self<span class="token punctuation">.</span>bst
+            <span class="token keyword">while</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>ptr<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                <span class="token keyword">if</span> search_key <span class="token operator">==</span> ptr<span class="token punctuation">.</span>key<span class="token punctuation">:</span>
+                    <span class="token keyword">return</span> ptr  <span class="token comment"># 搜索到了</span>
+                <span class="token keyword">elif</span> search_key <span class="token operator">&lt;</span> ptr<span class="token punctuation">.</span>key<span class="token punctuation">:</span>
+                    <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>ptr<span class="token punctuation">.</span>left<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                        ptr <span class="token operator">=</span> ptr<span class="token punctuation">.</span>left  <span class="token comment"># 小则往左</span>
+                    <span class="token keyword">else</span><span class="token punctuation">:</span>
+                        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'提示：搜索时，无法找到 key 为'</span><span class="token punctuation">,</span> search_key<span class="token punctuation">,</span> <span class="token string">'的目标元素。'</span><span class="token punctuation">)</span>
+                        <span class="token keyword">return</span> <span class="token boolean">None</span>  <span class="token comment"># 左孩子为空，找不到</span>
+                <span class="token keyword">else</span><span class="token punctuation">:</span>
+                    <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>ptr<span class="token punctuation">.</span>right<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                        ptr <span class="token operator">=</span> ptr<span class="token punctuation">.</span>right  <span class="token comment"># 大则往右</span>
+                    <span class="token keyword">else</span><span class="token punctuation">:</span>
+                        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'提示：搜索时，无法找到 key 为'</span><span class="token punctuation">,</span> search_key<span class="token punctuation">,</span> <span class="token string">'的目标元素。'</span><span class="token punctuation">)</span>
+                        <span class="token keyword">return</span> <span class="token boolean">None</span>  <span class="token comment"># 右孩子为空，找不到</span>
+
+    <span class="token comment"># 新建并返回具有随机优先级的结点</span>
+    <span class="token keyword">def</span> <span class="token function">create_new_node</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> new_key<span class="token punctuation">,</span> new_val<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        new_node <span class="token operator">=</span> TreeNode<span class="token punctuation">(</span>new_key<span class="token punctuation">,</span> new_val<span class="token punctuation">)</span>
+        random<span class="token punctuation">.</span>seed<span class="token punctuation">(</span><span class="token builtin">id</span><span class="token punctuation">(</span>new_node<span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment"># 以新结点对象的唯一标识符 id 作为随机数种子</span>
+        priority <span class="token operator">=</span> random<span class="token punctuation">.</span>randint<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> self<span class="token punctuation">.</span>inf<span class="token punctuation">)</span>  <span class="token comment"># 生成整型随机数</span>
+        <span class="token comment"># 如果优先级重复，则更换随机数 TODO 思考更优的随机优先级分配方案</span>
+        <span class="token keyword">while</span> priority <span class="token keyword">in</span> self<span class="token punctuation">.</span>used_priority<span class="token punctuation">:</span>
+            priority <span class="token operator">=</span> random<span class="token punctuation">.</span>randint<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> self<span class="token punctuation">.</span>inf<span class="token punctuation">)</span>  <span class="token comment"># 更换一个随机数</span>
+        self<span class="token punctuation">.</span>used_priority<span class="token punctuation">.</span>add<span class="token punctuation">(</span>priority<span class="token punctuation">)</span>  <span class="token comment"># 将选取好的不重复的优先级存储于集合中</span>
+        new_node<span class="token punctuation">.</span>priority <span class="token operator">=</span> priority
+        <span class="token keyword">return</span> new_node
+
+    <span class="token comment"># Treap 按 key 插入新结点，并给出 value</span>
+    <span class="token keyword">def</span> <span class="token function">treap_insert</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> insert_key<span class="token punctuation">,</span> insert_val<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> <span class="token keyword">not</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>bst<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token comment"># 如果当前 BST 为空，创建新结点作为树根</span>
+            self<span class="token punctuation">.</span>bst <span class="token operator">=</span> self<span class="token punctuation">.</span>create_new_node<span class="token punctuation">(</span>insert_key<span class="token punctuation">,</span> insert_val<span class="token punctuation">)</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            <span class="token comment"># 否则正常插入，先寻找应插入位置</span>
+            ptr <span class="token operator">=</span> self<span class="token punctuation">.</span>bst
+            <span class="token keyword">while</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>ptr<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                <span class="token keyword">if</span> insert_key <span class="token operator">&lt;=</span> ptr<span class="token punctuation">.</span>key<span class="token punctuation">:</span>
+                    <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>ptr<span class="token punctuation">.</span>left<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                        ptr <span class="token operator">=</span> ptr<span class="token punctuation">.</span>left  <span class="token comment"># 小则往左</span>
+                    <span class="token keyword">else</span><span class="token punctuation">:</span>
+                        <span class="token comment"># 找到了插入位置，即 ptr.left</span>
+                        new_node <span class="token operator">=</span> self<span class="token punctuation">.</span>create_new_node<span class="token punctuation">(</span>insert_key<span class="token punctuation">,</span> insert_val<span class="token punctuation">)</span>
+                        new_node<span class="token punctuation">.</span>parent <span class="token operator">=</span> ptr
+                        new_node<span class="token punctuation">.</span>is_left <span class="token operator">=</span> <span class="token boolean">True</span>
+                        ptr<span class="token punctuation">.</span>left <span class="token operator">=</span> new_node
+                        <span class="token comment"># 插入后逐级往上维护最小堆性质 (根据优先级)</span>
+                        self<span class="token punctuation">.</span>_treap_priority_fixup<span class="token punctuation">(</span>ptr<span class="token punctuation">.</span>left<span class="token punctuation">)</span>
+                        <span class="token keyword">break</span>
+                <span class="token keyword">else</span><span class="token punctuation">:</span>
+                    <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>ptr<span class="token punctuation">.</span>right<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                        ptr <span class="token operator">=</span> ptr<span class="token punctuation">.</span>right  <span class="token comment"># 大则往右</span>
+                    <span class="token keyword">else</span><span class="token punctuation">:</span>
+                        <span class="token comment"># 找到了插入位置，即 ptr.right</span>
+                        new_node <span class="token operator">=</span> self<span class="token punctuation">.</span>create_new_node<span class="token punctuation">(</span>insert_key<span class="token punctuation">,</span> insert_val<span class="token punctuation">)</span>
+                        new_node<span class="token punctuation">.</span>parent <span class="token operator">=</span> ptr
+                        new_node<span class="token punctuation">.</span>is_left <span class="token operator">=</span> <span class="token boolean">False</span>
+                        ptr<span class="token punctuation">.</span>right <span class="token operator">=</span> new_node
+                        <span class="token comment"># 插入后逐级往上维护最小堆性质 (根据优先级)</span>
+                        self<span class="token punctuation">.</span>_treap_priority_fixup<span class="token punctuation">(</span>ptr<span class="token punctuation">.</span>right<span class="token punctuation">)</span>
+                        <span class="token keyword">break</span>
+
+    <span class="token comment"># 辅助操作：Treap 插入结点之后，逐级向上根据优先级 priority 维护最小堆性质</span>
+    <span class="token comment"># 时间复杂度 O(log n) 与树高有关</span>
+    <span class="token comment"># 根据当前结点的优先级与其父结点的优先级对比，分 2 种情况，用旋转操作来调整平衡</span>
+    <span class="token keyword">def</span> <span class="token function">_treap_priority_fixup</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> node<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>node<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>parent<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                <span class="token keyword">if</span> node<span class="token punctuation">.</span>priority <span class="token operator">&lt;</span> node<span class="token punctuation">.</span>parent<span class="token punctuation">.</span>priority<span class="token punctuation">:</span>
+                    <span class="token comment"># 当前结点的优先级比其父结点低，需要上移</span>
+                    <span class="token keyword">if</span> node<span class="token punctuation">.</span>is_left<span class="token punctuation">:</span>
+                        <span class="token comment"># 当前结点是其父结点的左孩子，则右旋其父</span>
+                        node <span class="token operator">=</span> self<span class="token punctuation">.</span>right_rotate<span class="token punctuation">(</span>node<span class="token punctuation">.</span>parent<span class="token punctuation">)</span>
+                    <span class="token keyword">else</span><span class="token punctuation">:</span>
+                        <span class="token comment"># 当前结点是其父结点的右孩子，则左旋其父</span>
+                        node <span class="token operator">=</span> self<span class="token punctuation">.</span>left_rotate<span class="token punctuation">(</span>node<span class="token punctuation">.</span>parent<span class="token punctuation">)</span>
+                    <span class="token keyword">if</span> node <span class="token keyword">is</span> <span class="token keyword">not</span> <span class="token boolean">None</span> <span class="token keyword">and</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>node<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span> <span class="token keyword">and</span> \
+                            <span class="token builtin">isinstance</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>parent<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                        <span class="token comment"># 如果当前结点的父结点存在，则递归、继续往上调整</span>
+                        self<span class="token punctuation">.</span>_treap_priority_fixup<span class="token punctuation">(</span>node<span class="token punctuation">)</span>
+                    <span class="token keyword">else</span><span class="token punctuation">:</span>
+                        <span class="token keyword">return</span>
+                <span class="token keyword">else</span><span class="token punctuation">:</span>
+                    <span class="token comment"># 当前结点的优先级不比父结点低，未破坏最小堆性质，可终止</span>
+                    <span class="token keyword">return</span>
+            <span class="token keyword">else</span><span class="token punctuation">:</span>
+                <span class="token comment"># 当前结点的父结点为非树结点，可终止</span>
+                <span class="token keyword">return</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            <span class="token comment"># 当前结点为非树结点，可终止</span>
+            <span class="token keyword">return</span>
+
+    <span class="token comment"># 辅助函数：清除某个结点的所有指针域</span>
+    <span class="token decorator annotation punctuation">@staticmethod</span>
+    <span class="token keyword">def</span> <span class="token function">clear_node_link</span><span class="token punctuation">(</span>node<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>node<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            node<span class="token punctuation">.</span>left <span class="token operator">=</span> <span class="token boolean">None</span>
+            node<span class="token punctuation">.</span>right <span class="token operator">=</span> <span class="token boolean">None</span>
+            node<span class="token punctuation">.</span>parent <span class="token operator">=</span> <span class="token boolean">None</span>
+
+    <span class="token comment"># 根据 key 值删除结点，并返回被删除的结点</span>
+    <span class="token comment"># 删除黑色结点时，可能违反红黑性质，需要调用 rb_delete_fixup 维护红黑性质</span>
+    <span class="token comment"># 时间复杂度 O(log n) 与树高有关</span>
+    <span class="token keyword">def</span> <span class="token function">treap_delete</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> delete_key<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> <span class="token keyword">not</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>bst<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token comment"># 如果当前 BST 为空，则找不到目标 key，故无法删除</span>
+            <span class="token comment"># print('删除提示 1：Treap 为空，无法找到目标元素。')</span>
+            <span class="token keyword">return</span> <span class="token boolean">None</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> self<span class="token punctuation">.</span>_treap_delete<span class="token punctuation">(</span>self<span class="token punctuation">.</span>bst<span class="token punctuation">,</span> delete_key<span class="token punctuation">)</span>
+
+    <span class="token comment"># 实际执行的删除函数，可能递归</span>
+    <span class="token keyword">def</span> <span class="token function">_treap_delete</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> root<span class="token punctuation">,</span> delete_key<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> root <span class="token keyword">is</span> <span class="token boolean">None</span> <span class="token keyword">or</span> <span class="token keyword">not</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>root<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token comment"># 如果当前结点为空，则找不到目标 key，故无法删除</span>
+            <span class="token keyword">return</span> <span class="token boolean">None</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            <span class="token comment"># 否则正常删除，先搜索目标 key 位置</span>
+            ptr <span class="token operator">=</span> root
+            <span class="token keyword">while</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>ptr<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                <span class="token keyword">if</span> delete_key <span class="token operator">==</span> ptr<span class="token punctuation">.</span>key<span class="token punctuation">:</span>
+                    <span class="token comment"># 搜索到了目标 key，根据目标结点的孩子数目进行删除处理</span>
+                    delete_node <span class="token operator">=</span> ptr
+                    <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>ptr<span class="token punctuation">.</span>left<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span> <span class="token keyword">and</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>ptr<span class="token punctuation">.</span>right<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                        <span class="token comment"># 目标结点左右孩子都有，则先用后继替换此结点，然后从右子树中删除该后继</span>
+                        <span class="token comment"># 替换时，当前结点的优先级保留</span>
+                        successor <span class="token operator">=</span> self<span class="token punctuation">.</span>successor<span class="token punctuation">(</span>ptr<span class="token punctuation">)</span>
+                        ptr<span class="token punctuation">.</span>key <span class="token operator">=</span> successor<span class="token punctuation">.</span>key
+                        ptr<span class="token punctuation">.</span>val <span class="token operator">=</span> successor<span class="token punctuation">.</span>val
+                        <span class="token comment"># 向右递归，从右子树中删除该后继</span>
+                        <span class="token keyword">if</span> successor <span class="token operator">==</span> ptr<span class="token punctuation">.</span>right<span class="token punctuation">:</span>
+                            <span class="token comment"># 后继等于右孩子，表示右孩子没有 left，</span>
+                            <span class="token comment"># 那么该直接删除该右孩子，把其 right 接到本结点</span>
+                            <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>ptr<span class="token punctuation">.</span>right<span class="token punctuation">.</span>right<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                                <span class="token comment"># 右孩子的 right 是树结点类型</span>
+                                ptr<span class="token punctuation">.</span>right<span class="token punctuation">.</span>right<span class="token punctuation">.</span>parent <span class="token operator">=</span> ptr
+                                ptr<span class="token punctuation">.</span>right<span class="token punctuation">.</span>right<span class="token punctuation">.</span>is_left <span class="token operator">=</span> <span class="token boolean">False</span>
+                                ptr<span class="token punctuation">.</span>right <span class="token operator">=</span> ptr<span class="token punctuation">.</span>right<span class="token punctuation">.</span>right
+                            <span class="token keyword">else</span><span class="token punctuation">:</span>
+                                <span class="token comment"># 右孩子既没有 left 也没有 right</span>
+                                ptr<span class="token punctuation">.</span>right <span class="token operator">=</span> <span class="token boolean">None</span>
+                            <span class="token comment"># 清除 self.used_priority 中 successor 结点的优先级</span>
+                            <span class="token keyword">if</span> successor<span class="token punctuation">.</span>priority <span class="token keyword">in</span> self<span class="token punctuation">.</span>used_priority<span class="token punctuation">:</span>
+                                self<span class="token punctuation">.</span>used_priority<span class="token punctuation">.</span>remove<span class="token punctuation">(</span>successor<span class="token punctuation">.</span>priority<span class="token punctuation">)</span>
+                            self<span class="token punctuation">.</span>clear_node_link<span class="token punctuation">(</span>successor<span class="token punctuation">)</span>
+                            <span class="token keyword">return</span> successor
+                        <span class="token keyword">else</span><span class="token punctuation">:</span>
+                            self<span class="token punctuation">.</span>_treap_delete<span class="token punctuation">(</span>ptr<span class="token punctuation">.</span>right<span class="token punctuation">,</span> successor<span class="token punctuation">.</span>key<span class="token punctuation">)</span>
+                    <span class="token keyword">else</span><span class="token punctuation">:</span>
+                        <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>ptr<span class="token punctuation">.</span>left<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                            <span class="token comment"># 目标结点仅有左孩子，用左孩子替换自己，最小堆性质不会改变</span>
+                            ptr<span class="token punctuation">.</span>left<span class="token punctuation">.</span>parent <span class="token operator">=</span> ptr<span class="token punctuation">.</span>parent
+                            <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>ptr<span class="token punctuation">.</span>parent<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                                <span class="token keyword">if</span> ptr<span class="token punctuation">.</span>is_left<span class="token punctuation">:</span>
+                                    ptr<span class="token punctuation">.</span>parent<span class="token punctuation">.</span>left <span class="token operator">=</span> ptr<span class="token punctuation">.</span>left
+                                    ptr<span class="token punctuation">.</span>left<span class="token punctuation">.</span>is_left <span class="token operator">=</span> <span class="token boolean">True</span>
+                                <span class="token keyword">else</span><span class="token punctuation">:</span>
+                                    ptr<span class="token punctuation">.</span>parent<span class="token punctuation">.</span>right <span class="token operator">=</span> ptr<span class="token punctuation">.</span>left
+                                    ptr<span class="token punctuation">.</span>left<span class="token punctuation">.</span>is_left <span class="token operator">=</span> <span class="token boolean">False</span>
+                            <span class="token keyword">else</span><span class="token punctuation">:</span>
+                                <span class="token comment"># 如果待删除结点 ptr 没有父结点，则表示为根结点，需要更换树根</span>
+                                <span class="token keyword">if</span> ptr <span class="token operator">==</span> self<span class="token punctuation">.</span>bst<span class="token punctuation">:</span>
+                                    self<span class="token punctuation">.</span>bst <span class="token operator">=</span> ptr<span class="token punctuation">.</span>left
+                                <span class="token keyword">else</span><span class="token punctuation">:</span>
+                                    <span class="token comment"># 不应走此 Path</span>
+                                    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'treap_delete: Error Path1 - delete_key='</span><span class="token punctuation">,</span> delete_key<span class="token punctuation">)</span>
+                        <span class="token keyword">elif</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>ptr<span class="token punctuation">.</span>right<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                            <span class="token comment"># 目标结点仅有右孩子，用右孩子替换自己，最小堆性质不会改变</span>
+                            ptr<span class="token punctuation">.</span>right<span class="token punctuation">.</span>parent <span class="token operator">=</span> ptr<span class="token punctuation">.</span>parent
+                            <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>ptr<span class="token punctuation">.</span>parent<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                                <span class="token keyword">if</span> ptr<span class="token punctuation">.</span>is_left<span class="token punctuation">:</span>
+                                    ptr<span class="token punctuation">.</span>parent<span class="token punctuation">.</span>left <span class="token operator">=</span> ptr<span class="token punctuation">.</span>right
+                                    ptr<span class="token punctuation">.</span>right<span class="token punctuation">.</span>is_left <span class="token operator">=</span> <span class="token boolean">True</span>
+                                <span class="token keyword">else</span><span class="token punctuation">:</span>
+                                    ptr<span class="token punctuation">.</span>parent<span class="token punctuation">.</span>right <span class="token operator">=</span> ptr<span class="token punctuation">.</span>right
+                                    ptr<span class="token punctuation">.</span>right<span class="token punctuation">.</span>is_left <span class="token operator">=</span> <span class="token boolean">False</span>
+                            <span class="token keyword">else</span><span class="token punctuation">:</span>
+                                <span class="token comment"># 如果待删除结点 ptr 没有父结点，则表示为根结点，需要更换树根</span>
+                                <span class="token keyword">if</span> ptr <span class="token operator">==</span> self<span class="token punctuation">.</span>bst<span class="token punctuation">:</span>
+                                    self<span class="token punctuation">.</span>bst <span class="token operator">=</span> ptr<span class="token punctuation">.</span>right
+                                <span class="token keyword">else</span><span class="token punctuation">:</span>
+                                    <span class="token comment"># 不应走此 Path</span>
+                                    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'treap_delete: Error Path2 - delete_key='</span><span class="token punctuation">,</span> delete_key<span class="token punctuation">)</span>
+                        <span class="token keyword">else</span><span class="token punctuation">:</span>
+                            <span class="token comment"># 目标结点没有左右孩子，直接删除，最小堆性质不会改变</span>
+                            <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>ptr<span class="token punctuation">.</span>parent<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                                <span class="token comment"># 根据它是其父结点的左孩子还是右孩子，单向切断链接关系</span>
+                                <span class="token keyword">if</span> ptr<span class="token punctuation">.</span>is_left<span class="token punctuation">:</span>
+                                    ptr<span class="token punctuation">.</span>parent<span class="token punctuation">.</span>left <span class="token operator">=</span> <span class="token boolean">None</span>
+                                <span class="token keyword">else</span><span class="token punctuation">:</span>
+                                    ptr<span class="token punctuation">.</span>parent<span class="token punctuation">.</span>right <span class="token operator">=</span> <span class="token boolean">None</span>
+                            <span class="token keyword">else</span><span class="token punctuation">:</span>
+                                <span class="token comment"># 此结点既没有左右孩子，父结点还为非树结点，表示删除的是树根</span>
+                                <span class="token keyword">if</span> ptr <span class="token operator">==</span> self<span class="token punctuation">.</span>bst<span class="token punctuation">:</span>
+                                    self<span class="token punctuation">.</span>bst <span class="token operator">=</span> <span class="token boolean">None</span>
+                                <span class="token keyword">else</span><span class="token punctuation">:</span>
+                                    <span class="token comment"># 不应走此 Path</span>
+                                    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'treap_delete: Error Path3 - delete_key='</span><span class="token punctuation">,</span> delete_key<span class="token punctuation">)</span>
+                        <span class="token comment"># 清除 self.used_priority 中本结点的优先级</span>
+                        <span class="token keyword">if</span> delete_node<span class="token punctuation">.</span>priority <span class="token keyword">in</span> self<span class="token punctuation">.</span>used_priority<span class="token punctuation">:</span>
+                            self<span class="token punctuation">.</span>used_priority<span class="token punctuation">.</span>remove<span class="token punctuation">(</span>delete_node<span class="token punctuation">.</span>priority<span class="token punctuation">)</span>
+                        self<span class="token punctuation">.</span>clear_node_link<span class="token punctuation">(</span>delete_node<span class="token punctuation">)</span>
+                        <span class="token keyword">return</span> delete_node  <span class="token comment"># 返回被删除的结点</span>
+                <span class="token keyword">elif</span> delete_key <span class="token operator">&lt;</span> ptr<span class="token punctuation">.</span>key<span class="token punctuation">:</span>
+                    <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>ptr<span class="token punctuation">.</span>left<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                        ptr <span class="token operator">=</span> ptr<span class="token punctuation">.</span>left  <span class="token comment"># 小则往左</span>
+                    <span class="token keyword">else</span><span class="token punctuation">:</span>
+                        <span class="token comment"># print('删除提示 2：删除时，无法找到 key 为', delete_key, '的目标元素。')</span>
+                        <span class="token keyword">return</span> <span class="token boolean">None</span>  <span class="token comment"># 左孩子为空，找不到</span>
+                <span class="token keyword">else</span><span class="token punctuation">:</span>
+                    <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>ptr<span class="token punctuation">.</span>right<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                        ptr <span class="token operator">=</span> ptr<span class="token punctuation">.</span>right  <span class="token comment"># 大则往右</span>
+                    <span class="token keyword">else</span><span class="token punctuation">:</span>
+                        <span class="token comment"># print('删除提示 3：删除时，无法找到 key 为', delete_key, '的目标元素。')</span>
+                        <span class="token keyword">return</span> <span class="token boolean">None</span>  <span class="token comment"># 右孩子为空，找不到</span>
+
+    <span class="token comment"># 找到一棵以 root 为根的 BST 中的最小值结点（一路向左）</span>
+    <span class="token comment"># 时间复杂度 O(log n) 与树高有关</span>
+    <span class="token decorator annotation punctuation">@staticmethod</span>
+    <span class="token keyword">def</span> <span class="token function">min_bst</span><span class="token punctuation">(</span>root<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>root<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">while</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>left<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                root <span class="token operator">=</span> root<span class="token punctuation">.</span>left
+            <span class="token keyword">return</span> root
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token boolean">None</span>
+
+    <span class="token comment"># 找到一棵以 root 为根的 BST 中的最大值结点（一路向右）</span>
+    <span class="token comment"># 时间复杂度 O(log n) 与树高有关</span>
+    <span class="token decorator annotation punctuation">@staticmethod</span>
+    <span class="token keyword">def</span> <span class="token function">max_bst</span><span class="token punctuation">(</span>root<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>root<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">while</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>right<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                root <span class="token operator">=</span> root<span class="token punctuation">.</span>right
+            <span class="token keyword">return</span> root
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token boolean">None</span>
+
+    <span class="token comment"># 找到在 BST 中 node 结点的前驱结点，即：其左子树中的最大值</span>
+    <span class="token comment"># 时间复杂度 O(log n) 与树高有关</span>
+    <span class="token keyword">def</span> <span class="token function">predecessor</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> node<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>node<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> self<span class="token punctuation">.</span>max_bst<span class="token punctuation">(</span>node<span class="token punctuation">.</span>left<span class="token punctuation">)</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token boolean">None</span>
+
+    <span class="token comment"># 找到在 BST 中 node 结点的后继结点，即：其右子树中的最小值</span>
+    <span class="token comment"># 时间复杂度 O(log n) 与树高有关</span>
+    <span class="token keyword">def</span> <span class="token function">successor</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> node<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>node<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> self<span class="token punctuation">.</span>min_bst<span class="token punctuation">(</span>node<span class="token punctuation">.</span>right<span class="token punctuation">)</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token boolean">None</span>
+
+    <span class="token comment"># 检查一棵以 root 为根的二叉树是否为 BST</span>
+    <span class="token keyword">def</span> <span class="token function">check_bst</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> root<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> <span class="token keyword">not</span> root<span class="token punctuation">:</span>
+            <span class="token comment"># 空树也算作是 BST</span>
+            <span class="token keyword">return</span> <span class="token boolean">True</span>
+        <span class="token keyword">elif</span> <span class="token keyword">not</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>root<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token comment"># 当前结点非空，但是非树结点，不合法</span>
+            <span class="token keyword">return</span> <span class="token boolean">False</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            <span class="token comment"># 左/右孩子为空时，左/右孩子满足 BST 条件</span>
+            left_bst <span class="token operator">=</span> <span class="token boolean">True</span>   <span class="token comment"># 左孩子是否满足 BST 条件</span>
+            right_bst <span class="token operator">=</span> <span class="token boolean">True</span>  <span class="token comment"># 右孩子是否满足 BST 条件</span>
+
+            <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>left<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                <span class="token comment"># 如果当前结点的左孩子不为空，检查该左孩子的值</span>
+                <span class="token keyword">if</span> root<span class="token punctuation">.</span>left<span class="token punctuation">.</span>key <span class="token operator">&lt;=</span> root<span class="token punctuation">.</span>key<span class="token punctuation">:</span>
+                    <span class="token comment"># 如果左孩子的值小于等于当前结点的值，表示满足 BST 条件，继续往左观察</span>
+                    left_bst <span class="token operator">=</span> self<span class="token punctuation">.</span>check_bst<span class="token punctuation">(</span>root<span class="token punctuation">.</span>left<span class="token punctuation">)</span>
+                <span class="token keyword">else</span><span class="token punctuation">:</span>
+                    <span class="token comment"># 如果左孩子的值大于当前结点的值，表示不满足 BST 条件</span>
+                    <span class="token keyword">return</span> <span class="token boolean">False</span>
+
+            <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>right<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                <span class="token comment"># 如果当前结点的右孩子不为空，检查该右孩子的值</span>
+                <span class="token keyword">if</span> root<span class="token punctuation">.</span>right<span class="token punctuation">.</span>key <span class="token operator">&gt;</span> root<span class="token punctuation">.</span>key<span class="token punctuation">:</span>
+                    <span class="token comment"># 如果右孩子的值大于当前结点的值，表示满足 BST 条件，继续往右观察</span>
+                    right_bst <span class="token operator">=</span> self<span class="token punctuation">.</span>check_bst<span class="token punctuation">(</span>root<span class="token punctuation">.</span>right<span class="token punctuation">)</span>
+                <span class="token keyword">else</span><span class="token punctuation">:</span>
+                    <span class="token comment"># 如果右孩子的值小于等于当前结点的值，表示不满足 BST 条件</span>
+                    <span class="token keyword">return</span> <span class="token boolean">False</span>
+
+            <span class="token comment"># 左右孩子都满足条件，才返回 True</span>
+            <span class="token keyword">return</span> left_bst <span class="token keyword">and</span> right_bst
+
+
+<span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token comment"># 以插入的方式，构建 BST/RBT</span>
+    <span class="token comment"># kv_array 为二维数组，内维度的数组，首元素为 key，次元素为 value，可以为任意对象</span>
+    kv_array <span class="token operator">=</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">30</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">70</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token punctuation">[</span><span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">80</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">9</span><span class="token punctuation">,</span> <span class="token number">90</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">40</span><span class="token punctuation">]</span>
+    <span class="token punctuation">]</span>
+    <span class="token comment"># 像这种 key 基本有序地插入，如果是普通的 BST，那么树结构会退化地很严重，大幅影响效率</span>
+    treap <span class="token operator">=</span> Treap<span class="token punctuation">(</span>kv_array<span class="token punctuation">)</span>
+
+    <span class="token comment"># 输出升序排序的结果</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>treap<span class="token punctuation">.</span>get_sorted_key_list<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment"># [1, 2, 3, 4, 7, 8, 9]</span>
+
+    <span class="token comment"># 搜索值</span>
+    search_key <span class="token operator">=</span> <span class="token number">4</span>
+    start <span class="token operator">=</span> time<span class="token punctuation">.</span>process_time<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    ans <span class="token operator">=</span> treap<span class="token punctuation">.</span>treap_search<span class="token punctuation">(</span>search_key<span class="token punctuation">)</span>
+    end <span class="token operator">=</span> time<span class="token punctuation">.</span>process_time<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">if</span> ans <span class="token keyword">is</span> <span class="token keyword">not</span> <span class="token boolean">None</span> <span class="token keyword">and</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>ans<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'找到了 key 为'</span><span class="token punctuation">,</span> ans<span class="token punctuation">.</span>key<span class="token punctuation">,</span> <span class="token string">'的元素，其值为:'</span><span class="token punctuation">,</span> ans<span class="token punctuation">.</span>val<span class="token punctuation">)</span>
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'找不到 key 为'</span><span class="token punctuation">,</span> search_key<span class="token punctuation">,</span> <span class="token string">'的元素'</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'Running Time: %.5f ms'</span> <span class="token operator">%</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>end <span class="token operator">-</span> start<span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token comment"># 检查某二叉树是否为 BST</span>
+    root <span class="token operator">=</span> TreeNode<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span>
+    root<span class="token punctuation">.</span>left <span class="token operator">=</span> TreeNode<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+    root<span class="token punctuation">.</span>right <span class="token operator">=</span> TreeNode<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>treap<span class="token punctuation">.</span>check_bst<span class="token punctuation">(</span>root<span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment"># True</span>
+
+    root<span class="token punctuation">.</span>left<span class="token punctuation">.</span>left <span class="token operator">=</span> TreeNode<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>treap<span class="token punctuation">.</span>check_bst<span class="token punctuation">(</span>root<span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment"># False</span>
+
+    <span class="token comment"># 删除结点，预期结果如下：</span>
+    <span class="token comment"># 找不到 key= 17  的结点</span>
+    <span class="token comment"># [1, 2, 3, 4, 7, 8]</span>
+    <span class="token comment"># [1, 2, 4, 7, 8]</span>
+    <span class="token comment"># [1, 2, 4, 8]</span>
+    <span class="token comment"># [1, 2, 4]</span>
+    <span class="token comment"># [1, 4]</span>
+    <span class="token comment"># [4]</span>
+    <span class="token comment"># []</span>
+    <span class="token comment"># 找不到 key= 3  的结点</span>
+    delete_key_list <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">17</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span>
+    <span class="token keyword">for</span> delete_key <span class="token keyword">in</span> delete_key_list<span class="token punctuation">:</span>
+        deleted_node <span class="token operator">=</span> treap<span class="token punctuation">.</span>treap_delete<span class="token punctuation">(</span>delete_key<span class="token punctuation">)</span>
+        <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>deleted_node<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token comment"># print('删除了 key=', deleted_node.key, ' val=', deleted_node.val, ' 的结点')</span>
+            <span class="token comment"># print('删除了 key=', deleted_node.key, ' 的结点')</span>
+            treap<span class="token punctuation">.</span>update_sorted_list<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span>treap<span class="token punctuation">.</span>get_sorted_key_list<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'找不到 key='</span><span class="token punctuation">,</span> delete_key<span class="token punctuation">,</span> <span class="token string">' 的结点'</span><span class="token punctuation">)</span>
+
+    <span class="token comment"># 删空之后测试查找。预期如下：</span>
+    <span class="token comment"># 提示：搜索时，Treap 为空，无法找到目标元素。</span>
+    <span class="token comment"># 找不到 key= 4 的元素</span>
+    search_key <span class="token operator">=</span> <span class="token number">4</span>
+    ans <span class="token operator">=</span> treap<span class="token punctuation">.</span>treap_search<span class="token punctuation">(</span>search_key<span class="token punctuation">)</span>  <span class="token comment"># 找不到</span>
+    <span class="token keyword">if</span> ans <span class="token keyword">is</span> <span class="token keyword">not</span> <span class="token boolean">None</span> <span class="token keyword">and</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>ans<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'找到了 key='</span><span class="token punctuation">,</span> ans<span class="token punctuation">.</span>key<span class="token punctuation">,</span> <span class="token string">'的元素，其值为:'</span><span class="token punctuation">,</span> ans<span class="token punctuation">.</span>val<span class="token punctuation">)</span>
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'找不到 key='</span><span class="token punctuation">,</span> search_key<span class="token punctuation">,</span> <span class="token string">'的元素'</span><span class="token punctuation">)</span>
+
+    <span class="token comment"># 重新动态增加（降序测试）</span>
+    <span class="token keyword">for</span> key <span class="token keyword">in</span> <span class="token builtin">reversed</span><span class="token punctuation">(</span><span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        val <span class="token operator">=</span> key <span class="token operator">*</span> <span class="token number">100</span>
+        treap<span class="token punctuation">.</span>treap_insert<span class="token punctuation">(</span>key<span class="token punctuation">,</span> val<span class="token punctuation">)</span>
+        treap<span class="token punctuation">.</span>update_sorted_list<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>treap<span class="token punctuation">.</span>get_sorted_key_list<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token comment"># 再次测试查找。预期如下：</span>
+    <span class="token comment"># 找到了 key= 4 的元素，其值为: 400</span>
+    search_key <span class="token operator">=</span> <span class="token number">4</span>
+    ans <span class="token operator">=</span> treap<span class="token punctuation">.</span>treap_search<span class="token punctuation">(</span>search_key<span class="token punctuation">)</span>
+    <span class="token keyword">if</span> ans <span class="token keyword">is</span> <span class="token keyword">not</span> <span class="token boolean">None</span> <span class="token keyword">and</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>ans<span class="token punctuation">,</span> TreeNode<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'找到了 key='</span><span class="token punctuation">,</span> ans<span class="token punctuation">.</span>key<span class="token punctuation">,</span> <span class="token string">'的元素，其值为:'</span><span class="token punctuation">,</span> ans<span class="token punctuation">.</span>val<span class="token punctuation">)</span>
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'找不到 key='</span><span class="token punctuation">,</span> search_key<span class="token punctuation">,</span> <span class="token string">'的元素'</span><span class="token punctuation">)</span>
+
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">&quot;__main__&quot;</span><span class="token punctuation">:</span>
+    sys<span class="token punctuation">.</span>exit<span class="token punctuation">(</span>main<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+</code></pre></div><h2 id="参考资料"><a href="#参考资料" class="header-anchor">#</a> 参考资料</h2> <ul><li>Introduction to Algorithm (aka CLRS) Third Edition - Chapter 13 思考题 13-4</li></ul></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.14fe4530.js" defer></script><script src="/assets/js/2.db22a8ef.js" defer></script><script src="/assets/js/19.8ee69771.js" defer></script>
+  </body>
+</html>
