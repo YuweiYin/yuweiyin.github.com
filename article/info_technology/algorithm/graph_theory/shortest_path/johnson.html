@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Algorithm - Graph Theory - Johnson | YuweiYin</title>
+    <meta name="description" content="Homepage of YuweiYin">
+    <meta name="generator" content="VuePress 1.4.0">
+    <link rel="icon" href="/img/YuweiYin.jpeg">
+    
+    <link rel="preload" href="/assets/css/0.styles.2d4b740c.css" as="style"><link rel="preload" href="/assets/js/app.8831d2bb.js" as="script"><link rel="preload" href="/assets/js/2.db22a8ef.js" as="script"><link rel="preload" href="/assets/js/55.98bbe4fb.js" as="script"><link rel="prefetch" href="/assets/js/10.23546b84.js"><link rel="prefetch" href="/assets/js/100.f9a65668.js"><link rel="prefetch" href="/assets/js/101.625b0eb0.js"><link rel="prefetch" href="/assets/js/102.707b209e.js"><link rel="prefetch" href="/assets/js/103.9e7bd34d.js"><link rel="prefetch" href="/assets/js/104.85df230f.js"><link rel="prefetch" href="/assets/js/105.d846684f.js"><link rel="prefetch" href="/assets/js/106.192978eb.js"><link rel="prefetch" href="/assets/js/107.1181ffc9.js"><link rel="prefetch" href="/assets/js/108.c47f6dac.js"><link rel="prefetch" href="/assets/js/109.3bbf9920.js"><link rel="prefetch" href="/assets/js/11.20cc8840.js"><link rel="prefetch" href="/assets/js/110.c8639642.js"><link rel="prefetch" href="/assets/js/111.d61f1fed.js"><link rel="prefetch" href="/assets/js/112.20432ec5.js"><link rel="prefetch" href="/assets/js/113.5a04e958.js"><link rel="prefetch" href="/assets/js/114.034dccb8.js"><link rel="prefetch" href="/assets/js/115.28fae970.js"><link rel="prefetch" href="/assets/js/116.172b1b49.js"><link rel="prefetch" href="/assets/js/117.ffc1642d.js"><link rel="prefetch" href="/assets/js/118.cab08fef.js"><link rel="prefetch" href="/assets/js/119.5e8b434f.js"><link rel="prefetch" href="/assets/js/12.bc2913e6.js"><link rel="prefetch" href="/assets/js/120.26f0c36d.js"><link rel="prefetch" href="/assets/js/121.41ad6bfd.js"><link rel="prefetch" href="/assets/js/122.1276e07d.js"><link rel="prefetch" href="/assets/js/123.703d114e.js"><link rel="prefetch" href="/assets/js/124.1a55a28b.js"><link rel="prefetch" href="/assets/js/125.798da14d.js"><link rel="prefetch" href="/assets/js/126.7be2d216.js"><link rel="prefetch" href="/assets/js/127.31a3ea98.js"><link rel="prefetch" href="/assets/js/128.8ac02c5f.js"><link rel="prefetch" href="/assets/js/129.0e9a4bef.js"><link rel="prefetch" href="/assets/js/13.7aee06ec.js"><link rel="prefetch" href="/assets/js/130.0fe679fe.js"><link rel="prefetch" href="/assets/js/131.fa30ccc1.js"><link rel="prefetch" href="/assets/js/132.3eb0a974.js"><link rel="prefetch" href="/assets/js/133.4fbc1ea3.js"><link rel="prefetch" href="/assets/js/134.3c0e4c53.js"><link rel="prefetch" href="/assets/js/135.e74da6b3.js"><link rel="prefetch" href="/assets/js/136.cbd5b1ee.js"><link rel="prefetch" href="/assets/js/137.76d40877.js"><link rel="prefetch" href="/assets/js/138.6f771752.js"><link rel="prefetch" href="/assets/js/139.f9cec049.js"><link rel="prefetch" href="/assets/js/14.2a7cb0c2.js"><link rel="prefetch" href="/assets/js/140.2c5d5533.js"><link rel="prefetch" href="/assets/js/141.f7ac551e.js"><link rel="prefetch" href="/assets/js/142.610fe7f1.js"><link rel="prefetch" href="/assets/js/143.a0be8126.js"><link rel="prefetch" href="/assets/js/144.b0f0308b.js"><link rel="prefetch" href="/assets/js/145.1dcf870d.js"><link rel="prefetch" href="/assets/js/146.22e63073.js"><link rel="prefetch" href="/assets/js/147.d8af4c8b.js"><link rel="prefetch" href="/assets/js/148.197610ae.js"><link rel="prefetch" href="/assets/js/149.37711039.js"><link rel="prefetch" href="/assets/js/15.66275f59.js"><link rel="prefetch" href="/assets/js/150.869d6732.js"><link rel="prefetch" href="/assets/js/151.88eb0514.js"><link rel="prefetch" href="/assets/js/152.ee1c2799.js"><link rel="prefetch" href="/assets/js/153.7fbc5a53.js"><link rel="prefetch" href="/assets/js/154.0cc7501a.js"><link rel="prefetch" href="/assets/js/155.67f8b2fe.js"><link rel="prefetch" href="/assets/js/156.03514aad.js"><link rel="prefetch" href="/assets/js/157.c5e47234.js"><link rel="prefetch" href="/assets/js/158.edfa5565.js"><link rel="prefetch" href="/assets/js/159.fbb6770c.js"><link rel="prefetch" href="/assets/js/16.62977459.js"><link rel="prefetch" href="/assets/js/160.16f1bf14.js"><link rel="prefetch" href="/assets/js/161.d61dc469.js"><link rel="prefetch" href="/assets/js/162.f80f1565.js"><link rel="prefetch" href="/assets/js/163.65c799b0.js"><link rel="prefetch" href="/assets/js/164.e232fe5c.js"><link rel="prefetch" href="/assets/js/165.48a06fb1.js"><link rel="prefetch" href="/assets/js/166.aedc8f1a.js"><link rel="prefetch" href="/assets/js/167.e1577e12.js"><link rel="prefetch" href="/assets/js/168.f3d78caf.js"><link rel="prefetch" href="/assets/js/169.1a4f9e42.js"><link rel="prefetch" href="/assets/js/17.adb130fc.js"><link rel="prefetch" href="/assets/js/170.7c1a6602.js"><link rel="prefetch" href="/assets/js/171.516de6e7.js"><link rel="prefetch" href="/assets/js/172.471f0872.js"><link rel="prefetch" href="/assets/js/173.b9be7824.js"><link rel="prefetch" href="/assets/js/174.c64c6870.js"><link rel="prefetch" href="/assets/js/175.457e57fe.js"><link rel="prefetch" href="/assets/js/176.6b5bdb03.js"><link rel="prefetch" href="/assets/js/177.f0f7af51.js"><link rel="prefetch" href="/assets/js/178.8d3bb43d.js"><link rel="prefetch" href="/assets/js/179.c55429c3.js"><link rel="prefetch" href="/assets/js/18.997688b5.js"><link rel="prefetch" href="/assets/js/180.ffed8ea6.js"><link rel="prefetch" href="/assets/js/181.d5397972.js"><link rel="prefetch" href="/assets/js/182.5141d593.js"><link rel="prefetch" href="/assets/js/183.d1098467.js"><link rel="prefetch" href="/assets/js/184.a8c4a461.js"><link rel="prefetch" href="/assets/js/185.5dbc5187.js"><link rel="prefetch" href="/assets/js/186.d54f6a43.js"><link rel="prefetch" href="/assets/js/187.1d904135.js"><link rel="prefetch" href="/assets/js/188.7ca79900.js"><link rel="prefetch" href="/assets/js/189.08e86982.js"><link rel="prefetch" href="/assets/js/19.d8f54699.js"><link rel="prefetch" href="/assets/js/190.b0e16e67.js"><link rel="prefetch" href="/assets/js/191.5fc78a2f.js"><link rel="prefetch" href="/assets/js/192.9b687b65.js"><link rel="prefetch" href="/assets/js/193.6333b853.js"><link rel="prefetch" href="/assets/js/194.51c70d42.js"><link rel="prefetch" href="/assets/js/195.bfb5c1a9.js"><link rel="prefetch" href="/assets/js/196.3b91ccf4.js"><link rel="prefetch" href="/assets/js/197.7bfbc643.js"><link rel="prefetch" href="/assets/js/198.4b79ff04.js"><link rel="prefetch" href="/assets/js/199.b42e9b06.js"><link rel="prefetch" href="/assets/js/20.e16e5b8a.js"><link rel="prefetch" href="/assets/js/200.00891585.js"><link rel="prefetch" href="/assets/js/201.d9d2980b.js"><link rel="prefetch" href="/assets/js/202.d66dee5d.js"><link rel="prefetch" href="/assets/js/203.b90af5c6.js"><link rel="prefetch" href="/assets/js/204.f50443f8.js"><link rel="prefetch" href="/assets/js/205.e62eb266.js"><link rel="prefetch" href="/assets/js/206.78c78756.js"><link rel="prefetch" href="/assets/js/207.e367c16d.js"><link rel="prefetch" href="/assets/js/208.51f12083.js"><link rel="prefetch" href="/assets/js/209.d9d26393.js"><link rel="prefetch" href="/assets/js/21.3da40f00.js"><link rel="prefetch" href="/assets/js/210.97e98748.js"><link rel="prefetch" href="/assets/js/211.2f141ffb.js"><link rel="prefetch" href="/assets/js/212.372cf6c5.js"><link rel="prefetch" href="/assets/js/213.0bd9f6f3.js"><link rel="prefetch" href="/assets/js/214.f2f2c5a4.js"><link rel="prefetch" href="/assets/js/215.64bcd5d0.js"><link rel="prefetch" href="/assets/js/216.18e84138.js"><link rel="prefetch" href="/assets/js/217.7f717d64.js"><link rel="prefetch" href="/assets/js/218.9b6ad72a.js"><link rel="prefetch" href="/assets/js/219.94c1fc5b.js"><link rel="prefetch" href="/assets/js/22.7d891cdd.js"><link rel="prefetch" href="/assets/js/220.5fbba6b4.js"><link rel="prefetch" href="/assets/js/221.6e9e6fe4.js"><link rel="prefetch" href="/assets/js/222.82859050.js"><link rel="prefetch" href="/assets/js/223.fdc07e8a.js"><link rel="prefetch" href="/assets/js/224.b06050ae.js"><link rel="prefetch" href="/assets/js/225.e209b548.js"><link rel="prefetch" href="/assets/js/226.1ee9f199.js"><link rel="prefetch" href="/assets/js/227.30816b52.js"><link rel="prefetch" href="/assets/js/228.c2f50926.js"><link rel="prefetch" href="/assets/js/229.f6aa8afb.js"><link rel="prefetch" href="/assets/js/23.4843197c.js"><link rel="prefetch" href="/assets/js/230.7cbfe545.js"><link rel="prefetch" href="/assets/js/231.1b6f386f.js"><link rel="prefetch" href="/assets/js/232.1e422fcb.js"><link rel="prefetch" href="/assets/js/233.14d6701d.js"><link rel="prefetch" href="/assets/js/234.8a84c616.js"><link rel="prefetch" href="/assets/js/235.0b117994.js"><link rel="prefetch" href="/assets/js/236.c6f56a3d.js"><link rel="prefetch" href="/assets/js/237.f9ed5f2c.js"><link rel="prefetch" href="/assets/js/238.477fe16e.js"><link rel="prefetch" href="/assets/js/239.9d57c5eb.js"><link rel="prefetch" href="/assets/js/24.a9ddcf60.js"><link rel="prefetch" href="/assets/js/240.33dd2583.js"><link rel="prefetch" href="/assets/js/241.e1fc433d.js"><link rel="prefetch" href="/assets/js/242.81371392.js"><link rel="prefetch" href="/assets/js/243.55c9ab1f.js"><link rel="prefetch" href="/assets/js/244.6efd7fd4.js"><link rel="prefetch" href="/assets/js/245.fbabeb38.js"><link rel="prefetch" href="/assets/js/246.724144eb.js"><link rel="prefetch" href="/assets/js/247.208f9dde.js"><link rel="prefetch" href="/assets/js/248.6469b290.js"><link rel="prefetch" href="/assets/js/249.320ed57d.js"><link rel="prefetch" href="/assets/js/25.72456f10.js"><link rel="prefetch" href="/assets/js/250.d7a40e8e.js"><link rel="prefetch" href="/assets/js/251.028af9a5.js"><link rel="prefetch" href="/assets/js/252.80ab0de7.js"><link rel="prefetch" href="/assets/js/253.95c5ec65.js"><link rel="prefetch" href="/assets/js/254.78cd9419.js"><link rel="prefetch" href="/assets/js/255.b36480e9.js"><link rel="prefetch" href="/assets/js/256.4b7324e2.js"><link rel="prefetch" href="/assets/js/257.3f52186d.js"><link rel="prefetch" href="/assets/js/258.06c39952.js"><link rel="prefetch" href="/assets/js/259.7dadfcb4.js"><link rel="prefetch" href="/assets/js/26.6929cf57.js"><link rel="prefetch" href="/assets/js/260.0fb14dca.js"><link rel="prefetch" href="/assets/js/261.0bb7cbfb.js"><link rel="prefetch" href="/assets/js/262.2dcc51c2.js"><link rel="prefetch" href="/assets/js/263.fefdb6aa.js"><link rel="prefetch" href="/assets/js/264.2f55dbc0.js"><link rel="prefetch" href="/assets/js/265.6852d809.js"><link rel="prefetch" href="/assets/js/266.4ddb7f0b.js"><link rel="prefetch" href="/assets/js/267.3a1d40cb.js"><link rel="prefetch" href="/assets/js/268.dbc7175e.js"><link rel="prefetch" href="/assets/js/269.9e420bcb.js"><link rel="prefetch" href="/assets/js/27.d13df990.js"><link rel="prefetch" href="/assets/js/270.a5acd792.js"><link rel="prefetch" href="/assets/js/271.4199cea7.js"><link rel="prefetch" href="/assets/js/272.d0513364.js"><link rel="prefetch" href="/assets/js/273.42375fec.js"><link rel="prefetch" href="/assets/js/274.26e11067.js"><link rel="prefetch" href="/assets/js/275.13461b51.js"><link rel="prefetch" href="/assets/js/276.c4e0e712.js"><link rel="prefetch" href="/assets/js/277.e92f1325.js"><link rel="prefetch" href="/assets/js/278.afc663bd.js"><link rel="prefetch" href="/assets/js/279.3cd040e1.js"><link rel="prefetch" href="/assets/js/28.a8de68cc.js"><link rel="prefetch" href="/assets/js/280.36c17df9.js"><link rel="prefetch" href="/assets/js/281.a7871d5e.js"><link rel="prefetch" href="/assets/js/282.d5d5b45d.js"><link rel="prefetch" href="/assets/js/283.bf239b4c.js"><link rel="prefetch" href="/assets/js/284.7bf93672.js"><link rel="prefetch" href="/assets/js/285.9374d06f.js"><link rel="prefetch" href="/assets/js/286.4f1e4d0c.js"><link rel="prefetch" href="/assets/js/287.edb257ea.js"><link rel="prefetch" href="/assets/js/288.29413307.js"><link rel="prefetch" href="/assets/js/289.364c723b.js"><link rel="prefetch" href="/assets/js/29.f8658bde.js"><link rel="prefetch" href="/assets/js/290.6f7db169.js"><link rel="prefetch" href="/assets/js/291.7b644a13.js"><link rel="prefetch" href="/assets/js/292.3179a941.js"><link rel="prefetch" href="/assets/js/293.42a8d527.js"><link rel="prefetch" href="/assets/js/294.5003f273.js"><link rel="prefetch" href="/assets/js/295.84d2d329.js"><link rel="prefetch" href="/assets/js/296.b6d28522.js"><link rel="prefetch" href="/assets/js/297.f4e22584.js"><link rel="prefetch" href="/assets/js/298.042877df.js"><link rel="prefetch" href="/assets/js/299.a637838c.js"><link rel="prefetch" href="/assets/js/3.dcd207e8.js"><link rel="prefetch" href="/assets/js/30.81662dbb.js"><link rel="prefetch" href="/assets/js/300.cebe8bf5.js"><link rel="prefetch" href="/assets/js/301.3c7db5e4.js"><link rel="prefetch" href="/assets/js/302.0118e824.js"><link rel="prefetch" href="/assets/js/303.f1c64053.js"><link rel="prefetch" href="/assets/js/304.b26c9db8.js"><link rel="prefetch" href="/assets/js/305.017f2c4b.js"><link rel="prefetch" href="/assets/js/306.1c4cc43b.js"><link rel="prefetch" href="/assets/js/307.7faef956.js"><link rel="prefetch" href="/assets/js/308.11dd2b33.js"><link rel="prefetch" href="/assets/js/309.922edb53.js"><link rel="prefetch" href="/assets/js/31.e9c1132f.js"><link rel="prefetch" href="/assets/js/310.3a13f4e4.js"><link rel="prefetch" href="/assets/js/311.8a283537.js"><link rel="prefetch" href="/assets/js/312.fa2b7ee2.js"><link rel="prefetch" href="/assets/js/313.d39cbd85.js"><link rel="prefetch" href="/assets/js/314.43fb4701.js"><link rel="prefetch" href="/assets/js/315.07a594e2.js"><link rel="prefetch" href="/assets/js/316.2430b691.js"><link rel="prefetch" href="/assets/js/317.08f94dde.js"><link rel="prefetch" href="/assets/js/318.22b0da6c.js"><link rel="prefetch" href="/assets/js/319.46b6ee86.js"><link rel="prefetch" href="/assets/js/32.3d6d7d5d.js"><link rel="prefetch" href="/assets/js/33.7c51da8b.js"><link rel="prefetch" href="/assets/js/34.11f34070.js"><link rel="prefetch" href="/assets/js/35.520ba936.js"><link rel="prefetch" href="/assets/js/36.bbe6639e.js"><link rel="prefetch" href="/assets/js/37.63b1fa5e.js"><link rel="prefetch" href="/assets/js/38.e853ebec.js"><link rel="prefetch" href="/assets/js/39.6f90cb97.js"><link rel="prefetch" href="/assets/js/4.afea0107.js"><link rel="prefetch" href="/assets/js/40.68dad6b3.js"><link rel="prefetch" href="/assets/js/41.c6db35de.js"><link rel="prefetch" href="/assets/js/42.7e678fd9.js"><link rel="prefetch" href="/assets/js/43.70e1fe85.js"><link rel="prefetch" href="/assets/js/44.59a803fe.js"><link rel="prefetch" href="/assets/js/45.2a6f35a6.js"><link rel="prefetch" href="/assets/js/46.a0ada5bd.js"><link rel="prefetch" href="/assets/js/47.fa66eae3.js"><link rel="prefetch" href="/assets/js/48.39a1b11b.js"><link rel="prefetch" href="/assets/js/49.5d59528b.js"><link rel="prefetch" href="/assets/js/5.332429b6.js"><link rel="prefetch" href="/assets/js/50.62135104.js"><link rel="prefetch" href="/assets/js/51.9bd0aa49.js"><link rel="prefetch" href="/assets/js/52.675b9c21.js"><link rel="prefetch" href="/assets/js/53.735bf060.js"><link rel="prefetch" href="/assets/js/54.d7372836.js"><link rel="prefetch" href="/assets/js/56.0755b562.js"><link rel="prefetch" href="/assets/js/57.4546ae96.js"><link rel="prefetch" href="/assets/js/58.be3f4fdf.js"><link rel="prefetch" href="/assets/js/59.fe6f0cc8.js"><link rel="prefetch" href="/assets/js/6.1cdff9b5.js"><link rel="prefetch" href="/assets/js/60.8f5ecf46.js"><link rel="prefetch" href="/assets/js/61.a097eaa3.js"><link rel="prefetch" href="/assets/js/62.8d9c17db.js"><link rel="prefetch" href="/assets/js/63.827d943c.js"><link rel="prefetch" href="/assets/js/64.130bfa04.js"><link rel="prefetch" href="/assets/js/65.137c084c.js"><link rel="prefetch" href="/assets/js/66.ea4a570b.js"><link rel="prefetch" href="/assets/js/67.361c7e0f.js"><link rel="prefetch" href="/assets/js/68.f32c293e.js"><link rel="prefetch" href="/assets/js/69.2921332b.js"><link rel="prefetch" href="/assets/js/7.add63e58.js"><link rel="prefetch" href="/assets/js/70.2cfb8c5b.js"><link rel="prefetch" href="/assets/js/71.9f872eb5.js"><link rel="prefetch" href="/assets/js/72.19e21550.js"><link rel="prefetch" href="/assets/js/73.35c73311.js"><link rel="prefetch" href="/assets/js/74.443f2744.js"><link rel="prefetch" href="/assets/js/75.39560772.js"><link rel="prefetch" href="/assets/js/76.4fcafa42.js"><link rel="prefetch" href="/assets/js/77.5685f181.js"><link rel="prefetch" href="/assets/js/78.9d840058.js"><link rel="prefetch" href="/assets/js/79.985fc1d1.js"><link rel="prefetch" href="/assets/js/8.0df241e8.js"><link rel="prefetch" href="/assets/js/80.06108066.js"><link rel="prefetch" href="/assets/js/81.756f5c74.js"><link rel="prefetch" href="/assets/js/82.460c4d40.js"><link rel="prefetch" href="/assets/js/83.0fa983d8.js"><link rel="prefetch" href="/assets/js/84.b90eefda.js"><link rel="prefetch" href="/assets/js/85.301c9074.js"><link rel="prefetch" href="/assets/js/86.31f98534.js"><link rel="prefetch" href="/assets/js/87.859e1bad.js"><link rel="prefetch" href="/assets/js/88.f3fc05fe.js"><link rel="prefetch" href="/assets/js/89.6fdd187a.js"><link rel="prefetch" href="/assets/js/9.acc36747.js"><link rel="prefetch" href="/assets/js/90.d1f02428.js"><link rel="prefetch" href="/assets/js/91.5d35e117.js"><link rel="prefetch" href="/assets/js/92.f17855d6.js"><link rel="prefetch" href="/assets/js/93.21fb8a6b.js"><link rel="prefetch" href="/assets/js/94.0936f1fe.js"><link rel="prefetch" href="/assets/js/95.6b061ddb.js"><link rel="prefetch" href="/assets/js/96.d9e72796.js"><link rel="prefetch" href="/assets/js/97.e682db1e.js"><link rel="prefetch" href="/assets/js/98.5238a668.js"><link rel="prefetch" href="/assets/js/99.4cad8e25.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.2d4b740c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">YuweiYin</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/home/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="文章" class="dropdown-title"><span class="title">文章</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/article/mathematics/" class="nav-link">
+  数学哲学
+</a></li><li class="dropdown-item"><!----> <a href="/article/physics/" class="nav-link">
+  物理宇宙
+</a></li><li class="dropdown-item"><!----> <a href="/article/info_technology/" class="nav-link router-link-active">
+  信息技术
+</a></li><li class="dropdown-item"><!----> <a href="/article/essay/" class="nav-link">
+  见闻随笔
+</a></li><li class="dropdown-item"><!----> <a href="/article/other/" class="nav-link">
+  其它系列
+</a></li><li class="dropdown-item"><!----> <a href="/article/reprint/" class="nav-link">
+  转载文章
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于
+</a></div><div class="nav-item"><a href="https://www.github.com/YuweiYin" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/home/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="文章" class="dropdown-title"><span class="title">文章</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/article/mathematics/" class="nav-link">
+  数学哲学
+</a></li><li class="dropdown-item"><!----> <a href="/article/physics/" class="nav-link">
+  物理宇宙
+</a></li><li class="dropdown-item"><!----> <a href="/article/info_technology/" class="nav-link router-link-active">
+  信息技术
+</a></li><li class="dropdown-item"><!----> <a href="/article/essay/" class="nav-link">
+  见闻随笔
+</a></li><li class="dropdown-item"><!----> <a href="/article/other/" class="nav-link">
+  其它系列
+</a></li><li class="dropdown-item"><!----> <a href="/article/reprint/" class="nav-link">
+  转载文章
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于
+</a></div><div class="nav-item"><a href="https://www.github.com/YuweiYin" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/article/info_technology/" class="sidebar-link">Information Technology</a></li><li><a href="/article/info_technology/computer_science/" class="sidebar-link">Computer Science</a></li><li><a href="/article/info_technology/algorithm/" class="sidebar-link">Algorithm</a></li><li><a href="/article/info_technology/artificial_intelligence/" class="sidebar-link">Artificial Intelligence</a></li><li><a href="/article/info_technology/web_crawler/" class="sidebar-link">Web Crawler</a></li><li><a href="/article/info_technology/web_frontend/" class="sidebar-link">Web Frontend</a></li><li><a href="/article/info_technology/web_backend/" class="sidebar-link">Web Backend</a></li><li><a href="/article/info_technology/web_security/" class="sidebar-link">Web Security</a></li><li><a href="/article/info_technology/system_management/" class="sidebar-link">System Management</a></li><li><a href="/article/info_technology/paper_notes/" class="sidebar-link">Paper Notes</a></li><li><a href="/article/info_technology/other/" class="sidebar-link">Other</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="algorithm-graph-theory-johnson"><a href="#algorithm-graph-theory-johnson" class="header-anchor">#</a> Algorithm - Graph Theory - Johnson</h1> <p>Create Date: 2020.06.02</p> <p>Last Update Date: 2020.06.02</p> <p>By <a href="https://yuweiyin.github.io/" target="_blank" rel="noopener noreferrer">YuweiYin<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="简介"><a href="#简介" class="header-anchor">#</a> 简介</h2> <p>全源最短路径 All Pairs Shortest Path</p> <p>用于稀疏图的 Johnson 算法</p> <p>基于 <a href="./dijkstra">Dijkstra</a> 和 <a href="./bellman-ford">Bellman-Ford</a> 算法</p> <h2 id="全源最短路径"><a href="#全源最短路径" class="header-anchor">#</a> 全源最短路径</h2> <p>全源最短路径是考虑如何找到一个图中所有结点之间的(加权)最短路径。</p> <p>给定一个带(边)权重的有向图 G = (V, E)，其权重函数为 w: E -&gt; R，该函数将边映射到实数值权重上。目标是找到对于所有的结点对 u, v \in V，一条从结点 u 到结点 v 的加权最短路径。</p> <p>计算结果通常以表格(二维数组)形式输出：第 u 行第 v 列给出的是结点 u 到结点 v 的最短路径权重值。</p> <p>可以对每个结点单独运行<strong>单源最短路径算法</strong>，例如 Dijkstra 算法或 Bellman-Ford 算法。</p> <ul><li>对于 Dijkstra 算法
+<ul><li>如果使用<strong>线性数组</strong>来实现<strong>最小优先队列</strong> Q，则 <code>|V|</code> 次运行的总时间是 <code>O(|V|^3 + |V|·|E|)</code>，即 <code>O(|V|^3)</code>。</li> <li>如果使用<strong>二叉堆</strong>实现 Q，则 <code>|V|</code> 次运行的总时间是 <code>O(|V|·|E| log |V|)</code>，这在<strong>稀疏图</strong>的情况下是个较大的改进。</li> <li>如果使用<strong>斐波那契堆</strong>实现 Q，则 <code>|V|</code> 次运行的总时间是 <code>O(|V|·|E| + |V|^2 log |V|)</code>。这对大型稀疏图来说是个很好的算法。</li></ul></li></ul> <p>但是如果图中含有权重为负值的边，就不能使用 Dijkstra 算法。此时如果运行 Bellman-Ford 算法，<code>|V|</code> 次运行的总时间是 <code>O(|V|^2·|E|)</code>，在稠密图（<code>|E|</code> 接近 <code>|V|^2</code>）的情况下，此运行时间为 <code>O(|V|^4)</code>。</p> <p>假定用邻接矩阵来表达图结构，将结点编号为 1, 2, ..., <code>|V|</code>，则算法的输入是一个 n x n 的矩阵 W，该矩阵代表的是一个有 n 个结点的有向图 G = (V, E) 的边的权重。即 W = (wij)，其中：</p> <ul><li>若 i == j，则 wij = 0</li> <li>若 i != j 且 (i, j) \in E，则 wij 等于有向边 (i, j) 的权重值 w(i, j)</li> <li>若 i != j 且 (i, j) \notin E，则 wij = inf 无穷</li></ul> <p>算法输出的表格是一个 n x n 的矩阵 D = (dij)，其中 dij 代表的是从结点 i 到结点 j 的一条最短路径的权重值。若用 d(i, j) 来代表从结点 i 到结点 j 的最短路径权重，则在算法结束时有 dij = d(i, j)。</p> <p>为了获取最优解，还需要计算出<strong>前驱结点矩阵</strong> P = (pij)，其中 pij 在 i == j 或 从 i 到 j 不存在路径时为 nil 空，在其他情况下给出的是从结点 i 到结点 j 的某条最短路径上 结点 j 的前驱结点。有矩阵 P 的第 i 行所诱导的<strong>前驱子图</strong> 是一棵根结点为 i 的<strong>最短路径树</strong>。</p> <p>如果 Gpi 是一棵以结点 i 为根结点的最短路径树，则下面的过程将打印出从结点 i 到结点 j 的一条最短路径。</p> <div class="language- extra-class"><pre class="language-text"><code>PRINT_ALL_PAIRS_SHORTEST_PATH(P, i, j)
+1  if i == j
+2      print i
+3  elseif pij == nil
+4      print &quot;no path from&quot; i &quot;to&quot; j &quot;exists&quot;
+5  else
+6      PRINT_ALL_PAIRS_SHORTEST_PATH(P, i, pij)
+7      print j
+</code></pre></div><h2 id="johnson-算法"><a href="#johnson-算法" class="header-anchor">#</a> Johnson 算法</h2> <p>Johnson 算法可以在 <code>O(|V|^2 log |V| + |V|·|E|)</code> 的时间内找到所有结点对之间的最短路径。对于稀疏图来说，Johnson 算法的渐进性能优于 <a href="./all-pairs-sp-mm">重复平方法</a> 和 <a href="./floyd-warshall">Floyd-Warshall</a> 算法。</p> <p>Johnson 算法会将 <a href="./dijkstra">Dijkstra</a> 和 <a href="./bellman-ford">Bellman-Ford</a> 这两个单源最短路径算法作为子过程。Johnson 算法要么返回一个包含所有结点对的最短路径权重的矩阵，要么报告图中包含一个负权环。</p> <p>Johnson 算法使用的技术被称为 <strong>重新赋予权重</strong>，此技术的工作原理如下：</p> <p>如果图 G = (V, E) 中所有的边权重 w 皆为非负值，那么可以对每个结点运行一次 Dijkstra 算法来找到所有结点对的最短路径，另外如果在 Dijkstra 算法中用 <a href="../../data_structure/fibonacci-heap">斐波那契堆</a> 实现最小优先队列 Q，则总运行时间为 <code>O(|V|^2 log |V| + |V|·|E|)</code>，这在稀疏图的情况下优于 Floyd-Warshall 算法的 <code>\Theta(|V|^3)</code>。</p> <p>如果图 G = (V, E) 中包含权重为负值的边，但没有负权环，那么只要先对图 G 使用 <strong>重新赋予权重</strong>技术进行预处理，并在 <code>O(|V|·|E|)</code>的时间内 计算出一组新的非负权重值，然后调用 <code>|V|</code> 次 Dijkstra 算法即可。</p> <p>新赋予的权重 w' 必须满足如下两个重要的性质：</p> <ol><li>对于所有结点对 u, v \in V，一条路径 p 是在使用权重函数 w 时从结点 u 到结点 v 的一条最短路径，当且仅当 p 是在使用权重函数 w' 时从 u 到 v 的一条最短路径。</li> <li>对于所有的边 (u, v)，新权重 w'(u, v) 为非负值。</li></ol> <h3 id="重新赋予权重-维持最短路径"><a href="#重新赋予权重-维持最短路径" class="header-anchor">#</a> 重新赋予权重-维持最短路径</h3> <p>下面的引理描述的是 可以很容易地对边的权重进行重新赋值，来满足新权重函数 w' 需要的两个性质。使用 d 表示从权重函数 w 所导出的最短路径权重，而用 d' 表示从权重函数 w' 所导出的最短路径权重。</p> <p>《CLRS》<strong>引理 25.1</strong>（重新赋予权重并不改变最短路径）：给定带(边)权重的有向图 G = (V, E)，其权重函数为 w: E -&gt; R，设 h: V -&gt; R 为任意函数，该函数将结点映射到实数上。对于每条边 (u, v) \in E，定义 w'(u, v) = w(u, v) + h(u) - h(v)。</p> <p>设 <code>p = &lt;v0, v1, ..., vk&gt;</code> 为从结点 v0 到结点 vk 的任意一条路径，那么 p 是在使用权重函数 w 时 v0-&gt;vk 的一条最短路径，当且仅当 p 是在使用新权重函数 w' 时 v0-&gt;vk 的一条最短路径。即 w(p) = d(v0, vk) iff. w'(p) = d'(v0, vk)。而且，图 G 在使用权重函数 w 时不包负权环，当且仅当 p 在使用新权重函数 w' 也不包括权重为负值的环路。</p> <h3 id="重新赋予权重-生成非负权重"><a href="#重新赋予权重-生成非负权重" class="header-anchor">#</a> 重新赋予权重-生成非负权重</h3> <p>接下来确保第二个性质保持成立，即对于所有的边 (u, v) \in E，w'(u, v) 为非负值。给定带权重的有向图 G = (V, E)，其权重函数为 w: E -&gt; R。构造一个新图 G' = (V', E')，这里 V' = V \cup {s}，s \notin V，E' = E \cup {(s, v): v \in V}。</p> <p>即 s 是一个<strong>新增的源结点</strong>，它到其它所有结点均<strong>单向可达</strong>（且<strong>边权均为 0</strong>），其它结点均不到达 s。这类似于使用 Bellman-Ford 算法求解<strong>差分约束系统</strong>的做法。</p> <p><img src="/img/info_technology/algorithm/graph_theory/shortest_path/johnson-1.png" alt="johnson-1"></p> <p>假定图 G 和图 G' 都不包含负权环。定义 对于所有的 v \in V'，h(v) = d(s, v)。根据三角不等式，对于所有的边 (u, v) \in E'，有 h(v) &lt;= h(u) + w(u, v)。因此，依据引理 25.1 的式子来定义新的权重函数 w'，则有 w'(u, v) = w(u, v) + h(u) - h(v) &gt;= 0，于是满足了第二条性质。图 25-6(b) 描述的是对图 25-6(a) 进行权重重新赋值后的图 G'。</p> <p><img src="/img/info_technology/algorithm/graph_theory/shortest_path/johnson-2.png" alt="johnson-2"></p> <h3 id="使用-johnson-算法计算全源最短路径"><a href="#使用-johnson-算法计算全源最短路径" class="header-anchor">#</a> 使用 Johnson 算法计算全源最短路径</h3> <div class="language- extra-class"><pre class="language-text"><code>JOHNSON(G, w)
+1  compute G', where G'.V = G.V \cup {s}
+       G'.E = G.E \cup {(s, v): v \in G.V}, and
+       w(s, v) = 0 for all v \in G.V
+2  if Bellman-Ford(G', w, s) == False
+3      print &quot;The input graph contains a negative-weight cycle!&quot;
+4  else
+5      for each vertex v \in G'.V
+6          set h(v) to the value of d(s, v)
+               computed by the Bellman-Ford algorithm
+7      for each edge(u, v) \in G'.E
+8          w'(u, v) = w(u, v) + h(u) - h(v)
+9      let D = (d_uv) be a new n x n matrix
+10     for each vertex u \in G.V
+11         run Dijkstra(G, w', u) to compute d'(u, v) for all v \in G.V
+12         for each vertex v \in G.V
+13             d_uv = d'(u, v) + h(v) - h(u)
+14     return D
+</code></pre></div><p>算法流程描述：</p> <ol><li>在 1 行，新增源结点 s，生成图 G'。</li> <li>在 2 行，在图 G' 上运行 Bellman-Ford 算法，使用原始权重函数 w，计算从源结点 s 出发的单源最短路径。</li> <li>在 3 行，如果 Bellman-Ford 算法返回 False，表示图 G 含负权环。</li> <li>在 5～6 行，对 V 中每个结点 v，将 h(v) 的值设置为由 Bellman-Ford 算法所计算出来的最短路径权重 d(s, v)。</li> <li>在 7～8 行，对 E 中每条边 (u, v)，重新计算新的权重值 w'(u, v)</li> <li>在 9 行，设置权重矩阵 D</li> <li>在 10～13 行，对 V 中每个结点 u
+<ul><li>以 u 为起点、w' 为新的权重函数来运行 Dijkstra 算法。</li> <li>每次 Dijkstra 算法结束后，对 V 中每个结点 v，<strong>还原</strong>出最优路径值，并保存在 <code>d_uv</code> 表项中。</li></ul></li> <li>在 14 行，返回最终计算好的全源最短路径权重矩阵。</li></ol> <h2 id="python-代码范例"><a href="#python-代码范例" class="header-anchor">#</a> Python 代码范例</h2> <p>Python 环境：Python 3.7</p> <h3 id="全源最短路径和矩阵乘法"><a href="#全源最短路径和矩阵乘法" class="header-anchor">#</a> 全源最短路径和矩阵乘法</h3> <div class="language-python extra-class"><pre class="language-python"><code><span class="token comment">#!/usr/bin/env python</span>
+<span class="token comment"># -*- coding:utf-8 -*-</span>
+<span class="token triple-quoted-string string">&quot;&quot;&quot;=================================================
+@Project : algorithm/graph_theory/shortest_path
+@File    : johnson.py
+@Author  : YuweiYin
+@Date    : 2020-06-02
+==================================================&quot;&quot;&quot;</span>
+
+<span class="token keyword">import</span> sys
+<span class="token keyword">import</span> time
+<span class="token keyword">import</span> math
+
+<span class="token triple-quoted-string string">&quot;&quot;&quot;
+全源最短路径 All Pairs Shortest Path
+适用于稀疏图的 Johnson 算法
+基于 Dijkstra 和 Bellman-Ford 算法
+
+参考资料：
+Introduction to Algorithm (aka CLRS) Third Edition - Chapter 25
+&quot;&quot;&quot;</span>
+
+
+<span class="token comment"># 边结构体，表达边的信息，可随任务自定义 (增添其它值元素 val 对象)</span>
+<span class="token keyword">class</span> <span class="token class-name">Edge</span><span class="token punctuation">:</span>
+    <span class="token comment"># 构造方法</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> from_v<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> to_v<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> weight<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span> is_directed<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>from_v <span class="token operator">=</span> from_v  <span class="token comment"># 边的起始顶点(关键字/序号)</span>
+        self<span class="token punctuation">.</span>to_v <span class="token operator">=</span> to_v      <span class="token comment"># 边的终止顶点(关键字/序号)</span>
+        self<span class="token punctuation">.</span>weight <span class="token operator">=</span> weight  <span class="token comment"># 边的权重值 (默认值为 1，如果全部边的权重都相同，那图 G 就是无权图)</span>
+        self<span class="token punctuation">.</span>is_directed <span class="token operator">=</span> is_directed  <span class="token comment"># True 则表明此边是有向边，False 为无向边</span>
+        <span class="token comment"># 对无向边而言，起始顶点和终止顶点可以互换</span>
+
+    <span class="token comment"># 类序列化输出方法</span>
+    <span class="token keyword">def</span> <span class="token function">__str__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token builtin">str</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>from_v<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'-&gt;'</span> <span class="token operator">+</span> <span class="token builtin">str</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>to_v<span class="token punctuation">)</span> <span class="token operator">+</span>\
+               <span class="token string">'\t weight:'</span> <span class="token operator">+</span> <span class="token builtin">str</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>weight<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'\t is_directed:'</span> <span class="token operator">+</span> <span class="token builtin">str</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>is_directed<span class="token punctuation">)</span>
+
+
+<span class="token comment"># 用于邻接矩阵的顶点结构体 (比 VertexList 简单)</span>
+<span class="token comment"># 这里是用散列表 (而不是用链表) 来表达某顶点的所有邻接顶点</span>
+<span class="token keyword">class</span> <span class="token class-name">VertexMatrix</span><span class="token punctuation">:</span>
+    <span class="token comment"># 构造方法</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> key<span class="token punctuation">,</span> val<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> distance<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span> p<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> h<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>key <span class="token operator">=</span> key            <span class="token comment"># 本顶点的关键字 key (通常为顶点序号、唯一标志符)</span>
+        self<span class="token punctuation">.</span>val <span class="token operator">=</span> val            <span class="token comment"># 本顶点的值元素 val (可自定义为任意对象，为结点附带的信息)</span>
+        <span class="token triple-quoted-string string">'''如下为最短路径算法所需的属性'''</span>
+        self<span class="token punctuation">.</span>distance <span class="token operator">=</span> distance  <span class="token comment"># 从源结点到本结点的最短路径权重值</span>
+        self<span class="token punctuation">.</span>p <span class="token operator">=</span> p                <span class="token comment"># 本结点的前驱结点/最短路径树的父结点</span>
+        self<span class="token punctuation">.</span>h <span class="token operator">=</span> h                <span class="token comment"># 本结点用于 Johnson 算法的 h 属性</span>
+
+    <span class="token comment"># 类序列化输出方法</span>
+    <span class="token keyword">def</span> <span class="token function">__str__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token string">'Vertex key: '</span> <span class="token operator">+</span> <span class="token builtin">str</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>key<span class="token punctuation">)</span>
+
+
+<span class="token comment"># 元素结构体</span>
+<span class="token keyword">class</span> <span class="token class-name">Element</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> key<span class="token punctuation">,</span> val<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>key <span class="token operator">=</span> key      <span class="token comment"># (必备) 关键字 key。按每个顶点的 min_w 属性作为最小优先队列 Q 的 key</span>
+        self<span class="token punctuation">.</span>val <span class="token operator">=</span> val      <span class="token comment"># (可选) 值对象 val。每个顶点 Vertex 结构体</span>
+        self<span class="token punctuation">.</span>left <span class="token operator">=</span> self    <span class="token comment"># 本结点所在循环双向链表的 左兄弟结点</span>
+        self<span class="token punctuation">.</span>right <span class="token operator">=</span> self   <span class="token comment"># 本结点所在循环双向链表的 右兄弟结点</span>
+        self<span class="token punctuation">.</span>parent <span class="token operator">=</span> <span class="token boolean">None</span>  <span class="token comment"># 本结点的父结点</span>
+        self<span class="token punctuation">.</span>child <span class="token operator">=</span> <span class="token boolean">None</span>   <span class="token comment"># 本结点的(某一个)孩子结点</span>
+        self<span class="token punctuation">.</span>degree <span class="token operator">=</span> <span class="token number">0</span>     <span class="token comment"># 本结点的孩子链表中的孩子数目</span>
+        self<span class="token punctuation">.</span>mark <span class="token operator">=</span> <span class="token boolean">False</span>   <span class="token comment"># 指示本结点自从上一次成为另一个孩子的结点后，是否失去过孩子</span>
+
+
+<span class="token comment"># 斐波那契(最小)堆 Fibonacci Min-Heap 数据结构</span>
+<span class="token keyword">class</span> <span class="token class-name">FibonacciHeap</span><span class="token punctuation">:</span>
+    <span class="token comment"># 创建一个新的斐波那契堆 H</span>
+    <span class="token comment"># 此构造函数即为 make_fib_heap 过程</span>
+    <span class="token comment"># (摊还/实际)时间复杂度 O(1)</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> kv_list<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token comment"># 斐波那契堆 H 就是本类(对象) self，有如下两个属性</span>
+        self<span class="token punctuation">.</span><span class="token builtin">min</span> <span class="token operator">=</span> <span class="token boolean">None</span>  <span class="token comment"># 指向 H 中具有最小关键字的树的根结点</span>
+        self<span class="token punctuation">.</span>n <span class="token operator">=</span> <span class="token number">0</span>       <span class="token comment"># 表示 H 中当前含有的结点总数目</span>
+
+        <span class="token comment"># 如果传入的 kv_list 为列表，则以插入的方式构建斐波那契堆 H</span>
+        <span class="token comment"># 如果传入的 kv_list 不为列表或者内容不合法，则是一个空斐波那契堆</span>
+        <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>kv_list<span class="token punctuation">,</span> <span class="token builtin">list</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">for</span> kv <span class="token keyword">in</span> kv_list<span class="token punctuation">:</span>
+                <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>kv<span class="token punctuation">,</span> <span class="token builtin">list</span><span class="token punctuation">)</span> <span class="token keyword">and</span> <span class="token builtin">len</span><span class="token punctuation">(</span>kv<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">2</span>
+                self<span class="token punctuation">.</span>fib_heap_insert<span class="token punctuation">(</span>kv<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> kv<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+    <span class="token triple-quoted-string string">'''如下为 5 个可合并堆的基本操作'''</span>
+
+    <span class="token comment"># 创建并返回一个新的斐波那契堆</span>
+    <span class="token comment"># 构造函数即为 make_fib_heap 过程</span>
+    <span class="token comment"># (摊还/实际)时间复杂度 O(1)</span>
+    <span class="token comment"># def make_fib_heap(self):</span>
+    <span class="token comment">#     self.min = None  # 指向 H 中具有最小关键字的树的根结点</span>
+    <span class="token comment">#     self.n = 0       # 表示 H 中当前含有的结点总数目</span>
+
+    <span class="token comment"># 根据 key/val 构造结点，并插入到斐波那契堆 H 中</span>
+    <span class="token comment"># 操作成功返回 True，否则返回 False</span>
+    <span class="token comment"># (摊还/实际)时间复杂度 O(1)</span>
+    <span class="token keyword">def</span> <span class="token function">fib_heap_insert</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> insert_key<span class="token punctuation">,</span> insert_val<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token comment"># 根据 key/val 创建一个新的 Element 结点</span>
+        insert_ele <span class="token operator">=</span> Element<span class="token punctuation">(</span>insert_key<span class="token punctuation">,</span> insert_val<span class="token punctuation">)</span>
+        <span class="token comment"># 判断当前斐波那契堆 H 是否为空</span>
+        <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span><span class="token builtin">min</span><span class="token punctuation">,</span> Element<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token comment"># 如果 H 不为空，先插入当前新结点到根链表</span>
+            insert_ele<span class="token punctuation">.</span>right <span class="token operator">=</span> self<span class="token punctuation">.</span><span class="token builtin">min</span><span class="token punctuation">.</span>right
+            <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span><span class="token builtin">min</span><span class="token punctuation">.</span>right<span class="token punctuation">,</span> Element<span class="token punctuation">)</span>  <span class="token comment"># 由于是循环双向链表，所以有此断言</span>
+            self<span class="token punctuation">.</span><span class="token builtin">min</span><span class="token punctuation">.</span>right<span class="token punctuation">.</span>left <span class="token operator">=</span> insert_ele
+            self<span class="token punctuation">.</span><span class="token builtin">min</span><span class="token punctuation">.</span>right <span class="token operator">=</span> insert_ele
+            insert_ele<span class="token punctuation">.</span>left <span class="token operator">=</span> self<span class="token punctuation">.</span><span class="token builtin">min</span>
+
+            <span class="token comment"># 然后再检查是否需要更改 H.min</span>
+            <span class="token keyword">if</span> insert_key <span class="token operator">&lt;</span> self<span class="token punctuation">.</span><span class="token builtin">min</span><span class="token punctuation">.</span>key<span class="token punctuation">:</span>
+                self<span class="token punctuation">.</span><span class="token builtin">min</span> <span class="token operator">=</span> insert_ele
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            <span class="token comment"># 如果 H 为空，则使得当前新结点 为 H 的根链表中唯一的结点</span>
+            self<span class="token punctuation">.</span><span class="token builtin">min</span> <span class="token operator">=</span> insert_ele
+        <span class="token comment"># 结点总数目加一</span>
+        self<span class="token punctuation">.</span>n <span class="token operator">+=</span> <span class="token number">1</span>
+        <span class="token keyword">return</span> <span class="token boolean">True</span>
+
+    <span class="token comment"># 根据 Element 对象构造结点，并插入到斐波那契堆 H 中</span>
+    <span class="token comment"># 操作成功返回 True，否则返回 False</span>
+    <span class="token comment"># (摊还/实际)时间复杂度 O(1)</span>
+    <span class="token keyword">def</span> <span class="token function">fib_heap_insert_ele</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> insert_ele<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>insert_ele<span class="token punctuation">,</span> Element<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token comment"># 判断当前斐波那契堆 H 是否为空</span>
+            <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span><span class="token builtin">min</span><span class="token punctuation">,</span> Element<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                <span class="token comment"># 如果 H 不为空，先插入当前新结点到根链表</span>
+                insert_ele<span class="token punctuation">.</span>right <span class="token operator">=</span> self<span class="token punctuation">.</span><span class="token builtin">min</span><span class="token punctuation">.</span>right
+                <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span><span class="token builtin">min</span><span class="token punctuation">.</span>right<span class="token punctuation">,</span> Element<span class="token punctuation">)</span>  <span class="token comment"># 由于是循环双向链表，所以有此断言</span>
+                self<span class="token punctuation">.</span><span class="token builtin">min</span><span class="token punctuation">.</span>right<span class="token punctuation">.</span>left <span class="token operator">=</span> insert_ele
+                self<span class="token punctuation">.</span><span class="token builtin">min</span><span class="token punctuation">.</span>right <span class="token operator">=</span> insert_ele
+                insert_ele<span class="token punctuation">.</span>left <span class="token operator">=</span> self<span class="token punctuation">.</span><span class="token builtin">min</span>
+
+                <span class="token comment"># 然后再检查是否需要更改 H.min</span>
+                <span class="token keyword">if</span> insert_ele<span class="token punctuation">.</span>key <span class="token operator">&lt;</span> self<span class="token punctuation">.</span><span class="token builtin">min</span><span class="token punctuation">.</span>key<span class="token punctuation">:</span>
+                    self<span class="token punctuation">.</span><span class="token builtin">min</span> <span class="token operator">=</span> insert_ele
+            <span class="token keyword">else</span><span class="token punctuation">:</span>
+                <span class="token comment"># 如果 H 为空，则使得当前新结点 为 H 的根链表中唯一的结点</span>
+                self<span class="token punctuation">.</span><span class="token builtin">min</span> <span class="token operator">=</span> insert_ele
+            <span class="token comment"># 结点总数目加一</span>
+            self<span class="token punctuation">.</span>n <span class="token operator">+=</span> <span class="token number">1</span>
+            <span class="token keyword">return</span> <span class="token boolean">True</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token boolean">False</span>
+
+    <span class="token comment"># 合并两个斐波那契堆</span>
+    <span class="token comment"># 操作成功返回 True，否则返回 False</span>
+    <span class="token comment"># (摊还/实际)时间复杂度 O(1)</span>
+    <span class="token comment"># (此为静态函数，不对本斐波那契堆 self 作用)</span>
+    <span class="token decorator annotation punctuation">@staticmethod</span>
+    <span class="token keyword">def</span> <span class="token function">fib_heap_union</span><span class="token punctuation">(</span>h1<span class="token punctuation">,</span> h2<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>h1<span class="token punctuation">,</span> FibonacciHeap<span class="token punctuation">)</span> <span class="token keyword">and</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>h2<span class="token punctuation">,</span> FibonacciHeap<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token comment"># h1 和 h2 均为斐波那契堆，考察二者是否为空堆</span>
+            <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>h1<span class="token punctuation">.</span><span class="token builtin">min</span><span class="token punctuation">,</span> Element<span class="token punctuation">)</span> <span class="token keyword">and</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>h2<span class="token punctuation">.</span><span class="token builtin">min</span><span class="token punctuation">,</span> Element<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                <span class="token comment"># 二者均不为空，则正常合并。</span>
+                <span class="token comment"># 先构建一个新的空斐波那契堆，并设置 min 为 h1.min</span>
+                union_heap <span class="token operator">=</span> FibonacciHeap<span class="token punctuation">(</span><span class="token punctuation">)</span>
+                union_heap<span class="token punctuation">.</span><span class="token builtin">min</span> <span class="token operator">=</span> h1<span class="token punctuation">.</span><span class="token builtin">min</span>
+
+                <span class="token comment"># 将 h2 连接到 union_heap 中 (两个循环双向链表的连接)</span>
+                <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>union_heap<span class="token punctuation">.</span><span class="token builtin">min</span><span class="token punctuation">.</span>right<span class="token punctuation">,</span> Element<span class="token punctuation">)</span>
+                <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>h2<span class="token punctuation">.</span><span class="token builtin">min</span><span class="token punctuation">.</span>left<span class="token punctuation">,</span> Element<span class="token punctuation">)</span>
+                union_heap<span class="token punctuation">.</span><span class="token builtin">min</span><span class="token punctuation">.</span>right<span class="token punctuation">.</span>left <span class="token operator">=</span> h2<span class="token punctuation">.</span><span class="token builtin">min</span><span class="token punctuation">.</span>left
+                h2<span class="token punctuation">.</span><span class="token builtin">min</span><span class="token punctuation">.</span>left<span class="token punctuation">.</span>right <span class="token operator">=</span> union_heap<span class="token punctuation">.</span><span class="token builtin">min</span><span class="token punctuation">.</span>right
+                union_heap<span class="token punctuation">.</span><span class="token builtin">min</span><span class="token punctuation">.</span>right <span class="token operator">=</span> h2<span class="token punctuation">.</span><span class="token builtin">min</span>
+                h2<span class="token punctuation">.</span><span class="token builtin">min</span><span class="token punctuation">.</span>left <span class="token operator">=</span> union_heap<span class="token punctuation">.</span><span class="token builtin">min</span>
+
+                <span class="token comment"># 检查是否需要更新 min</span>
+                <span class="token keyword">if</span> h2<span class="token punctuation">.</span><span class="token builtin">min</span><span class="token punctuation">.</span>key <span class="token operator">&lt;</span> union_heap<span class="token punctuation">.</span><span class="token builtin">min</span><span class="token punctuation">.</span>key<span class="token punctuation">:</span>
+                    union_heap<span class="token punctuation">.</span><span class="token builtin">min</span> <span class="token operator">=</span> h2<span class="token punctuation">.</span><span class="token builtin">min</span>
+                <span class="token comment"># 增加结点数目</span>
+                union_heap<span class="token punctuation">.</span>n <span class="token operator">=</span> h1<span class="token punctuation">.</span>n <span class="token operator">+</span> h2<span class="token punctuation">.</span>n
+                <span class="token comment"># 返回合并后的斐波那契堆</span>
+                <span class="token keyword">return</span> union_heap
+            <span class="token keyword">elif</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>h1<span class="token punctuation">.</span><span class="token builtin">min</span><span class="token punctuation">,</span> Element<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                <span class="token comment"># 如果仅 h1 为非空堆，则返回 h1</span>
+                <span class="token keyword">return</span> h1
+            <span class="token keyword">elif</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>h2<span class="token punctuation">.</span><span class="token builtin">min</span><span class="token punctuation">,</span> Element<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                <span class="token comment"># 如果仅 h2 为非空堆，则返回 h2</span>
+                <span class="token keyword">return</span> h2
+            <span class="token keyword">else</span><span class="token punctuation">:</span>
+                <span class="token comment"># 如果 h1 和 h2 均为空堆，则任意返回其中一个 (这里返回 h1)</span>
+                <span class="token keyword">return</span> h1
+        <span class="token keyword">elif</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>h1<span class="token punctuation">,</span> FibonacciHeap<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token comment"># 如果仅 h1 为斐波那契堆，则返回 h1</span>
+            <span class="token keyword">return</span> h1
+        <span class="token keyword">elif</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>h2<span class="token punctuation">,</span> FibonacciHeap<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token comment"># 如果仅 h2 为斐波那契堆，则返回 h2</span>
+            <span class="token keyword">return</span> h2
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            <span class="token comment"># 如果 h1 和 h2 均不为斐波那契堆，则返回空</span>
+            <span class="token keyword">return</span> <span class="token boolean">None</span>
+
+    <span class="token comment"># 查询最小结点</span>
+    <span class="token comment"># (摊还/实际)时间复杂度 O(1)</span>
+    <span class="token keyword">def</span> <span class="token function">fib_heap_minimum</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> self<span class="token punctuation">.</span><span class="token builtin">min</span>
+
+    <span class="token comment"># 查询最小结点 - 输出其 key/val</span>
+    <span class="token comment"># (摊还/实际)时间复杂度 O(1)</span>
+    <span class="token keyword">def</span> <span class="token function">fib_heap_print_min_kv</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span><span class="token builtin">min</span><span class="token punctuation">,</span> Element<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span><span class="token builtin">min</span><span class="token punctuation">.</span>key<span class="token punctuation">,</span> self<span class="token punctuation">.</span><span class="token builtin">min</span><span class="token punctuation">.</span>val<span class="token punctuation">)</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'Fibonacci Heap is Empty!'</span><span class="token punctuation">)</span>
+
+    <span class="token comment"># 抽取最小结点 (查找、删除、返回)</span>
+    <span class="token comment"># (摊还)时间复杂度 O(log n)</span>
+    <span class="token keyword">def</span> <span class="token function">fib_heap_extract_min</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        z <span class="token operator">=</span> self<span class="token punctuation">.</span><span class="token builtin">min</span>  <span class="token comment"># 待删除的结点 z</span>
+        <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>z<span class="token punctuation">,</span> Element<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token comment"># 判断待删结点 z 是否有孩子结点</span>
+            <span class="token comment"># 如果没有孩子结点，则跳过下面的分支，直接删除 z，并寻找替代的 min</span>
+            <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>z<span class="token punctuation">.</span>child<span class="token punctuation">,</span> Element<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                <span class="token comment"># 如果待删结点 z 有孩子结点，则把其所有孩子均移至根链表</span>
+                <span class="token comment"># 先遍历此孩子链表，将其父指针均置为空</span>
+                ptr <span class="token operator">=</span> z<span class="token punctuation">.</span>child
+                ptr<span class="token punctuation">.</span>parent <span class="token operator">=</span> <span class="token boolean">None</span>
+                <span class="token keyword">while</span> ptr<span class="token punctuation">.</span>right <span class="token operator">!=</span> z<span class="token punctuation">.</span>child<span class="token punctuation">:</span>
+                    ptr <span class="token operator">=</span> ptr<span class="token punctuation">.</span>right
+                    ptr<span class="token punctuation">.</span>parent <span class="token operator">=</span> <span class="token boolean">None</span>
+                <span class="token comment"># 然后将此孩子链表链接到 H 的根链表 (两个循环双向链表的连接)</span>
+                <span class="token comment"># 孩子的孩子结点则不改动</span>
+                z<span class="token punctuation">.</span>child<span class="token punctuation">.</span>right<span class="token punctuation">.</span>left <span class="token operator">=</span> z<span class="token punctuation">.</span>left
+                z<span class="token punctuation">.</span>left<span class="token punctuation">.</span>right <span class="token operator">=</span> z<span class="token punctuation">.</span>child<span class="token punctuation">.</span>right
+                z<span class="token punctuation">.</span>child<span class="token punctuation">.</span>right <span class="token operator">=</span> z
+                z<span class="token punctuation">.</span>left <span class="token operator">=</span> z<span class="token punctuation">.</span>child
+                <span class="token comment"># 清除 z 的孩子指针</span>
+                z<span class="token punctuation">.</span>child <span class="token operator">=</span> <span class="token boolean">None</span>
+
+            <span class="token comment"># 从根链表中删除结点 z</span>
+            <span class="token keyword">if</span> z<span class="token punctuation">.</span>right <span class="token operator">==</span> z<span class="token punctuation">:</span>
+                <span class="token comment"># 本堆仅有 z 一个结点，删除之后堆为空</span>
+                <span class="token keyword">assert</span> z<span class="token punctuation">.</span>left <span class="token operator">==</span> z <span class="token keyword">and</span> self<span class="token punctuation">.</span>n <span class="token operator">==</span> <span class="token number">1</span>
+                self<span class="token punctuation">.</span><span class="token builtin">min</span> <span class="token operator">=</span> <span class="token boolean">None</span>
+                self<span class="token punctuation">.</span>n <span class="token operator">=</span> <span class="token number">0</span>
+            <span class="token keyword">else</span><span class="token punctuation">:</span>
+                <span class="token comment"># 本堆不止 z 一个结点，则正常删除 z (通过修改链表指针链接)</span>
+                self<span class="token punctuation">.</span><span class="token builtin">min</span> <span class="token operator">=</span> z<span class="token punctuation">.</span>right  <span class="token comment"># 将 min 改为 z.right，但它不一定是根链表中的最小结点，之后会修复此性质</span>
+                z<span class="token punctuation">.</span>right<span class="token punctuation">.</span>left <span class="token operator">=</span> z<span class="token punctuation">.</span>left
+                z<span class="token punctuation">.</span>left<span class="token punctuation">.</span>right <span class="token operator">=</span> z<span class="token punctuation">.</span>right
+                <span class="token comment"># 合并根链表中的结点，减少根链表的结点数目，并修复性质：让 self.min 确实为最小元素</span>
+                self<span class="token punctuation">.</span>_consolidate<span class="token punctuation">(</span><span class="token punctuation">)</span>
+                self<span class="token punctuation">.</span>n <span class="token operator">-=</span> <span class="token number">1</span>
+            <span class="token comment"># 返回被删结点 z</span>
+            <span class="token keyword">return</span> z
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            <span class="token comment"># self.min 不是 Element 对象，表明此斐波那契堆为空堆</span>
+            <span class="token keyword">return</span> <span class="token boolean">None</span>
+
+    <span class="token comment"># 辅助函数：合并斐波那契堆 H 的根链表</span>
+    <span class="token comment"># 重复执行如下步骤，直到根链表中的每个结点有不同的 degree 度数</span>
+    <span class="token comment"># 1. 在根链表中找到两个具有相同度数的根 x 和 y。不失一般性，假定 x.key &lt;= y.key</span>
+    <span class="token comment"># 2. 把 y 链接到 x：从根链表中移除 y，调用 _fib_heap_link 过程，使 y 成为 x 的孩子</span>
+    <span class="token comment"># 过程 2 将 x.degree 属性增加 1，并清除 y 上的 mark 标记</span>
+    <span class="token keyword">def</span> <span class="token function">_consolidate</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token comment"># 辅助数组 d_arr 用于记录根结点对应的度数的轨迹</span>
+        <span class="token comment"># 如果 d_arr[i] == y，那么当前的 y 是一个具有 y.degree == i 的结点</span>
+        <span class="token comment"># d_arr 数组的长度为最大度数的上界 D(H.n)，可以证明 D(H.n) &lt;= \floor(log_{phi} n) = O(log n)</span>
+        phi <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">+</span> math<span class="token punctuation">.</span>sqrt<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span>  <span class="token comment"># 黄金分割率 golden_ratio ~= 1.61803</span>
+        <span class="token comment"># phi = round(phi, 5)  # 四舍五入仅保留小数点后几位，可加速下面的对数运算</span>
+        <span class="token comment"># max_d = int(math.log(self.n, phi))  # 最大度数的上界</span>
+        max_d <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span>math<span class="token punctuation">.</span>log<span class="token punctuation">(</span>self<span class="token punctuation">.</span>n<span class="token punctuation">,</span> phi<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span>  <span class="token comment"># 最大度数的上界</span>
+
+        <span class="token comment"># 创建长度为 max_d 的辅助数据 d_arr</span>
+        <span class="token comment"># 如果 d_arr 中某结点关键字 key 为 inf，则表示仅为占位结点</span>
+        inf <span class="token operator">=</span> <span class="token number">0x3f3f3f3f</span>
+        d_arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>max_d<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            empty_node <span class="token operator">=</span> Element<span class="token punctuation">(</span>inf<span class="token punctuation">)</span>
+            d_arr<span class="token punctuation">.</span>append<span class="token punctuation">(</span>empty_node<span class="token punctuation">)</span>
+
+        <span class="token comment"># 循环处理根链表中的每个根结点 cur_root</span>
+        ptr <span class="token operator">=</span> self<span class="token punctuation">.</span><span class="token builtin">min</span><span class="token punctuation">.</span>right
+        <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>ptr<span class="token punctuation">,</span> Element<span class="token punctuation">)</span>  <span class="token comment"># 进入 _consolidate 前已保证本斐波那契堆不是空堆，故有此断言</span>
+        <span class="token keyword">while</span> ptr <span class="token operator">!=</span> self<span class="token punctuation">.</span><span class="token builtin">min</span><span class="token punctuation">:</span>
+            <span class="token comment"># ptr 可能会成为别的结点的子结点，所以不再是根结点，因此下一个检查的也就不是 ptr.right 了</span>
+            next_root <span class="token operator">=</span> ptr<span class="token punctuation">.</span>right  <span class="token comment"># 记录下一个应该检查的根结点</span>
+            cur_root <span class="token operator">=</span> ptr
+            <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>cur_root<span class="token punctuation">,</span> Element<span class="token punctuation">)</span>
+            cur_d <span class="token operator">=</span> cur_root<span class="token punctuation">.</span>degree  <span class="token comment"># 当前结点的度数</span>
+            <span class="token keyword">assert</span> <span class="token number">0</span> <span class="token operator">&lt;=</span> cur_d <span class="token operator">&lt;</span> max_d
+
+            <span class="token comment"># 若存在与当前根结点 cur_root 相同度数的结点 y，需要合并这两个结点</span>
+            <span class="token keyword">while</span> d_arr<span class="token punctuation">[</span>cur_d<span class="token punctuation">]</span><span class="token punctuation">.</span>key <span class="token operator">!=</span> inf<span class="token punctuation">:</span>
+                y <span class="token operator">=</span> d_arr<span class="token punctuation">[</span>cur_d<span class="token punctuation">]</span>  <span class="token comment"># 取出此结点 y，让它加入 cur_root 的孩子链表</span>
+                <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>y<span class="token punctuation">,</span> Element<span class="token punctuation">)</span>
+                <span class="token comment"># 如果原本在 trace 数组里的结点 y 的关键字 key 更小，则交换 cur_root 和 y</span>
+                <span class="token keyword">if</span> y<span class="token punctuation">.</span>key <span class="token operator">&lt;</span> cur_root<span class="token punctuation">.</span>key<span class="token punctuation">:</span>
+                    temp <span class="token operator">=</span> y
+                    y <span class="token operator">=</span> cur_root
+                    cur_root <span class="token operator">=</span> temp
+                <span class="token comment"># 让结点 y 加入结点 cur_root 的孩子链表</span>
+                self<span class="token punctuation">.</span>_fib_heap_link<span class="token punctuation">(</span>cur_root<span class="token punctuation">,</span> y<span class="token punctuation">)</span>
+                <span class="token comment"># 让 d_arr[cur_d] 变为占位元素</span>
+                empty_node <span class="token operator">=</span> Element<span class="token punctuation">(</span>inf<span class="token punctuation">)</span>
+                d_arr<span class="token punctuation">[</span>cur_d<span class="token punctuation">]</span> <span class="token operator">=</span> empty_node
+                <span class="token comment"># 此时 cur_root 的度数增加了 1，所以要检查此新度数会不会又是重复的</span>
+                cur_d <span class="token operator">+=</span> <span class="token number">1</span>
+            <span class="token comment"># 循环处理完后，把 cur_root 加入数组 d_arr 相应的位置</span>
+            <span class="token keyword">assert</span> <span class="token number">0</span> <span class="token operator">&lt;=</span> cur_d <span class="token operator">&lt;</span> max_d
+            d_arr<span class="token punctuation">[</span>cur_d<span class="token punctuation">]</span> <span class="token operator">=</span> cur_root
+            ptr <span class="token operator">=</span> next_root
+
+        <span class="token comment"># 外层 while 循环忽略了 self.min 结点，所以此时要对 self.min 结点做相同的处理</span>
+        cur_root <span class="token operator">=</span> self<span class="token punctuation">.</span><span class="token builtin">min</span>
+        <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>cur_root<span class="token punctuation">,</span> Element<span class="token punctuation">)</span>
+        cur_d <span class="token operator">=</span> cur_root<span class="token punctuation">.</span>degree  <span class="token comment"># 当前结点的度数</span>
+        <span class="token keyword">assert</span> <span class="token number">0</span> <span class="token operator">&lt;=</span> cur_d <span class="token operator">&lt;</span> max_d
+
+        <span class="token comment"># 若存在与当前根结点 cur_root 相同度数的结点 y，需要合并这两个结点</span>
+        <span class="token keyword">while</span> d_arr<span class="token punctuation">[</span>cur_d<span class="token punctuation">]</span><span class="token punctuation">.</span>key <span class="token operator">!=</span> inf<span class="token punctuation">:</span>
+            y <span class="token operator">=</span> d_arr<span class="token punctuation">[</span>cur_d<span class="token punctuation">]</span>  <span class="token comment"># 取出此结点 y，让它加入 cur_root 的孩子链表</span>
+            <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>y<span class="token punctuation">,</span> Element<span class="token punctuation">)</span>
+            <span class="token comment"># 如果原本在 trace 数组里的结点 y 的关键字 key 更小，则交换 cur_root 和 y</span>
+            <span class="token keyword">if</span> y<span class="token punctuation">.</span>key <span class="token operator">&lt;</span> cur_root<span class="token punctuation">.</span>key<span class="token punctuation">:</span>
+                temp <span class="token operator">=</span> y
+                y <span class="token operator">=</span> cur_root
+                cur_root <span class="token operator">=</span> temp
+            <span class="token comment"># 让结点 y 加入结点 cur_root 的孩子链表</span>
+            self<span class="token punctuation">.</span>_fib_heap_link<span class="token punctuation">(</span>cur_root<span class="token punctuation">,</span> y<span class="token punctuation">)</span>
+            <span class="token comment"># 让 d_arr[cur_d] 变为占位元素</span>
+            empty_node <span class="token operator">=</span> Element<span class="token punctuation">(</span>inf<span class="token punctuation">)</span>
+            d_arr<span class="token punctuation">[</span>cur_d<span class="token punctuation">]</span> <span class="token operator">=</span> empty_node
+            <span class="token comment"># 此时 cur_root 的度数增加了 1，所以要检查此新度数会不会又是重复的</span>
+            cur_d <span class="token operator">+=</span> <span class="token number">1</span>
+        <span class="token comment"># 循环处理完后，把 cur_root 加入数组 d_arr 相应的位置</span>
+        <span class="token keyword">assert</span> <span class="token number">0</span> <span class="token operator">&lt;=</span> cur_d <span class="token operator">&lt;</span> max_d
+        d_arr<span class="token punctuation">[</span>cur_d<span class="token punctuation">]</span> <span class="token operator">=</span> cur_root
+
+        <span class="token comment"># 最后，对处理好后的 d_arr 进行遍历</span>
+        self<span class="token punctuation">.</span><span class="token builtin">min</span> <span class="token operator">=</span> <span class="token boolean">None</span>
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>max_d<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>d_arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> Element<span class="token punctuation">)</span> <span class="token keyword">and</span> d_arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>key <span class="token operator">!=</span> inf<span class="token punctuation">:</span>
+                <span class="token comment"># 如果 d_arr[i] 不是占位元素，则将之插入到根链表</span>
+                new_root <span class="token operator">=</span> d_arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+                <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span><span class="token builtin">min</span><span class="token punctuation">,</span> Element<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                    <span class="token comment"># 如果此时 self.min 存在，则将 d_arr[i] 结点插入根链表</span>
+                    new_root<span class="token punctuation">.</span>right <span class="token operator">=</span> self<span class="token punctuation">.</span><span class="token builtin">min</span><span class="token punctuation">.</span>right
+                    self<span class="token punctuation">.</span><span class="token builtin">min</span><span class="token punctuation">.</span>right<span class="token punctuation">.</span>left <span class="token operator">=</span> new_root
+                    new_root<span class="token punctuation">.</span>left <span class="token operator">=</span> self<span class="token punctuation">.</span><span class="token builtin">min</span>
+                    self<span class="token punctuation">.</span><span class="token builtin">min</span><span class="token punctuation">.</span>right <span class="token operator">=</span> new_root
+                    <span class="token comment"># 并视情况更新 self.min</span>
+                    <span class="token keyword">if</span> new_root<span class="token punctuation">.</span>key <span class="token operator">&lt;</span> self<span class="token punctuation">.</span><span class="token builtin">min</span><span class="token punctuation">.</span>key<span class="token punctuation">:</span>
+                        self<span class="token punctuation">.</span><span class="token builtin">min</span> <span class="token operator">=</span> new_root
+                <span class="token keyword">else</span><span class="token punctuation">:</span>
+                    <span class="token comment"># 如果此时 self.min 为空，则创建一个仅含 d_arr[i] 结点的根链表</span>
+                    new_root<span class="token punctuation">.</span>left <span class="token operator">=</span> new_root<span class="token punctuation">.</span>right <span class="token operator">=</span> new_root
+                    new_root<span class="token punctuation">.</span>parent <span class="token operator">=</span> <span class="token boolean">None</span>
+                    self<span class="token punctuation">.</span><span class="token builtin">min</span> <span class="token operator">=</span> new_root
+
+    <span class="token comment"># 辅助函数：让结点 y 加入结点 cur_root 的孩子链表</span>
+    <span class="token keyword">def</span> <span class="token function">_fib_heap_link</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> cur_root<span class="token punctuation">,</span> y<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>y<span class="token punctuation">,</span> Element<span class="token punctuation">)</span> <span class="token keyword">and</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>cur_root<span class="token punctuation">,</span> Element<span class="token punctuation">)</span>
+        <span class="token keyword">assert</span> self<span class="token punctuation">.</span>n <span class="token operator">&gt;=</span> <span class="token number">2</span> <span class="token keyword">and</span> y<span class="token punctuation">.</span>right <span class="token operator">!=</span> y  <span class="token comment"># 此时根链表至少有两个结点</span>
+        <span class="token comment"># 1. 将结点 y 从根链表中移除</span>
+        y<span class="token punctuation">.</span>right<span class="token punctuation">.</span>left <span class="token operator">=</span> y<span class="token punctuation">.</span>left
+        y<span class="token punctuation">.</span>left<span class="token punctuation">.</span>right <span class="token operator">=</span> y<span class="token punctuation">.</span>right
+
+        <span class="token comment"># 2. 让 y 加入 cur_root 的孩子链表，并增加 cur_root 的度数</span>
+        <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>cur_root<span class="token punctuation">.</span>child<span class="token punctuation">,</span> Element<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token comment"># 如果 cur_root 已有孩子结点，则正常插入</span>
+            y<span class="token punctuation">.</span>parent <span class="token operator">=</span> cur_root
+            y<span class="token punctuation">.</span>right <span class="token operator">=</span> cur_root<span class="token punctuation">.</span>child<span class="token punctuation">.</span>right
+            cur_root<span class="token punctuation">.</span>child<span class="token punctuation">.</span>right<span class="token punctuation">.</span>left <span class="token operator">=</span> y
+            y<span class="token punctuation">.</span>left <span class="token operator">=</span> cur_root<span class="token punctuation">.</span>child
+            cur_root<span class="token punctuation">.</span>child<span class="token punctuation">.</span>right <span class="token operator">=</span> y
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            <span class="token comment"># 否则让 y 成为 cur_root 的唯一孩子结点</span>
+            cur_root<span class="token punctuation">.</span>child <span class="token operator">=</span> y
+            y<span class="token punctuation">.</span>parent <span class="token operator">=</span> cur_root
+            y<span class="token punctuation">.</span>left <span class="token operator">=</span> y<span class="token punctuation">.</span>right <span class="token operator">=</span> y
+        cur_root<span class="token punctuation">.</span>degree <span class="token operator">+=</span> <span class="token number">1</span>
+
+        <span class="token comment"># 3. 重置结点 y 的 mark 标志为 False (此时没有失去孩子)</span>
+        y<span class="token punctuation">.</span>mark <span class="token operator">=</span> <span class="token boolean">False</span>
+
+    <span class="token triple-quoted-string string">'''如下为 2 个斐波那契堆可以额外完成的操作'''</span>
+
+    <span class="token comment"># 减小某结点的关键字 key</span>
+    <span class="token comment"># (摊还)时间复杂度 O(1)</span>
+    <span class="token comment"># 操作成功则返回 True，否则返回 False</span>
+    <span class="token keyword">def</span> <span class="token function">fib_heap_decrease_key</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> x<span class="token punctuation">,</span> new_k<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> Element<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">if</span> x<span class="token punctuation">.</span>key <span class="token operator">&lt;</span> new_k<span class="token punctuation">:</span>
+                <span class="token comment"># 只能降 key，不能升 key</span>
+                <span class="token keyword">return</span> <span class="token boolean">False</span>
+            <span class="token keyword">elif</span> x<span class="token punctuation">.</span>key <span class="token operator">==</span> new_k<span class="token punctuation">:</span>
+                <span class="token comment"># 已满足目标</span>
+                <span class="token keyword">return</span> <span class="token boolean">True</span>
+            <span class="token keyword">else</span><span class="token punctuation">:</span>
+                x<span class="token punctuation">.</span>key <span class="token operator">=</span> new_k
+                <span class="token comment"># 如果父结点存在，则观察是否需要维护最小堆性质</span>
+                y <span class="token operator">=</span> x<span class="token punctuation">.</span>parent
+                <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>y<span class="token punctuation">,</span> Element<span class="token punctuation">)</span> <span class="token keyword">and</span> x<span class="token punctuation">.</span>key <span class="token operator">&lt;</span> y<span class="token punctuation">.</span>key<span class="token punctuation">:</span>
+                    <span class="token comment"># 结点 x 比其父结点 y 的关键字 key 更小，需要维护最小堆性质</span>
+                    self<span class="token punctuation">.</span>_cut<span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span>  <span class="token comment"># 从 y 中移除 x，并将 x 加入根链表</span>
+                    self<span class="token punctuation">.</span>_cascading_cut<span class="token punctuation">(</span>y<span class="token punctuation">)</span>  <span class="token comment"># y 失去了孩子 x，进行处理</span>
+                <span class="token comment"># 视情况更新 self.min</span>
+                <span class="token keyword">if</span> x<span class="token punctuation">.</span>key <span class="token operator">&lt;</span> self<span class="token punctuation">.</span><span class="token builtin">min</span><span class="token punctuation">.</span>key<span class="token punctuation">:</span>
+                    self<span class="token punctuation">.</span><span class="token builtin">min</span> <span class="token operator">=</span> x
+                <span class="token keyword">return</span> <span class="token boolean">True</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token boolean">False</span>
+
+    <span class="token comment"># 辅助函数：切断 x 与其父结点 y 的关联，并将 x 加入根链表</span>
+    <span class="token keyword">def</span> <span class="token function">_cut</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> x<span class="token punctuation">,</span> y<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> Element<span class="token punctuation">)</span> <span class="token keyword">and</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>y<span class="token punctuation">,</span> Element<span class="token punctuation">)</span>
+        <span class="token comment"># 1. 将 x 从其父结点 y 的孩子链表中移除，并减小 y 的度数</span>
+        <span class="token keyword">if</span> x <span class="token operator">==</span> x<span class="token punctuation">.</span>right<span class="token punctuation">:</span>
+            <span class="token comment"># 如果 x 是 y 的唯一孩子</span>
+            <span class="token keyword">assert</span> x <span class="token operator">==</span> x<span class="token punctuation">.</span>left <span class="token keyword">and</span> y<span class="token punctuation">.</span>child <span class="token operator">==</span> x
+            y<span class="token punctuation">.</span>child <span class="token operator">=</span> <span class="token boolean">None</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            <span class="token comment"># 如果 x 不是 y 的唯一孩子，则正常移除 x</span>
+            x<span class="token punctuation">.</span>right<span class="token punctuation">.</span>left <span class="token operator">=</span> x<span class="token punctuation">.</span>left
+            x<span class="token punctuation">.</span>left<span class="token punctuation">.</span>right <span class="token operator">=</span> x<span class="token punctuation">.</span>right
+            <span class="token comment"># 如果 y 的 child 指针当前指向了 x，则要更换 child 指针的指向</span>
+            <span class="token keyword">if</span> y<span class="token punctuation">.</span>child <span class="token operator">==</span> x<span class="token punctuation">:</span>
+                y<span class="token punctuation">.</span>child <span class="token operator">=</span> x<span class="token punctuation">.</span>right
+        y<span class="token punctuation">.</span>degree <span class="token operator">-=</span> <span class="token number">1</span>
+
+        <span class="token comment"># 2. 把 x 加入到根链表中</span>
+        <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span><span class="token builtin">min</span><span class="token punctuation">,</span> Element<span class="token punctuation">)</span>
+        x<span class="token punctuation">.</span>right <span class="token operator">=</span> self<span class="token punctuation">.</span><span class="token builtin">min</span><span class="token punctuation">.</span>right
+        self<span class="token punctuation">.</span><span class="token builtin">min</span><span class="token punctuation">.</span>right<span class="token punctuation">.</span>left <span class="token operator">=</span> x
+        x<span class="token punctuation">.</span>left <span class="token operator">=</span> self<span class="token punctuation">.</span><span class="token builtin">min</span>
+        self<span class="token punctuation">.</span><span class="token builtin">min</span><span class="token punctuation">.</span>right <span class="token operator">=</span> x
+
+        <span class="token comment"># 3. 修改 x 的父指针、重置 mark 标记</span>
+        x<span class="token punctuation">.</span>parent <span class="token operator">=</span> <span class="token boolean">None</span>
+        x<span class="token punctuation">.</span>mark <span class="token operator">=</span> <span class="token boolean">False</span>
+
+    <span class="token comment"># 辅助函数：</span>
+    <span class="token keyword">def</span> <span class="token function">_cascading_cut</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> y<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>y<span class="token punctuation">,</span> Element<span class="token punctuation">)</span>
+        z <span class="token operator">=</span> y<span class="token punctuation">.</span>parent
+        <span class="token comment"># 如果 y 的父结点不是空，表示 y 不是根结点</span>
+        <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>z<span class="token punctuation">,</span> Element<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">if</span> <span class="token keyword">not</span> y<span class="token punctuation">.</span>mark<span class="token punctuation">:</span>
+                <span class="token comment"># 如果此前 y 没有失去过孩子，则此时记录 y 失去过孩子</span>
+                <span class="token comment"># 因为 _cascading_cut 函数调用前 执行了 _cut 函数</span>
+                y<span class="token punctuation">.</span>mark <span class="token operator">=</span> <span class="token boolean">True</span>
+            <span class="token keyword">else</span><span class="token punctuation">:</span>
+                <span class="token comment"># 继续向上处理：</span>
+                <span class="token comment"># 先调用 _cut 函数：从 z 中移除 y，并将 y 移至根链表</span>
+                self<span class="token punctuation">.</span>_cut<span class="token punctuation">(</span>y<span class="token punctuation">,</span> z<span class="token punctuation">)</span>
+                <span class="token comment"># 然后递归调用 _cascading_cut 函数，处理父结点 z</span>
+                self<span class="token punctuation">.</span>_cascading_cut<span class="token punctuation">(</span>z<span class="token punctuation">)</span>
+
+    <span class="token comment"># 删除某结点</span>
+    <span class="token comment"># 假定在斐波那契堆中任何关键字的当前值均大于 -inf 负无穷</span>
+    <span class="token comment"># 则删除操作仅需调用之前实现好的两个操作</span>
+    <span class="token comment"># 删除成功则返回被删除的结点，否则返回 None</span>
+    <span class="token comment"># (摊还)时间复杂度 O(log n)</span>
+    <span class="token keyword">def</span> <span class="token function">fib_heap_delete</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> x<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        neg_inf <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">0x3f3f3f3f</span>
+        <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> Element<span class="token punctuation">)</span> <span class="token keyword">and</span> x<span class="token punctuation">.</span>key <span class="token operator">&gt;</span> neg_inf<span class="token punctuation">:</span>
+            <span class="token comment"># 1. 把待删除结点的关键字 key 降到负无穷 -inf，从而成为了 self.min</span>
+            <span class="token keyword">if</span> self<span class="token punctuation">.</span>fib_heap_decrease_key<span class="token punctuation">(</span>x<span class="token punctuation">,</span> neg_inf<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                <span class="token comment"># 2. 如果降 key 成功，则把最小值抽取出来</span>
+                <span class="token keyword">return</span> self<span class="token punctuation">.</span>fib_heap_extract_min<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token keyword">else</span><span class="token punctuation">:</span>
+                <span class="token keyword">return</span> <span class="token boolean">None</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token boolean">None</span>
+
+
+<span class="token comment"># (带边权的)邻接矩阵的图结构，通常适合稠密图</span>
+<span class="token comment"># 输入顶点结构体列表、边结构体列表</span>
+<span class="token keyword">class</span> <span class="token class-name">AdjacencyMatrix</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> vertices<span class="token punctuation">,</span> edges<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>vertices<span class="token punctuation">,</span> <span class="token builtin">list</span><span class="token punctuation">)</span>
+
+        self<span class="token punctuation">.</span>inf <span class="token operator">=</span> <span class="token number">0x3f3f3f3f</span> <span class="token operator">-</span> <span class="token number">1</span>    <span class="token comment"># 初始各边的权重值均为 inf 无穷</span>
+        self<span class="token punctuation">.</span>edges <span class="token operator">=</span> edges           <span class="token comment"># 存储输入的边列表</span>
+        self<span class="token punctuation">.</span>key2e_index <span class="token operator">=</span> <span class="token builtin">dict</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span>  <span class="token comment"># 由(起始,终止)顶点的关键字/唯一标志符映射到边数组下标</span>
+
+        self<span class="token punctuation">.</span>vertices <span class="token operator">=</span> vertices     <span class="token comment"># 存储输入的顶点列表 (可以从下标映射到顶点)</span>
+        self<span class="token punctuation">.</span>v2index <span class="token operator">=</span> <span class="token builtin">dict</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span>      <span class="token comment"># 由顶点映射到其下标 (既是邻接矩阵的行/列下标，也是 vertices 列表的下标)</span>
+        self<span class="token punctuation">.</span>key2v_index <span class="token operator">=</span> <span class="token builtin">dict</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span>  <span class="token comment"># 由顶点的关键字/唯一标志符映射到顶点数组下标</span>
+        <span class="token keyword">for</span> index<span class="token punctuation">,</span> vertex <span class="token keyword">in</span> <span class="token builtin">enumerate</span><span class="token punctuation">(</span>vertices<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            self<span class="token punctuation">.</span>v2index<span class="token punctuation">[</span>vertex<span class="token punctuation">]</span> <span class="token operator">=</span> index
+            self<span class="token punctuation">.</span>key2v_index<span class="token punctuation">[</span>vertex<span class="token punctuation">.</span>key<span class="token punctuation">]</span> <span class="token operator">=</span> index
+
+        <span class="token comment"># 构建带权重的邻接矩阵(二维方阵)，adj[x][y] 的值为边 (x, y) 的权重值</span>
+        v_num <span class="token operator">=</span> <span class="token builtin">len</span><span class="token punctuation">(</span>vertices<span class="token punctuation">)</span>  <span class="token comment"># 顶点数目</span>
+        self<span class="token punctuation">.</span>adj_m <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">[</span>self<span class="token punctuation">.</span>inf<span class="token punctuation">]</span> <span class="token operator">*</span> v_num <span class="token keyword">for</span> _ <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>v_num<span class="token punctuation">)</span><span class="token punctuation">]</span>
+
+        <span class="token comment"># 若 edges 合法，则进行边初始化处理</span>
+        <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>edges<span class="token punctuation">,</span> <span class="token builtin">list</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">for</span> index<span class="token punctuation">,</span> edge <span class="token keyword">in</span> <span class="token builtin">enumerate</span><span class="token punctuation">(</span>edges<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>edge<span class="token punctuation">,</span> Edge<span class="token punctuation">)</span>
+                from_v <span class="token operator">=</span> edge<span class="token punctuation">.</span>from_v  <span class="token comment"># 边起点的关键字 key</span>
+                to_v <span class="token operator">=</span> edge<span class="token punctuation">.</span>to_v      <span class="token comment"># 边终点的关键字 key</span>
+                weight <span class="token operator">=</span> edge<span class="token punctuation">.</span>weight  <span class="token comment"># 边的权重值</span>
+                self<span class="token punctuation">.</span>key2e_index<span class="token punctuation">[</span><span class="token punctuation">(</span>from_v<span class="token punctuation">,</span> to_v<span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token operator">=</span> index
+                <span class="token keyword">if</span> from_v <span class="token keyword">in</span> self<span class="token punctuation">.</span>key2v_index <span class="token keyword">and</span> to_v <span class="token keyword">in</span> self<span class="token punctuation">.</span>key2v_index<span class="token punctuation">:</span>
+                    <span class="token comment"># 将顶点关键字 key 转为下标 index，然后设置 adj[from][to] 为边权</span>
+                    from_index <span class="token operator">=</span> self<span class="token punctuation">.</span>key2v_index<span class="token punctuation">[</span>from_v<span class="token punctuation">]</span>
+                    to_index <span class="token operator">=</span> self<span class="token punctuation">.</span>key2v_index<span class="token punctuation">[</span>to_v<span class="token punctuation">]</span>
+                    <span class="token keyword">assert</span> <span class="token number">0</span> <span class="token operator">&lt;=</span> from_index <span class="token operator">&lt;</span> v_num <span class="token keyword">and</span> <span class="token number">0</span> <span class="token operator">&lt;=</span> to_index <span class="token operator">&lt;</span> v_num
+                    self<span class="token punctuation">.</span>adj_m<span class="token punctuation">[</span>from_index<span class="token punctuation">]</span><span class="token punctuation">[</span>to_index<span class="token punctuation">]</span> <span class="token operator">=</span> weight
+                    <span class="token comment"># 如果是无向边，则 adj[to][from] 也设置为 weight</span>
+                    <span class="token keyword">if</span> <span class="token keyword">not</span> edge<span class="token punctuation">.</span>is_directed<span class="token punctuation">:</span>
+                        self<span class="token punctuation">.</span>adj_m<span class="token punctuation">[</span>to_index<span class="token punctuation">]</span><span class="token punctuation">[</span>from_index<span class="token punctuation">]</span> <span class="token operator">=</span> weight
+
+    <span class="token comment"># 判断 key 号为 _key 的顶点是否位于顶点列表中</span>
+    <span class="token keyword">def</span> <span class="token function">__contains__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> _key<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> _key <span class="token keyword">in</span> self<span class="token punctuation">.</span>key2v_index
+
+    <span class="token comment"># 获取图中 key 号为 _key 的顶点，如果没有此顶点则返回 None</span>
+    <span class="token keyword">def</span> <span class="token function">get_vertex</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> _key<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> _key <span class="token keyword">in</span> self<span class="token punctuation">.</span>key2v_index<span class="token punctuation">:</span>
+            index <span class="token operator">=</span> self<span class="token punctuation">.</span>key2v_index<span class="token punctuation">[</span>_key<span class="token punctuation">]</span>
+            <span class="token keyword">return</span> self<span class="token punctuation">.</span>vertices<span class="token punctuation">[</span>index<span class="token punctuation">]</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token boolean">None</span>
+
+    <span class="token comment"># 邻接矩阵 - 图转置</span>
+    <span class="token keyword">def</span> <span class="token function">graph_transposition</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">for</span> edge <span class="token keyword">in</span> self<span class="token punctuation">.</span>edges<span class="token punctuation">:</span>
+            <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>edge<span class="token punctuation">,</span> Edge<span class="token punctuation">)</span>
+            <span class="token comment"># 其实如果是无向边，无需处理，但这里还是转了</span>
+            <span class="token comment"># 先获取 key</span>
+            from_key <span class="token operator">=</span> edge<span class="token punctuation">.</span>from_v
+            to_key <span class="token operator">=</span> edge<span class="token punctuation">.</span>to_v
+            <span class="token comment"># 交换 key</span>
+            edge<span class="token punctuation">.</span>from_v <span class="token operator">=</span> to_key
+            edge<span class="token punctuation">.</span>to_v <span class="token operator">=</span> from_key
+            <span class="token comment"># 把 key 转成 index</span>
+            <span class="token keyword">assert</span> from_key <span class="token keyword">in</span> self<span class="token punctuation">.</span>key2v_index <span class="token keyword">and</span> to_key <span class="token keyword">in</span> self<span class="token punctuation">.</span>key2v_index
+            from_index <span class="token operator">=</span> self<span class="token punctuation">.</span>key2v_index<span class="token punctuation">[</span>from_key<span class="token punctuation">]</span>
+            to_index <span class="token operator">=</span> self<span class="token punctuation">.</span>key2v_index<span class="token punctuation">[</span>to_key<span class="token punctuation">]</span>
+            <span class="token comment"># 修改邻接矩阵</span>
+            temp <span class="token operator">=</span> self<span class="token punctuation">.</span>adj_m<span class="token punctuation">[</span>from_index<span class="token punctuation">]</span><span class="token punctuation">[</span>to_index<span class="token punctuation">]</span>
+            self<span class="token punctuation">.</span>adj_m<span class="token punctuation">[</span>from_index<span class="token punctuation">]</span><span class="token punctuation">[</span>to_index<span class="token punctuation">]</span> <span class="token operator">=</span> self<span class="token punctuation">.</span>adj_m<span class="token punctuation">[</span>to_index<span class="token punctuation">]</span><span class="token punctuation">[</span>from_index<span class="token punctuation">]</span>
+            self<span class="token punctuation">.</span>adj_m<span class="token punctuation">[</span>to_index<span class="token punctuation">]</span><span class="token punctuation">[</span>from_index<span class="token punctuation">]</span> <span class="token operator">=</span> temp
+
+    <span class="token comment"># 输出邻接矩阵</span>
+    <span class="token keyword">def</span> <span class="token function">print_matrix_info</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>adj_m<span class="token punctuation">,</span> <span class="token builtin">list</span><span class="token punctuation">)</span>
+        <span class="token keyword">for</span> row <span class="token keyword">in</span> self<span class="token punctuation">.</span>adj_m<span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span>row<span class="token punctuation">)</span>
+
+
+<span class="token keyword">class</span> <span class="token class-name">BellmanFord</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>inf <span class="token operator">=</span> <span class="token number">0x3f3f3f3f</span> <span class="token operator">-</span> <span class="token number">1</span>  <span class="token comment"># 所有结点的 distance 初始化为 inf</span>
+
+    <span class="token comment"># 初始化每个结点的 distance 和 p 属性</span>
+    <span class="token keyword">def</span> <span class="token function">initialize_single_source</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> adj_m<span class="token punctuation">,</span> source_v<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>adj_m<span class="token punctuation">,</span> AdjacencyMatrix<span class="token punctuation">)</span> <span class="token keyword">and</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>source_v<span class="token punctuation">,</span> VertexMatrix<span class="token punctuation">)</span>
+        <span class="token keyword">for</span> v <span class="token keyword">in</span> adj_m<span class="token punctuation">.</span>vertices<span class="token punctuation">:</span>
+            <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>v<span class="token punctuation">,</span> VertexMatrix<span class="token punctuation">)</span>
+            v<span class="token punctuation">.</span>distance <span class="token operator">=</span> self<span class="token punctuation">.</span>inf
+            v<span class="token punctuation">.</span>p <span class="token operator">=</span> <span class="token boolean">None</span>
+        source_v<span class="token punctuation">.</span>distance <span class="token operator">=</span> <span class="token number">0</span>
+
+    <span class="token comment"># 对边 (u, v) 进行松弛操作</span>
+    <span class="token decorator annotation punctuation">@staticmethod</span>
+    <span class="token keyword">def</span> <span class="token function">relax</span><span class="token punctuation">(</span>adj_m<span class="token punctuation">,</span> u<span class="token punctuation">,</span> v<span class="token punctuation">,</span> weight_func<span class="token operator">=</span><span class="token keyword">lambda</span> x<span class="token punctuation">:</span> x<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>adj_m<span class="token punctuation">,</span> AdjacencyMatrix<span class="token punctuation">)</span>
+        <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>u<span class="token punctuation">,</span> VertexMatrix<span class="token punctuation">)</span> <span class="token keyword">and</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>v<span class="token punctuation">,</span> VertexMatrix<span class="token punctuation">)</span>
+        <span class="token comment"># 获取边 (u, v)</span>
+        <span class="token keyword">assert</span> u<span class="token punctuation">.</span>key <span class="token keyword">in</span> adj_m<span class="token punctuation">.</span>key2v_index <span class="token keyword">and</span> v<span class="token punctuation">.</span>key <span class="token keyword">in</span> adj_m<span class="token punctuation">.</span>key2v_index
+        <span class="token keyword">assert</span> <span class="token punctuation">(</span>u<span class="token punctuation">.</span>key<span class="token punctuation">,</span> v<span class="token punctuation">.</span>key<span class="token punctuation">)</span> <span class="token keyword">in</span> adj_m<span class="token punctuation">.</span>key2e_index
+        edge_index <span class="token operator">=</span> adj_m<span class="token punctuation">.</span>key2e_index<span class="token punctuation">[</span><span class="token punctuation">(</span>u<span class="token punctuation">.</span>key<span class="token punctuation">,</span> v<span class="token punctuation">.</span>key<span class="token punctuation">)</span><span class="token punctuation">]</span>
+        edge <span class="token operator">=</span> adj_m<span class="token punctuation">.</span>edges<span class="token punctuation">[</span>edge_index<span class="token punctuation">]</span>
+        <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>edge<span class="token punctuation">,</span> Edge<span class="token punctuation">)</span>
+        <span class="token comment"># 检查是否可以对从 s 到 v 的最短路径进行改善</span>
+        <span class="token comment"># 将 s-&gt;u 的最短路径距离 加上 u-&gt;v 的边权重值</span>
+        cur_dis <span class="token operator">=</span> u<span class="token punctuation">.</span>distance <span class="token operator">+</span> weight_func<span class="token punctuation">(</span>edge<span class="token punctuation">.</span>weight<span class="token punctuation">)</span>
+        <span class="token comment"># cur_dis 与当前得到的 s-&gt;v 的最短路径估计 进行比较</span>
+        <span class="token keyword">if</span> cur_dis <span class="token operator">&lt;</span> v<span class="token punctuation">.</span>distance<span class="token punctuation">:</span>
+            <span class="token comment"># 如果前者更小，则更新估计值 v.d 并修改前驱结点 v.p</span>
+            v<span class="token punctuation">.</span>distance <span class="token operator">=</span> cur_dis
+            v<span class="token punctuation">.</span>p <span class="token operator">=</span> u
+
+    <span class="token comment"># 寻找图 adj_m 从源结点 source_v 出发的单源最短路径</span>
+    <span class="token comment"># 这里默认图为邻接矩阵结构，weight_func 为恒等函数</span>
+    <span class="token keyword">def</span> <span class="token function">do_bf</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> adj_m<span class="token punctuation">,</span> source_v<span class="token punctuation">,</span> weight_func<span class="token operator">=</span><span class="token keyword">lambda</span> x<span class="token punctuation">:</span> x<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>adj_m<span class="token punctuation">,</span> AdjacencyMatrix<span class="token punctuation">)</span> <span class="token keyword">and</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>source_v<span class="token punctuation">,</span> VertexMatrix<span class="token punctuation">)</span>
+        <span class="token comment"># 1. 对所有结点的 d 值和 p 值进行初始化</span>
+        self<span class="token punctuation">.</span>initialize_single_source<span class="token punctuation">(</span>adj_m<span class="token punctuation">,</span> source_v<span class="token punctuation">)</span>
+
+        <span class="token comment"># 2. 循环对图的每条边进行 |V| - 1 次松弛操作，完成各结点的 d、p 值计算</span>
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>adj_m<span class="token punctuation">.</span>vertices<span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token comment"># 对每条边进行操作</span>
+            <span class="token keyword">for</span> edge <span class="token keyword">in</span> adj_m<span class="token punctuation">.</span>edges<span class="token punctuation">:</span>
+                <span class="token comment"># 先通过边中存储的的 from/to 关键字获取 u/v 顶点结构体</span>
+                <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>edge<span class="token punctuation">,</span> Edge<span class="token punctuation">)</span>
+                <span class="token keyword">assert</span> edge<span class="token punctuation">.</span>from_v <span class="token keyword">in</span> adj_m<span class="token punctuation">.</span>key2v_index <span class="token keyword">and</span> edge<span class="token punctuation">.</span>to_v <span class="token keyword">in</span> adj_m<span class="token punctuation">.</span>key2v_index
+                u <span class="token operator">=</span> adj_m<span class="token punctuation">.</span>vertices<span class="token punctuation">[</span>adj_m<span class="token punctuation">.</span>key2v_index<span class="token punctuation">[</span>edge<span class="token punctuation">.</span>from_v<span class="token punctuation">]</span><span class="token punctuation">]</span>
+                v <span class="token operator">=</span> adj_m<span class="token punctuation">.</span>vertices<span class="token punctuation">[</span>adj_m<span class="token punctuation">.</span>key2v_index<span class="token punctuation">[</span>edge<span class="token punctuation">.</span>to_v<span class="token punctuation">]</span><span class="token punctuation">]</span>
+                <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>u<span class="token punctuation">,</span> VertexMatrix<span class="token punctuation">)</span> <span class="token keyword">and</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>v<span class="token punctuation">,</span> VertexMatrix<span class="token punctuation">)</span>
+                <span class="token comment"># 进行松弛操作</span>
+                self<span class="token punctuation">.</span>relax<span class="token punctuation">(</span>adj_m<span class="token punctuation">,</span> u<span class="token punctuation">,</span> v<span class="token punctuation">,</span> weight_func<span class="token punctuation">)</span>
+
+        <span class="token comment"># 3. 循环检查图中是否存在负权环，如果有则返回 False</span>
+        <span class="token keyword">for</span> edge <span class="token keyword">in</span> adj_m<span class="token punctuation">.</span>edges<span class="token punctuation">:</span>
+            <span class="token comment"># 先通过边中存储的的 from/to 关键字获取 u/v 顶点结构体</span>
+            <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>edge<span class="token punctuation">,</span> Edge<span class="token punctuation">)</span>
+            <span class="token keyword">assert</span> edge<span class="token punctuation">.</span>from_v <span class="token keyword">in</span> adj_m<span class="token punctuation">.</span>key2v_index <span class="token keyword">and</span> edge<span class="token punctuation">.</span>to_v <span class="token keyword">in</span> adj_m<span class="token punctuation">.</span>key2v_index
+            u <span class="token operator">=</span> adj_m<span class="token punctuation">.</span>vertices<span class="token punctuation">[</span>adj_m<span class="token punctuation">.</span>key2v_index<span class="token punctuation">[</span>edge<span class="token punctuation">.</span>from_v<span class="token punctuation">]</span><span class="token punctuation">]</span>
+            v <span class="token operator">=</span> adj_m<span class="token punctuation">.</span>vertices<span class="token punctuation">[</span>adj_m<span class="token punctuation">.</span>key2v_index<span class="token punctuation">[</span>edge<span class="token punctuation">.</span>to_v<span class="token punctuation">]</span><span class="token punctuation">]</span>
+            <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>u<span class="token punctuation">,</span> VertexMatrix<span class="token punctuation">)</span> <span class="token keyword">and</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>v<span class="token punctuation">,</span> VertexMatrix<span class="token punctuation">)</span>
+            <span class="token comment"># 检测负权环</span>
+            <span class="token keyword">if</span> u<span class="token punctuation">.</span>distance <span class="token operator">+</span> weight_func<span class="token punctuation">(</span>edge<span class="token punctuation">.</span>weight<span class="token punctuation">)</span> <span class="token operator">&lt;</span> v<span class="token punctuation">.</span>distance<span class="token punctuation">:</span>
+                <span class="token keyword">return</span> <span class="token boolean">False</span>
+
+        <span class="token comment"># 4. 前面已经检测不到负权环了，所以返回 True 表示没有负权环</span>
+        <span class="token keyword">return</span> <span class="token boolean">True</span>
+
+
+<span class="token keyword">class</span> <span class="token class-name">Dijkstra</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>inf <span class="token operator">=</span> <span class="token number">0x3f3f3f3f</span> <span class="token operator">-</span> <span class="token number">1</span>  <span class="token comment"># 所有结点的 distance 初始化为 inf</span>
+        <span class="token comment"># 注意这里的 inf 无穷要小于 斐波那契堆 fib_heap_extract_min 中的 inf</span>
+
+    <span class="token comment"># 初始化每个结点的 distance 和 p 属性</span>
+    <span class="token keyword">def</span> <span class="token function">initialize_single_source</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> adj_m<span class="token punctuation">,</span> source_v<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>adj_m<span class="token punctuation">,</span> AdjacencyMatrix<span class="token punctuation">)</span> <span class="token keyword">and</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>source_v<span class="token punctuation">,</span> VertexMatrix<span class="token punctuation">)</span>
+        <span class="token keyword">for</span> v <span class="token keyword">in</span> adj_m<span class="token punctuation">.</span>vertices<span class="token punctuation">:</span>
+            <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>v<span class="token punctuation">,</span> VertexMatrix<span class="token punctuation">)</span>
+            v<span class="token punctuation">.</span>distance <span class="token operator">=</span> self<span class="token punctuation">.</span>inf
+            v<span class="token punctuation">.</span>p <span class="token operator">=</span> <span class="token boolean">None</span>
+        source_v<span class="token punctuation">.</span>distance <span class="token operator">=</span> <span class="token number">0</span>
+
+    <span class="token comment"># 对边 (u, v) 进行松弛操作</span>
+    <span class="token decorator annotation punctuation">@staticmethod</span>
+    <span class="token keyword">def</span> <span class="token function">relax</span><span class="token punctuation">(</span>adj_m<span class="token punctuation">,</span> u<span class="token punctuation">,</span> v<span class="token punctuation">,</span> weight_func<span class="token operator">=</span><span class="token keyword">lambda</span> x<span class="token punctuation">:</span> x<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>adj_m<span class="token punctuation">,</span> AdjacencyMatrix<span class="token punctuation">)</span>
+        <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>u<span class="token punctuation">,</span> VertexMatrix<span class="token punctuation">)</span> <span class="token keyword">and</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>v<span class="token punctuation">,</span> VertexMatrix<span class="token punctuation">)</span>
+        <span class="token comment"># 获取边 (u, v)</span>
+        <span class="token keyword">assert</span> u<span class="token punctuation">.</span>key <span class="token keyword">in</span> adj_m<span class="token punctuation">.</span>key2v_index <span class="token keyword">and</span> v<span class="token punctuation">.</span>key <span class="token keyword">in</span> adj_m<span class="token punctuation">.</span>key2v_index
+        <span class="token keyword">assert</span> <span class="token punctuation">(</span>u<span class="token punctuation">.</span>key<span class="token punctuation">,</span> v<span class="token punctuation">.</span>key<span class="token punctuation">)</span> <span class="token keyword">in</span> adj_m<span class="token punctuation">.</span>key2e_index
+        edge_index <span class="token operator">=</span> adj_m<span class="token punctuation">.</span>key2e_index<span class="token punctuation">[</span><span class="token punctuation">(</span>u<span class="token punctuation">.</span>key<span class="token punctuation">,</span> v<span class="token punctuation">.</span>key<span class="token punctuation">)</span><span class="token punctuation">]</span>
+        edge <span class="token operator">=</span> adj_m<span class="token punctuation">.</span>edges<span class="token punctuation">[</span>edge_index<span class="token punctuation">]</span>
+        <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>edge<span class="token punctuation">,</span> Edge<span class="token punctuation">)</span>
+        <span class="token comment"># 检查是否可以对从 s 到 v 的最短路径进行改善</span>
+        <span class="token comment"># 将 s-&gt;u 的最短路径距离 加上 u-&gt;v 的边权重值</span>
+        cur_dis <span class="token operator">=</span> u<span class="token punctuation">.</span>distance <span class="token operator">+</span> weight_func<span class="token punctuation">(</span>edge<span class="token punctuation">.</span>weight<span class="token punctuation">)</span>
+        <span class="token comment"># cur_dis 与当前得到的 s-&gt;v 的最短路径估计 进行比较</span>
+        <span class="token keyword">if</span> cur_dis <span class="token operator">&lt;</span> v<span class="token punctuation">.</span>distance<span class="token punctuation">:</span>
+            <span class="token comment"># 如果前者更小，则更新估计值 v.d 并修改前驱结点 v.p</span>
+            v<span class="token punctuation">.</span>distance <span class="token operator">=</span> cur_dis
+            v<span class="token punctuation">.</span>p <span class="token operator">=</span> u
+
+    <span class="token comment"># 寻找图 adj_m 从源结点 source_v 出发的单源最短路径</span>
+    <span class="token comment"># 这里默认图为邻接矩阵结构，weight_func 为恒等函数</span>
+    <span class="token keyword">def</span> <span class="token function">do_dijkstra</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> adj_m<span class="token punctuation">,</span> source_v<span class="token punctuation">,</span> weight_func<span class="token operator">=</span><span class="token keyword">lambda</span> x<span class="token punctuation">:</span> x<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>adj_m<span class="token punctuation">,</span> AdjacencyMatrix<span class="token punctuation">)</span> <span class="token keyword">and</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>source_v<span class="token punctuation">,</span> VertexMatrix<span class="token punctuation">)</span>
+        <span class="token comment"># 1. 对所有结点的 d 值和 p 值进行初始化</span>
+        self<span class="token punctuation">.</span>initialize_single_source<span class="token punctuation">(</span>adj_m<span class="token punctuation">,</span> source_v<span class="token punctuation">)</span>
+
+        <span class="token comment"># 2. 将集合 S 初始化为一个空集</span>
+        <span class="token comment"># s_set = []</span>
+
+        <span class="token comment"># 3. (利用斐波那契堆)创建最小优先队列 Q 并将 V 中全部结点入队</span>
+        min_pri_q <span class="token operator">=</span> FibonacciHeap<span class="token punctuation">(</span>kv_list<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">)</span>
+        v2ele <span class="token operator">=</span> <span class="token builtin">dict</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span>  <span class="token comment"># 顶点的关键字到 Element 对象的映射</span>
+        <span class="token keyword">for</span> v <span class="token keyword">in</span> adj_m<span class="token punctuation">.</span>vertices<span class="token punctuation">:</span>
+            <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>v<span class="token punctuation">,</span> VertexMatrix<span class="token punctuation">)</span>
+            <span class="token comment"># 每个结点在 Q 中的关键值 key 为其 distance 值</span>
+            new_ele <span class="token operator">=</span> Element<span class="token punctuation">(</span>key<span class="token operator">=</span>v<span class="token punctuation">.</span>distance<span class="token punctuation">,</span> val<span class="token operator">=</span>v<span class="token punctuation">)</span>  <span class="token comment"># 封装为 Element 结构体</span>
+            v2ele<span class="token punctuation">[</span>v<span class="token punctuation">.</span>key<span class="token punctuation">]</span> <span class="token operator">=</span> new_ele
+            min_pri_q<span class="token punctuation">.</span>fib_heap_insert_ele<span class="token punctuation">(</span>insert_ele<span class="token operator">=</span>new_ele<span class="token punctuation">)</span>
+
+        <span class="token comment"># 4. 只要 Q 不空，则继续 while 循环</span>
+        <span class="token keyword">while</span> min_pri_q<span class="token punctuation">.</span><span class="token builtin">min</span> <span class="token keyword">is</span> <span class="token keyword">not</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+            <span class="token comment"># 4.1. 取出 Q 中最小 d 值的结点 u</span>
+            u_ele <span class="token operator">=</span> min_pri_q<span class="token punctuation">.</span>fib_heap_extract_min<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>u_ele<span class="token punctuation">,</span> Element<span class="token punctuation">)</span>
+            u_node <span class="token operator">=</span> u_ele<span class="token punctuation">.</span>val
+            <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>u_node<span class="token punctuation">,</span> VertexMatrix<span class="token punctuation">)</span> <span class="token keyword">and</span> u_node<span class="token punctuation">.</span>key <span class="token keyword">in</span> adj_m<span class="token punctuation">.</span>key2v_index
+            u_index <span class="token operator">=</span> adj_m<span class="token punctuation">.</span>key2v_index<span class="token punctuation">[</span>u_node<span class="token punctuation">.</span>key<span class="token punctuation">]</span>
+            <span class="token comment"># 4.2. 把结点 u 加入集合 S 中</span>
+            <span class="token comment"># s_set.append(u_vertex)</span>
+            <span class="token comment"># 4.3. 在 for 循环中，对于 u 的每个邻接结点 v，松弛边 (u, v)</span>
+            <span class="token keyword">for</span> v_index<span class="token punctuation">,</span> edge_weight <span class="token keyword">in</span> <span class="token builtin">enumerate</span><span class="token punctuation">(</span>adj_m<span class="token punctuation">.</span>adj_m<span class="token punctuation">[</span>u_index<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                <span class="token comment"># 如果此边权为 inf，则此边不存在，考虑下一个结点下标</span>
+                <span class="token keyword">if</span> edge_weight <span class="token operator">&gt;=</span> self<span class="token punctuation">.</span>inf<span class="token punctuation">:</span>
+                    <span class="token keyword">continue</span>
+                <span class="token comment"># 如果边存在，获取终点 v</span>
+                v_node <span class="token operator">=</span> adj_m<span class="token punctuation">.</span>vertices<span class="token punctuation">[</span>v_index<span class="token punctuation">]</span>
+                <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>v_node<span class="token punctuation">,</span> VertexMatrix<span class="token punctuation">)</span>
+                <span class="token comment"># 通过起点和终点获取边 Edge 结构体</span>
+                <span class="token keyword">assert</span> <span class="token punctuation">(</span>u_node<span class="token punctuation">.</span>key<span class="token punctuation">,</span> v_node<span class="token punctuation">.</span>key<span class="token punctuation">)</span> <span class="token keyword">in</span> adj_m<span class="token punctuation">.</span>key2e_index
+                cur_edge_index <span class="token operator">=</span> adj_m<span class="token punctuation">.</span>key2e_index<span class="token punctuation">[</span><span class="token punctuation">(</span>u_node<span class="token punctuation">.</span>key<span class="token punctuation">,</span> v_node<span class="token punctuation">.</span>key<span class="token punctuation">)</span><span class="token punctuation">]</span>
+                cur_edge <span class="token operator">=</span> adj_m<span class="token punctuation">.</span>edges<span class="token punctuation">[</span>cur_edge_index<span class="token punctuation">]</span>
+                <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>cur_edge<span class="token punctuation">,</span> Edge<span class="token punctuation">)</span>
+                <span class="token comment"># 对边 (u, v) 进行松弛操作</span>
+                <span class="token comment"># self.relax(adj_m, u_node, v_node, weight_func)</span>
+                <span class="token comment"># 检查是否可以对从 s 到 v 的最短路径进行改善</span>
+                <span class="token comment"># 将 s-&gt;u 的最短路径距离 加上 u-&gt;v 的边权重值</span>
+                cur_dis <span class="token operator">=</span> u_node<span class="token punctuation">.</span>distance <span class="token operator">+</span> weight_func<span class="token punctuation">(</span>cur_edge<span class="token punctuation">.</span>weight<span class="token punctuation">)</span>
+                <span class="token comment"># cur_dis 与当前得到的 s-&gt;v 的最短路径估计 进行比较</span>
+                <span class="token keyword">if</span> cur_dis <span class="token operator">&lt;</span> v_node<span class="token punctuation">.</span>distance<span class="token punctuation">:</span>
+                    <span class="token comment"># 如果前者更小，则更新估计值 v.d 并修改前驱结点 v.p</span>
+                    v_node<span class="token punctuation">.</span>distance <span class="token operator">=</span> cur_dis
+                    v_node<span class="token punctuation">.</span>p <span class="token operator">=</span> u_node
+                    <span class="token comment"># 最小优先队列 Q 执行 decrease_key 操作</span>
+                    <span class="token keyword">assert</span> v_node<span class="token punctuation">.</span>key <span class="token keyword">in</span> v2ele
+                    min_pri_q<span class="token punctuation">.</span>fib_heap_decrease_key<span class="token punctuation">(</span>v2ele<span class="token punctuation">[</span>v_node<span class="token punctuation">.</span>key<span class="token punctuation">]</span><span class="token punctuation">,</span> cur_dis<span class="token punctuation">)</span>
+
+
+<span class="token keyword">class</span> <span class="token class-name">Johnson</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>inf <span class="token operator">=</span> <span class="token number">0x3f3f3f3f</span> <span class="token operator">-</span> <span class="token number">1</span>  <span class="token comment"># 所有结点的 distance 初始化为 inf</span>
+
+    <span class="token comment"># Johnson 全源最短路径算法</span>
+    <span class="token comment"># 寻找图 adj_m 的全源最短路径 (这里默认图为邻接矩阵结构)</span>
+    <span class="token comment"># 时间复杂度 \Theta(VE + V^2 log V)</span>
+    <span class="token comment"># 空间复杂度 \Theta(V^2)</span>
+    <span class="token keyword">def</span> <span class="token function">do_johnson</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> adj_m<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>adj_m<span class="token punctuation">,</span> AdjacencyMatrix<span class="token punctuation">)</span>
+
+        <span class="token comment"># 1. 新增源结点 s，生成图 G'</span>
+        source_v_key <span class="token operator">=</span> <span class="token string">'__source__'</span>  <span class="token comment"># 需保证不与其它结点的关键字相同</span>
+        source_v <span class="token operator">=</span> VertexMatrix<span class="token punctuation">(</span>key<span class="token operator">=</span>source_v_key<span class="token punctuation">)</span>
+        new_vertices <span class="token operator">=</span> <span class="token punctuation">[</span>source_v<span class="token punctuation">]</span>
+        new_edges <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+        <span class="token keyword">for</span> v <span class="token keyword">in</span> adj_m<span class="token punctuation">.</span>vertices<span class="token punctuation">:</span>
+            new_vertices<span class="token punctuation">.</span>append<span class="token punctuation">(</span>v<span class="token punctuation">)</span>
+            new_edges<span class="token punctuation">.</span>append<span class="token punctuation">(</span>Edge<span class="token punctuation">(</span>from_v<span class="token operator">=</span>source_v<span class="token punctuation">.</span>key<span class="token punctuation">,</span> to_v<span class="token operator">=</span>v<span class="token punctuation">.</span>key<span class="token punctuation">,</span> weight<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span> is_directed<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token keyword">for</span> edge <span class="token keyword">in</span> adj_m<span class="token punctuation">.</span>edges<span class="token punctuation">:</span>
+            new_edges<span class="token punctuation">.</span>append<span class="token punctuation">(</span>edge<span class="token punctuation">)</span>
+        <span class="token comment"># 创建新的邻接矩阵 G'</span>
+        new_adj_m <span class="token operator">=</span> AdjacencyMatrix<span class="token punctuation">(</span>new_vertices<span class="token punctuation">,</span> new_edges<span class="token punctuation">)</span>
+
+        <span class="token comment"># 2. 在图 G' 上运行 Bellman-Ford 算法，使用原始权重函数 w，计算从源结点 s 出发的单源最短路径</span>
+        <span class="token comment"># 设置源结点</span>
+        <span class="token keyword">assert</span> source_v_key <span class="token keyword">in</span> new_adj_m<span class="token punctuation">.</span>key2v_index
+        source_v <span class="token operator">=</span> new_adj_m<span class="token punctuation">.</span>vertices<span class="token punctuation">[</span>new_adj_m<span class="token punctuation">.</span>key2v_index<span class="token punctuation">[</span>source_v_key<span class="token punctuation">]</span><span class="token punctuation">]</span>
+        <span class="token comment"># 执行 Bellman-Ford 算法</span>
+        bellman_ford <span class="token operator">=</span> BellmanFord<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        no_neg_cycle <span class="token operator">=</span> bellman_ford<span class="token punctuation">.</span>do_bf<span class="token punctuation">(</span>new_adj_m<span class="token punctuation">,</span> source_v<span class="token punctuation">)</span>
+
+        <span class="token comment"># 3. 如果 Bellman-Ford 算法返回 False，表示图 G' 含负权环</span>
+        <span class="token keyword">if</span> <span class="token keyword">not</span> no_neg_cycle<span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'The input graph contains a negative-weight cycle!'</span><span class="token punctuation">)</span>
+            <span class="token keyword">return</span> <span class="token boolean">None</span>
+
+        <span class="token comment"># 4. 对 V' 中每个结点 v，将 h(v) 的值设置为由 Bellman-Ford 算法所计算出来的最短路径权重 d(s, v)</span>
+        <span class="token keyword">for</span> v <span class="token keyword">in</span> new_adj_m<span class="token punctuation">.</span>vertices<span class="token punctuation">:</span>
+            <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>v<span class="token punctuation">,</span> VertexMatrix<span class="token punctuation">)</span>
+            v<span class="token punctuation">.</span>h <span class="token operator">=</span> v<span class="token punctuation">.</span>distance
+
+        <span class="token comment"># 5. 对 E' 中每条边 (u, v)，重新计算新的权重值 w'(u, v)</span>
+        <span class="token keyword">for</span> edge <span class="token keyword">in</span> new_adj_m<span class="token punctuation">.</span>edges<span class="token punctuation">:</span>
+            <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>edge<span class="token punctuation">,</span> Edge<span class="token punctuation">)</span>
+            <span class="token comment"># 获取边的端点 u 和 v</span>
+            <span class="token keyword">assert</span> edge<span class="token punctuation">.</span>from_v <span class="token keyword">in</span> new_adj_m<span class="token punctuation">.</span>key2v_index <span class="token keyword">and</span> edge<span class="token punctuation">.</span>to_v <span class="token keyword">in</span> new_adj_m<span class="token punctuation">.</span>key2v_index
+            u_index <span class="token operator">=</span> new_adj_m<span class="token punctuation">.</span>key2v_index<span class="token punctuation">[</span>edge<span class="token punctuation">.</span>from_v<span class="token punctuation">]</span>
+            v_index <span class="token operator">=</span> new_adj_m<span class="token punctuation">.</span>key2v_index<span class="token punctuation">[</span>edge<span class="token punctuation">.</span>to_v<span class="token punctuation">]</span>
+            u_node <span class="token operator">=</span> new_adj_m<span class="token punctuation">.</span>vertices<span class="token punctuation">[</span>u_index<span class="token punctuation">]</span>
+            v_node <span class="token operator">=</span> new_adj_m<span class="token punctuation">.</span>vertices<span class="token punctuation">[</span>v_index<span class="token punctuation">]</span>
+            <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>u_node<span class="token punctuation">,</span> VertexMatrix<span class="token punctuation">)</span> <span class="token keyword">and</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>v_node<span class="token punctuation">,</span> VertexMatrix<span class="token punctuation">)</span>
+            edge<span class="token punctuation">.</span>weight <span class="token operator">=</span> edge<span class="token punctuation">.</span>weight <span class="token operator">+</span> u_node<span class="token punctuation">.</span>h <span class="token operator">-</span> v_node<span class="token punctuation">.</span>h
+
+        <span class="token comment"># 6. 设置权重矩阵 D</span>
+        n <span class="token operator">=</span> <span class="token builtin">len</span><span class="token punctuation">(</span>adj_m<span class="token punctuation">.</span>vertices<span class="token punctuation">)</span>
+        matrix_d <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">[</span>self<span class="token punctuation">.</span>inf <span class="token keyword">for</span> _ <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token keyword">for</span> _ <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">]</span>
+
+        <span class="token comment"># 7. 对 V 中每个结点 u</span>
+        dijkstra <span class="token operator">=</span> Dijkstra<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">for</span> u_index<span class="token punctuation">,</span> u_node <span class="token keyword">in</span> <span class="token builtin">enumerate</span><span class="token punctuation">(</span>adj_m<span class="token punctuation">.</span>vertices<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token comment"># 以 u 为起点、w' 为新的权重函数来运行 Dijkstra 算法</span>
+            dijkstra<span class="token punctuation">.</span>do_dijkstra<span class="token punctuation">(</span>adj_m<span class="token punctuation">,</span> u_node<span class="token punctuation">)</span>
+            <span class="token comment"># 每次 Dijkstra 算法结束后，对 V 中每个结点 v，还原出最优路径值，并保存在 `d_uv` 表项中</span>
+            <span class="token keyword">for</span> v_index<span class="token punctuation">,</span> v_node <span class="token keyword">in</span> <span class="token builtin">enumerate</span><span class="token punctuation">(</span>adj_m<span class="token punctuation">.</span>vertices<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                matrix_d<span class="token punctuation">[</span>u_index<span class="token punctuation">]</span><span class="token punctuation">[</span>v_index<span class="token punctuation">]</span> <span class="token operator">=</span> v_node<span class="token punctuation">.</span>distance <span class="token operator">+</span> v_node<span class="token punctuation">.</span>h <span class="token operator">-</span> u_node<span class="token punctuation">.</span>h
+        <span class="token comment"># 8. 返回最终计算好的全源最短路径权重矩阵 D</span>
+        <span class="token keyword">return</span> matrix_d
+
+    <span class="token comment"># 根据前驱矩阵 P 获取某结点 i 到 j 的一条最短路径(上的所有结点)</span>
+    <span class="token comment"># 输入的是结点 i 和 j 的关键字 key</span>
+    <span class="token keyword">def</span> <span class="token function">print_shortest_path</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> adj_m<span class="token punctuation">,</span> matrix_p<span class="token punctuation">,</span> i_key<span class="token punctuation">,</span> j_key<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token comment"># 检查输入的合法性</span>
+        <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>adj_m<span class="token punctuation">,</span> AdjacencyMatrix<span class="token punctuation">)</span>
+        n <span class="token operator">=</span> <span class="token builtin">len</span><span class="token punctuation">(</span>adj_m<span class="token punctuation">.</span>vertices<span class="token punctuation">)</span>
+        <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>matrix_p<span class="token punctuation">,</span> <span class="token builtin">list</span><span class="token punctuation">)</span> <span class="token keyword">and</span> <span class="token builtin">len</span><span class="token punctuation">(</span>matrix_p<span class="token punctuation">)</span> <span class="token operator">==</span> n
+        <span class="token keyword">for</span> row <span class="token keyword">in</span> matrix_p<span class="token punctuation">:</span>
+            <span class="token keyword">assert</span> <span class="token builtin">len</span><span class="token punctuation">(</span>row<span class="token punctuation">)</span> <span class="token operator">==</span> n
+
+        <span class="token keyword">assert</span> i_key <span class="token keyword">in</span> adj_m<span class="token punctuation">.</span>key2v_index <span class="token keyword">and</span> j_key <span class="token keyword">in</span> adj_m<span class="token punctuation">.</span>key2v_index
+        i <span class="token operator">=</span> adj_m<span class="token punctuation">.</span>key2v_index<span class="token punctuation">[</span>i_key<span class="token punctuation">]</span>
+        j <span class="token operator">=</span> adj_m<span class="token punctuation">.</span>key2v_index<span class="token punctuation">[</span>j_key<span class="token punctuation">]</span>
+        self<span class="token punctuation">.</span>_print_shortest_path<span class="token punctuation">(</span>adj_m<span class="token punctuation">,</span> matrix_p<span class="token punctuation">,</span> i<span class="token punctuation">,</span> j<span class="token punctuation">)</span>
+
+    <span class="token comment"># 输入的是结点 i 和 j 的下标</span>
+    <span class="token keyword">def</span> <span class="token function">_print_shortest_path</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> adj_m<span class="token punctuation">,</span> matrix_p<span class="token punctuation">,</span> i<span class="token punctuation">,</span> j<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>adj_m<span class="token punctuation">,</span> AdjacencyMatrix<span class="token punctuation">)</span>
+        <span class="token keyword">if</span> i <span class="token operator">==</span> j<span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span>adj_m<span class="token punctuation">.</span>vertices<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+        <span class="token keyword">elif</span> matrix_p<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">==</span> self<span class="token punctuation">.</span>inf<span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'no path from'</span><span class="token punctuation">,</span> adj_m<span class="token punctuation">.</span>vertices<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>key<span class="token punctuation">,</span> <span class="token string">'to'</span><span class="token punctuation">,</span> adj_m<span class="token punctuation">.</span>vertices<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">.</span>key<span class="token punctuation">)</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            self<span class="token punctuation">.</span>_print_shortest_path<span class="token punctuation">(</span>adj_m<span class="token punctuation">,</span> matrix_p<span class="token punctuation">,</span> i<span class="token punctuation">,</span> matrix_p<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span>adj_m<span class="token punctuation">.</span>vertices<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+    <span class="token comment"># 辅助函数：打印矩阵</span>
+    <span class="token decorator annotation punctuation">@staticmethod</span>
+    <span class="token keyword">def</span> <span class="token function">print_matrix</span><span class="token punctuation">(</span>matrix<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>matrix<span class="token punctuation">,</span> <span class="token builtin">list</span><span class="token punctuation">)</span>
+        <span class="token keyword">for</span> row <span class="token keyword">in</span> matrix<span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span>row<span class="token punctuation">)</span>
+
+
+<span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token comment"># 构造图同《CLRS》图 25-6 的(带边权)有向图 用于计算全源最短路径</span>
+    <span class="token comment"># 用于构造邻接矩阵的顶点的 key/val 信息列表</span>
+    matrix_vertices_info <span class="token operator">=</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">[</span><span class="token string">'1'</span><span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'2'</span><span class="token punctuation">,</span> <span class="token number">200</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'3'</span><span class="token punctuation">,</span> <span class="token number">300</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'4'</span><span class="token punctuation">,</span> <span class="token number">400</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'5'</span><span class="token punctuation">,</span> <span class="token number">500</span><span class="token punctuation">]</span>
+    <span class="token punctuation">]</span>
+    <span class="token comment"># 有向边的 from/to/weight/is_directed 信息列表</span>
+    <span class="token comment"># is_directed 为 True 表示此边为有向边，否则为无向边</span>
+    di_edges_info <span class="token operator">=</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">[</span><span class="token string">'1'</span><span class="token punctuation">,</span> <span class="token string">'2'</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token boolean">True</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'1'</span><span class="token punctuation">,</span> <span class="token string">'3'</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token boolean">True</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'1'</span><span class="token punctuation">,</span> <span class="token string">'5'</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token boolean">True</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token punctuation">[</span><span class="token string">'2'</span><span class="token punctuation">,</span> <span class="token string">'4'</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token boolean">True</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'2'</span><span class="token punctuation">,</span> <span class="token string">'5'</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token boolean">True</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'3'</span><span class="token punctuation">,</span> <span class="token string">'2'</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token boolean">True</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token punctuation">[</span><span class="token string">'4'</span><span class="token punctuation">,</span> <span class="token string">'1'</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token boolean">True</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'4'</span><span class="token punctuation">,</span> <span class="token string">'3'</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token boolean">True</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'5'</span><span class="token punctuation">,</span> <span class="token string">'4'</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> <span class="token boolean">True</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token comment"># 主对角线权重全为 0</span>
+        <span class="token punctuation">[</span><span class="token string">'1'</span><span class="token punctuation">,</span> <span class="token string">'1'</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token boolean">True</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'2'</span><span class="token punctuation">,</span> <span class="token string">'2'</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token boolean">True</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'3'</span><span class="token punctuation">,</span> <span class="token string">'3'</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token boolean">True</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token punctuation">[</span><span class="token string">'4'</span><span class="token punctuation">,</span> <span class="token string">'4'</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token boolean">True</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'5'</span><span class="token punctuation">,</span> <span class="token string">'5'</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token boolean">True</span><span class="token punctuation">]</span>
+    <span class="token punctuation">]</span>
+
+    <span class="token comment"># 根据前述列表信息构造结点列表</span>
+    matrix_vertices <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    di_edges <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    <span class="token keyword">for</span> v <span class="token keyword">in</span> matrix_vertices_info<span class="token punctuation">:</span>
+        matrix_vertices<span class="token punctuation">.</span>append<span class="token punctuation">(</span>VertexMatrix<span class="token punctuation">(</span>key<span class="token operator">=</span>v<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> val<span class="token operator">=</span>v<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">for</span> e <span class="token keyword">in</span> di_edges_info<span class="token punctuation">:</span>
+        di_edges<span class="token punctuation">.</span>append<span class="token punctuation">(</span>Edge<span class="token punctuation">(</span>from_v<span class="token operator">=</span>e<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> to_v<span class="token operator">=</span>e<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> weight<span class="token operator">=</span>e<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> is_directed<span class="token operator">=</span>e<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token comment"># 创建邻接矩阵 (用邻接矩阵+有向图 执行全源最短路径算法)</span>
+    adj_m <span class="token operator">=</span> AdjacencyMatrix<span class="token punctuation">(</span>matrix_vertices<span class="token punctuation">,</span> di_edges<span class="token punctuation">)</span>
+
+    <span class="token comment"># 执行 \Theta(VE + V^2 log V) Johnson 全源最短路径算法</span>
+    johnson <span class="token operator">=</span> Johnson<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    start <span class="token operator">=</span> time<span class="token punctuation">.</span>process_time<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    matrix_d <span class="token operator">=</span> johnson<span class="token punctuation">.</span>do_johnson<span class="token punctuation">(</span>adj_m<span class="token punctuation">)</span>
+    end <span class="token operator">=</span> time<span class="token punctuation">.</span>process_time<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token comment"># 输出结果 &amp; 运行时间</span>
+    <span class="token comment"># [0, 1, -3, 2, -4]</span>
+    <span class="token comment"># [3, 0, -4, 1, -1]</span>
+    <span class="token comment"># [7, 4, 0, 5, 3]</span>
+    <span class="token comment"># [2, -1, -5, 0, -2]</span>
+    <span class="token comment"># [8, 5, 1, 6, 0]</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'\nmatrix_d:'</span><span class="token punctuation">)</span>
+    johnson<span class="token punctuation">.</span>print_matrix<span class="token punctuation">(</span>matrix_d<span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'Running Time: %.5f ms'</span> <span class="token operator">%</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>end <span class="token operator">-</span> start<span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">&quot;__main__&quot;</span><span class="token punctuation">:</span>
+    sys<span class="token punctuation">.</span>exit<span class="token punctuation">(</span>main<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+</code></pre></div><h2 id="参考资料"><a href="#参考资料" class="header-anchor">#</a> 参考资料</h2> <ul><li>Introduction to Algorithm (aka CLRS) Third Edition - Chapter 25</li></ul></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.8831d2bb.js" defer></script><script src="/assets/js/2.db22a8ef.js" defer></script><script src="/assets/js/55.98bbe4fb.js" defer></script>
+  </body>
+</html>
