@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Algorithm - Graph Theory - DAG Shortest Path | YuweiYin</title>
+    <meta name="description" content="Homepage of YuweiYin">
+    <meta name="generator" content="VuePress 1.4.0">
+    <link rel="icon" href="/img/YuweiYin.jpeg">
+    
+    <link rel="preload" href="/assets/css/0.styles.2d4b740c.css" as="style"><link rel="preload" href="/assets/js/app.1fbc75d1.js" as="script"><link rel="preload" href="/assets/js/2.db22a8ef.js" as="script"><link rel="preload" href="/assets/js/53.9d041a89.js" as="script"><link rel="prefetch" href="/assets/js/10.6185bc21.js"><link rel="prefetch" href="/assets/js/100.381caa1b.js"><link rel="prefetch" href="/assets/js/101.45e2fefe.js"><link rel="prefetch" href="/assets/js/102.524cd2df.js"><link rel="prefetch" href="/assets/js/103.e8fe4ceb.js"><link rel="prefetch" href="/assets/js/104.efe860e4.js"><link rel="prefetch" href="/assets/js/105.140c14e6.js"><link rel="prefetch" href="/assets/js/106.d76ced71.js"><link rel="prefetch" href="/assets/js/107.e1c4244f.js"><link rel="prefetch" href="/assets/js/108.e6c6c277.js"><link rel="prefetch" href="/assets/js/109.9dbeeda6.js"><link rel="prefetch" href="/assets/js/11.6c4c1478.js"><link rel="prefetch" href="/assets/js/110.2c6b1ff3.js"><link rel="prefetch" href="/assets/js/111.7f5306c5.js"><link rel="prefetch" href="/assets/js/112.9829d03d.js"><link rel="prefetch" href="/assets/js/113.69e056f7.js"><link rel="prefetch" href="/assets/js/114.a7c8b5fc.js"><link rel="prefetch" href="/assets/js/115.cf212d69.js"><link rel="prefetch" href="/assets/js/116.dc24c22e.js"><link rel="prefetch" href="/assets/js/117.a0cf83ce.js"><link rel="prefetch" href="/assets/js/118.acdd6d03.js"><link rel="prefetch" href="/assets/js/119.60734133.js"><link rel="prefetch" href="/assets/js/12.a3db2bdd.js"><link rel="prefetch" href="/assets/js/120.4f4fc5dc.js"><link rel="prefetch" href="/assets/js/121.92a60907.js"><link rel="prefetch" href="/assets/js/122.c30a1145.js"><link rel="prefetch" href="/assets/js/123.dd8e13d1.js"><link rel="prefetch" href="/assets/js/124.ecf09513.js"><link rel="prefetch" href="/assets/js/125.e46c98e1.js"><link rel="prefetch" href="/assets/js/126.c527fc49.js"><link rel="prefetch" href="/assets/js/127.ddcc1d9f.js"><link rel="prefetch" href="/assets/js/128.e3dbb3b8.js"><link rel="prefetch" href="/assets/js/129.c5a53b96.js"><link rel="prefetch" href="/assets/js/13.47640fd0.js"><link rel="prefetch" href="/assets/js/130.544196f9.js"><link rel="prefetch" href="/assets/js/131.875a02ea.js"><link rel="prefetch" href="/assets/js/132.72987651.js"><link rel="prefetch" href="/assets/js/133.c11bdf0a.js"><link rel="prefetch" href="/assets/js/134.d516667d.js"><link rel="prefetch" href="/assets/js/135.65a1a7fe.js"><link rel="prefetch" href="/assets/js/136.82bd2adb.js"><link rel="prefetch" href="/assets/js/137.b71619b3.js"><link rel="prefetch" href="/assets/js/138.a7cfaa52.js"><link rel="prefetch" href="/assets/js/139.c53c4cac.js"><link rel="prefetch" href="/assets/js/14.2795cf8d.js"><link rel="prefetch" href="/assets/js/140.1bf0e86c.js"><link rel="prefetch" href="/assets/js/141.8628b3f9.js"><link rel="prefetch" href="/assets/js/142.54714a7a.js"><link rel="prefetch" href="/assets/js/143.5b1c0487.js"><link rel="prefetch" href="/assets/js/144.2f80bb0f.js"><link rel="prefetch" href="/assets/js/145.b05e8d05.js"><link rel="prefetch" href="/assets/js/146.b9c5d035.js"><link rel="prefetch" href="/assets/js/147.96e854e1.js"><link rel="prefetch" href="/assets/js/148.18a05c12.js"><link rel="prefetch" href="/assets/js/149.62035de6.js"><link rel="prefetch" href="/assets/js/15.3253d306.js"><link rel="prefetch" href="/assets/js/150.91e52d04.js"><link rel="prefetch" href="/assets/js/151.220ea1b7.js"><link rel="prefetch" href="/assets/js/152.d6b361f8.js"><link rel="prefetch" href="/assets/js/153.6c06f850.js"><link rel="prefetch" href="/assets/js/154.ce3ed24c.js"><link rel="prefetch" href="/assets/js/155.3dcfbee8.js"><link rel="prefetch" href="/assets/js/156.43d96c55.js"><link rel="prefetch" href="/assets/js/157.80016ddb.js"><link rel="prefetch" href="/assets/js/158.df27f398.js"><link rel="prefetch" href="/assets/js/159.ef3e1c25.js"><link rel="prefetch" href="/assets/js/16.fd34d447.js"><link rel="prefetch" href="/assets/js/160.1d734e0a.js"><link rel="prefetch" href="/assets/js/161.6ff03637.js"><link rel="prefetch" href="/assets/js/162.93e8e56a.js"><link rel="prefetch" href="/assets/js/163.7f1be803.js"><link rel="prefetch" href="/assets/js/164.bb895e5b.js"><link rel="prefetch" href="/assets/js/165.038658f2.js"><link rel="prefetch" href="/assets/js/166.541309bf.js"><link rel="prefetch" href="/assets/js/167.8382f56c.js"><link rel="prefetch" href="/assets/js/168.137a2f79.js"><link rel="prefetch" href="/assets/js/169.4846ca05.js"><link rel="prefetch" href="/assets/js/17.9fbae18a.js"><link rel="prefetch" href="/assets/js/170.363ef320.js"><link rel="prefetch" href="/assets/js/171.b81bcc71.js"><link rel="prefetch" href="/assets/js/172.8087abe8.js"><link rel="prefetch" href="/assets/js/173.7737a3be.js"><link rel="prefetch" href="/assets/js/174.96fe2cc3.js"><link rel="prefetch" href="/assets/js/175.41c8e120.js"><link rel="prefetch" href="/assets/js/176.c71934bc.js"><link rel="prefetch" href="/assets/js/177.a07b0ea1.js"><link rel="prefetch" href="/assets/js/178.309e8a66.js"><link rel="prefetch" href="/assets/js/179.b7a1035d.js"><link rel="prefetch" href="/assets/js/18.e644ed68.js"><link rel="prefetch" href="/assets/js/180.0e6b824d.js"><link rel="prefetch" href="/assets/js/181.10dc3ca3.js"><link rel="prefetch" href="/assets/js/182.5662a792.js"><link rel="prefetch" href="/assets/js/183.fe8ea120.js"><link rel="prefetch" href="/assets/js/184.727fa9a0.js"><link rel="prefetch" href="/assets/js/185.b8a6cf67.js"><link rel="prefetch" href="/assets/js/186.c6835557.js"><link rel="prefetch" href="/assets/js/187.ba73487c.js"><link rel="prefetch" href="/assets/js/188.632644d7.js"><link rel="prefetch" href="/assets/js/189.c6b0f24b.js"><link rel="prefetch" href="/assets/js/19.a51114c2.js"><link rel="prefetch" href="/assets/js/190.e523381c.js"><link rel="prefetch" href="/assets/js/191.3b162c5f.js"><link rel="prefetch" href="/assets/js/192.14a0295a.js"><link rel="prefetch" href="/assets/js/193.222ab1cc.js"><link rel="prefetch" href="/assets/js/194.02db41c2.js"><link rel="prefetch" href="/assets/js/195.fdf05f14.js"><link rel="prefetch" href="/assets/js/196.fb0cc84b.js"><link rel="prefetch" href="/assets/js/197.62127ece.js"><link rel="prefetch" href="/assets/js/198.be4512ae.js"><link rel="prefetch" href="/assets/js/199.0d16ec6f.js"><link rel="prefetch" href="/assets/js/20.4a536c77.js"><link rel="prefetch" href="/assets/js/200.c7a591ec.js"><link rel="prefetch" href="/assets/js/201.a1c75154.js"><link rel="prefetch" href="/assets/js/202.70c48e42.js"><link rel="prefetch" href="/assets/js/203.91fdf4cd.js"><link rel="prefetch" href="/assets/js/204.f1fe57a4.js"><link rel="prefetch" href="/assets/js/205.2b4701b7.js"><link rel="prefetch" href="/assets/js/206.d6d0a3bd.js"><link rel="prefetch" href="/assets/js/207.b4aa4abd.js"><link rel="prefetch" href="/assets/js/208.67ef6087.js"><link rel="prefetch" href="/assets/js/209.938719d3.js"><link rel="prefetch" href="/assets/js/21.fbdde5e3.js"><link rel="prefetch" href="/assets/js/210.5938539c.js"><link rel="prefetch" href="/assets/js/211.c94e8358.js"><link rel="prefetch" href="/assets/js/212.f6340e45.js"><link rel="prefetch" href="/assets/js/213.c84730fe.js"><link rel="prefetch" href="/assets/js/214.a6c951b7.js"><link rel="prefetch" href="/assets/js/215.cbce7e04.js"><link rel="prefetch" href="/assets/js/216.8fe53de9.js"><link rel="prefetch" href="/assets/js/217.9fcc946f.js"><link rel="prefetch" href="/assets/js/218.26631daf.js"><link rel="prefetch" href="/assets/js/219.241b842e.js"><link rel="prefetch" href="/assets/js/22.ab67d1ed.js"><link rel="prefetch" href="/assets/js/220.b9124712.js"><link rel="prefetch" href="/assets/js/221.3f7bf41f.js"><link rel="prefetch" href="/assets/js/222.ce5f7ece.js"><link rel="prefetch" href="/assets/js/223.a7592435.js"><link rel="prefetch" href="/assets/js/224.92ad0061.js"><link rel="prefetch" href="/assets/js/225.758641f2.js"><link rel="prefetch" href="/assets/js/226.8181f852.js"><link rel="prefetch" href="/assets/js/227.637c5341.js"><link rel="prefetch" href="/assets/js/228.ee96ce4c.js"><link rel="prefetch" href="/assets/js/229.70cec977.js"><link rel="prefetch" href="/assets/js/23.17bf7f19.js"><link rel="prefetch" href="/assets/js/230.49ab9c15.js"><link rel="prefetch" href="/assets/js/231.ddb4687d.js"><link rel="prefetch" href="/assets/js/232.90787f17.js"><link rel="prefetch" href="/assets/js/233.54d032a4.js"><link rel="prefetch" href="/assets/js/234.3d5d22d6.js"><link rel="prefetch" href="/assets/js/235.788180b6.js"><link rel="prefetch" href="/assets/js/236.f6cf5f99.js"><link rel="prefetch" href="/assets/js/237.d721dae4.js"><link rel="prefetch" href="/assets/js/238.79912055.js"><link rel="prefetch" href="/assets/js/239.62939557.js"><link rel="prefetch" href="/assets/js/24.3f05bd7a.js"><link rel="prefetch" href="/assets/js/240.4f9daf21.js"><link rel="prefetch" href="/assets/js/241.96b73733.js"><link rel="prefetch" href="/assets/js/242.7975ca7a.js"><link rel="prefetch" href="/assets/js/243.619a04d1.js"><link rel="prefetch" href="/assets/js/244.a8f737a4.js"><link rel="prefetch" href="/assets/js/245.2d7555c8.js"><link rel="prefetch" href="/assets/js/246.a922bd04.js"><link rel="prefetch" href="/assets/js/247.7b3bb5cc.js"><link rel="prefetch" href="/assets/js/248.490aa2a2.js"><link rel="prefetch" href="/assets/js/249.a160d261.js"><link rel="prefetch" href="/assets/js/25.e115af85.js"><link rel="prefetch" href="/assets/js/250.ff450ee1.js"><link rel="prefetch" href="/assets/js/251.5e3b0b15.js"><link rel="prefetch" href="/assets/js/252.b5c4e8df.js"><link rel="prefetch" href="/assets/js/253.a9c70c2b.js"><link rel="prefetch" href="/assets/js/254.6c77f07d.js"><link rel="prefetch" href="/assets/js/255.7b3298c1.js"><link rel="prefetch" href="/assets/js/256.7a443263.js"><link rel="prefetch" href="/assets/js/257.aa663d31.js"><link rel="prefetch" href="/assets/js/258.7df5ed5a.js"><link rel="prefetch" href="/assets/js/259.9cff50e3.js"><link rel="prefetch" href="/assets/js/26.5a9c078b.js"><link rel="prefetch" href="/assets/js/260.02f19d51.js"><link rel="prefetch" href="/assets/js/261.b57bc0f8.js"><link rel="prefetch" href="/assets/js/262.1905c09e.js"><link rel="prefetch" href="/assets/js/263.49502946.js"><link rel="prefetch" href="/assets/js/264.c86684fd.js"><link rel="prefetch" href="/assets/js/265.8052e5b9.js"><link rel="prefetch" href="/assets/js/266.8c28f10a.js"><link rel="prefetch" href="/assets/js/267.02f7c838.js"><link rel="prefetch" href="/assets/js/268.0eaf82f4.js"><link rel="prefetch" href="/assets/js/269.5fd81dd0.js"><link rel="prefetch" href="/assets/js/27.f493e686.js"><link rel="prefetch" href="/assets/js/270.8ddfcfad.js"><link rel="prefetch" href="/assets/js/271.0244e50a.js"><link rel="prefetch" href="/assets/js/272.73f83888.js"><link rel="prefetch" href="/assets/js/273.62fd22a0.js"><link rel="prefetch" href="/assets/js/274.490406ae.js"><link rel="prefetch" href="/assets/js/275.b6129841.js"><link rel="prefetch" href="/assets/js/276.e82c76da.js"><link rel="prefetch" href="/assets/js/277.28d3b12a.js"><link rel="prefetch" href="/assets/js/278.cc5fa30a.js"><link rel="prefetch" href="/assets/js/279.212d6dc9.js"><link rel="prefetch" href="/assets/js/28.665a34bd.js"><link rel="prefetch" href="/assets/js/280.48d4cbf0.js"><link rel="prefetch" href="/assets/js/281.7047682c.js"><link rel="prefetch" href="/assets/js/282.a8bec889.js"><link rel="prefetch" href="/assets/js/283.40648e16.js"><link rel="prefetch" href="/assets/js/284.fe5b7a20.js"><link rel="prefetch" href="/assets/js/285.9c7c71ce.js"><link rel="prefetch" href="/assets/js/286.deb7ab95.js"><link rel="prefetch" href="/assets/js/287.dc3ba123.js"><link rel="prefetch" href="/assets/js/288.26707aa6.js"><link rel="prefetch" href="/assets/js/289.be035ceb.js"><link rel="prefetch" href="/assets/js/29.b044f0c3.js"><link rel="prefetch" href="/assets/js/290.ade6664c.js"><link rel="prefetch" href="/assets/js/291.c7e1a8e3.js"><link rel="prefetch" href="/assets/js/292.e99e6ff6.js"><link rel="prefetch" href="/assets/js/293.6029fb61.js"><link rel="prefetch" href="/assets/js/294.28eadf6e.js"><link rel="prefetch" href="/assets/js/295.3debed8b.js"><link rel="prefetch" href="/assets/js/296.d7691863.js"><link rel="prefetch" href="/assets/js/297.3ac61b63.js"><link rel="prefetch" href="/assets/js/298.c9f59111.js"><link rel="prefetch" href="/assets/js/299.3ee5025b.js"><link rel="prefetch" href="/assets/js/3.3c6f3d31.js"><link rel="prefetch" href="/assets/js/30.5bddd19c.js"><link rel="prefetch" href="/assets/js/300.6ecf6ed3.js"><link rel="prefetch" href="/assets/js/301.4f145cb4.js"><link rel="prefetch" href="/assets/js/302.bf051684.js"><link rel="prefetch" href="/assets/js/303.2ac16e9d.js"><link rel="prefetch" href="/assets/js/304.35071baa.js"><link rel="prefetch" href="/assets/js/305.1c23f72a.js"><link rel="prefetch" href="/assets/js/306.f981b95c.js"><link rel="prefetch" href="/assets/js/307.1aee37f4.js"><link rel="prefetch" href="/assets/js/308.54d32813.js"><link rel="prefetch" href="/assets/js/309.04a51ddd.js"><link rel="prefetch" href="/assets/js/31.54473c58.js"><link rel="prefetch" href="/assets/js/310.f8213618.js"><link rel="prefetch" href="/assets/js/311.640194dd.js"><link rel="prefetch" href="/assets/js/312.a57d8e13.js"><link rel="prefetch" href="/assets/js/313.a95ae5d1.js"><link rel="prefetch" href="/assets/js/314.54fe004f.js"><link rel="prefetch" href="/assets/js/315.82b02852.js"><link rel="prefetch" href="/assets/js/316.8e7de38f.js"><link rel="prefetch" href="/assets/js/317.6fd6f25e.js"><link rel="prefetch" href="/assets/js/318.a61d5b2d.js"><link rel="prefetch" href="/assets/js/319.63b47a17.js"><link rel="prefetch" href="/assets/js/32.5ef1669d.js"><link rel="prefetch" href="/assets/js/320.61dc9a22.js"><link rel="prefetch" href="/assets/js/321.d1615ad6.js"><link rel="prefetch" href="/assets/js/322.213ec79c.js"><link rel="prefetch" href="/assets/js/323.d50efbc0.js"><link rel="prefetch" href="/assets/js/324.0350f6f3.js"><link rel="prefetch" href="/assets/js/325.5e7af4e3.js"><link rel="prefetch" href="/assets/js/326.3deaa35c.js"><link rel="prefetch" href="/assets/js/327.bb26d885.js"><link rel="prefetch" href="/assets/js/328.f847e86d.js"><link rel="prefetch" href="/assets/js/329.31efa256.js"><link rel="prefetch" href="/assets/js/33.a96f2b55.js"><link rel="prefetch" href="/assets/js/330.cb3cfbe4.js"><link rel="prefetch" href="/assets/js/34.9d382b51.js"><link rel="prefetch" href="/assets/js/35.2ceda8b7.js"><link rel="prefetch" href="/assets/js/36.6698771d.js"><link rel="prefetch" href="/assets/js/37.8b7dc39a.js"><link rel="prefetch" href="/assets/js/38.7ffd883c.js"><link rel="prefetch" href="/assets/js/39.b5d9cb9c.js"><link rel="prefetch" href="/assets/js/4.afea0107.js"><link rel="prefetch" href="/assets/js/40.6fdd0fa1.js"><link rel="prefetch" href="/assets/js/41.6cbfa987.js"><link rel="prefetch" href="/assets/js/42.d33833f0.js"><link rel="prefetch" href="/assets/js/43.8e192588.js"><link rel="prefetch" href="/assets/js/44.5a62536e.js"><link rel="prefetch" href="/assets/js/45.7db040b5.js"><link rel="prefetch" href="/assets/js/46.775fdfc7.js"><link rel="prefetch" href="/assets/js/47.0e023096.js"><link rel="prefetch" href="/assets/js/48.541fabd6.js"><link rel="prefetch" href="/assets/js/49.6b131533.js"><link rel="prefetch" href="/assets/js/5.2b1d7a9b.js"><link rel="prefetch" href="/assets/js/50.a58ca386.js"><link rel="prefetch" href="/assets/js/51.61f0910f.js"><link rel="prefetch" href="/assets/js/52.30178f08.js"><link rel="prefetch" href="/assets/js/54.025b004d.js"><link rel="prefetch" href="/assets/js/55.ad2f916c.js"><link rel="prefetch" href="/assets/js/56.ed074303.js"><link rel="prefetch" href="/assets/js/57.26dd3331.js"><link rel="prefetch" href="/assets/js/58.4c254ba9.js"><link rel="prefetch" href="/assets/js/59.f0619886.js"><link rel="prefetch" href="/assets/js/6.a0812dba.js"><link rel="prefetch" href="/assets/js/60.07f13400.js"><link rel="prefetch" href="/assets/js/61.d1dd1566.js"><link rel="prefetch" href="/assets/js/62.123fdc80.js"><link rel="prefetch" href="/assets/js/63.66bf5146.js"><link rel="prefetch" href="/assets/js/64.48468d27.js"><link rel="prefetch" href="/assets/js/65.23948477.js"><link rel="prefetch" href="/assets/js/66.465875e4.js"><link rel="prefetch" href="/assets/js/67.7c80861b.js"><link rel="prefetch" href="/assets/js/68.dcef2f38.js"><link rel="prefetch" href="/assets/js/69.e0430d9d.js"><link rel="prefetch" href="/assets/js/7.d1366bd8.js"><link rel="prefetch" href="/assets/js/70.1b205099.js"><link rel="prefetch" href="/assets/js/71.37cbc36e.js"><link rel="prefetch" href="/assets/js/72.c150c915.js"><link rel="prefetch" href="/assets/js/73.e4cb44bd.js"><link rel="prefetch" href="/assets/js/74.45a895d5.js"><link rel="prefetch" href="/assets/js/75.c87a95ad.js"><link rel="prefetch" href="/assets/js/76.9bbe0cf9.js"><link rel="prefetch" href="/assets/js/77.94dec7e1.js"><link rel="prefetch" href="/assets/js/78.d43bed38.js"><link rel="prefetch" href="/assets/js/79.7fbf14bc.js"><link rel="prefetch" href="/assets/js/8.15be0c15.js"><link rel="prefetch" href="/assets/js/80.11d87a64.js"><link rel="prefetch" href="/assets/js/81.e73abc66.js"><link rel="prefetch" href="/assets/js/82.fa816885.js"><link rel="prefetch" href="/assets/js/83.f46b10b8.js"><link rel="prefetch" href="/assets/js/84.7ccf702e.js"><link rel="prefetch" href="/assets/js/85.6c6049e8.js"><link rel="prefetch" href="/assets/js/86.d11e45aa.js"><link rel="prefetch" href="/assets/js/87.69cc3903.js"><link rel="prefetch" href="/assets/js/88.56aef7b5.js"><link rel="prefetch" href="/assets/js/89.543fbd0b.js"><link rel="prefetch" href="/assets/js/9.9ffe3771.js"><link rel="prefetch" href="/assets/js/90.b109df1b.js"><link rel="prefetch" href="/assets/js/91.a4799256.js"><link rel="prefetch" href="/assets/js/92.8e72cf37.js"><link rel="prefetch" href="/assets/js/93.f195a315.js"><link rel="prefetch" href="/assets/js/94.2f1f3225.js"><link rel="prefetch" href="/assets/js/95.578c0668.js"><link rel="prefetch" href="/assets/js/96.460f6052.js"><link rel="prefetch" href="/assets/js/97.d1be7f00.js"><link rel="prefetch" href="/assets/js/98.9d1650e2.js"><link rel="prefetch" href="/assets/js/99.46c02e9a.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.2d4b740c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">YuweiYin</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/home/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="文章" class="dropdown-title"><span class="title">文章</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/article/mathematics/" class="nav-link">
+  数学哲学
+</a></li><li class="dropdown-item"><!----> <a href="/article/physics/" class="nav-link">
+  物理宇宙
+</a></li><li class="dropdown-item"><!----> <a href="/article/info-technology/" class="nav-link router-link-active">
+  信息技术
+</a></li><li class="dropdown-item"><!----> <a href="/article/essay/" class="nav-link">
+  见闻随笔
+</a></li><li class="dropdown-item"><!----> <a href="/article/other/" class="nav-link">
+  其它系列
+</a></li><li class="dropdown-item"><!----> <a href="/article/reprint/" class="nav-link">
+  转载文章
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于
+</a></div><div class="nav-item"><a href="https://www.github.com/YuweiYin" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/home/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="文章" class="dropdown-title"><span class="title">文章</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/article/mathematics/" class="nav-link">
+  数学哲学
+</a></li><li class="dropdown-item"><!----> <a href="/article/physics/" class="nav-link">
+  物理宇宙
+</a></li><li class="dropdown-item"><!----> <a href="/article/info-technology/" class="nav-link router-link-active">
+  信息技术
+</a></li><li class="dropdown-item"><!----> <a href="/article/essay/" class="nav-link">
+  见闻随笔
+</a></li><li class="dropdown-item"><!----> <a href="/article/other/" class="nav-link">
+  其它系列
+</a></li><li class="dropdown-item"><!----> <a href="/article/reprint/" class="nav-link">
+  转载文章
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于
+</a></div><div class="nav-item"><a href="https://www.github.com/YuweiYin" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/article/info-technology/" class="sidebar-link">Information Technology</a></li><li><a href="/article/info-technology/computer-science/" class="sidebar-link">Computer Science</a></li><li><a href="/article/info-technology/algorithm/" class="sidebar-link">Algorithm</a></li><li><a href="/article/info-technology/artificial-intelligence/" class="sidebar-link">Artificial Intelligence</a></li><li><a href="/article/info-technology/web-crawler/" class="sidebar-link">Web Crawler</a></li><li><a href="/article/info-technology/web-frontend/" class="sidebar-link">Web Frontend</a></li><li><a href="/article/info-technology/web-backend/" class="sidebar-link">Web Backend</a></li><li><a href="/article/info-technology/web-security/" class="sidebar-link">Web Security</a></li><li><a href="/article/info-technology/system-management/" class="sidebar-link">System Management</a></li><li><a href="/article/info-technology/paper-notes/" class="sidebar-link">Paper Notes</a></li><li><a href="/article/info-technology/other/" class="sidebar-link">Other</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="algorithm-graph-theory-dag-shortest-path"><a href="#algorithm-graph-theory-dag-shortest-path" class="header-anchor">#</a> Algorithm - Graph Theory - DAG Shortest Path</h1> <p>Create Date: 2020.05.31</p> <p>Last Update Date: 2020.05.31</p> <p>By <a href="https://yuweiyin.github.io/" target="_blank" rel="noopener noreferrer">YuweiYin<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="简介"><a href="#简介" class="header-anchor">#</a> 简介</h2> <p>单源最短路径 Single Source Shortest Path</p> <p>有向无环图 (Directed Acyclic Graph, DAG) 的单源最短路径</p> <h3 id="有向无环图-dag-的单源最短路径"><a href="#有向无环图-dag-的单源最短路径" class="header-anchor">#</a> 有向无环图 DAG 的单源最短路径</h3> <p>根据结点的<strong>拓扑排序</strong>次序来对带(边)权重的有向无环图 G = (V, E) 进行边的松弛操作，可以在 <code>\Theta(|V| + |E|)</code> 时间内计算出从单个源结点 s 到所有结点之间的最短路径。在有向无环图中，即便存在权重为负值的边，但由于没有权重为负值的环路（负权环），所以最短路径都是存在的。</p> <p>算法先对有向无环图进行拓扑排序，下面的伪代码展示了如何对一个有向无环图进行拓扑排序：</p> <div class="language- extra-class"><pre class="language-text"><code>TOPOLOGICAL_SORT(G)
+1  call DFS(G) to compute finishing times v.f for each vertex v
+2  as each vertex is finished, insert it into the front of a linked list
+3  return the linked list of vertices
+</code></pre></div><p>可以在 <code>\Theta(|V| + |E|)</code> 的时间内完成拓扑排序。因为 DFS 需要 <code>\Theta(|V| + |E|)</code> 的运行时间。将结点插入到链表最前端所需的时间为 O(1)，而一共只有 <code>|V|</code> 个结点需要插入。</p> <p>拓扑排序之后，可以确定结点之间的一个线性次序。如果 DAG 包含从结点 u 到结点 v 的一条路径，则 u 在拓扑排序的次序中位于 v 的前面。只需按照拓扑排序的次序对结点进行一遍处理即可。每次对一个结点进行处理时，从该结点发出的所有边进行松弛操作。</p> <p>使用如下运行时间为 <code>\Theta(|V|)</code> 的算法来对 最短路径估计 和 前驱结点 进行初始化：</p> <div class="language- extra-class"><pre class="language-text"><code>INITIALIZE_SINGLE_SOURCE(G, s)
+1  for each vertex v \in G.V
+2      v.d = inf
+3      v.p = nil
+4  s.d = 0
+</code></pre></div><p>在初始化操作结束后，对于所有的结点 v \in V，有 v.p = nil 和 s.d = 0，以及除 s 外的所有结点 v 有 v.d = inf 无穷（表示不可达）。</p> <p>对一条边 (u, v) 的松弛过程为：首先测试 是否可以对从 s 到 v 的最短路径进行改善。测试的方法是：将 s-&gt;u 的最短路径距离 加上 u-&gt;v 的边权重值，前述二者的和 与当前得到的 s-&gt;v 的最短路径估计 进行比较，如果前者更小，则更新估计值 v.d 并修改前驱结点 v.p。</p> <div class="language- extra-class"><pre class="language-text"><code>RELAX(u, v, w)
+1  if u.d + w(u, v) &lt; v.d
+2      v.d = u.d + w(u, v)
+3      v.p = u
+</code></pre></div><p>执行 <code>DAG_SHORTEST_PATHS</code> 过程求单源最短路径：</p> <div class="language- extra-class"><pre class="language-text"><code>DAG_SHORTEST_PATHS(G, w, s)
+1  topologically sort the vertices of G
+2  INITIALIZE_SINGLE_SOURCE(G, s)
+3  for each vertex u, taken in topologically sorted order
+4      for each vertex v \in G.Adj[u]
+5          RELAX(u, v, w)
+</code></pre></div><p>算法流程描述：</p> <ol><li>在 1 行，进行拓扑排序（一次 DFS）。</li> <li>在 2 行，对所有结点的 d 值和 p 值进行初始化。</li> <li>在 3～5 行，外层循环对每个结点 u，内层循环对 u 的每个邻接结点 v 进行松弛操作。</li></ol> <hr> <p>第 1 行 拓扑排序的时间为 <code>\Theta(|V| + |E|)</code>，第 2 行初始化过程的时间为 <code>\Theta(|V|)</code>。3～5 行的外循环执行了 <code>|V|</code> 次，内外循环合起来 恰好对每条边进行了一次松弛操作，（利用聚合分析）内循环每次对运行时间为 <code>\Theta(1)</code>。因此本算法的总运行时间为 <code>\Theta(|V| + |E|)</code>。对于以邻接表表示的图来说，这个时间为线性级。</p> <p><img src="/img/info-technology/algorithm/graph-theory/shortest-path/dag-shortest-path-1.png" alt="dag-shortest-path-1"></p> <p>下面的定理将证明 <code>DAG_SHORTEST_PATHS</code> 过程能够正确计算出 从源结点 s 出发的所有的最短路径。</p> <p>《CLRS》<strong>定理 24.5</strong>：如果带(边)权重的有向无环图 G = (V, E) 有一个源结点 s，则在算法 <code>DAG_SHORTEST_PATHS</code> 终止时，对于所有的结点 v \in V，有 v.d == d(s, v)，且前驱子图 Gp 是一棵最短路径树。</p> <p><img src="/img/info-technology/algorithm/graph-theory/shortest-path/dag-shortest-path-2.png" alt="dag-shortest-path-2"></p> <hr> <p>算法 <code>DAG_SHORTEST_PATHS</code> 的一个有趣的应用是在 <strong>PERT (Program Evaluation and Review Technique) 图</strong> 的分析中进行关键路径的判断。PERT 图是一个有向无环图，在这种图中，每条边代表需要进行的工作，边上的权重代表执行该工作所需要的时间。如果边 (u, v) 进入结点 v，边 (v, x) 离开结点 v（从结点 v 发出），则工作 (u, v) 必须在工作 (v, x) 前完成。PERT 图中的一条路径代表的是一个工作执行序列。</p> <p><strong>关键路径</strong>则是该有向无环图中一条(加权)<strong>最长</strong>的路径，该条路径代表执行任何工作序列所需要的最长时间。因此，关键路径上的权重提供的是执行所有工作所需时间的下界。可以使用如下两种办法中的任意一种来找到 PERT 图中的关键路径：</p> <ul><li>将所有权重变为负数，然后运行 <code>DAG_SHORTEST_PATHS</code>。</li> <li>运行 <code>DAG_SHORTEST_PATHS</code>，但进行如下修改：
+<ul><li>在 <code>INITIALIZE_SINGLE_SOURCE</code> 的第 2 行将 inf 替换为 -inf</li> <li>在 <code>RELAX</code> 过程中将 <code>&lt;</code> 替换为 <code>&gt;</code></li></ul></li></ul> <h2 id="python-代码范例"><a href="#python-代码范例" class="header-anchor">#</a> Python 代码范例</h2> <p>Python 环境：Python 3.7</p> <h3 id="dag-shortest-path"><a href="#dag-shortest-path" class="header-anchor">#</a> DAG Shortest Path</h3> <div class="language-python extra-class"><pre class="language-python"><code><span class="token comment">#!/usr/bin/env python</span>
+<span class="token comment"># -*- coding:utf-8 -*-</span>
+<span class="token triple-quoted-string string">&quot;&quot;&quot;=================================================
+@Project : algorithm/graph_theory/shortest_path
+@File    : dag-shortest-path.py
+@Author  : YuweiYin
+@Date    : 2020-05-31
+==================================================&quot;&quot;&quot;</span>
+
+<span class="token keyword">import</span> sys
+<span class="token keyword">import</span> time
+
+<span class="token triple-quoted-string string">&quot;&quot;&quot;
+单源最短路径 Single Source Shortest Path
+有向无环图 DAG 的单源最短路径
+
+参考资料：
+Introduction to Algorithm (aka CLRS) Third Edition - Chapter 24
+&quot;&quot;&quot;</span>
+
+
+<span class="token comment"># 边结构体，表达边的信息，可随任务自定义 (增添其它值元素 val 对象)</span>
+<span class="token keyword">class</span> <span class="token class-name">Edge</span><span class="token punctuation">:</span>
+    <span class="token comment"># 构造方法</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> from_v<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> to_v<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> weight<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span> is_directed<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>from_v <span class="token operator">=</span> from_v  <span class="token comment"># 边的起始顶点(关键字/序号)</span>
+        self<span class="token punctuation">.</span>to_v <span class="token operator">=</span> to_v      <span class="token comment"># 边的终止顶点(关键字/序号)</span>
+        self<span class="token punctuation">.</span>weight <span class="token operator">=</span> weight  <span class="token comment"># 边的权重值 (默认值为 1，如果全部边的权重都相同，那图 G 就是无权图)</span>
+        self<span class="token punctuation">.</span>is_directed <span class="token operator">=</span> is_directed  <span class="token comment"># True 则表明此边是有向边，False 为无向边</span>
+        <span class="token comment"># 对无向边而言，起始顶点和终止顶点可以互换</span>
+
+    <span class="token comment"># 类序列化输出方法</span>
+    <span class="token keyword">def</span> <span class="token function">__str__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token builtin">str</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>from_v<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'-&gt;'</span> <span class="token operator">+</span> <span class="token builtin">str</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>to_v<span class="token punctuation">)</span> <span class="token operator">+</span>\
+               <span class="token string">'\t weight:'</span> <span class="token operator">+</span> <span class="token builtin">str</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>weight<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'\t is_directed:'</span> <span class="token operator">+</span> <span class="token builtin">str</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>is_directed<span class="token punctuation">)</span>
+
+
+<span class="token comment"># 用于邻接表的顶点结构体</span>
+<span class="token comment"># 这里是用散列表 (而不是用链表) 来表达某顶点的所有邻接顶点</span>
+<span class="token keyword">class</span> <span class="token class-name">VertexList</span><span class="token punctuation">:</span>
+    <span class="token comment"># 构造方法</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> key<span class="token punctuation">,</span> val<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> distance<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span> p<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">,</span> discover<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span> finish<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>key <span class="token operator">=</span> key            <span class="token comment"># 本顶点的关键字 key (通常为顶点序号、唯一标志符)</span>
+        self<span class="token punctuation">.</span>val <span class="token operator">=</span> val            <span class="token comment"># 本顶点的值元素 val (可自定义为任意对象，为结点附带的信息)</span>
+        self<span class="token punctuation">.</span>neighbor <span class="token operator">=</span> <span class="token builtin">dict</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span>  <span class="token comment"># 本顶点的邻居字典，key 为邻居的关键字，value 为 Edge 边结构体</span>
+        <span class="token comment"># 如果是有向图，本结点为关联边的出发点 from_v，其邻居关联边的终止点 to_v</span>
+        <span class="token triple-quoted-string string">'''如下为最短路径算法所需的属性'''</span>
+        self<span class="token punctuation">.</span>distance <span class="token operator">=</span> distance  <span class="token comment"># 从源结点 s 到本结点的最短路径权重值</span>
+        self<span class="token punctuation">.</span>p <span class="token operator">=</span> p                <span class="token comment"># 本结点的前驱结点/最短路径树的父结点</span>
+        <span class="token triple-quoted-string string">'''下面是用于 DFS 的属性'''</span>
+        self<span class="token punctuation">.</span>color <span class="token operator">=</span> <span class="token boolean">False</span>        <span class="token comment"># False 为&quot;白色&quot;，表示未被发现；True 为&quot;黑色&quot;，表示已经完成探索</span>
+        self<span class="token punctuation">.</span>discover <span class="token operator">=</span> discover  <span class="token comment"># 此结点被发现的时间戳 (在此时间前为颜色为白)</span>
+        self<span class="token punctuation">.</span>finish <span class="token operator">=</span> finish      <span class="token comment"># 此结点完成探索的时间戳 (在此时间后为颜色为黑)</span>
+
+    <span class="token comment"># 类序列化输出方法</span>
+    <span class="token keyword">def</span> <span class="token function">__str__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token builtin">str</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>key<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">' is connected to:'</span> <span class="token operator">+</span> <span class="token builtin">str</span><span class="token punctuation">(</span><span class="token punctuation">[</span>v<span class="token punctuation">.</span>key <span class="token keyword">for</span> v <span class="token keyword">in</span> self<span class="token punctuation">.</span>neighbor<span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+    <span class="token comment"># 增添本顶点的邻居 neighbor，以字典结构存储</span>
+    <span class="token comment"># 注意：如果不允许图有自环/自圈，那么在增添邻居/边 的时候要禁止增添 self.neighbor[self.key] 项。这里暂不限制</span>
+    <span class="token keyword">def</span> <span class="token function">add_neighbor</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> key<span class="token punctuation">,</span> weight<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span> is_directed<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token comment"># 如果 neighbor 字典里已有此 key，则会覆盖。起到了更新边信息的作用</span>
+        self<span class="token punctuation">.</span>neighbor<span class="token punctuation">[</span>key<span class="token punctuation">]</span> <span class="token operator">=</span> Edge<span class="token punctuation">(</span>from_v<span class="token operator">=</span>self<span class="token punctuation">.</span>key<span class="token punctuation">,</span> to_v<span class="token operator">=</span>key<span class="token punctuation">,</span> weight<span class="token operator">=</span>weight<span class="token punctuation">,</span> is_directed<span class="token operator">=</span>is_directed<span class="token punctuation">)</span>
+
+    <span class="token comment"># 以 Edge 边结构体来增添本顶点的邻居 neighbor</span>
+    <span class="token keyword">def</span> <span class="token function">add_edge</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> edge<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token comment"># 检查输入 edge 的合法性</span>
+        <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>edge<span class="token punctuation">,</span> Edge<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token comment"># 如果 edge 是有向边，那么本结点需要是 edge 的出发点 from_v</span>
+            <span class="token keyword">if</span> edge<span class="token punctuation">.</span>is_directed<span class="token punctuation">:</span>
+                <span class="token keyword">if</span> edge<span class="token punctuation">.</span>from_v <span class="token operator">==</span> self<span class="token punctuation">.</span>key<span class="token punctuation">:</span>
+                    self<span class="token punctuation">.</span>neighbor<span class="token punctuation">[</span>edge<span class="token punctuation">.</span>to_v<span class="token punctuation">]</span> <span class="token operator">=</span> edge
+            <span class="token comment"># 如果 edge 是无向边，那么本结点需要是 edge 的出发点 from_v 或结束点 to_v 之一</span>
+            <span class="token keyword">else</span><span class="token punctuation">:</span>
+                <span class="token keyword">if</span> edge<span class="token punctuation">.</span>from_v <span class="token operator">==</span> self<span class="token punctuation">.</span>key<span class="token punctuation">:</span>
+                    self<span class="token punctuation">.</span>neighbor<span class="token punctuation">[</span>edge<span class="token punctuation">.</span>to_v<span class="token punctuation">]</span> <span class="token operator">=</span> edge
+                <span class="token keyword">elif</span> edge<span class="token punctuation">.</span>to_v <span class="token operator">==</span> self<span class="token punctuation">.</span>key<span class="token punctuation">:</span>
+                    <span class="token comment"># 先把 from_v 和 to_v 交换</span>
+                    edge<span class="token punctuation">.</span>to_v <span class="token operator">=</span> edge<span class="token punctuation">.</span>from_v
+                    edge<span class="token punctuation">.</span>from_v <span class="token operator">=</span> self<span class="token punctuation">.</span>key
+                    self<span class="token punctuation">.</span>neighbor<span class="token punctuation">[</span>edge<span class="token punctuation">.</span>to_v<span class="token punctuation">]</span> <span class="token operator">=</span> edge
+
+    <span class="token comment"># 返回本顶点的所有邻接顶点(的关键字/序号) 数组</span>
+    <span class="token keyword">def</span> <span class="token function">get_connections</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> self<span class="token punctuation">.</span>neighbor<span class="token punctuation">.</span>keys<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token comment"># 返回本顶点到邻居 neighbor 的 Edge 边结构体</span>
+    <span class="token keyword">def</span> <span class="token function">get_weight</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> neighbor<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> neighbor <span class="token keyword">in</span> self<span class="token punctuation">.</span>neighbor<span class="token punctuation">:</span>
+            <span class="token keyword">return</span> self<span class="token punctuation">.</span>neighbor<span class="token punctuation">[</span>neighbor<span class="token punctuation">]</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token boolean">None</span>
+
+
+<span class="token comment"># 邻接表的图结构，通常适合稀疏图</span>
+<span class="token comment"># 输入顶点结构体列表、边结构体列表</span>
+<span class="token keyword">class</span> <span class="token class-name">AdjacencyList</span><span class="token punctuation">:</span>
+    <span class="token comment"># 构造函数，edges 必须是二维数组，内部维度是一系列长度为 2 或者 3 的数组，</span>
+    <span class="token comment"># 分别代表着边的起始顶点 start、终止顶点 end 以及边权(可选)</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> vertices<span class="token punctuation">,</span> edges<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>vertices<span class="token punctuation">,</span> <span class="token builtin">list</span><span class="token punctuation">)</span>
+
+        self<span class="token punctuation">.</span>edges <span class="token operator">=</span> edges         <span class="token comment"># 存储输入的边列表</span>
+        self<span class="token punctuation">.</span>vertices <span class="token operator">=</span> vertices   <span class="token comment"># 存储输入的顶点列表 (可以从下标映射到顶点)</span>
+        self<span class="token punctuation">.</span>v2index <span class="token operator">=</span> <span class="token builtin">dict</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span>    <span class="token comment"># 由顶点映射到其下标 (既是邻接矩阵的行/列下标，也是 vertices 列表的下标)</span>
+        self<span class="token punctuation">.</span>key2index <span class="token operator">=</span> <span class="token builtin">dict</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span>  <span class="token comment"># 由顶点的关键字/唯一标志符映射到其下标</span>
+        <span class="token keyword">for</span> index<span class="token punctuation">,</span> vertex <span class="token keyword">in</span> <span class="token builtin">enumerate</span><span class="token punctuation">(</span>vertices<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            self<span class="token punctuation">.</span>v2index<span class="token punctuation">[</span>vertex<span class="token punctuation">]</span> <span class="token operator">=</span> index
+            self<span class="token punctuation">.</span>key2index<span class="token punctuation">[</span>vertex<span class="token punctuation">.</span>key<span class="token punctuation">]</span> <span class="token operator">=</span> index
+
+        self<span class="token punctuation">.</span>adj_l <span class="token operator">=</span> <span class="token builtin">dict</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span>      <span class="token comment"># 本图的顶点字典, key 为顶点的序号，val 为顶点结构体</span>
+        <span class="token keyword">for</span> vertex <span class="token keyword">in</span> vertices<span class="token punctuation">:</span>
+            <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>vertex<span class="token punctuation">,</span> VertexList<span class="token punctuation">)</span>
+            self<span class="token punctuation">.</span>adj_l<span class="token punctuation">[</span>vertex<span class="token punctuation">.</span>key<span class="token punctuation">]</span> <span class="token operator">=</span> vertex
+
+        <span class="token comment"># 若 edges 合法，则进行边初始化处理</span>
+        <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>edges<span class="token punctuation">,</span> <span class="token builtin">list</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">for</span> edge <span class="token keyword">in</span> edges<span class="token punctuation">:</span>
+                <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>edge<span class="token punctuation">,</span> Edge<span class="token punctuation">)</span>
+                <span class="token comment"># 如果是有向边</span>
+                <span class="token keyword">if</span> edge<span class="token punctuation">.</span>is_directed<span class="token punctuation">:</span>
+                    from_v <span class="token operator">=</span> edge<span class="token punctuation">.</span>from_v
+                    <span class="token keyword">if</span> from_v <span class="token keyword">in</span> self<span class="token punctuation">.</span>adj_l<span class="token punctuation">:</span>
+                        self<span class="token punctuation">.</span>adj_l<span class="token punctuation">[</span>from_v<span class="token punctuation">]</span><span class="token punctuation">.</span>add_edge<span class="token punctuation">(</span>edge<span class="token punctuation">)</span>
+                <span class="token comment"># 如果是无向边</span>
+                <span class="token keyword">else</span><span class="token punctuation">:</span>
+                    from_v <span class="token operator">=</span> edge<span class="token punctuation">.</span>from_v
+                    to_v <span class="token operator">=</span> edge<span class="token punctuation">.</span>to_v
+                    <span class="token keyword">if</span> from_v <span class="token keyword">in</span> self<span class="token punctuation">.</span>adj_l<span class="token punctuation">:</span>
+                        self<span class="token punctuation">.</span>adj_l<span class="token punctuation">[</span>from_v<span class="token punctuation">]</span><span class="token punctuation">.</span>add_edge<span class="token punctuation">(</span>edge<span class="token punctuation">)</span>
+                    <span class="token keyword">if</span> to_v <span class="token keyword">in</span> self<span class="token punctuation">.</span>adj_l<span class="token punctuation">:</span>
+                        self<span class="token punctuation">.</span>adj_l<span class="token punctuation">[</span>to_v<span class="token punctuation">]</span><span class="token punctuation">.</span>add_edge<span class="token punctuation">(</span>edge<span class="token punctuation">)</span>
+
+    <span class="token comment"># 判断 key 号为 _key 的顶点是否位于顶点列表中</span>
+    <span class="token keyword">def</span> <span class="token function">__contains__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> _key<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> _key <span class="token keyword">in</span> self<span class="token punctuation">.</span>adj_l
+
+    <span class="token comment"># 类迭代器方法</span>
+    <span class="token keyword">def</span> <span class="token function">__iter__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token builtin">iter</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>adj_l<span class="token punctuation">.</span>values<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token comment"># 获取图中 key 号为 _key 的顶点，如果没有此顶点则返回 None</span>
+    <span class="token keyword">def</span> <span class="token function">get_vertex</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> _key<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> _key <span class="token keyword">in</span> self<span class="token punctuation">.</span>adj_l<span class="token punctuation">:</span>
+            <span class="token keyword">return</span> self<span class="token punctuation">.</span>adj_l<span class="token punctuation">[</span>_key<span class="token punctuation">]</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token boolean">None</span>
+
+    <span class="token comment"># 邻接表 - 图转置</span>
+    <span class="token keyword">def</span> <span class="token function">graph_transposition</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">for</span> edge <span class="token keyword">in</span> self<span class="token punctuation">.</span>edges<span class="token punctuation">:</span>
+            <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>edge<span class="token punctuation">,</span> Edge<span class="token punctuation">)</span>
+            <span class="token comment"># 其实如果是无向边，无需处理，但这里还是转了</span>
+            temp <span class="token operator">=</span> edge<span class="token punctuation">.</span>from_v
+            edge<span class="token punctuation">.</span>from_v <span class="token operator">=</span> edge<span class="token punctuation">.</span>to_v
+            edge<span class="token punctuation">.</span>to_v <span class="token operator">=</span> temp
+
+    <span class="token comment"># 输出每个结点的信息</span>
+    <span class="token keyword">def</span> <span class="token function">print_vertex_info</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">for</span> v <span class="token keyword">in</span> self<span class="token punctuation">.</span>vertices<span class="token punctuation">:</span>
+            <span class="token keyword">if</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>v<span class="token punctuation">.</span>p<span class="token punctuation">,</span> VertexList<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                <span class="token keyword">print</span><span class="token punctuation">(</span>v<span class="token punctuation">.</span>key<span class="token punctuation">,</span> <span class="token string">'\tdistance:'</span><span class="token punctuation">,</span> v<span class="token punctuation">.</span>distance<span class="token punctuation">,</span> <span class="token string">'\tp:'</span><span class="token punctuation">,</span> v<span class="token punctuation">.</span>p<span class="token punctuation">.</span>key<span class="token punctuation">)</span>
+            <span class="token keyword">else</span><span class="token punctuation">:</span>
+                <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'Shortest Path Tree root:'</span><span class="token punctuation">,</span> v<span class="token punctuation">.</span>key<span class="token punctuation">,</span> <span class="token string">'\tdistance:'</span><span class="token punctuation">,</span> v<span class="token punctuation">.</span>distance<span class="token punctuation">)</span>
+
+
+<span class="token comment"># 深度优先搜索 (Depth First Search, BFS)</span>
+<span class="token keyword">class</span> <span class="token class-name">DFS</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>inf <span class="token operator">=</span> <span class="token number">0x3f3f3f3f</span>     <span class="token comment"># 初始化各个结点被发现和结束探索的时间均为 inf 无穷</span>
+        self<span class="token punctuation">.</span>timestamp <span class="token operator">=</span> <span class="token number">0</span>        <span class="token comment"># 时间戳</span>
+        self<span class="token punctuation">.</span>topo_sort_list <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>  <span class="token comment"># 拓扑排序的顺序。在 DFS 某结点 finish 时(其关键字)加入此列表</span>
+
+    <span class="token comment"># 输入：邻接表 图结构</span>
+    <span class="token keyword">def</span> <span class="token function">do_dfs</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> adj_l<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>adj_l<span class="token punctuation">,</span> AdjacencyList<span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>topo_sort_list <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>  <span class="token comment"># 拓扑排序的顺序</span>
+        <span class="token comment"># 1. 初始化图 G 的每个顶点 u \in G.V，让其颜色为白色 white、前驱结点/父结点为空 nil</span>
+        <span class="token keyword">for</span> v <span class="token keyword">in</span> adj_l<span class="token punctuation">.</span>adj_l<span class="token punctuation">.</span>values<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            v<span class="token punctuation">.</span>color <span class="token operator">=</span> <span class="token boolean">False</span>
+            v<span class="token punctuation">.</span>discover <span class="token operator">=</span> self<span class="token punctuation">.</span>inf
+            v<span class="token punctuation">.</span>finish <span class="token operator">=</span> self<span class="token punctuation">.</span>inf
+            v<span class="token punctuation">.</span>p <span class="token operator">=</span> <span class="token boolean">None</span>
+
+        <span class="token comment"># 2. 初始化时间戳 time</span>
+        self<span class="token punctuation">.</span>timestamp <span class="token operator">=</span> <span class="token number">0</span>
+
+        <span class="token comment"># 3. 以每个白色的结点作为 DFS 算法的源结点（也即 DFS 树的根结点）调用 `DFS_VISIT` 过程进行深度优先搜索。</span>
+        <span class="token keyword">for</span> u <span class="token keyword">in</span> adj_l<span class="token punctuation">.</span>adj_l<span class="token punctuation">.</span>values<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">if</span> <span class="token keyword">not</span> u<span class="token punctuation">.</span>color<span class="token punctuation">:</span>
+                self<span class="token punctuation">.</span>_dfs_visit<span class="token punctuation">(</span>adj_l<span class="token punctuation">,</span> u<span class="token punctuation">)</span>
+
+        <span class="token comment"># 返回拓扑排序结果</span>
+        <span class="token keyword">return</span> self<span class="token punctuation">.</span>topo_sort_list
+
+    <span class="token comment"># 以 u 为 DFS 树根结点，开始对邻接表结构的图 graph 进行 DFS</span>
+    <span class="token keyword">def</span> <span class="token function">_dfs_visit</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> adj_l<span class="token punctuation">,</span> u<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>adj_l<span class="token punctuation">,</span> AdjacencyList<span class="token punctuation">)</span> <span class="token keyword">and</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>u<span class="token punctuation">,</span> VertexList<span class="token punctuation">)</span>
+        <span class="token comment"># 1. 时间戳增长，并赋予给结点 u 的发现时间 u.d</span>
+        <span class="token comment"># 由于 u 已被发现，其颜色置为灰色 gray（已被发现状态）</span>
+        self<span class="token punctuation">.</span>timestamp <span class="token operator">+=</span> <span class="token number">1</span>
+        u<span class="token punctuation">.</span>discover <span class="token operator">=</span> self<span class="token punctuation">.</span>timestamp
+        u<span class="token punctuation">.</span>color <span class="token operator">=</span> <span class="token boolean">True</span>  <span class="token comment"># 这里省了灰色状态，直接赋为黑色</span>
+
+        <span class="token comment"># 2. 对于 u 的每个邻接结点 v，如果 v 是白色的（未被发现状态）</span>
+        <span class="token comment"># 则将 v 的前驱置为 u，并以 v 为起点递归地进行 DFS 搜索</span>
+        <span class="token keyword">for</span> edge <span class="token keyword">in</span> u<span class="token punctuation">.</span>neighbor<span class="token punctuation">.</span>values<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>edge<span class="token punctuation">,</span> Edge<span class="token punctuation">)</span>
+            <span class="token comment"># 先从 u 的关联边 edge 中得到邻接结点 v 的关键字</span>
+            <span class="token keyword">if</span> edge<span class="token punctuation">.</span>is_directed<span class="token punctuation">:</span>
+                <span class="token comment"># 有向边，则邻接结点 v 的关键字是 edge 的终止结点</span>
+                v_key <span class="token operator">=</span> edge<span class="token punctuation">.</span>to_v
+            <span class="token keyword">else</span><span class="token punctuation">:</span>
+                <span class="token comment"># 无向边，则先设置邻接结点 v 的关键字是 edge 的终止结点</span>
+                v_key <span class="token operator">=</span> edge<span class="token punctuation">.</span>to_v
+                <span class="token comment"># 但如果终止结点是 u，那么设置 邻接结点 v 的关键字是 edge 的起始结点</span>
+                <span class="token keyword">if</span> v_key <span class="token operator">==</span> u<span class="token punctuation">.</span>key<span class="token punctuation">:</span>
+                    v_key <span class="token operator">=</span> edge<span class="token punctuation">.</span>from_v
+                <span class="token comment"># 如果起始结点也是 u，则表示该边为无向图的自环，不必再处理</span>
+            <span class="token comment"># 再从关键字 v_key 获取结点 v</span>
+            <span class="token keyword">assert</span> v_key <span class="token keyword">in</span> adj_l<span class="token punctuation">.</span>key2index
+            v_index <span class="token operator">=</span> adj_l<span class="token punctuation">.</span>key2index<span class="token punctuation">[</span>v_key<span class="token punctuation">]</span>
+            v <span class="token operator">=</span> adj_l<span class="token punctuation">.</span>vertices<span class="token punctuation">[</span>v_index<span class="token punctuation">]</span>
+            <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>v<span class="token punctuation">,</span> VertexList<span class="token punctuation">)</span>
+
+            <span class="token keyword">if</span> <span class="token keyword">not</span> v<span class="token punctuation">.</span>color<span class="token punctuation">:</span>
+                v<span class="token punctuation">.</span>p <span class="token operator">=</span> u
+                self<span class="token punctuation">.</span>_dfs_visit<span class="token punctuation">(</span>adj_l<span class="token punctuation">,</span> v<span class="token punctuation">)</span>
+
+        <span class="token comment"># 3. 由于此时 u 的邻接结点都已被处理结束，故置 u 的颜色为黑色（处理完毕状态）</span>
+        <span class="token comment"># 随后时间戳增长，并赋予给结点 u 的完成时间 u.f</span>
+        <span class="token comment"># u.color = True</span>
+        self<span class="token punctuation">.</span>timestamp <span class="token operator">+=</span> <span class="token number">1</span>
+        u<span class="token punctuation">.</span>finish <span class="token operator">=</span> self<span class="token punctuation">.</span>timestamp
+        <span class="token comment"># 拓扑排序：在 DFS 某结点 finish 时(其关键字)加入此列表</span>
+        self<span class="token punctuation">.</span>topo_sort_list<span class="token punctuation">.</span>append<span class="token punctuation">(</span>u<span class="token punctuation">.</span>key<span class="token punctuation">)</span>  <span class="token comment"># 插入到后方 O(1) 但这样是拓扑排序的逆序</span>
+
+    <span class="token comment"># 在计算出 DFS 之后，打印出所有结点(的关键字)及其发现时间 discover 与结束探索时间 finish</span>
+    <span class="token decorator annotation punctuation">@staticmethod</span>
+    <span class="token keyword">def</span> <span class="token function">print_vertex_time</span><span class="token punctuation">(</span>adj_l<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>adj_l<span class="token punctuation">,</span> AdjacencyList<span class="token punctuation">)</span>
+        <span class="token keyword">for</span> v <span class="token keyword">in</span> adj_l<span class="token punctuation">.</span>vertices<span class="token punctuation">:</span>
+            <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>v<span class="token punctuation">,</span> VertexList<span class="token punctuation">)</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span>v<span class="token punctuation">.</span>key<span class="token punctuation">,</span> v<span class="token punctuation">.</span>discover<span class="token punctuation">,</span> v<span class="token punctuation">.</span>finish<span class="token punctuation">)</span>
+
+
+<span class="token keyword">class</span> <span class="token class-name">DagShortestPath</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>inf <span class="token operator">=</span> <span class="token number">0x3f3f3f3f</span>  <span class="token comment"># 所有结点的 distance 初始化为 inf</span>
+
+    <span class="token comment"># 初始化每个结点的 distance 和 p 属性</span>
+    <span class="token keyword">def</span> <span class="token function">initialize_single_source</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> adj_l<span class="token punctuation">,</span> source_v<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>adj_l<span class="token punctuation">,</span> AdjacencyList<span class="token punctuation">)</span> <span class="token keyword">and</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>source_v<span class="token punctuation">,</span> VertexList<span class="token punctuation">)</span>
+        <span class="token keyword">for</span> v <span class="token keyword">in</span> adj_l<span class="token punctuation">.</span>vertices<span class="token punctuation">:</span>
+            <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>v<span class="token punctuation">,</span> VertexList<span class="token punctuation">)</span>
+            v<span class="token punctuation">.</span>distance <span class="token operator">=</span> self<span class="token punctuation">.</span>inf
+            v<span class="token punctuation">.</span>p <span class="token operator">=</span> <span class="token boolean">None</span>
+        source_v<span class="token punctuation">.</span>distance <span class="token operator">=</span> <span class="token number">0</span>
+
+    <span class="token comment"># 对边 (u, v) 进行松弛操作</span>
+    <span class="token decorator annotation punctuation">@staticmethod</span>
+    <span class="token keyword">def</span> <span class="token function">relax</span><span class="token punctuation">(</span>u<span class="token punctuation">,</span> v<span class="token punctuation">,</span> weight_func<span class="token operator">=</span><span class="token keyword">lambda</span> x<span class="token punctuation">:</span> x<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>u<span class="token punctuation">,</span> VertexList<span class="token punctuation">)</span> <span class="token keyword">and</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>v<span class="token punctuation">,</span> VertexList<span class="token punctuation">)</span>
+        <span class="token comment"># 获取边 (u, v)</span>
+        <span class="token keyword">assert</span> v<span class="token punctuation">.</span>key <span class="token keyword">in</span> u<span class="token punctuation">.</span>neighbor
+        edge <span class="token operator">=</span> u<span class="token punctuation">.</span>neighbor<span class="token punctuation">[</span>v<span class="token punctuation">.</span>key<span class="token punctuation">]</span>
+        <span class="token comment"># 检查是否可以对从 s 到 v 的最短路径进行改善</span>
+        <span class="token comment"># 将 s-&gt;u 的最短路径距离 加上 u-&gt;v 的边权重值</span>
+        cur_dis <span class="token operator">=</span> u<span class="token punctuation">.</span>distance <span class="token operator">+</span> weight_func<span class="token punctuation">(</span>edge<span class="token punctuation">.</span>weight<span class="token punctuation">)</span>
+        <span class="token comment"># cur_dis 与当前得到的 s-&gt;v 的最短路径估计 进行比较</span>
+        <span class="token keyword">if</span> cur_dis <span class="token operator">&lt;</span> v<span class="token punctuation">.</span>distance<span class="token punctuation">:</span>
+            <span class="token comment"># 如果前者更小，则更新估计值 v.d 并修改前驱结点 v.p</span>
+            v<span class="token punctuation">.</span>distance <span class="token operator">=</span> cur_dis
+            v<span class="token punctuation">.</span>p <span class="token operator">=</span> u
+
+    <span class="token comment"># 寻找图 adj_l 的一棵最小生成树</span>
+    <span class="token comment"># 这里默认图为邻接表结构，weight_func 为恒等函数</span>
+    <span class="token keyword">def</span> <span class="token function">do_dag_shortest_path</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> adj_l<span class="token punctuation">,</span> source_v<span class="token punctuation">,</span> weight_func<span class="token operator">=</span><span class="token keyword">lambda</span> x<span class="token punctuation">:</span> x<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>adj_l<span class="token punctuation">,</span> AdjacencyList<span class="token punctuation">)</span> <span class="token keyword">and</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>source_v<span class="token punctuation">,</span> VertexList<span class="token punctuation">)</span>
+        <span class="token comment"># 1. 进行拓扑排序（一次 DFS）</span>
+        dfs <span class="token operator">=</span> DFS<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        topo_sort_list <span class="token operator">=</span> dfs<span class="token punctuation">.</span>do_dfs<span class="token punctuation">(</span>adj_l<span class="token punctuation">)</span>  <span class="token comment"># 获得拓扑排序的逆序</span>
+        <span class="token comment"># dfs.print_vertex_time(adj_l)</span>
+        <span class="token comment"># print(topo_sort_list)</span>
+
+        <span class="token comment"># 2. 对所有结点的 d 值和 p 值进行初始化</span>
+        self<span class="token punctuation">.</span>initialize_single_source<span class="token punctuation">(</span>adj_l<span class="token punctuation">,</span> source_v<span class="token punctuation">)</span>
+
+        <span class="token comment"># 3. 外层循环对每个结点 u，内层循环对 u 的每个邻接结点 v 进行松弛操作</span>
+        <span class="token keyword">for</span> u_key <span class="token keyword">in</span> <span class="token builtin">reversed</span><span class="token punctuation">(</span>topo_sort_list<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token comment"># 根据关键字 u_key 获取结点 u</span>
+            <span class="token keyword">assert</span> u_key <span class="token keyword">in</span> adj_l<span class="token punctuation">.</span>key2index
+            u <span class="token operator">=</span> adj_l<span class="token punctuation">.</span>vertices<span class="token punctuation">[</span>adj_l<span class="token punctuation">.</span>key2index<span class="token punctuation">[</span>u_key<span class="token punctuation">]</span><span class="token punctuation">]</span>
+            <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>u<span class="token punctuation">,</span> VertexList<span class="token punctuation">)</span>
+            <span class="token comment"># 对 u 的每个邻接结点 v 进行松弛操作</span>
+            <span class="token keyword">for</span> edge <span class="token keyword">in</span> u<span class="token punctuation">.</span>neighbor<span class="token punctuation">.</span>values<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>edge<span class="token punctuation">,</span> Edge<span class="token punctuation">)</span>
+                <span class="token comment"># 先从 u 的关联边 edge 中得到邻接结点 v 的关键字</span>
+                <span class="token keyword">if</span> edge<span class="token punctuation">.</span>is_directed<span class="token punctuation">:</span>
+                    <span class="token comment"># 有向边，则邻接结点 v 的关键字是 edge 的终止结点</span>
+                    v_key <span class="token operator">=</span> edge<span class="token punctuation">.</span>to_v
+                <span class="token keyword">else</span><span class="token punctuation">:</span>
+                    <span class="token comment"># 无向边，则先设置邻接结点 v 的关键字是 edge 的终止结点</span>
+                    v_key <span class="token operator">=</span> edge<span class="token punctuation">.</span>to_v
+                    <span class="token comment"># 但如果终止结点是 u，那么设置 邻接结点 v 的关键字是 edge 的起始结点</span>
+                    <span class="token keyword">if</span> v_key <span class="token operator">==</span> u<span class="token punctuation">.</span>key<span class="token punctuation">:</span>
+                        v_key <span class="token operator">=</span> edge<span class="token punctuation">.</span>from_v
+                    <span class="token comment"># 如果起始结点也是 u，则表示该边为无向图的自环，不必再处理</span>
+                <span class="token comment"># 再从关键字 v_key 获取结点 v</span>
+                <span class="token keyword">assert</span> v_key <span class="token keyword">in</span> adj_l<span class="token punctuation">.</span>key2index
+                v_index <span class="token operator">=</span> adj_l<span class="token punctuation">.</span>key2index<span class="token punctuation">[</span>v_key<span class="token punctuation">]</span>
+                v <span class="token operator">=</span> adj_l<span class="token punctuation">.</span>vertices<span class="token punctuation">[</span>v_index<span class="token punctuation">]</span>
+                <span class="token keyword">assert</span> <span class="token builtin">isinstance</span><span class="token punctuation">(</span>v<span class="token punctuation">,</span> VertexList<span class="token punctuation">)</span>
+                <span class="token comment"># 进行松弛操作</span>
+                self<span class="token punctuation">.</span>relax<span class="token punctuation">(</span>u<span class="token punctuation">,</span> v<span class="token punctuation">,</span> weight_func<span class="token punctuation">)</span>
+
+
+<span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token comment"># 构造图同《CLRS》Chapter 24.2 的(带边权)有向无环图</span>
+    <span class="token comment"># 用于构造邻接表的顶点的 key/val 信息列表</span>
+    list_vertices_info <span class="token operator">=</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">[</span><span class="token string">'r'</span><span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'s'</span><span class="token punctuation">,</span> <span class="token number">200</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'t'</span><span class="token punctuation">,</span> <span class="token number">300</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'x'</span><span class="token punctuation">,</span> <span class="token number">400</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'y'</span><span class="token punctuation">,</span> <span class="token number">500</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'z'</span><span class="token punctuation">,</span> <span class="token number">600</span><span class="token punctuation">]</span>
+    <span class="token punctuation">]</span>
+    <span class="token comment"># 有向边的 from/to/weight/is_directed 信息列表</span>
+    <span class="token comment"># is_directed 为 True 表示此边为有向边，否则为无向边</span>
+    di_edges_info <span class="token operator">=</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">[</span><span class="token string">'r'</span><span class="token punctuation">,</span> <span class="token string">'s'</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token boolean">True</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'r'</span><span class="token punctuation">,</span> <span class="token string">'t'</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token boolean">True</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'s'</span><span class="token punctuation">,</span> <span class="token string">'t'</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token boolean">True</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token punctuation">[</span><span class="token string">'s'</span><span class="token punctuation">,</span> <span class="token string">'x'</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> <span class="token boolean">True</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'t'</span><span class="token punctuation">,</span> <span class="token string">'x'</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token boolean">True</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'t'</span><span class="token punctuation">,</span> <span class="token string">'y'</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token boolean">True</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token punctuation">[</span><span class="token string">'t'</span><span class="token punctuation">,</span> <span class="token string">'z'</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token boolean">True</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'x'</span><span class="token punctuation">,</span> <span class="token string">'y'</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token boolean">True</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'x'</span><span class="token punctuation">,</span> <span class="token string">'z'</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token boolean">True</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token punctuation">[</span><span class="token string">'y'</span><span class="token punctuation">,</span> <span class="token string">'z'</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token boolean">True</span><span class="token punctuation">]</span>
+    <span class="token punctuation">]</span>
+
+    <span class="token comment"># 根据前述列表信息构造结点列表</span>
+    list_vertices <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    di_edges <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    <span class="token keyword">for</span> v <span class="token keyword">in</span> list_vertices_info<span class="token punctuation">:</span>
+        list_vertices<span class="token punctuation">.</span>append<span class="token punctuation">(</span>VertexList<span class="token punctuation">(</span>key<span class="token operator">=</span>v<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> val<span class="token operator">=</span>v<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">for</span> e <span class="token keyword">in</span> di_edges_info<span class="token punctuation">:</span>
+        di_edges<span class="token punctuation">.</span>append<span class="token punctuation">(</span>Edge<span class="token punctuation">(</span>from_v<span class="token operator">=</span>e<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> to_v<span class="token operator">=</span>e<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> weight<span class="token operator">=</span>e<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> is_directed<span class="token operator">=</span>e<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token comment"># 创建邻接表 (用邻接链表+无向图 执行最短路径算法)</span>
+    adj_l <span class="token operator">=</span> AdjacencyList<span class="token punctuation">(</span>list_vertices<span class="token punctuation">,</span> di_edges<span class="token punctuation">)</span>
+
+    <span class="token comment"># 设置源结点</span>
+    source_v_key <span class="token operator">=</span> <span class="token string">'s'</span>
+    <span class="token keyword">assert</span> source_v_key <span class="token keyword">in</span> adj_l<span class="token punctuation">.</span>key2index
+    source_v <span class="token operator">=</span> adj_l<span class="token punctuation">.</span>vertices<span class="token punctuation">[</span>adj_l<span class="token punctuation">.</span>key2index<span class="token punctuation">[</span>source_v_key<span class="token punctuation">]</span><span class="token punctuation">]</span>
+
+    <span class="token comment"># 执行 Bellman-Ford 算法</span>
+    start <span class="token operator">=</span> time<span class="token punctuation">.</span>process_time<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    dsp <span class="token operator">=</span> DagShortestPath<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    dsp<span class="token punctuation">.</span>do_dag_shortest_path<span class="token punctuation">(</span>adj_l<span class="token punctuation">,</span> source_v<span class="token punctuation">)</span>
+    end <span class="token operator">=</span> time<span class="token punctuation">.</span>process_time<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token comment"># 输出结果 (由于从 s 出发，此有向图无法从 s 到达 r，所以 t 的最终最短距离为 inf)</span>
+    <span class="token comment"># Shortest Path Tree root: r    distance: 1061109567</span>
+    <span class="token comment"># Shortest Path Tree root: s    distance: 0</span>
+    <span class="token comment"># t     distance: 2     p: s</span>
+    <span class="token comment"># x     distance: 6     p: s</span>
+    <span class="token comment"># y     distance: 5     p: x</span>
+    <span class="token comment"># z     distance: 3     p: y</span>
+    adj_l<span class="token punctuation">.</span>print_vertex_info<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'Running Time: %.5f ms'</span> <span class="token operator">%</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>end <span class="token operator">-</span> start<span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">&quot;__main__&quot;</span><span class="token punctuation">:</span>
+    sys<span class="token punctuation">.</span>exit<span class="token punctuation">(</span>main<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+</code></pre></div><h2 id="参考资料"><a href="#参考资料" class="header-anchor">#</a> 参考资料</h2> <ul><li>Introduction to Algorithm (aka CLRS) Third Edition - Chapter 24</li></ul></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.1fbc75d1.js" defer></script><script src="/assets/js/2.db22a8ef.js" defer></script><script src="/assets/js/53.9d041a89.js" defer></script>
+  </body>
+</html>
