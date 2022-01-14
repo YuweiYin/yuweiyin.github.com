@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>AlphaGo与人工智能 | Yuwei Yin (Joey)</title>
+    <meta name="description" content="Wir müssen wissen, wir werden wissen!">
+    <meta name="generator" content="VuePress 1.4.0">
+    <link rel="icon" href="/img/YuweiYin.jpeg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/github-markdown-css/2.2.1/github-markdown.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css">
+    
+    <link rel="preload" href="/assets/css/0.styles.07718e97.css" as="style"><link rel="preload" href="/assets/js/app.1d455c0d.js" as="script"><link rel="preload" href="/assets/js/2.bd627f1b.js" as="script"><link rel="preload" href="/assets/js/449.83c2871e.js" as="script"><link rel="prefetch" href="/assets/js/10.6fb0632f.js"><link rel="prefetch" href="/assets/js/100.fed6ac4d.js"><link rel="prefetch" href="/assets/js/101.494a8217.js"><link rel="prefetch" href="/assets/js/102.40a1fa43.js"><link rel="prefetch" href="/assets/js/103.be075285.js"><link rel="prefetch" href="/assets/js/104.52dd0152.js"><link rel="prefetch" href="/assets/js/105.c287db2b.js"><link rel="prefetch" href="/assets/js/106.370faaba.js"><link rel="prefetch" href="/assets/js/107.63438563.js"><link rel="prefetch" href="/assets/js/108.8842f0e7.js"><link rel="prefetch" href="/assets/js/109.ae54825d.js"><link rel="prefetch" href="/assets/js/11.d0eafdbc.js"><link rel="prefetch" href="/assets/js/110.1850ad8c.js"><link rel="prefetch" href="/assets/js/111.c02f77dc.js"><link rel="prefetch" href="/assets/js/112.e1a19489.js"><link rel="prefetch" href="/assets/js/113.aef2af48.js"><link rel="prefetch" href="/assets/js/114.afe14f15.js"><link rel="prefetch" href="/assets/js/115.7f7fa128.js"><link rel="prefetch" href="/assets/js/116.5bf7a662.js"><link rel="prefetch" href="/assets/js/117.70d12ca6.js"><link rel="prefetch" href="/assets/js/118.749bf003.js"><link rel="prefetch" href="/assets/js/119.5ef560cf.js"><link rel="prefetch" href="/assets/js/12.f401f85d.js"><link rel="prefetch" href="/assets/js/120.63147cd6.js"><link rel="prefetch" href="/assets/js/121.8ee7bbb4.js"><link rel="prefetch" href="/assets/js/122.dcd4721a.js"><link rel="prefetch" href="/assets/js/123.84955904.js"><link rel="prefetch" href="/assets/js/124.152b44c3.js"><link rel="prefetch" href="/assets/js/125.ab6fd0d7.js"><link rel="prefetch" href="/assets/js/126.1019c8f3.js"><link rel="prefetch" href="/assets/js/127.66987aef.js"><link rel="prefetch" href="/assets/js/128.18e04972.js"><link rel="prefetch" href="/assets/js/129.52a2c459.js"><link rel="prefetch" href="/assets/js/13.28e67822.js"><link rel="prefetch" href="/assets/js/130.656f73e5.js"><link rel="prefetch" href="/assets/js/131.ec476efa.js"><link rel="prefetch" href="/assets/js/132.e06ea41b.js"><link rel="prefetch" href="/assets/js/133.4e59e311.js"><link rel="prefetch" href="/assets/js/134.3054cba8.js"><link rel="prefetch" href="/assets/js/135.d462b6d7.js"><link rel="prefetch" href="/assets/js/136.6c02f6b6.js"><link rel="prefetch" href="/assets/js/137.d121f16f.js"><link rel="prefetch" href="/assets/js/138.eedc96ea.js"><link rel="prefetch" href="/assets/js/139.b61712a3.js"><link rel="prefetch" href="/assets/js/14.871c38a6.js"><link rel="prefetch" href="/assets/js/140.d7bf671c.js"><link rel="prefetch" href="/assets/js/141.2f6d7cb6.js"><link rel="prefetch" href="/assets/js/142.0c171476.js"><link rel="prefetch" href="/assets/js/143.6ddad2b4.js"><link rel="prefetch" href="/assets/js/144.2b9f5546.js"><link rel="prefetch" href="/assets/js/145.cf6cf59c.js"><link rel="prefetch" href="/assets/js/146.1e2dd83c.js"><link rel="prefetch" href="/assets/js/147.02dc94ad.js"><link rel="prefetch" href="/assets/js/148.21e3c196.js"><link rel="prefetch" href="/assets/js/149.f61ff30a.js"><link rel="prefetch" href="/assets/js/15.f67f48ab.js"><link rel="prefetch" href="/assets/js/150.e7e76a05.js"><link rel="prefetch" href="/assets/js/151.fa4ebd0b.js"><link rel="prefetch" href="/assets/js/152.db0638e9.js"><link rel="prefetch" href="/assets/js/153.163f7b15.js"><link rel="prefetch" href="/assets/js/154.20db95ca.js"><link rel="prefetch" href="/assets/js/155.13b1bd78.js"><link rel="prefetch" href="/assets/js/156.63684e4b.js"><link rel="prefetch" href="/assets/js/157.39e56fef.js"><link rel="prefetch" href="/assets/js/158.95c95751.js"><link rel="prefetch" href="/assets/js/159.71fca574.js"><link rel="prefetch" href="/assets/js/16.dcdabbc4.js"><link rel="prefetch" href="/assets/js/160.144dcb57.js"><link rel="prefetch" href="/assets/js/161.22c770cf.js"><link rel="prefetch" href="/assets/js/162.2c110866.js"><link rel="prefetch" href="/assets/js/163.ad118793.js"><link rel="prefetch" href="/assets/js/164.8be31307.js"><link rel="prefetch" href="/assets/js/165.5de7c99a.js"><link rel="prefetch" href="/assets/js/166.6a5a5585.js"><link rel="prefetch" href="/assets/js/167.238f09a3.js"><link rel="prefetch" href="/assets/js/168.476c631a.js"><link rel="prefetch" href="/assets/js/169.50f85207.js"><link rel="prefetch" href="/assets/js/17.4897be82.js"><link rel="prefetch" href="/assets/js/170.de74bec5.js"><link rel="prefetch" href="/assets/js/171.5bc63357.js"><link rel="prefetch" href="/assets/js/172.6cc777df.js"><link rel="prefetch" href="/assets/js/173.2811b6ee.js"><link rel="prefetch" href="/assets/js/174.c1ed5d4a.js"><link rel="prefetch" href="/assets/js/175.4c9ae4c3.js"><link rel="prefetch" href="/assets/js/176.15bda87d.js"><link rel="prefetch" href="/assets/js/177.7f557523.js"><link rel="prefetch" href="/assets/js/178.4cd082d4.js"><link rel="prefetch" href="/assets/js/179.86193eee.js"><link rel="prefetch" href="/assets/js/18.a2d5b349.js"><link rel="prefetch" href="/assets/js/180.a739b559.js"><link rel="prefetch" href="/assets/js/181.c8b32ecf.js"><link rel="prefetch" href="/assets/js/182.7e558757.js"><link rel="prefetch" href="/assets/js/183.bc00a1ee.js"><link rel="prefetch" href="/assets/js/184.9730d61b.js"><link rel="prefetch" href="/assets/js/185.49eff625.js"><link rel="prefetch" href="/assets/js/186.1b1ee4f4.js"><link rel="prefetch" href="/assets/js/187.d3d852cb.js"><link rel="prefetch" href="/assets/js/188.ef17e523.js"><link rel="prefetch" href="/assets/js/189.f8488ae4.js"><link rel="prefetch" href="/assets/js/19.ae9b911e.js"><link rel="prefetch" href="/assets/js/190.ac023803.js"><link rel="prefetch" href="/assets/js/191.1547a5e2.js"><link rel="prefetch" href="/assets/js/192.2089737c.js"><link rel="prefetch" href="/assets/js/193.b7e74b18.js"><link rel="prefetch" href="/assets/js/194.c38e987f.js"><link rel="prefetch" href="/assets/js/195.6afa408d.js"><link rel="prefetch" href="/assets/js/196.e4dc722c.js"><link rel="prefetch" href="/assets/js/197.1f9e5895.js"><link rel="prefetch" href="/assets/js/198.40f30d4c.js"><link rel="prefetch" href="/assets/js/199.f03011ff.js"><link rel="prefetch" href="/assets/js/20.a21d5b3c.js"><link rel="prefetch" href="/assets/js/200.ade34c84.js"><link rel="prefetch" href="/assets/js/201.01400015.js"><link rel="prefetch" href="/assets/js/202.aad84c4f.js"><link rel="prefetch" href="/assets/js/203.25a3d415.js"><link rel="prefetch" href="/assets/js/204.df039bd7.js"><link rel="prefetch" href="/assets/js/205.64d76805.js"><link rel="prefetch" href="/assets/js/206.0d64ceaa.js"><link rel="prefetch" href="/assets/js/207.aa24a2eb.js"><link rel="prefetch" href="/assets/js/208.77f606c0.js"><link rel="prefetch" href="/assets/js/209.089d8350.js"><link rel="prefetch" href="/assets/js/21.6b590aee.js"><link rel="prefetch" href="/assets/js/210.0260315a.js"><link rel="prefetch" href="/assets/js/211.90692d20.js"><link rel="prefetch" href="/assets/js/212.8bedf937.js"><link rel="prefetch" href="/assets/js/213.6b3caec9.js"><link rel="prefetch" href="/assets/js/214.85183d4d.js"><link rel="prefetch" href="/assets/js/215.d894fc18.js"><link rel="prefetch" href="/assets/js/216.9269980a.js"><link rel="prefetch" href="/assets/js/217.8e04dd94.js"><link rel="prefetch" href="/assets/js/218.4e514c69.js"><link rel="prefetch" href="/assets/js/219.90987063.js"><link rel="prefetch" href="/assets/js/22.0d974431.js"><link rel="prefetch" href="/assets/js/220.b0b94d72.js"><link rel="prefetch" href="/assets/js/221.303c8986.js"><link rel="prefetch" href="/assets/js/222.cb94ebd3.js"><link rel="prefetch" href="/assets/js/223.0251b116.js"><link rel="prefetch" href="/assets/js/224.c90e5035.js"><link rel="prefetch" href="/assets/js/225.0485fdb2.js"><link rel="prefetch" href="/assets/js/226.09aa1b94.js"><link rel="prefetch" href="/assets/js/227.c543e233.js"><link rel="prefetch" href="/assets/js/228.67d3dc04.js"><link rel="prefetch" href="/assets/js/229.c57b14dd.js"><link rel="prefetch" href="/assets/js/23.f1d65237.js"><link rel="prefetch" href="/assets/js/230.00f4e685.js"><link rel="prefetch" href="/assets/js/231.daf4881a.js"><link rel="prefetch" href="/assets/js/232.216e99d6.js"><link rel="prefetch" href="/assets/js/233.ef48487c.js"><link rel="prefetch" href="/assets/js/234.bb17c2f4.js"><link rel="prefetch" href="/assets/js/235.cb24f9a7.js"><link rel="prefetch" href="/assets/js/236.a9202faa.js"><link rel="prefetch" href="/assets/js/237.2f4e86f2.js"><link rel="prefetch" href="/assets/js/238.004bada4.js"><link rel="prefetch" href="/assets/js/239.0b4bb063.js"><link rel="prefetch" href="/assets/js/24.3e1c8983.js"><link rel="prefetch" href="/assets/js/240.a8392dc3.js"><link rel="prefetch" href="/assets/js/241.8fd2de6f.js"><link rel="prefetch" href="/assets/js/242.39dd4496.js"><link rel="prefetch" href="/assets/js/243.11969932.js"><link rel="prefetch" href="/assets/js/244.b6b61e9b.js"><link rel="prefetch" href="/assets/js/245.b250b0da.js"><link rel="prefetch" href="/assets/js/246.3766e49c.js"><link rel="prefetch" href="/assets/js/247.d2144b9e.js"><link rel="prefetch" href="/assets/js/248.52177828.js"><link rel="prefetch" href="/assets/js/249.f3f170ed.js"><link rel="prefetch" href="/assets/js/25.011c264d.js"><link rel="prefetch" href="/assets/js/250.311ddab3.js"><link rel="prefetch" href="/assets/js/251.b9682622.js"><link rel="prefetch" href="/assets/js/252.5371e0e4.js"><link rel="prefetch" href="/assets/js/253.9a415934.js"><link rel="prefetch" href="/assets/js/254.1c8db85f.js"><link rel="prefetch" href="/assets/js/255.e780e3ef.js"><link rel="prefetch" href="/assets/js/256.78419fa1.js"><link rel="prefetch" href="/assets/js/257.2f7a8246.js"><link rel="prefetch" href="/assets/js/258.ca8f48b5.js"><link rel="prefetch" href="/assets/js/259.52a4419d.js"><link rel="prefetch" href="/assets/js/26.04fe30be.js"><link rel="prefetch" href="/assets/js/260.fff28592.js"><link rel="prefetch" href="/assets/js/261.dc304bd6.js"><link rel="prefetch" href="/assets/js/262.3303830d.js"><link rel="prefetch" href="/assets/js/263.f40b62a1.js"><link rel="prefetch" href="/assets/js/264.ef9bae16.js"><link rel="prefetch" href="/assets/js/265.b8ade88f.js"><link rel="prefetch" href="/assets/js/266.b0aa008e.js"><link rel="prefetch" href="/assets/js/267.d9179212.js"><link rel="prefetch" href="/assets/js/268.3a276478.js"><link rel="prefetch" href="/assets/js/269.d05effd2.js"><link rel="prefetch" href="/assets/js/27.b7a77e58.js"><link rel="prefetch" href="/assets/js/270.c72f08f7.js"><link rel="prefetch" href="/assets/js/271.29f1d4b8.js"><link rel="prefetch" href="/assets/js/272.8e36c1f0.js"><link rel="prefetch" href="/assets/js/273.61c90229.js"><link rel="prefetch" href="/assets/js/274.a05a6816.js"><link rel="prefetch" href="/assets/js/275.2787ad51.js"><link rel="prefetch" href="/assets/js/276.fa4d6202.js"><link rel="prefetch" href="/assets/js/277.2f03ee27.js"><link rel="prefetch" href="/assets/js/278.71a4e185.js"><link rel="prefetch" href="/assets/js/279.4953bab7.js"><link rel="prefetch" href="/assets/js/28.019d42e0.js"><link rel="prefetch" href="/assets/js/280.ae271e0a.js"><link rel="prefetch" href="/assets/js/281.a5c45e6d.js"><link rel="prefetch" href="/assets/js/282.10187208.js"><link rel="prefetch" href="/assets/js/283.485d53c2.js"><link rel="prefetch" href="/assets/js/284.823241e1.js"><link rel="prefetch" href="/assets/js/285.a872830b.js"><link rel="prefetch" href="/assets/js/286.f121edb1.js"><link rel="prefetch" href="/assets/js/287.b3b61c1e.js"><link rel="prefetch" href="/assets/js/288.9a64e9d1.js"><link rel="prefetch" href="/assets/js/289.ab5ef251.js"><link rel="prefetch" href="/assets/js/29.5fa768d9.js"><link rel="prefetch" href="/assets/js/290.9d825bb7.js"><link rel="prefetch" href="/assets/js/291.02e64a69.js"><link rel="prefetch" href="/assets/js/292.b1acd985.js"><link rel="prefetch" href="/assets/js/293.32635d31.js"><link rel="prefetch" href="/assets/js/294.3337cc68.js"><link rel="prefetch" href="/assets/js/295.fef5a38d.js"><link rel="prefetch" href="/assets/js/296.ef304a7a.js"><link rel="prefetch" href="/assets/js/297.a513ac1a.js"><link rel="prefetch" href="/assets/js/298.b4e2ea83.js"><link rel="prefetch" href="/assets/js/299.37ca9d38.js"><link rel="prefetch" href="/assets/js/3.59dcaa01.js"><link rel="prefetch" href="/assets/js/30.32f07336.js"><link rel="prefetch" href="/assets/js/300.82364742.js"><link rel="prefetch" href="/assets/js/301.1b57eafc.js"><link rel="prefetch" href="/assets/js/302.fa12e879.js"><link rel="prefetch" href="/assets/js/303.1506edd6.js"><link rel="prefetch" href="/assets/js/304.ef979dc9.js"><link rel="prefetch" href="/assets/js/305.984dbb60.js"><link rel="prefetch" href="/assets/js/306.d92198b7.js"><link rel="prefetch" href="/assets/js/307.c2dbcd07.js"><link rel="prefetch" href="/assets/js/308.16c3dda6.js"><link rel="prefetch" href="/assets/js/309.0c4256e3.js"><link rel="prefetch" href="/assets/js/31.78412f0f.js"><link rel="prefetch" href="/assets/js/310.fc64fcb0.js"><link rel="prefetch" href="/assets/js/311.2eecbcc8.js"><link rel="prefetch" href="/assets/js/312.fedef3d0.js"><link rel="prefetch" href="/assets/js/313.85d5df3b.js"><link rel="prefetch" href="/assets/js/314.8f8c1ec5.js"><link rel="prefetch" href="/assets/js/315.04ad02b7.js"><link rel="prefetch" href="/assets/js/316.a2fb85f6.js"><link rel="prefetch" href="/assets/js/317.1148013f.js"><link rel="prefetch" href="/assets/js/318.6df8b463.js"><link rel="prefetch" href="/assets/js/319.553f7e3c.js"><link rel="prefetch" href="/assets/js/32.0d3c477b.js"><link rel="prefetch" href="/assets/js/320.ddc95b6a.js"><link rel="prefetch" href="/assets/js/321.fa755f9e.js"><link rel="prefetch" href="/assets/js/322.c6adb67a.js"><link rel="prefetch" href="/assets/js/323.5a1fd9df.js"><link rel="prefetch" href="/assets/js/324.382aa829.js"><link rel="prefetch" href="/assets/js/325.62da2a4f.js"><link rel="prefetch" href="/assets/js/326.56fc9b66.js"><link rel="prefetch" href="/assets/js/327.a9221084.js"><link rel="prefetch" href="/assets/js/328.cb62417e.js"><link rel="prefetch" href="/assets/js/329.70ac7344.js"><link rel="prefetch" href="/assets/js/33.c7b047bd.js"><link rel="prefetch" href="/assets/js/330.fb0e677d.js"><link rel="prefetch" href="/assets/js/331.211efd77.js"><link rel="prefetch" href="/assets/js/332.160d7390.js"><link rel="prefetch" href="/assets/js/333.e21a0246.js"><link rel="prefetch" href="/assets/js/334.c689f8ab.js"><link rel="prefetch" href="/assets/js/335.62f2b40e.js"><link rel="prefetch" href="/assets/js/336.a4ad010e.js"><link rel="prefetch" href="/assets/js/337.c10d45f4.js"><link rel="prefetch" href="/assets/js/338.89125457.js"><link rel="prefetch" href="/assets/js/339.7d7c23bf.js"><link rel="prefetch" href="/assets/js/34.d690114a.js"><link rel="prefetch" href="/assets/js/340.84e80ecb.js"><link rel="prefetch" href="/assets/js/341.b75ff72a.js"><link rel="prefetch" href="/assets/js/342.e4053627.js"><link rel="prefetch" href="/assets/js/343.4ed49142.js"><link rel="prefetch" href="/assets/js/344.532dcaa5.js"><link rel="prefetch" href="/assets/js/345.730897f1.js"><link rel="prefetch" href="/assets/js/346.13d46132.js"><link rel="prefetch" href="/assets/js/347.beca793a.js"><link rel="prefetch" href="/assets/js/348.c09f10bd.js"><link rel="prefetch" href="/assets/js/349.52dde984.js"><link rel="prefetch" href="/assets/js/35.74fff3e3.js"><link rel="prefetch" href="/assets/js/350.ee1da74c.js"><link rel="prefetch" href="/assets/js/351.3e9517e1.js"><link rel="prefetch" href="/assets/js/352.cab7f4a5.js"><link rel="prefetch" href="/assets/js/353.3d779802.js"><link rel="prefetch" href="/assets/js/354.0872eddf.js"><link rel="prefetch" href="/assets/js/355.3ac1814e.js"><link rel="prefetch" href="/assets/js/356.e6d564f2.js"><link rel="prefetch" href="/assets/js/357.c1e38879.js"><link rel="prefetch" href="/assets/js/358.a9ae3252.js"><link rel="prefetch" href="/assets/js/359.8fe5cb40.js"><link rel="prefetch" href="/assets/js/36.856d3fc6.js"><link rel="prefetch" href="/assets/js/360.f28d4982.js"><link rel="prefetch" href="/assets/js/361.53fe58bc.js"><link rel="prefetch" href="/assets/js/362.2565b707.js"><link rel="prefetch" href="/assets/js/363.2bd52b30.js"><link rel="prefetch" href="/assets/js/364.f25f676e.js"><link rel="prefetch" href="/assets/js/365.7e38e559.js"><link rel="prefetch" href="/assets/js/366.87d0a684.js"><link rel="prefetch" href="/assets/js/367.be97df74.js"><link rel="prefetch" href="/assets/js/368.d29688fc.js"><link rel="prefetch" href="/assets/js/369.29ac39eb.js"><link rel="prefetch" href="/assets/js/37.9ae6cef6.js"><link rel="prefetch" href="/assets/js/370.720b39ac.js"><link rel="prefetch" href="/assets/js/371.74eb38b4.js"><link rel="prefetch" href="/assets/js/372.b9b79244.js"><link rel="prefetch" href="/assets/js/373.08861866.js"><link rel="prefetch" href="/assets/js/374.958bf6c5.js"><link rel="prefetch" href="/assets/js/375.42a4cd0b.js"><link rel="prefetch" href="/assets/js/376.1b44284d.js"><link rel="prefetch" href="/assets/js/377.3e6b62d8.js"><link rel="prefetch" href="/assets/js/378.b9e0314f.js"><link rel="prefetch" href="/assets/js/379.efbe0d3f.js"><link rel="prefetch" href="/assets/js/38.4bc09171.js"><link rel="prefetch" href="/assets/js/380.43d4b2a5.js"><link rel="prefetch" href="/assets/js/381.8c3c23cf.js"><link rel="prefetch" href="/assets/js/382.7d7549cb.js"><link rel="prefetch" href="/assets/js/383.ffdd813f.js"><link rel="prefetch" href="/assets/js/384.10a9407d.js"><link rel="prefetch" href="/assets/js/385.024ed2ef.js"><link rel="prefetch" href="/assets/js/386.b21e2e8a.js"><link rel="prefetch" href="/assets/js/387.178ae86f.js"><link rel="prefetch" href="/assets/js/388.7d4f59d8.js"><link rel="prefetch" href="/assets/js/389.ae818e46.js"><link rel="prefetch" href="/assets/js/39.4c1a2d31.js"><link rel="prefetch" href="/assets/js/390.f6f97226.js"><link rel="prefetch" href="/assets/js/391.43f085af.js"><link rel="prefetch" href="/assets/js/392.a752f250.js"><link rel="prefetch" href="/assets/js/393.685532c8.js"><link rel="prefetch" href="/assets/js/394.669d620d.js"><link rel="prefetch" href="/assets/js/395.d365ec9a.js"><link rel="prefetch" href="/assets/js/396.82936ca8.js"><link rel="prefetch" href="/assets/js/397.dbcc850d.js"><link rel="prefetch" href="/assets/js/398.64454b44.js"><link rel="prefetch" href="/assets/js/399.f14fcd7a.js"><link rel="prefetch" href="/assets/js/4.2b906f18.js"><link rel="prefetch" href="/assets/js/40.f3d51329.js"><link rel="prefetch" href="/assets/js/400.933281ce.js"><link rel="prefetch" href="/assets/js/401.1971c12f.js"><link rel="prefetch" href="/assets/js/402.675c1ecb.js"><link rel="prefetch" href="/assets/js/403.bb995bde.js"><link rel="prefetch" href="/assets/js/404.06380789.js"><link rel="prefetch" href="/assets/js/405.6c997cd9.js"><link rel="prefetch" href="/assets/js/406.5dc36e62.js"><link rel="prefetch" href="/assets/js/407.3f47d69f.js"><link rel="prefetch" href="/assets/js/408.8bc5f74a.js"><link rel="prefetch" href="/assets/js/409.236b2f50.js"><link rel="prefetch" href="/assets/js/41.8100e1b8.js"><link rel="prefetch" href="/assets/js/410.b5c4f804.js"><link rel="prefetch" href="/assets/js/411.f101dff8.js"><link rel="prefetch" href="/assets/js/412.069079bf.js"><link rel="prefetch" href="/assets/js/413.f0581b13.js"><link rel="prefetch" href="/assets/js/414.d34d892d.js"><link rel="prefetch" href="/assets/js/415.5d7f7299.js"><link rel="prefetch" href="/assets/js/416.d9d53d01.js"><link rel="prefetch" href="/assets/js/417.97902215.js"><link rel="prefetch" href="/assets/js/418.1aa8222f.js"><link rel="prefetch" href="/assets/js/419.fdebd9c8.js"><link rel="prefetch" href="/assets/js/42.74645069.js"><link rel="prefetch" href="/assets/js/420.246a88e3.js"><link rel="prefetch" href="/assets/js/421.f2031588.js"><link rel="prefetch" href="/assets/js/422.038f2939.js"><link rel="prefetch" href="/assets/js/423.c48e9336.js"><link rel="prefetch" href="/assets/js/424.f26e911a.js"><link rel="prefetch" href="/assets/js/425.56e8539f.js"><link rel="prefetch" href="/assets/js/426.472a6f66.js"><link rel="prefetch" href="/assets/js/427.44f18da5.js"><link rel="prefetch" href="/assets/js/428.9c40b43d.js"><link rel="prefetch" href="/assets/js/429.3525d226.js"><link rel="prefetch" href="/assets/js/43.897833fd.js"><link rel="prefetch" href="/assets/js/430.1374f626.js"><link rel="prefetch" href="/assets/js/431.a57fe5e8.js"><link rel="prefetch" href="/assets/js/432.630fa28f.js"><link rel="prefetch" href="/assets/js/433.85155ad2.js"><link rel="prefetch" href="/assets/js/434.e9e748d1.js"><link rel="prefetch" href="/assets/js/435.25df06c1.js"><link rel="prefetch" href="/assets/js/436.3d7dc4fd.js"><link rel="prefetch" href="/assets/js/437.14230dbf.js"><link rel="prefetch" href="/assets/js/438.3ab2591b.js"><link rel="prefetch" href="/assets/js/439.36660376.js"><link rel="prefetch" href="/assets/js/44.81f7ba3a.js"><link rel="prefetch" href="/assets/js/440.56b80ab8.js"><link rel="prefetch" href="/assets/js/441.2c59dbbd.js"><link rel="prefetch" href="/assets/js/442.c3593d0e.js"><link rel="prefetch" href="/assets/js/443.ecd15e5a.js"><link rel="prefetch" href="/assets/js/444.e895121c.js"><link rel="prefetch" href="/assets/js/445.4743e179.js"><link rel="prefetch" href="/assets/js/446.f55375f9.js"><link rel="prefetch" href="/assets/js/447.37bbd29e.js"><link rel="prefetch" href="/assets/js/448.2d84b694.js"><link rel="prefetch" href="/assets/js/45.1ca0ea78.js"><link rel="prefetch" href="/assets/js/450.41f473c3.js"><link rel="prefetch" href="/assets/js/451.45634daf.js"><link rel="prefetch" href="/assets/js/452.97aaa94f.js"><link rel="prefetch" href="/assets/js/453.9839942f.js"><link rel="prefetch" href="/assets/js/454.809868bd.js"><link rel="prefetch" href="/assets/js/455.649d455e.js"><link rel="prefetch" href="/assets/js/456.e3686423.js"><link rel="prefetch" href="/assets/js/457.e22e3e36.js"><link rel="prefetch" href="/assets/js/458.14e23a8f.js"><link rel="prefetch" href="/assets/js/459.f7455ab0.js"><link rel="prefetch" href="/assets/js/46.798b42bc.js"><link rel="prefetch" href="/assets/js/460.02cf4458.js"><link rel="prefetch" href="/assets/js/461.0d64d934.js"><link rel="prefetch" href="/assets/js/462.7b91e714.js"><link rel="prefetch" href="/assets/js/463.c0de9d86.js"><link rel="prefetch" href="/assets/js/464.ccf3782d.js"><link rel="prefetch" href="/assets/js/465.a7d0335a.js"><link rel="prefetch" href="/assets/js/466.bf079481.js"><link rel="prefetch" href="/assets/js/467.53a84241.js"><link rel="prefetch" href="/assets/js/468.20584137.js"><link rel="prefetch" href="/assets/js/469.f793d4a9.js"><link rel="prefetch" href="/assets/js/47.1782645a.js"><link rel="prefetch" href="/assets/js/470.7305acfb.js"><link rel="prefetch" href="/assets/js/471.7a98d1aa.js"><link rel="prefetch" href="/assets/js/472.8cb52e4f.js"><link rel="prefetch" href="/assets/js/473.1c682ab3.js"><link rel="prefetch" href="/assets/js/474.cf3f07cf.js"><link rel="prefetch" href="/assets/js/475.1e2b08be.js"><link rel="prefetch" href="/assets/js/476.c0b26bdb.js"><link rel="prefetch" href="/assets/js/477.af01995c.js"><link rel="prefetch" href="/assets/js/478.fd1fac85.js"><link rel="prefetch" href="/assets/js/479.b1e28521.js"><link rel="prefetch" href="/assets/js/48.0c188dc0.js"><link rel="prefetch" href="/assets/js/480.e73da1df.js"><link rel="prefetch" href="/assets/js/481.067f6140.js"><link rel="prefetch" href="/assets/js/482.db90dc2c.js"><link rel="prefetch" href="/assets/js/483.8874b5ae.js"><link rel="prefetch" href="/assets/js/484.40ef5b37.js"><link rel="prefetch" href="/assets/js/485.db2b477a.js"><link rel="prefetch" href="/assets/js/486.974e9bcf.js"><link rel="prefetch" href="/assets/js/487.dc28b441.js"><link rel="prefetch" href="/assets/js/488.92e10f63.js"><link rel="prefetch" href="/assets/js/489.b4f0706d.js"><link rel="prefetch" href="/assets/js/49.22d3d15e.js"><link rel="prefetch" href="/assets/js/490.ca5cb6c7.js"><link rel="prefetch" href="/assets/js/491.42654bd2.js"><link rel="prefetch" href="/assets/js/492.1e048618.js"><link rel="prefetch" href="/assets/js/493.acbc070b.js"><link rel="prefetch" href="/assets/js/494.ac3b1dc7.js"><link rel="prefetch" href="/assets/js/495.f255fe56.js"><link rel="prefetch" href="/assets/js/496.5f2fdc9d.js"><link rel="prefetch" href="/assets/js/497.8bea96aa.js"><link rel="prefetch" href="/assets/js/498.bc13cecc.js"><link rel="prefetch" href="/assets/js/499.566707d8.js"><link rel="prefetch" href="/assets/js/5.e30b7ee6.js"><link rel="prefetch" href="/assets/js/50.d5bfddfd.js"><link rel="prefetch" href="/assets/js/500.1e02eef8.js"><link rel="prefetch" href="/assets/js/501.9cfde320.js"><link rel="prefetch" href="/assets/js/502.e0f5e06c.js"><link rel="prefetch" href="/assets/js/503.55dca957.js"><link rel="prefetch" href="/assets/js/504.e88e637e.js"><link rel="prefetch" href="/assets/js/505.8de50ac5.js"><link rel="prefetch" href="/assets/js/506.bcf2250b.js"><link rel="prefetch" href="/assets/js/507.359ba3d9.js"><link rel="prefetch" href="/assets/js/508.0ecc8041.js"><link rel="prefetch" href="/assets/js/509.7ac5da10.js"><link rel="prefetch" href="/assets/js/51.bc9af172.js"><link rel="prefetch" href="/assets/js/510.9bb1c7cb.js"><link rel="prefetch" href="/assets/js/511.c60fb31e.js"><link rel="prefetch" href="/assets/js/512.ca77c1be.js"><link rel="prefetch" href="/assets/js/513.2c1aae8c.js"><link rel="prefetch" href="/assets/js/514.c4a97461.js"><link rel="prefetch" href="/assets/js/515.cb3f4cc4.js"><link rel="prefetch" href="/assets/js/516.c9579cff.js"><link rel="prefetch" href="/assets/js/517.1ba4e70e.js"><link rel="prefetch" href="/assets/js/518.b2142060.js"><link rel="prefetch" href="/assets/js/52.b4659795.js"><link rel="prefetch" href="/assets/js/53.307196b1.js"><link rel="prefetch" href="/assets/js/54.015a2b83.js"><link rel="prefetch" href="/assets/js/55.7825ff18.js"><link rel="prefetch" href="/assets/js/56.ef3c37d2.js"><link rel="prefetch" href="/assets/js/57.1706314c.js"><link rel="prefetch" href="/assets/js/58.c75de9d0.js"><link rel="prefetch" href="/assets/js/59.6f934b9a.js"><link rel="prefetch" href="/assets/js/6.94a432ac.js"><link rel="prefetch" href="/assets/js/60.43ac8652.js"><link rel="prefetch" href="/assets/js/61.e0e0ec57.js"><link rel="prefetch" href="/assets/js/62.11000526.js"><link rel="prefetch" href="/assets/js/63.e677f4c9.js"><link rel="prefetch" href="/assets/js/64.f782a5f9.js"><link rel="prefetch" href="/assets/js/65.a0b17789.js"><link rel="prefetch" href="/assets/js/66.7dd864f5.js"><link rel="prefetch" href="/assets/js/67.2619c722.js"><link rel="prefetch" href="/assets/js/68.1a8eba8d.js"><link rel="prefetch" href="/assets/js/69.f1f2aa8b.js"><link rel="prefetch" href="/assets/js/7.9ae6462c.js"><link rel="prefetch" href="/assets/js/70.e46abfe7.js"><link rel="prefetch" href="/assets/js/71.fbb53157.js"><link rel="prefetch" href="/assets/js/72.6a510720.js"><link rel="prefetch" href="/assets/js/73.7dc03803.js"><link rel="prefetch" href="/assets/js/74.99874dd1.js"><link rel="prefetch" href="/assets/js/75.3726fbb7.js"><link rel="prefetch" href="/assets/js/76.c3cb70b6.js"><link rel="prefetch" href="/assets/js/77.60a643d2.js"><link rel="prefetch" href="/assets/js/78.a52f3918.js"><link rel="prefetch" href="/assets/js/79.c7a58f28.js"><link rel="prefetch" href="/assets/js/8.dc0dc676.js"><link rel="prefetch" href="/assets/js/80.46daebba.js"><link rel="prefetch" href="/assets/js/81.6fa4cd82.js"><link rel="prefetch" href="/assets/js/82.f2fec921.js"><link rel="prefetch" href="/assets/js/83.4cb84eb3.js"><link rel="prefetch" href="/assets/js/84.e518d03e.js"><link rel="prefetch" href="/assets/js/85.1313f740.js"><link rel="prefetch" href="/assets/js/86.cdc7dd42.js"><link rel="prefetch" href="/assets/js/87.9c4f7359.js"><link rel="prefetch" href="/assets/js/88.c6735447.js"><link rel="prefetch" href="/assets/js/89.ed25130f.js"><link rel="prefetch" href="/assets/js/9.b03dac7b.js"><link rel="prefetch" href="/assets/js/90.8190663b.js"><link rel="prefetch" href="/assets/js/91.5cb23e87.js"><link rel="prefetch" href="/assets/js/92.b7edc7b1.js"><link rel="prefetch" href="/assets/js/93.56abc408.js"><link rel="prefetch" href="/assets/js/94.61f81422.js"><link rel="prefetch" href="/assets/js/95.df11b57c.js"><link rel="prefetch" href="/assets/js/96.0464357c.js"><link rel="prefetch" href="/assets/js/97.08af444b.js"><link rel="prefetch" href="/assets/js/98.33e72d9e.js"><link rel="prefetch" href="/assets/js/99.b9879fbc.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.07718e97.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Yuwei Yin (Joey)</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/home/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Mathematics" class="dropdown-title"><span class="title">Mathematics</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/article/mathematics/" class="nav-link">
+  Mathematics
+</a></li><li class="dropdown-item"><!----> <a href="/article/mathematics/mathematics-for-computer-science/" class="nav-link">
+  Mathematics for Computer Science
+</a></li><li class="dropdown-item"><!----> <a href="/article/mathematics/information-theory/" class="nav-link">
+  Information Theory
+</a></li><li class="dropdown-item"><!----> <a href="/article/mathematics/analysis/" class="nav-link">
+  Analysis
+</a></li><li class="dropdown-item"><!----> <a href="/article/mathematics/algebra/" class="nav-link">
+  Algebra
+</a></li><li class="dropdown-item"><!----> <a href="/article/mathematics/probability-theory-statistics/" class="nav-link">
+  Probability Theory &amp; Statistics
+</a></li><li class="dropdown-item"><!----> <a href="/article/mathematics/optimization/" class="nav-link">
+  Optimization
+</a></li><li class="dropdown-item"><!----> <a href="/article/mathematics/geometry/" class="nav-link">
+  Geometry
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Polymath" class="dropdown-title"><span class="title">Polymath</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/article/polymath/" class="nav-link">
+  Polymath
+</a></li><li class="dropdown-item"><!----> <a href="/article/polymath/biology/" class="nav-link">
+  Biology
+</a></li><li class="dropdown-item"><!----> <a href="/article/polymath/physics/" class="nav-link">
+  Physics
+</a></li><li class="dropdown-item"><!----> <a href="/article/polymath/chemistry/" class="nav-link">
+  Chemistry
+</a></li><li class="dropdown-item"><!----> <a href="/article/polymath/astronomy-cosmology/" class="nav-link">
+  Astronomy Cosmology
+</a></li><li class="dropdown-item"><!----> <a href="/article/polymath/geography/" class="nav-link">
+  Geography
+</a></li><li class="dropdown-item"><!----> <a href="/article/polymath/history/" class="nav-link">
+  History
+</a></li><li class="dropdown-item"><!----> <a href="/article/polymath/economics/" class="nav-link">
+  Economics
+</a></li><li class="dropdown-item"><!----> <a href="/article/polymath/psychology/" class="nav-link">
+  Psychology
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Polyglot" class="dropdown-title"><span class="title">Polyglot</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/article/polyglot/" class="nav-link">
+  Polyglot
+</a></li><li class="dropdown-item"><!----> <a href="/article/polyglot/arabic/" class="nav-link">
+  Arabic
+</a></li><li class="dropdown-item"><!----> <a href="/article/polyglot/english/" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/article/polyglot/french/" class="nav-link">
+  French
+</a></li><li class="dropdown-item"><!----> <a href="/article/polyglot/german/" class="nav-link">
+  German
+</a></li><li class="dropdown-item"><!----> <a href="/article/polyglot/greek/" class="nav-link">
+  Greek
+</a></li><li class="dropdown-item"><!----> <a href="/article/polyglot/hebrew/" class="nav-link">
+  Hebrew
+</a></li><li class="dropdown-item"><!----> <a href="/article/polyglot/italian/" class="nav-link">
+  Italian
+</a></li><li class="dropdown-item"><!----> <a href="/article/polyglot/japanese/" class="nav-link">
+  Japanese
+</a></li><li class="dropdown-item"><!----> <a href="/article/polyglot/latin/" class="nav-link">
+  Latin
+</a></li><li class="dropdown-item"><!----> <a href="/article/polyglot/persian/" class="nav-link">
+  Persian
+</a></li><li class="dropdown-item"><!----> <a href="/article/polyglot/portuguese/" class="nav-link">
+  Portuguese
+</a></li><li class="dropdown-item"><!----> <a href="/article/polyglot/russian/" class="nav-link">
+  Russian
+</a></li><li class="dropdown-item"><!----> <a href="/article/polyglot/spanish/" class="nav-link">
+  Spanish
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="CS" class="dropdown-title"><span class="title">CS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/article/computer-science/" class="nav-link">
+  Computer Science
+</a></li><li class="dropdown-item"><!----> <a href="/article/computer-science/introduction-to-cs/" class="nav-link">
+  Introduction to Computer Science
+</a></li><li class="dropdown-item"><!----> <a href="/article/computer-science/circuit/" class="nav-link">
+  Circuit
+</a></li><li class="dropdown-item"><!----> <a href="/article/computer-science/signal-system/" class="nav-link">
+  Signal System
+</a></li><li class="dropdown-item"><!----> <a href="/article/computer-science/computer-organization-architecture/" class="nav-link">
+  Computer Organization &amp; Architecture
+</a></li><li class="dropdown-item"><!----> <a href="/article/computer-science/operating-system/" class="nav-link">
+  Operating System
+</a></li><li class="dropdown-item"><!----> <a href="/article/computer-science/compilation-principle/" class="nav-link">
+  Compilation Principle
+</a></li><li class="dropdown-item"><!----> <a href="/article/computer-science/principles-of-programming-languages/" class="nav-link">
+  Principles of Programming Languages
+</a></li><li class="dropdown-item"><!----> <a href="/article/computer-science/programming-language/" class="nav-link">
+  Programming Language
+</a></li><li class="dropdown-item"><!----> <a href="/article/computer-science/object-oriented/" class="nav-link">
+  Object Oriented
+</a></li><li class="dropdown-item"><!----> <a href="/article/computer-science/design-pattern/" class="nav-link">
+  Design Pattern
+</a></li><li class="dropdown-item"><!----> <a href="/article/computer-science/software-engineering/" class="nav-link">
+  Software Engineering
+</a></li><li class="dropdown-item"><!----> <a href="/article/computer-science/computer-network/" class="nav-link">
+  Computer Network
+</a></li><li class="dropdown-item"><!----> <a href="/article/computer-science/database/" class="nav-link">
+  Database
+</a></li><li class="dropdown-item"><!----> <a href="/article/computer-science/security/" class="nav-link">
+  Security
+</a></li><li class="dropdown-item"><!----> <a href="/article/computer-science/system-development/" class="nav-link">
+  System Development
+</a></li><li class="dropdown-item"><!----> <a href="/article/computer-science/application/" class="nav-link">
+  Application
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Alg" class="dropdown-title"><span class="title">Alg</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/article/algorithm/" class="nav-link">
+  Algorithm
+</a></li><li class="dropdown-item"><!----> <a href="/article/algorithm/algorithm-basis/" class="nav-link">
+  Algorithm Basis
+</a></li><li class="dropdown-item"><!----> <a href="/article/algorithm/algorithm-topics/" class="nav-link">
+  Algorithm Topics
+</a></li><li class="dropdown-item"><!----> <a href="/article/algorithm/leetcode-all-solution/" class="nav-link">
+  LeetCode All Solution
+</a></li><li class="dropdown-item"><!----> <a href="/article/algorithm/leetcode-study-plan/" class="nav-link">
+  LeetCode Study Plan
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="AI" class="dropdown-title"><span class="title">AI</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/article/artificial-intelligence/" class="nav-link">
+  Artificial Intelligence
+</a></li><li class="dropdown-item"><!----> <a href="/article/artificial-intelligence/artificial-intelligence-principle/" class="nav-link">
+  Artificial Intelligence Principle
+</a></li><li class="dropdown-item"><!----> <a href="/article/artificial-intelligence/application/" class="nav-link">
+  Application
+</a></li><li class="dropdown-item"><!----> <a href="/article/artificial-intelligence/machine-learning/" class="nav-link">
+  Machine Learning
+</a></li><li class="dropdown-item"><!----> <a href="/article/artificial-intelligence/explainable-interpretable-machine-learning/" class="nav-link">
+  Explainable/Interpretable Machine Learning
+</a></li><li class="dropdown-item"><!----> <a href="/article/artificial-intelligence/deep-learning/" class="nav-link">
+  Deep Learning
+</a></li><li class="dropdown-item"><!----> <a href="/article/artificial-intelligence/natural-language-processing/" class="nav-link">
+  Natural Language Processing
+</a></li><li class="dropdown-item"><!----> <a href="/article/artificial-intelligence/speech/" class="nav-link">
+  Speech
+</a></li><li class="dropdown-item"><!----> <a href="/article/artificial-intelligence/computer-vision/" class="nav-link">
+  Computer Vision
+</a></li><li class="dropdown-item"><!----> <a href="/article/artificial-intelligence/data-mining-knowledge-management/" class="nav-link">
+  Data Mining &amp; Knowledge Management
+</a></li><li class="dropdown-item"><!----> <a href="/article/artificial-intelligence/knowledge-representation-and-reasoning/" class="nav-link">
+  Knowledge Representation and Reasoning
+</a></li><li class="dropdown-item"><!----> <a href="/article/artificial-intelligence/planning-routing-and-scheduling/" class="nav-link">
+  Planning, Routing, and Scheduling
+</a></li><li class="dropdown-item"><!----> <a href="/article/artificial-intelligence/agent-based-and-multi-agent-systems/" class="nav-link">
+  Agent-based and Multi-agent Systems
+</a></li><li class="dropdown-item"><!----> <a href="/article/artificial-intelligence/robotics/" class="nav-link">
+  Robotics
+</a></li><li class="dropdown-item"><!----> <a href="/article/artificial-intelligence/search-and-optimization/" class="nav-link">
+  Search and Optimization
+</a></li><li class="dropdown-item"><!----> <a href="/article/artificial-intelligence/constraint-satisfaction-and-optimization/" class="nav-link">
+  Constraint Satisfaction and Optimization
+</a></li><li class="dropdown-item"><!----> <a href="/article/artificial-intelligence/uncertainty-in-ai/" class="nav-link">
+  Uncertainty in AI
+</a></li><li class="dropdown-item"><!----> <a href="/article/artificial-intelligence/cognitive-modeling-cognitive-systems/" class="nav-link">
+  Cognitive Modeling &amp; Cognitive Systems
+</a></li><li class="dropdown-item"><!----> <a href="/article/artificial-intelligence/game-theory-and-economic-paradigms/" class="nav-link">
+  Game Theory and Economic Paradigms
+</a></li><li class="dropdown-item"><!----> <a href="/article/artificial-intelligence/humans-and-ai/" class="nav-link">
+  Humans and AI
+</a></li><li class="dropdown-item"><!----> <a href="/article/artificial-intelligence/ai-ethics-trust-fairness/" class="nav-link">
+  AI Ethics, Trust, Fairness
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="NLP" class="dropdown-title"><span class="title">NLP</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/article/natural-language-processing/" class="nav-link">
+  Natural Language Processing
+</a></li><li class="dropdown-item"><!----> <a href="/article/natural-language-processing/nlp-course/" class="nav-link">
+  NLP Course
+</a></li><li class="dropdown-item"><!----> <a href="/article/natural-language-processing/nlp-research-topic/text-representation/" class="nav-link">
+  Text Representation
+</a></li><li class="dropdown-item"><!----> <a href="/article/natural-language-processing/nlp-research-topic/nlp-disentangle/" class="nav-link">
+  NLP Disentangle
+</a></li><li class="dropdown-item"><!----> <a href="/article/natural-language-processing/nlp-research-topic/pretraining-language-model/" class="nav-link">
+  PreTraining Language Model
+</a></li><li class="dropdown-item"><!----> <a href="/article/natural-language-processing/nlp-research-topic/machine-translation/" class="nav-link">
+  Machine Translation
+</a></li><li class="dropdown-item"><!----> <a href="/article/natural-language-processing/nlp-research-topic/machine-reading-comprehension/" class="nav-link">
+  Machine Reading Comprehension
+</a></li><li class="dropdown-item"><!----> <a href="/article/natural-language-processing/nlp-research-topic/dialogue-system/" class="nav-link">
+  Dialogue System
+</a></li></ul></div></div><div class="nav-item"><a href="/article/essay/" class="nav-link">
+  Essay
+</a></div><div class="nav-item"><a href="/article/repost/" class="nav-link router-link-active">
+  Repost
+</a></div><div class="nav-item"><a href="https://www.github.com/YuweiYin" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/home/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Mathematics" class="dropdown-title"><span class="title">Mathematics</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/article/mathematics/" class="nav-link">
+  Mathematics
+</a></li><li class="dropdown-item"><!----> <a href="/article/mathematics/mathematics-for-computer-science/" class="nav-link">
+  Mathematics for Computer Science
+</a></li><li class="dropdown-item"><!----> <a href="/article/mathematics/information-theory/" class="nav-link">
+  Information Theory
+</a></li><li class="dropdown-item"><!----> <a href="/article/mathematics/analysis/" class="nav-link">
+  Analysis
+</a></li><li class="dropdown-item"><!----> <a href="/article/mathematics/algebra/" class="nav-link">
+  Algebra
+</a></li><li class="dropdown-item"><!----> <a href="/article/mathematics/probability-theory-statistics/" class="nav-link">
+  Probability Theory &amp; Statistics
+</a></li><li class="dropdown-item"><!----> <a href="/article/mathematics/optimization/" class="nav-link">
+  Optimization
+</a></li><li class="dropdown-item"><!----> <a href="/article/mathematics/geometry/" class="nav-link">
+  Geometry
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Polymath" class="dropdown-title"><span class="title">Polymath</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/article/polymath/" class="nav-link">
+  Polymath
+</a></li><li class="dropdown-item"><!----> <a href="/article/polymath/biology/" class="nav-link">
+  Biology
+</a></li><li class="dropdown-item"><!----> <a href="/article/polymath/physics/" class="nav-link">
+  Physics
+</a></li><li class="dropdown-item"><!----> <a href="/article/polymath/chemistry/" class="nav-link">
+  Chemistry
+</a></li><li class="dropdown-item"><!----> <a href="/article/polymath/astronomy-cosmology/" class="nav-link">
+  Astronomy Cosmology
+</a></li><li class="dropdown-item"><!----> <a href="/article/polymath/geography/" class="nav-link">
+  Geography
+</a></li><li class="dropdown-item"><!----> <a href="/article/polymath/history/" class="nav-link">
+  History
+</a></li><li class="dropdown-item"><!----> <a href="/article/polymath/economics/" class="nav-link">
+  Economics
+</a></li><li class="dropdown-item"><!----> <a href="/article/polymath/psychology/" class="nav-link">
+  Psychology
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Polyglot" class="dropdown-title"><span class="title">Polyglot</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/article/polyglot/" class="nav-link">
+  Polyglot
+</a></li><li class="dropdown-item"><!----> <a href="/article/polyglot/arabic/" class="nav-link">
+  Arabic
+</a></li><li class="dropdown-item"><!----> <a href="/article/polyglot/english/" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/article/polyglot/french/" class="nav-link">
+  French
+</a></li><li class="dropdown-item"><!----> <a href="/article/polyglot/german/" class="nav-link">
+  German
+</a></li><li class="dropdown-item"><!----> <a href="/article/polyglot/greek/" class="nav-link">
+  Greek
+</a></li><li class="dropdown-item"><!----> <a href="/article/polyglot/hebrew/" class="nav-link">
+  Hebrew
+</a></li><li class="dropdown-item"><!----> <a href="/article/polyglot/italian/" class="nav-link">
+  Italian
+</a></li><li class="dropdown-item"><!----> <a href="/article/polyglot/japanese/" class="nav-link">
+  Japanese
+</a></li><li class="dropdown-item"><!----> <a href="/article/polyglot/latin/" class="nav-link">
+  Latin
+</a></li><li class="dropdown-item"><!----> <a href="/article/polyglot/persian/" class="nav-link">
+  Persian
+</a></li><li class="dropdown-item"><!----> <a href="/article/polyglot/portuguese/" class="nav-link">
+  Portuguese
+</a></li><li class="dropdown-item"><!----> <a href="/article/polyglot/russian/" class="nav-link">
+  Russian
+</a></li><li class="dropdown-item"><!----> <a href="/article/polyglot/spanish/" class="nav-link">
+  Spanish
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="CS" class="dropdown-title"><span class="title">CS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/article/computer-science/" class="nav-link">
+  Computer Science
+</a></li><li class="dropdown-item"><!----> <a href="/article/computer-science/introduction-to-cs/" class="nav-link">
+  Introduction to Computer Science
+</a></li><li class="dropdown-item"><!----> <a href="/article/computer-science/circuit/" class="nav-link">
+  Circuit
+</a></li><li class="dropdown-item"><!----> <a href="/article/computer-science/signal-system/" class="nav-link">
+  Signal System
+</a></li><li class="dropdown-item"><!----> <a href="/article/computer-science/computer-organization-architecture/" class="nav-link">
+  Computer Organization &amp; Architecture
+</a></li><li class="dropdown-item"><!----> <a href="/article/computer-science/operating-system/" class="nav-link">
+  Operating System
+</a></li><li class="dropdown-item"><!----> <a href="/article/computer-science/compilation-principle/" class="nav-link">
+  Compilation Principle
+</a></li><li class="dropdown-item"><!----> <a href="/article/computer-science/principles-of-programming-languages/" class="nav-link">
+  Principles of Programming Languages
+</a></li><li class="dropdown-item"><!----> <a href="/article/computer-science/programming-language/" class="nav-link">
+  Programming Language
+</a></li><li class="dropdown-item"><!----> <a href="/article/computer-science/object-oriented/" class="nav-link">
+  Object Oriented
+</a></li><li class="dropdown-item"><!----> <a href="/article/computer-science/design-pattern/" class="nav-link">
+  Design Pattern
+</a></li><li class="dropdown-item"><!----> <a href="/article/computer-science/software-engineering/" class="nav-link">
+  Software Engineering
+</a></li><li class="dropdown-item"><!----> <a href="/article/computer-science/computer-network/" class="nav-link">
+  Computer Network
+</a></li><li class="dropdown-item"><!----> <a href="/article/computer-science/database/" class="nav-link">
+  Database
+</a></li><li class="dropdown-item"><!----> <a href="/article/computer-science/security/" class="nav-link">
+  Security
+</a></li><li class="dropdown-item"><!----> <a href="/article/computer-science/system-development/" class="nav-link">
+  System Development
+</a></li><li class="dropdown-item"><!----> <a href="/article/computer-science/application/" class="nav-link">
+  Application
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Alg" class="dropdown-title"><span class="title">Alg</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/article/algorithm/" class="nav-link">
+  Algorithm
+</a></li><li class="dropdown-item"><!----> <a href="/article/algorithm/algorithm-basis/" class="nav-link">
+  Algorithm Basis
+</a></li><li class="dropdown-item"><!----> <a href="/article/algorithm/algorithm-topics/" class="nav-link">
+  Algorithm Topics
+</a></li><li class="dropdown-item"><!----> <a href="/article/algorithm/leetcode-all-solution/" class="nav-link">
+  LeetCode All Solution
+</a></li><li class="dropdown-item"><!----> <a href="/article/algorithm/leetcode-study-plan/" class="nav-link">
+  LeetCode Study Plan
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="AI" class="dropdown-title"><span class="title">AI</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/article/artificial-intelligence/" class="nav-link">
+  Artificial Intelligence
+</a></li><li class="dropdown-item"><!----> <a href="/article/artificial-intelligence/artificial-intelligence-principle/" class="nav-link">
+  Artificial Intelligence Principle
+</a></li><li class="dropdown-item"><!----> <a href="/article/artificial-intelligence/application/" class="nav-link">
+  Application
+</a></li><li class="dropdown-item"><!----> <a href="/article/artificial-intelligence/machine-learning/" class="nav-link">
+  Machine Learning
+</a></li><li class="dropdown-item"><!----> <a href="/article/artificial-intelligence/explainable-interpretable-machine-learning/" class="nav-link">
+  Explainable/Interpretable Machine Learning
+</a></li><li class="dropdown-item"><!----> <a href="/article/artificial-intelligence/deep-learning/" class="nav-link">
+  Deep Learning
+</a></li><li class="dropdown-item"><!----> <a href="/article/artificial-intelligence/natural-language-processing/" class="nav-link">
+  Natural Language Processing
+</a></li><li class="dropdown-item"><!----> <a href="/article/artificial-intelligence/speech/" class="nav-link">
+  Speech
+</a></li><li class="dropdown-item"><!----> <a href="/article/artificial-intelligence/computer-vision/" class="nav-link">
+  Computer Vision
+</a></li><li class="dropdown-item"><!----> <a href="/article/artificial-intelligence/data-mining-knowledge-management/" class="nav-link">
+  Data Mining &amp; Knowledge Management
+</a></li><li class="dropdown-item"><!----> <a href="/article/artificial-intelligence/knowledge-representation-and-reasoning/" class="nav-link">
+  Knowledge Representation and Reasoning
+</a></li><li class="dropdown-item"><!----> <a href="/article/artificial-intelligence/planning-routing-and-scheduling/" class="nav-link">
+  Planning, Routing, and Scheduling
+</a></li><li class="dropdown-item"><!----> <a href="/article/artificial-intelligence/agent-based-and-multi-agent-systems/" class="nav-link">
+  Agent-based and Multi-agent Systems
+</a></li><li class="dropdown-item"><!----> <a href="/article/artificial-intelligence/robotics/" class="nav-link">
+  Robotics
+</a></li><li class="dropdown-item"><!----> <a href="/article/artificial-intelligence/search-and-optimization/" class="nav-link">
+  Search and Optimization
+</a></li><li class="dropdown-item"><!----> <a href="/article/artificial-intelligence/constraint-satisfaction-and-optimization/" class="nav-link">
+  Constraint Satisfaction and Optimization
+</a></li><li class="dropdown-item"><!----> <a href="/article/artificial-intelligence/uncertainty-in-ai/" class="nav-link">
+  Uncertainty in AI
+</a></li><li class="dropdown-item"><!----> <a href="/article/artificial-intelligence/cognitive-modeling-cognitive-systems/" class="nav-link">
+  Cognitive Modeling &amp; Cognitive Systems
+</a></li><li class="dropdown-item"><!----> <a href="/article/artificial-intelligence/game-theory-and-economic-paradigms/" class="nav-link">
+  Game Theory and Economic Paradigms
+</a></li><li class="dropdown-item"><!----> <a href="/article/artificial-intelligence/humans-and-ai/" class="nav-link">
+  Humans and AI
+</a></li><li class="dropdown-item"><!----> <a href="/article/artificial-intelligence/ai-ethics-trust-fairness/" class="nav-link">
+  AI Ethics, Trust, Fairness
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="NLP" class="dropdown-title"><span class="title">NLP</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/article/natural-language-processing/" class="nav-link">
+  Natural Language Processing
+</a></li><li class="dropdown-item"><!----> <a href="/article/natural-language-processing/nlp-course/" class="nav-link">
+  NLP Course
+</a></li><li class="dropdown-item"><!----> <a href="/article/natural-language-processing/nlp-research-topic/text-representation/" class="nav-link">
+  Text Representation
+</a></li><li class="dropdown-item"><!----> <a href="/article/natural-language-processing/nlp-research-topic/nlp-disentangle/" class="nav-link">
+  NLP Disentangle
+</a></li><li class="dropdown-item"><!----> <a href="/article/natural-language-processing/nlp-research-topic/pretraining-language-model/" class="nav-link">
+  PreTraining Language Model
+</a></li><li class="dropdown-item"><!----> <a href="/article/natural-language-processing/nlp-research-topic/machine-translation/" class="nav-link">
+  Machine Translation
+</a></li><li class="dropdown-item"><!----> <a href="/article/natural-language-processing/nlp-research-topic/machine-reading-comprehension/" class="nav-link">
+  Machine Reading Comprehension
+</a></li><li class="dropdown-item"><!----> <a href="/article/natural-language-processing/nlp-research-topic/dialogue-system/" class="nav-link">
+  Dialogue System
+</a></li></ul></div></div><div class="nav-item"><a href="/article/essay/" class="nav-link">
+  Essay
+</a></div><div class="nav-item"><a href="/article/repost/" class="nav-link router-link-active">
+  Repost
+</a></div><div class="nav-item"><a href="https://www.github.com/YuweiYin" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/article/repost/" class="sidebar-link">Repost</a></li><li><a href="/article/repost/yinwang/2012/" class="sidebar-link">Blog of Yin Wang in 2012</a></li><li><a href="/article/repost/yinwang/2013/" class="sidebar-link">Blog of Yin Wang in 2013</a></li><li><a href="/article/repost/yinwang/2014/" class="sidebar-link">Blog of Yin Wang in 2014</a></li><li><a href="/article/repost/yinwang/2015/" class="sidebar-link">Blog of Yin Wang in 2015</a></li><li><a href="/article/repost/yinwang/2016/" class="sidebar-link">Blog of Yin Wang in 2016</a></li><li><a href="/article/repost/yinwang/2017/" class="sidebar-link">Blog of Yin Wang in 2017</a></li><li><a href="/article/repost/yinwang/2018/" class="sidebar-link">Blog of Yin Wang in 2018</a></li><li><a href="/article/repost/yinwang/2019/" class="sidebar-link">Blog of Yin Wang in 2019</a></li><li><a href="/article/repost/yinwang/2020/" class="sidebar-link">Blog of Yin Wang in 2020</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="alphago与人工智能"><a href="#alphago与人工智能" class="header-anchor">#</a> AlphaGo与人工智能</h1> <p>2016年03月09日 - <a href="http://www.yinwang.org/" target="_blank" rel="noopener noreferrer">王垠<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p><a href="http://www.yinwang.org/blog-cn/2016/03/09/alpha-go" target="_blank" rel="noopener noreferrer">原文链接<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <hr> <p>在之前的一篇<a href="http://www.yinwang.org/blog-cn/2016/02/12/self-driving-car" target="_blank" rel="noopener noreferrer">文章<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>中我指出，自动驾驶所需要的“视觉识别能力”和“常识判断能力”，对于机器来说是非常困难的问题。至今没有任何机器可以在视觉方面达到驴的水平，更不要说和人比。可是最近 Google 的 <a href="https://deepmind.com/research/case-studies/alphago-the-story-so-far" target="_blank" rel="noopener noreferrer">AlphaGo<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 战胜了围棋世界冠军，挺闹腾的，以至于对AI的误解又加深了。</p> <p>本来玩个游戏而已，恁要吹成是“历史性的人机大战”，说得好像是机器挑战了人类的智能，伤了人类的自尊似的。这整个项目打着一个相当高大上的招牌，叫做“<a href="https://deepmind.com/" target="_blank" rel="noopener noreferrer">Deep Mind<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>”。当然，其中的技术也有一些吓人的名字，什么“神经网络”啊，“深度学习”啊……</p> <p>听到这些，总有一知半解的人，根据科幻电影的情节开始展望，这样厉害的技术，应该可以用来做更加“智能”的事情，然后就开始对“人类的未来”作出一些猜想，比如自动车就要实现，人的工作很快都要被机器取代，甚至 <a href="https://en.wikipedia.org/wiki/Skynet_(Terminator)" target="_blank" rel="noopener noreferrer">Skynet<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 就要控制人类，云云。</p> <p>我只想在这里给这些人提个醒：还是别做科幻梦了，回到现实吧。</p> <h2 id="棋类是相对容易的ai问题"><a href="#棋类是相对容易的ai问题" class="header-anchor">#</a> 棋类是相对容易的AI问题</h2> <p>一个常见的外行想法，是以为 AlphaGo 真的具有“人类智能”，所以 Google 利用同样的技术，应该可以实现自动车。这些人不但大大的高估了所谓“AI”的能力，而且他们不明白，不同的“AI问题”的难度，其实有着天壤之别。</p> <p>围棋是简单的，世界是复杂的。机器视觉和自动车，难度比围棋要大许多倍，根本不在一个量级。要达到准确的视觉判断能力，机器必须拥有真正的认知能力和常识，这并不是 AlphaGo 所用的树搜索和神经网络，就可以解决的。由于需要以极高的速度处理“模拟信号”，这根本就不是人们常用的“数字计算机”可以解决的问题。也就是说，不是写代码就可以搞定的。</p> <p>很早以前，人工智能专家们就发现一个很有趣的现象，是这样：</p> <ul><li>对于人来说很难，很烦的事情（复杂的计算，下棋，推理……），对于计算机来说，其实算是相对容易的事情。</li> <li>对于人来说很容易的事情（认人，走路，开车，打球……），对于计算机来说，却非常困难。</li> <li>计算机不能应付复杂的环境，只能在相对完美的环境下工作，需要精确的，离散的输入。</li> <li>人对环境的适应能力很高，擅长于处理模糊的，连续的，不完美的数据。</li></ul> <p>从以上几点你可以看出，棋类活动正好符合了计算机的特点，因为它总是处于一种隔离的，完美的环境，具有离散的，精确的，有限的输入。棋盘上就那么几十，几百个点，不是随便放在哪里都可以的。一人走一步，轮流着走，不能乱来。整个棋盘的信息是完全可见的，没有隐藏和缺损的信息。棋局的“解空间”虽然很大，却非常规整，有规律可循。如果完全不靠经验和技巧的话，围棋的第一步可以有361种情况，第二步有360种情况，……</p> <p>这对机器是非常有利的情况，因为计算机可以有计划有步骤，兢兢业业的把各种可能出现的情况算出来，一直到许多步以后，然后从中选择最有优势的走法。所以下棋归根结底，就是一个“树搜索”问题，只不过因为规模太大，需要加入一些优化。围棋的解空间虽然大，却是一个已知数，它最多有 $ 250^{150} $ 种情况。AlphaGo 使用所谓“神经网络”，就是为了在搜索的时候进行优化，尽早的排除不大可能取胜的情况，免得浪费计算的时间。</p> <p>这种精确而死板的活动，就跟计算一个比较大的乘法算式（比如 $ 2463757 \times 65389 $）的性质类似，只不过规模大很多。显然，人做这类事情很繁，很累，容易出错，计算机对此却任劳任怨，因为它本来就是个机器。当年“深蓝”战胜国际象棋世界冠军的时候，我就已经预测到，计算机成为围棋世界冠军是迟早的事，所以没必要玩这些虐待自己脑子的游戏了。可惜的是，挺多人仍然把精通棋艺作为一种荣耀（因为“琴棋书画剑”嘛）。很多中国人认为，中国人下围棋总是输给韩国人，是一种耻辱。现在看来这是多么可笑的事情，这就像心算乘法不如韩国人快，就觉得是耻辱一样 😃</p> <h2 id="认知是真正困难的ai问题"><a href="#认知是真正困难的ai问题" class="header-anchor">#</a> 认知是真正困难的AI问题</h2> <p>现在来对比一下人们生活中的琐事，就说倒水端茶吧。</p> <p>让一个机器来给你倒水，有多难呢？意想不到的难！看看这个场景，如果你的电脑配备有摄像头，那么它怎么知道茶壶在哪里呢？要知道，茶壶的材料，颜色，形状，和角度，可以有几乎无穷多的变化。甚至有些茶壶跟哈哈镜一样，会把旁边的物体的形状都扭曲反射出来。桌上的物品附近都有各种反光和阴影，不同材料的反光特性还不一样，这些都会大幅度的影响机器对物品的识别。</p> <p>为了识别物体，机器需要常识，它的头脑里必须有概念，必须知道什么样的东西才能叫做“茶壶”和“茶杯”。不要小看这一步的难度，这意味着机器必须理解基本的“拓扑结构”，什么叫做“连续的平面”，什么叫做“洞”，什么是“凹”和“凸”，什么是“里”和“外”…… 另外，这机器必须能够分辨物体和阴影。它必须知道水是什么，水有什么样的运动特性，什么叫做“流动”。它必须知道“水往低处流”，然后它又必须知道什么叫“低”和“高”…… 它必须知道茶杯为什么可以盛水，茶壶的嘴在哪里，把手在哪里，怎样才能拿起茶壶。如果一眼没有看见茶壶的把手，那它在哪里？茶壶的哪一面是“上面”，要怎样才可以把水从茶壶的嘴里倒出来，而不是从盖子上面泼出来？什么是裂掉的茶杯，它为什么会漏水，什么是缺口的茶杯，它为什么仍然可以盛水而不漏？干净的茶杯是什么样子的，什么是脏的茶杯，什么是茶垢，为什么茶垢不算是脏东西？如何控制水的流速和落点，什么叫做“水溅出来了”，要怎么倒水才不会溅出来？……</p> <p>你也许没有想到，倒茶这么简单的事情，需要用到如此多的常识。所有这些变数加在一起，其实远远的大于围棋棋局的数量，人却可以不费力的完成。这能力，真是应该让人自己都吓一跳，然而人却对此不以为然，称之为“琐事”！因为其他人都可以做这样的事情，甚至猴子都可以，怎么能显得出我很了不起呢？人的自尊和虚荣，再一次的蒙蔽了他自己。他没有意识到，这其实是非常宝贵，让机器难以匹敌的能力。他说：“机器经过大量的学习，总有一天会做到的。看我们有神经网络呢，还有深度学习！”</p> <h2 id="机器学习是什么"><a href="#机器学习是什么" class="header-anchor">#</a> 机器学习是什么</h2> <p>有些人喜欢拿“机器学习”或者“深度学习”来吓唬人，以为出现了“学习”两个字，就可以化腐朽为神奇。而其实所谓机器学习，跟人类的学习，完全是两回事。机器的“学习能力”，并没有比石头高出很多，因为机器学习说白了，只不过是通过大量的数据，<a href="https://en.wikipedia.org/wiki/Curve_fitting" target="_blank" rel="noopener noreferrer">统计拟合<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>出某些函数的参数。</p> <p>比如，你采集到一些二维数据点。你猜测它们符合一个简单的函数 $ y = ax^{3} + bx^{2} + cx + d $，但不知道a, b, c和d该是多少。于是你就利用所谓“机器学习”（也就是数学统计），推断出参数a, b, c和d的值，使得采集到的数据尽可能的靠近这函数的曲线。可是这函数是怎么来的呢？终究还是人想出来的。机器无论如何也跳不出 $ y = ax^{3} + bx^{2} + cx + d $ 这个框子。如果数据不符合这个范式，还是只有靠人，才能找到更加符合数据特性的函数。</p> <p>所谓神经网络，其实也是一个函数，它在本质上跟 $ y = ax^{3} + bx^{2} + cx + d $ 并没有不同，只不过输入的参数多一些，逻辑复杂一些。“神经网络”跟神经，其实完全没有关系，却偏喜欢说是受到了神经元的启发而来的。神经网络是一个非常聪明的广告词，它不知道迷惑了多少人。因为有“神经”两个字在里面，很多人以为它会让机器具有智能，而其实这些就是统计学家们斯通见惯的事情：拟合一个函数。你可以拟合出很好的函数，然而这跟智能没什么关系。</p> <h2 id="alphago并不是人工智能历史性的突破"><a href="#alphago并不是人工智能历史性的突破" class="header-anchor">#</a> AlphaGo并不是人工智能历史性的突破</h2> <p>这次AlphaGo战胜了围棋冠军，跟之前IBM的“<a href="https://www.theverge.com/2016/3/12/11211306/ibm-deep-blue-murray-campbell-alphago-deepmind-interview" target="_blank" rel="noopener noreferrer">深蓝<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>”电脑战胜国际象棋世界冠军，意义其实差不多。能够写出程序，在这些事情上打败世界冠军，的确是一个进步，它肯定会对某些特定的应用带来改善。然而，这并不说明AI取得了革命性的进步，更不能表明电脑具有了真正的，通用的智能。恰恰相反，电脑能够在棋类游戏中战胜人类，正好说明下棋这种活动，其实并不需要很多的智能。从事棋类活动的能力，并不足以衡量人的智力。</p> <p>著名的认知科学家 <a href="http://www.theatlantic.com/magazine/archive/2013/11/the-man-who-would-teach-machines-to-think/309529" target="_blank" rel="noopener noreferrer">Douglas Hofstadter<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>（《<a href="https://en.wikipedia.org/wiki/G%C3%B6del,_Escher,_Bach" target="_blank" rel="noopener noreferrer">GEB<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>》的作者），早就指出AI领域的那些热门话题，比如电脑下棋，跟真正意义上的人类智能，几乎完全不搭边。绝大部分人其实不明白思考和智能到底是什么。大部分所谓AI专家，对人脑的工作原理所知甚少，甚至完全不关心。</p> <p>AlphaGo 所用的技术，也许能够用于其它同类的游戏，然而它并不能作为解决现实问题的通用方法。特别是，这种技术不可能对自动车的发展带来突破。自动车如果只比开车技术很差的人强一点，是不可接受的。它必须要近乎完美的工作，才有可能被人接受，然而这就要求它必须具有人类级别的视觉认知能力。比如，它必须能够察觉到前面车上绑了个家具，没绑稳，快要掉下来了，赶快换车道，超过它。可惜的是，自动车的“眼睛”里看到的，只是一个个的立方块，它几乎完全不理解身边到底发生着什么，它只是在跟随和避让一些线条和方块…… 我们多希望马路都是游戏一样简单，清晰，完美，没有意外的，可惜它不是那样的。每一个细节都可能关系到人的生死，这就是现实世界。</p> <p><img src="/img/yinwang/alpha-go.png" alt="alpha-go"></p> <p>为 AlphaGo 热血沸腾的人们，别再沉迷于自动车和 Skynet 之类的幻想了。看清AI和“神经网络”的实质，用它们来做点有用的东西就可以，没必要对实现“人类智能”抱太大的希望。</p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.1d455c0d.js" defer></script><script src="/assets/js/2.bd627f1b.js" defer></script><script src="/assets/js/449.83c2871e.js" defer></script>
+  </body>
+</html>
