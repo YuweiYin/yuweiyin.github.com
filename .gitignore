@@ -13,3 +13,7 @@ xcuserdata
 *.pbxproj
 *-checkpoint.ipynb
 *.ipynb_checkpoints
+
+.sass-cache
+.jekyll-cache
+.jekyll-metadata

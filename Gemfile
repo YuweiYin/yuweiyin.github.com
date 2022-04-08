@@ -40,4 +40,8 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 # do not have a Java counterpart.
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
-gem "github-pages", group: :jekyll_plugins
+# gem 'sass', '~>3.2.0'
+gem 'sass', '~>3.4'
+gem 'compass', '~>0.12.0'
+gem 'susy', '~>1.0.0'
+gem 'breakpoint', '~>2.0.0'
