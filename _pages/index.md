@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 # layout: home
 layout: archive
-title: "Yuwei Yin (Joey) Homepage"
+title: "Homepage"
 permalink: /
 author_profile: true
 # redirect_from:
