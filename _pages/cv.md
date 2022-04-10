@@ -58,33 +58,39 @@ MathJax = {
   <!-- * Developed a smart band system to measure the heart rate and sports situation (Publication: [CN-Journal](https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CJFD&dbname=CJFDLAST2017&filename=DNZS201636043)) -->
   * National Undergraduate Innovation Project
   * Developed a smart band system to measure the heart rate and sports situation (Software & Hardware)
-  * Publication: *Design and Implementation of Smart Band System* ([CN-Journal](https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CJFD&dbname=CJFDLAST2017&filename=DNZS201636043))
+  <!-- * Publication: *Design and Implementation of Smart Band System* ([CN-Journal](https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CJFD&dbname=CJFDLAST2017&filename=DNZS201636043)) -->
+  <!-- * Publication: *Design and Implementation of Smart Band System* ([CN-Journal](https://www.cnki.com.cn/Article/CJFDTotal-DNZS201636043.htm)) -->
+  <!-- 智能手环系统的设计与实现   马旭平，蔡嘉豪，阴昱为，丁尚甦 -->
   * Advisor: Xuping Ma.
 
 ## Publications
 
 **Research Interests**: Natural Language Understanding & Generation, Multilingual NLP, Interpretable NLP
 
-### 2021
+<!-- ### 2021 -->
 
-* *Multilingual Agreement for Multilingual Neural Machine Translation* ([ACL-IJCNLP 2021](https://aclanthology.org/2021.acl-short.31/))
+* *Multilingual Agreement for Multilingual Neural Machine Translation* ([ACL-IJCNLP, 2021](https://aclanthology.org/2021.acl-short.31/))
   * Jian Yang, <u>Yuwei Yin</u>, Shuming Ma, Haoyang Huang, Dongdong Zhang, Zhoujun Li, Furu Wei
 
-* *Improving Multilingual Neural Machine Translation with Auxiliary Source Languages* ([EMNLP 2021](https://aclanthology.org/2021.findings-emnlp.260/))
+* *Improving Multilingual Neural Machine Translation with Auxiliary Source Languages* ([EMNLP, 2021](https://aclanthology.org/2021.findings-emnlp.260/))
   * Weijia Xu, <u>Yuwei Yin</u>, Shuming Ma, Dongdong Zhang, Haoyang Huang
+
+<!-- * *Design and Implementation of Smart Band System* ([Computer Knowledge and Technology, 2016](https://www.cnki.com.cn/Article/CJFDTotal-DNZS201636043.htm)) -->
+* *Design and Implementation of Smart Band System* ([Computer Knowledge and Technology, 2016](https://yuweiyin.github.io/files/publications/2016-12-01-Smart-Band-System.pdf))
+  * Xuping Ma, Jiahao Cai, <u>Yuwei Yin</u>, Shangsu Ding
 
 ## Teaching and Academic Service
 
-* **Teaching Assistant**
+* **Teaching Assistantship**
   <!-- * Fall 2019: *Discrete Mathematics* (B3I061142), School of Computer Science and Engineering, Beihang University, professor: [Zhoujun Li](https://scholar.google.com/citations?user=e-4LoEcAAAAJ) -->
   * Fall 2019: *Discrete Mathematics* (B3I061142), School of Computer Science and Engineering, Beihang University
 
-* **Invited Reviewer**
-  * 2022: IEEE/ACM Transactions on Audio, Speech, and Language Processing
-
-* **Mentorship**
+* **Research Mentorship**
   <!-- * 2019 -- 2020: Masters in Beihang University: Caijun Bao, Xinxin Song, Nannan Shi, Yuling Deng -->
-  * 2019 -- 2020: Masters: Caijun Bao, Xinxin Song, Nannan Shi, Yuling Deng
+  * 2019 -- 2020: M.S. in Beihang University: Caijun Bao, Xinxin Song, Nannan Shi, Yuling Deng
+
+* **Journal & Conference Reviewing**
+  * 2022: IEEE/ACM Transactions on Audio, Speech, and Language Processing
 
 ## Professional Skills
 
@@ -93,7 +99,7 @@ MathJax = {
 * **Toolkits & Libraries**
   * PyTorch, Tensorflow, Keras, Fairseq, scikit-learn, Gensim, NLTK, CoreNLP
 * **Data Analysis**
-  * Crawler (BeautifulSoup4, Scrapy), Numpy, Pandas, Matplotlib, t-SNE
+  * Crawler (Requests, BeautifulSoup4, Scrapy), Numpy, Pandas, Matplotlib, t-SNE
 * **System Development**
   * Vue.js, Django, Node.js, Java Web, Android SDK
 * **Office Software**
@@ -108,8 +114,8 @@ MathJax = {
 * **Scholarship**
   * China National Scholarship. (top 1%, National level) twice: Nov. 2016 & Nov. 2017
   * Excellent Academic Scholarship. (top 10%, University level) thrice: Jan. 2016 & Jan. 2017 & Jan. 2018
-  * Social Contribution Scholarship. (University level) twice: Jan. 2017 & Jan. 2018
   * Research and Innovative Scholarship. (University level) twice: Jan. 2016 & Jan. 2017
+  * Social Contribution Scholarship. (University level) twice: Jan. 2017 & Jan. 2018
 * **Competition**
   * 1st Prize in The 32nd National Physics Competition, Beijing District. (top 5%, Provincial level) Dec. 2015
   * 1st Prize in The 9th Mathematics Competition. (top 5%, University level) Jun. 2015

@@ -7,7 +7,7 @@ permalink: /publications/2021-08-02-ACL-MNMT-multiAgreement
 venue: "Conference (ACL-IJCNLP 2021)"
 # paperurl: "https://yuweiyin.github.io/files/publications/2021-08-02-ACL-MNMT-multiAgreement.pdf"
 # paperurl: "http://localhost:4000/files/publications/2021-08-02-ACL-MNMT-multiAgreement.pdf"
-paperurl: "https://aclanthology.org/2021.acl-short.31.pdf"
+# paperurl: "https://aclanthology.org/2021.acl-short.31.pdf"
 picture: "https://yuweiyin.github.io/files/publications/2021-08-02-ACL-MNMT-multiAgreement.png"
 # picture: "http://localhost:4000/files/publications/2021-08-02-ACL-MNMT-multiAgreement.png"
 # citation: "Jian Yang, Yuwei Yin, Shuming Ma, Haoyang Huang, Dongdong Zhang, Zhoujun Li, and Furu Wei. 2021. Multilingual Agreement for Multilingual Neural Machine Translation. In Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 2: Short Papers), pages 233–239, Online. Association for Computational Linguistics."
@@ -35,7 +35,7 @@ MathJax = {
 <!-- ![picture](http://localhost:4000/files/publications/2021-08-02-ACL-MNMT-multiAgreement.png) -->
 
 <!-- - **Citation**:
-  - Jian Yang, <u>Yuwei Yin</u>, Shuming Ma, Haoyang Huang, Dongdong Zhang, Zhoujun Li, and Furu Wei. 2021. Multilingual Agreement for Multilingual Neural Machine Translation. In Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 2: Short Papers), pages 233–239, Online. Association for Computational Linguistics. -->
+  - Jian Yang, Yuwei Yin, Shuming Ma, Haoyang Huang, Dongdong Zhang, Zhoujun Li, and Furu Wei. 2021. Multilingual Agreement for Multilingual Neural Machine Translation. In Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 2: Short Papers), pages 233–239, Online. Association for Computational Linguistics. -->
 
 ```bibtex
 @inproceedings{yang-etal-2021-multilingual,

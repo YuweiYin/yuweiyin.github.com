@@ -7,7 +7,7 @@ permalink: /publications/2021-11-07-EMNLP-MNMT-auxSource
 venue: "Conference (EMNLP 2021)"
 # paperurl: "https://yuweiyin.github.io/files/publications/2021-11-07-EMNLP-MNMT-auxSource.pdf"
 # paperurl: "http://localhost:4000/files/publications/2021-11-07-EMNLP-MNMT-auxSource.pdf"
-paperurl: "https://aclanthology.org/2021.findings-emnlp.260.pdf"
+# paperurl: "https://aclanthology.org/2021.findings-emnlp.260.pdf"
 picture: "https://yuweiyin.github.io/files/publications/2021-11-07-EMNLP-MNMT-auxSource.png"
 # picture: "http://localhost:4000/files/publications/2021-11-07-EMNLP-MNMT-auxSource.png"
 # citation: "Weijia Xu, Yuwei Yin, Shuming Ma, Dongdong Zhang, and Haoyang Huang. 2021. Improving Multilingual Neural Machine Translation with Auxiliary Source Languages. In Findings of the Association for Computational Linguistics: EMNLP 2021, pages 3029–3041, Punta Cana, Dominican Republic. Association for Computational Linguistics."
@@ -35,7 +35,7 @@ MathJax = {
 <!-- ![picture](http://localhost:4000/files/publications/2021-11-07-EMNLP-MNMT-auxSource.png) -->
 
 <!-- - **Citation**:
-  - Weijia Xu, <u>Yuwei Yin</u>, Shuming Ma, Dongdong Zhang, and Haoyang Huang. 2021. Improving Multilingual Neural Machine Translation with Auxiliary Source Languages. In Findings of the Association for Computational Linguistics: EMNLP 2021, pages 3029–3041, Punta Cana, Dominican Republic. Association for Computational Linguistics. -->
+  - Weijia Xu, Yuwei Yin, Shuming Ma, Dongdong Zhang, and Haoyang Huang. 2021. Improving Multilingual Neural Machine Translation with Auxiliary Source Languages. In Findings of the Association for Computational Linguistics: EMNLP 2021, pages 3029–3041, Punta Cana, Dominican Republic. Association for Computational Linguistics. -->
 
 ```bibtex
 @inproceedings{xu-etal-2021-improving-multilingual,
