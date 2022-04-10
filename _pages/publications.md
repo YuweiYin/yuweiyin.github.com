@@ -5,6 +5,7 @@ permalink: /publications/
 author_profile: true
 redirect_from:
   - /publication
+  - /publication/
 ---
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>

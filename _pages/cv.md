@@ -5,6 +5,7 @@ permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume
+  - /resume/
 ---
 
 {% include base_path %}
@@ -20,7 +21,8 @@ MathJax = {
 };
 </script>
 
-[PDF CV](https://yuweiyin.github.io/files/CV-YuweiYin-Joey.pdf)
+[PDF CV](https://yuweiyin.github.io/files/cv/CV-YuweiYin-Joey.pdf)
+<!-- [PDF CV](http://localhost:4000/files/cv/CV-YuweiYin-Joey.pdf) -->
 
 ## Education
 

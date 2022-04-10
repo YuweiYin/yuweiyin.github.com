@@ -50,6 +50,10 @@
       <p>Paper URL: <a href="{{ post.paperurl }}">{{ post.paperurl }}</a></p>
     {% endif %}
 
+    {% if post.picture %}
+      <img src="{{ post.picture }}" alt="picture" width="90%" height="auto" max-width="90%">
+    {% endif %}
+
     {% if post.excerpt and site.read_more != 'enabled' %}
       <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
     {% elsif post.excerpt and site.read_more == 'enabled' %}

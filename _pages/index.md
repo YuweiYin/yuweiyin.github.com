@@ -8,7 +8,9 @@ permalink: /
 author_profile: true
 redirect_from:
   - /home
+  - /home/
   - /homepage
+  - /homepage/
   # - /index
 ---
 
@@ -27,7 +29,7 @@ MathJax = {
 
 ## About Me
 
-Hi! I am Yuwei (/ˈjuːweɪ/), an NLPhile, namely a technophile of natural language processing. My research interest lies in natural language understanding & generation, multilingual NLP, and interpretable NLP. With the help of advanced computing processors and powerful statistical algorithms, dealing with human language is becoming more and more promising. Yet human language is not just about counting, repeating, and probability. Thus in-depth NLP research had better take into account the linguistic factors and refer to the language acquisition process of human beings. This intriguing research will help us better understand ourselves. The finding and explanation of human beings, nature, and the universe deeply motivate me to go on a fascinating lifelong research Odyssey.
+Hi! I am Yuwei (/ˈjuːweɪ/), an NLPhile, namely a technophile of natural language processing. My research interest lies in <u>natural language understanding & generation, multilingual NLP, and interpretable NLP</u>. With the help of advanced computing processors and powerful statistical algorithms, dealing with human language is becoming more and more promising. Yet human language is not just about counting, repeating, and probability. Thus in-depth NLP research had better take into account the linguistic factors and refer to the language acquisition process of human beings. This intriguing research will help us better understand ourselves. The finding and explanation of human beings, nature, and the universe deeply motivate me to go on a fascinating lifelong research Odyssey.
 
 Feel free to [reach out to me](mailto:seckexyin@gmail.com), especially about NLP research.
 
@@ -50,7 +52,7 @@ After returning to Beijing, I decided to take an internship in the research grou
 ### Watershed (September 2021)
 
 <!-- However, to my mind, relying on the internship to finish the Ph.D. program is not a long-term solution. Let alone the policy that interns have to check out after 1.5 years at most in Microsoft. To pursue careers in academia, I was determined to reboot my postgraduate journey and get a doctorate degree elsewhere. -->
-However, to my mind, relying on the internship to finish the Ph.D. program was not desirable. Let alone the policy that interns had to check out after 1.5 years at most in Microsoft. To pursue careers in academia, I was determined to reboot my postgraduate journey and get a doctorate degree elsewhere. In fact, I planned to apply to programs in the US. Since Beihang University is the top target of the [Presidential Proclamation 10043](https://en.wikipedia.org/wiki/Proclamation_10043) (PP 10043), I chose to forgo the Master's degree there in order to have a better chance of getting the VISA and admission. Therefore, I left Beijing in September 2021, gave myself one year gap, and applied for oversea Ph.D. programs at the end of 2022.
+However, to my mind, relying on the internship to finish the Ph.D. program was not desirable. Let alone the policy that interns had to check out after 1.5 years at most in Microsoft. To pursue careers in academia, I was determined to reboot my postgraduate journey and get a doctorate degree elsewhere. In fact, I planned to apply to programs in the US. Since Beihang University is the top target of the [Presidential Proclamation 10043](https://en.wikipedia.org/wiki/Proclamation_10043) (PP 10043), I chose to forgo the Master's and Ph.D. degree there in order to have a better chance of getting the VISA and admission. Therefore, I left Beijing in September 2021, gave myself one year gap, and applied to oversea postgraduate programs at the end of 2022.
 
 ## Gap Year (2022)
 
