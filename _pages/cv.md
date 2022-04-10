@@ -61,6 +61,12 @@ MathJax = {
   <!-- * Publication: *Design and Implementation of Smart Band System* ([CN-Journal](https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CJFD&dbname=CJFDLAST2017&filename=DNZS201636043)) -->
   <!-- * Publication: *Design and Implementation of Smart Band System* ([CN-Journal](https://www.cnki.com.cn/Article/CJFDTotal-DNZS201636043.htm)) -->
   <!-- 智能手环系统的设计与实现   马旭平，蔡嘉豪，阴昱为，丁尚甦 -->
+  <!-- 基金资助: 北京信息科技大学2016年人才培养质量提高经费（5111610800）支持; -->
+  <!-- ISSN 1009-3044 -->
+  <!-- Computer Knowledge and Technology 电脑知识与技术 -->
+  <!-- Vol.12, No.36, December 2016 -->
+  <!-- DOI: 10.14004/j.cnki.ckt.2016.4822 -->
+  <!-- 分类号: TP311.52 -->
   * Advisor: Xuping Ma.
 
 ## Publications
