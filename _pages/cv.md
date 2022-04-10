@@ -67,13 +67,15 @@ MathJax = {
 
 **Research Interests**: Natural Language Understanding & Generation, Multilingual NLP, Interpretable NLP
 
-<!-- ### 2021 -->
+### Conference Proceedings
 
 * *Multilingual Agreement for Multilingual Neural Machine Translation* ([ACL-IJCNLP, 2021](https://aclanthology.org/2021.acl-short.31/))
   * Jian Yang, <u>Yuwei Yin</u>, Shuming Ma, Haoyang Huang, Dongdong Zhang, Zhoujun Li, Furu Wei
 
 * *Improving Multilingual Neural Machine Translation with Auxiliary Source Languages* ([EMNLP, 2021](https://aclanthology.org/2021.findings-emnlp.260/))
   * Weijia Xu, <u>Yuwei Yin</u>, Shuming Ma, Dongdong Zhang, Haoyang Huang
+
+### Journal Articles
 
 <!-- * *Design and Implementation of Smart Band System* ([Computer Knowledge and Technology, 2016](https://www.cnki.com.cn/Article/CJFDTotal-DNZS201636043.htm)) -->
 * *Design and Implementation of Smart Band System* ([Computer Knowledge and Technology, 2016](https://yuweiyin.github.io/files/publications/2016-12-01-Smart-Band-System.pdf))
