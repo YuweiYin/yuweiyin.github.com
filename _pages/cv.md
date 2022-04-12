@@ -31,11 +31,11 @@ MathJax = {
   * Intelligent Information Process Institute, State Key Lab of Software Development Environment
   <!-- * <u>Integrated M.S. & Ph.D. (dropout)</u> in Machine Learning (M.S.) & Natural Language Processing (Ph.D.) -->
   * <u>Integrated M.S. & Ph.D. (dropout)</u> M.S. in Machine Learning (2018 -- 2019) & Ph.D. in Natural Language Processing (2019 -- 2021)
-  * GPA: 91.7 / 100, rank 3rd of 80 doctoral students in School of Computer Science and Engineering
+  * GPA: 91.7 / 100, rank 3rd of 80 in School of Computer Science and Engineering
 
 * Sep. 2014 -- Jun. 2018: **Beijing Information Science & Technology University** ([BISTU](https://english.bistu.edu.cn/)), Beijing, China
   * <u>Bachelor of Engineering (honours)</u> in Computer Science and Technology
-  * GPA: 92.7 / 100, rank 1st of 202 students in Computer Science and Technology, Computer School
+  * GPA: 92.7 / 100, rank 1st of 202 in Computer Science and Technology, Computer School
 
 ## Research Experience
 
