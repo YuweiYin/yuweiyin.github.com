@@ -27,7 +27,8 @@ MathJax = {
 ## Education
 
 * Sep. 2018 -- Sep. 2021: **Beihang University** ([BUAA](https://ev.buaa.edu.cn/)), Beijing, China
-  * State Key Laboratory of Software Development Environment, School of Computer Science and Engineering
+  <!-- * State Key Lab of Software Development Environment, School of Computer Science and Engineering -->
+  * Intelligent Information Process Institute, State Key Lab of Software Development Environment
   <!-- * <u>Integrated M.S. & Ph.D. (dropout)</u> in Machine Learning (M.S.) & Natural Language Processing (Ph.D.) -->
   * <u>Integrated M.S. & Ph.D. (dropout)</u> M.S. in Machine Learning (2018 -- 2019) & Ph.D. in Natural Language Processing (2019 -- 2021)
   * GPA: 91.7 / 100, rank 3rd of 80 doctoral students in School of Computer Science and Engineering
@@ -36,27 +37,27 @@ MathJax = {
   * <u>Bachelor of Engineering (honours)</u> in Computer Science and Technology
   * GPA: 92.7 / 100, rank 1st of 202 students in Computer Science and Technology, Computer School
 
-## Experience
+## Research Experience
 
 * Nov. 2020 -- Sep. 2021: **Microsoft Research Asia** ([MSRA](https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/))
-  * Research Intern (Stars of Tomorrow Internship Program) in Natural Language Computing Group ([NLC](https://www.microsoft.com/en-us/research/group/natural-language-computing/))
+  * <u>Research Intern</u> (Stars of Tomorrow Internship Program) in Natural Language Computing Group ([NLC](https://www.microsoft.com/en-us/research/group/natural-language-computing/))
   * Engaged in multilingual neural machine translation research
   * Mentor: [Shuming Ma](https://www.microsoft.com/en-us/research/people/shumma/). Advisor: [Haoyang Huang](https://www.microsoft.com/en-us/research/people/haohua/), [Dongdong Zhang](https://www.microsoft.com/en-us/research/people/dozhang/).
 
-* Sep. 2018 -- Jun. 2019: **State Key Laboratory of Software Development Environment, Beihang University**
-  * Funded program Expert Database Management System ([EDMS](https://github.com/gzliuyun/EDMS))
+* Sep. 2018 -- Jun. 2019: **State Key Lab of Software Development Environment, Beihang University**
+  * <u>Research Assistant</u> in funding program: Expert Database Management System ([EDMS](https://github.com/gzliuyun/EDMS))
   * Developed the data mining (crawling, cleaning, and statistical analysis) and website system
   * Project manager: [Xiaoming Zhang](https://www.researchgate.net/profile/Xiaoming-Zhang-11).
 
 * Sep. 2017 -- Jun. 2018: **Institute of Software Chinese Academy of Sciences** ([ISCAS](http://english.is.cas.cn/))
-  * Research Intern in Trusted Computing and Information Assurance Group (TCA)
+  * <u>Research Intern</u> in Trusted Computing and Information Assurance Group (TCA)
   * Developed a privacy-protected bicycle-sharing system (Android & Web applications) based on single sign-on
   * Advisor: [Zhenfeng Zhang](https://people.ucas.ac.cn/~zfzhang?language=en), [Chengxia Liu](https://jsjxy.bistu.edu.cn/sz/jsyl/jsjkxyjsx_7820/201905/t20190506_68373.html).
 
 * Sep. 2015 -- Dec. 2016: **Computer School, Beijing Information Science & Technology University**
   <!-- * National Undergraduate Innovation Project, advised by Xuping Ma -->
   <!-- * Developed a smart band system to measure the heart rate and sports situation (Publication: [CN-Journal](https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CJFD&dbname=CJFDLAST2017&filename=DNZS201636043)) -->
-  * National Undergraduate Innovation Project
+  * <u>Research Assistant</u> in funding program: National Undergraduate Innovation Project
   * Developed a smart band system to measure the heart rate and sports situation (Software & Hardware)
   <!-- * Publication: *Design and Implementation of Smart Band System* ([CN-Journal](https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CJFD&dbname=CJFDLAST2017&filename=DNZS201636043)) -->
   <!-- * Publication: *Design and Implementation of Smart Band System* ([CN-Journal](https://www.cnki.com.cn/Article/CJFDTotal-DNZS201636043.htm)) -->
@@ -67,6 +68,7 @@ MathJax = {
   <!-- Vol.12, No.36, December 2016 -->
   <!-- DOI: 10.14004/j.cnki.ckt.2016.4822 -->
   <!-- 分类号: TP311.52 -->
+  <!-- 基金项目: 由北京信息科技大学2016年人才培养质量提高经费 (5111610800) 支持 -->
   * Advisor: Xuping Ma.
 
 ## Publications
