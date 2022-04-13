@@ -45,3 +45,5 @@ gem 'sass', '~>3.4'
 gem 'compass', '~>0.12.0'
 gem 'susy', '~>1.0.0'
 gem 'breakpoint', '~>2.0.0'
+
+gem "nokogiri", ">= 1.13.4"
