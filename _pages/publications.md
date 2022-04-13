@@ -31,9 +31,73 @@ MathJax = {
 
 {% include base_path %}
 
-{% for post in site.publications reversed %}
-  {% include archive-single.html %}
-{% endfor %}
-<!-- {% for post in site.publications %}
+<!-- {% for post in site.publications reversed %}
   {% include archive-single.html %}
 {% endfor %} -->
+
+<h2 id="yyw-directory">Directory</h2>
+
+<!-- - **Conference Proceedings** (<a href="#yyw-pub-conference">Jump</a>)
+  - [C1] *Improving Multilingual Neural Machine Translation with Auxiliary Source Languages* (<a href="#yyw-pub-conference-MNMT-auxSource">Jump</a>)
+  - [C2] *Multilingual Agreement for Multilingual Neural Machine Translation* (<a href="#yyw-pub-conference-MNMT-multiAgreement">Jump</a>)
+- **Journal Articles** (<a href="#yyw-pub-journal">Jump</a>)
+  - [J1] *Design and Implementation of Smart Band System* (<a href="#yyw-pub-journal-Smart-Band-System">Jump</a>) -->
+
+- [[C]](#yyw-pub-conference) **Conference Proceedings**
+  - [[C1]](#yyw-pub-conference-MNMT-auxSource) *Improving Multilingual Neural Machine Translation with Auxiliary Source Languages*
+  - [[C2]](#yyw-pub-conference-MNMT-multiAgreement) *Multilingual Agreement for Multilingual Neural Machine Translation*
+- [[J]](#yyw-pub-journal) **Journal Articles**
+  - [[J1]](#yyw-pub-journal-Smart-Band-System) *Design and Implementation of Smart Band System*
+<!-- - [[P]](#yyw-pub-preprints) **Preprints** -->
+  <!-- - [[P1]](#yyw-pub-preprints-XNLP) *XNLP* -->
+
+---
+
+<h2 id="yyw-pub-conference">Conference Proceedings</h2>
+
+<!-- - <a href="#yyw-directory">Back to Directory</a> -->
+<!-- - [C1] *Improving Multilingual Neural Machine Translation with Auxiliary Source Languages* (<a href="#yyw-pub-conference-MNMT-auxSource">Jump</a>) -->
+<!-- - [C2] *Multilingual Agreement for Multilingual Neural Machine Translation* (<a href="#yyw-pub-conference-MNMT-multiAgreement">Jump</a>) -->
+
+
+<h3 id="yyw-pub-conference-MNMT-auxSource">[C1] Improving Multilingual Neural Machine Translation with Auxiliary Source Languages</h3>
+
+<!-- * <a href="#yyw-directory">Back to Directory</a> -->
+<!-- * <a href="#yyw-pub-conference">Back to Chapter Head</a> -->
+- Published in Conference: [EMNLP 2021](https://2021.emnlp.org/) (November 2021)
+- [Detail Page](https://yuweiyin.github.io/publications/2021-11-07-EMNLP-MNMT-auxSource); [ACL Anthology](https://aclanthology.org/2021.findings-emnlp.260/); [PDF Download](https://yuweiyin.github.io/files/publications/2021-11-07-EMNLP-MNMT-auxSource.pdf)
+- <details><summary>Abstract</summary>Multilingual neural machine translation models typically handle one source language at a time. However, prior work has shown that translating from multiple source languages improves translation quality. Different from existing approaches on multi-source translation that are limited to the test scenario where parallel source sentences from multiple languages are available at inference time, we propose to improve multilingual translation in a more common scenario by exploiting synthetic source sentences from auxiliary languages. We train our model on synthetic multi-source corpora and apply random masking to enable flexible inference with single-source or bi-source inputs. Extensive experiments on Chinese/English-Japanese and a large-scale multilingual translation benchmark show that our model outperforms the multilingual baseline significantly by up to +4.0 BLEU with the largest improvements on low-resource or distant language pairs.</details>
+
+<!-- ![picture](https://yuweiyin.github.io/files/publications/2021-11-07-EMNLP-MNMT-auxSource.png) -->
+
+
+<h3 id="yyw-pub-conference-MNMT-multiAgreement">[C2] Multilingual Agreement for Multilingual Neural Machine Translation</h3>
+
+<!-- * <a href="#yyw-directory">Back to Directory</a> -->
+<!-- * <a href="#yyw-pub-conference">Back to Chapter Head</a> -->
+- Published in Conference: [ACL-IJCNLP 2021](https://2021.aclweb.org/) (August 2021)
+- [Detail Page](https://yuweiyin.github.io/publications/2021-08-02-ACL-MNMT-multiAgreement); [ACL Anthology](https://aclanthology.org/2021.acl-short.31/); [PDF Download](https://yuweiyin.github.io/files/publications/2021-08-02-ACL-MNMT-multiAgreement.pdf)
+- <details><summary>Abstract</summary>Although multilingual neural machine translation (MNMT) enables multiple language translations, the training process is based on independent multilingual objectives. Most multilingual models can not explicitly exploit different language pairs to assist each other, ignoring the relationships among them. In this work, we propose a novel agreement-based method to encourage multilingual agreement among different translation directions, which minimizes the differences among them. We combine the multilingual training objectives with the agreement term by randomly substituting some fragments of the source language with their counterpart translations of auxiliary languages. To examine the effectiveness of our method, we conduct experiments on the multilingual translation task of 10 language pairs. Experimental results show that our method achieves significant improvements over the previous multilingual baselines.</details>
+
+<!-- ![picture](https://yuweiyin.github.io/files/publications/2021-08-02-ACL-MNMT-multiAgreement.png) -->
+
+
+
+<h2 id="yyw-pub-journal">Journal Articles</h2>
+
+<!-- - <a href="#yyw-directory">Back to Directory</a> -->
+<!-- - [J1] *Design and Implementation of Smart Band System* (<a href="#yyw-pub-journal-Smart-Band-System">Jump</a>) -->
+
+<h3 id="yyw-pub-journal-Smart-Band-System">[J1] Design and Implementation of Smart Band System</h3>
+
+<!-- - <a href="#yyw-directory">Back to Directory</a> -->
+<!-- - <a href="#yyw-pub-journal">Back to Chapter Head</a> -->
+- Published in Journal: Computer Knowledge and Technology (December 2016, China)
+- [Detail Page](https://yuweiyin.github.io/publications/2016-12-01-Smart-Band-System); [CNKI Anthology](https://www.cnki.com.cn/Article/CJFDTotal-DNZS201636043.htm); [PDF Download](https://yuweiyin.github.io/files/publications/2016-12-01-Smart-Band-System.pdf)
+- <details><summary>Abstract</summary>Nowadays, health and intelligent medical are hotspot of the society. According to this, here puts forward a design and implementation of smart band system, focus on measuring the heart rate and the sports situation. The first part is about the main technics which are used, including the Photo Plethysmography and acceleration measure; then the second part is the introduction about design of band, the telephone client and the backend server including the design of hardware, client and database, and how to process the data; in the end an instance is used to prove the practicability of the system. Based on this, a conclusion is drawn, and the future direction is put forward.</details>
+
+
+
+<!-- <h2 id="yyw-pub-preprints">Preprints</h2> -->
+
+<!-- <h3 id="yyw-pub-preprints-XNLP">[P1] XNLP</h3> -->

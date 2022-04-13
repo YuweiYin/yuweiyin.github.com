@@ -38,6 +38,7 @@ School Year | Course | Type
 4: Spring 2016 | Comprehensive Practice of Computer Composition Principle | Compulsory
 4: Spring 2016 | Assembly Language and Microcomputer Interface Technology | Compulsory
 4: Spring 2016 | Principles and Applications of Database | Compulsory
+4: Spring 2016 | Fundamentals and Application of XML | Selective
 4: Spring 2016 | Computer Network | Compulsory
 4: Spring 2016 | Operating System | Compulsory
 5: Fall 2016 | Operating System Practice | Compulsory
@@ -49,8 +50,8 @@ School Year | Course | Type
 5: Fall 2016 | Practice of Embedded Application System | Compulsory
 5: Fall 2016 | Practice of Web Application System | Compulsory
 6: Spring 2017 | Mobile Application System Practice| Compulsory
-6: Spring 2017 | Compilation Principles | Compulsory
 6: Spring 2017 | Computer Architecture | Compulsory
+6: Spring 2017 | Compilation Principles | Compulsory
 6: Spring 2017 | Information Safety | Compulsory
 7: Fall 2017 | Comprehensive Practice of Intelligent System | Compulsory
 7: Fall 2017 | Professional Fieldwork | Compulsory
@@ -80,7 +81,6 @@ School Year | Course | Type
 3: Fall 2015 | Programming C++ | Selective
 3: Fall 2015 | Data Structure (C) | Compulsory
 4: Spring 2016 | Comprehensive Design of Data Structures (C) | Compulsory
-4: Spring 2016 | Fundamentals and Application of XML | Selective
 6: Spring 2017 | Algorithm Analysis and Design | Compulsory
 Postgraduate | Algorithm Design and Analysis | Compulsory
 Postgraduate | Principles of Programming Language | Compulsory

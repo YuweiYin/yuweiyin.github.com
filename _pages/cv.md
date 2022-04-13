@@ -21,7 +21,7 @@ MathJax = {
 };
 </script>
 
-[PDF CV](https://yuweiyin.github.io/files/cv/CV-YuweiYin-Joey.pdf)
+[PDF CV](https://yuweiyin.github.io/files/cv/CV-YuweiYin-Joey.pdf) (version: April 2022)
 <!-- [PDF CV](http://localhost:4000/files/cv/CV-YuweiYin-Joey.pdf) -->
 
 ## Education
@@ -41,7 +41,7 @@ MathJax = {
 
 * Nov. 2020 -- Sep. 2021: **Microsoft Research Asia** ([MSRA](https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/))
   * <u>Research Intern</u> (Stars of Tomorrow Internship Program) in Natural Language Computing Group ([NLC](https://www.microsoft.com/en-us/research/group/natural-language-computing/))
-  * Engaged in multilingual neural machine translation research
+  * Engaged in multilingual neural machine translation research [C1] [C2]
   * Mentor: [Shuming Ma](https://www.microsoft.com/en-us/research/people/shumma/). Advisor: [Haoyang Huang](https://www.microsoft.com/en-us/research/people/haohua/), [Dongdong Zhang](https://www.microsoft.com/en-us/research/people/dozhang/).
 
 * Sep. 2018 -- Jun. 2019: **State Key Lab of Software Development Environment, Beihang University**
@@ -58,7 +58,7 @@ MathJax = {
   <!-- * National Undergraduate Innovation Project, advised by Xuping Ma -->
   <!-- * Developed a smart band system to measure the heart rate and sports situation (Publication: [CN-Journal](https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CJFD&dbname=CJFDLAST2017&filename=DNZS201636043)) -->
   * <u>Research Assistant</u> in funding program: National Undergraduate Innovation Project
-  * Developed a smart band system to measure the heart rate and sports situation (Software & Hardware)
+  * Developed a smart band system to measure the heart rate and sports situation (Software & Hardware) [J1]
   <!-- * Publication: *Design and Implementation of Smart Band System* ([CN-Journal](https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CJFD&dbname=CJFDLAST2017&filename=DNZS201636043)) -->
   <!-- * Publication: *Design and Implementation of Smart Band System* ([CN-Journal](https://www.cnki.com.cn/Article/CJFDTotal-DNZS201636043.htm)) -->
   <!-- 智能手环系统的设计与实现   马旭平，蔡嘉豪，阴昱为，丁尚甦 -->
@@ -77,17 +77,22 @@ MathJax = {
 
 ### Conference Proceedings
 
-* *Multilingual Agreement for Multilingual Neural Machine Translation* ([ACL-IJCNLP, 2021](https://aclanthology.org/2021.acl-short.31/))
-  * Jian Yang, <u>Yuwei Yin</u>, Shuming Ma, Haoyang Huang, Dongdong Zhang, Zhoujun Li, Furu Wei
-
-* *Improving Multilingual Neural Machine Translation with Auxiliary Source Languages* ([EMNLP, 2021](https://aclanthology.org/2021.findings-emnlp.260/))
+* [C1] *Improving Multilingual Neural Machine Translation with Auxiliary Source Languages* ([EMNLP, 2021](https://aclanthology.org/2021.findings-emnlp.260/))
   * Weijia Xu, <u>Yuwei Yin</u>, Shuming Ma, Dongdong Zhang, Haoyang Huang
+
+* [C2] *Multilingual Agreement for Multilingual Neural Machine Translation* ([ACL-IJCNLP, 2021](https://aclanthology.org/2021.acl-short.31/))
+  * Jian Yang, <u>Yuwei Yin</u>, Shuming Ma, Haoyang Huang, Dongdong Zhang, Zhoujun Li, Furu Wei
 
 ### Journal Articles
 
 <!-- * *Design and Implementation of Smart Band System* ([Computer Knowledge and Technology, 2016](https://www.cnki.com.cn/Article/CJFDTotal-DNZS201636043.htm)) -->
-* *Design and Implementation of Smart Band System* ([Computer Knowledge and Technology, 2016](https://yuweiyin.github.io/files/publications/2016-12-01-Smart-Band-System.pdf))
+* [J1] *Design and Implementation of Smart Band System* ([Computer Knowledge and Technology, 2016](https://yuweiyin.github.io/files/publications/2016-12-01-Smart-Band-System.pdf))
   * Xuping Ma, Jiahao Cai, <u>Yuwei Yin</u>, Shangsu Ding
+
+<!-- ### Preprints -->
+
+<!-- * [P1] *XNLP* -->
+  <!-- * <u>Yuwei Yin</u> -->
 
 ## Teaching and Academic Service
 
