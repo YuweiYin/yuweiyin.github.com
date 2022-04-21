@@ -44,8 +44,10 @@ MathJax = {
   - [J1] *Design and Implementation of Smart Band System* (<a href="#yyw-pub-journal-Smart-Band-System">Jump</a>) -->
 
 - [[C]](#yyw-pub-conference) **Conference Proceedings**
-  - [[C1]](#yyw-pub-conference-MNMT-auxSource) *Improving Multilingual Neural Machine Translation with Auxiliary Source Languages*
-  - [[C2]](#yyw-pub-conference-MNMT-multiAgreement) *Multilingual Agreement for Multilingual Neural Machine Translation*
+  - [[C4]](#yyw-pub-conference-MNMT-UM4) *Unified Multilingual Multiple Teacher-Student Model for Zero-Resource Neural Machine Translation*
+  - [[C3]](#yyw-pub-conference-MNMT-HLT) *High-resource Language-specific Training for Multilingual Neural Machine Translation*
+  - [[C2]](#yyw-pub-conference-MNMT-auxSource) *Improving Multilingual Neural Machine Translation with Auxiliary Source Languages*
+  - [[C1]](#yyw-pub-conference-MNMT-multiAgreement) *Multilingual Agreement for Multilingual Neural Machine Translation*
 - [[J]](#yyw-pub-journal) **Journal Articles**
   - [[J1]](#yyw-pub-journal-Smart-Band-System) *Design and Implementation of Smart Band System*
 <!-- - [[P]](#yyw-pub-preprints) **Preprints** -->
@@ -55,12 +57,32 @@ MathJax = {
 
 <h2 id="yyw-pub-conference">Conference Proceedings</h2>
 
+<h3 id="yyw-pub-conference-MNMT-UM4">[C4] Unified Multilingual Multiple Teacher-Student Model for Zero-Resource Neural Machine Translation</h3>
+
+<!-- * <a href="#yyw-directory">Back to Directory</a> -->
+<!-- * <a href="#yyw-pub-conference">Back to Chapter Head</a> -->
+<!-- - Published in Conference: [IJCAI-ECAI 2022](https://2021.emnlp.org/) (July 2022) -->
+- To be published in Conference: [IJCAI-ECAI 2022](https://2021.emnlp.org/) (July 2022)
+- [Detail Page](https://yuweiyin.github.io/publications/2022-07-23-IJCAI-MNMT-UM4); [IJCAI Anthology](https://www.ijcai.org/past_proceedings); [PDF Download](https://yuweiyin.github.io/files/publications/2022-07-23-IJCAI-MNMT-UM4.pdf)
+- <details><summary>Abstract</summary>Most translation tasks among languages belong to the zero-resource translation problem where parallel corpora are unavailable. Multilingual neural machine translation (MNMT) enables one-pass translation using shared semantic space for all languages compared to the two-pass pivot translation but often underperforms the pivot-based method. In this paper, we propose a novel method, named as Unified Multilingual Multiple teacher-student Model for NMT (UM4). Our method unifies source-teacher, target-teacher, and pivot-teacher models to guide the student model for the zero-resource translation. The source teacher and target teacher force the student to learn the direct source-target translation by the distilled knowledge on both source and target sides. The monolingual corpus is further leveraged by the pivot-teacher model to enhance the student model. Experimental results demonstrate that our model of 72 directions significantly outperforms previous methods on the WMT benchmark.</details>
+
+
+<h3 id="yyw-pub-conference-MNMT-HLT">[C3] High-resource Language-specific Training for Multilingual Neural Machine Translation</h3>
+
+<!-- * <a href="#yyw-directory">Back to Directory</a> -->
+<!-- * <a href="#yyw-pub-conference">Back to Chapter Head</a> -->
+<!-- - Published in Conference: [IJCAI-ECAI 2022](https://2021.emnlp.org/) (July 2022) -->
+- To be published in Conference: [IJCAI-ECAI 2022](https://2021.emnlp.org/) (July 2022)
+- [Detail Page](https://yuweiyin.github.io/publications/2022-07-23-IJCAI-MNMT-HLT); [IJCAI Anthology](https://www.ijcai.org/past_proceedings); [PDF Download](https://yuweiyin.github.io/files/publications/2022-07-23-IJCAI-MNMT-HLT.pdf)
+- <details><summary>Abstract</summary>Multilingual neural machine translation (MNMT) trained in multiple language pairs has attracted considerable attention due to fewer model parameters and lower training costs by sharing knowledge among multiple languages. Nonetheless, multilingual training is plagued by language interference degeneration in shared parameters because of the negative interference among different translation directions, especially on high-resource languages. In this paper, we propose the multilingual translation model with the high-resource language-specific training (HLT-MT) to alleviate the negative interference, which adopts the two-stage training with the language-specific selection mechanism. Specifically, we first train the multilingual model only with the high-resource pairs and select the language-specific modules at the top of the decoder to enhance the translation quality of high-resource directions. Next, the model is further trained on all available corpora to transfer knowledge from high-resource languages (HRLs) to low-resource languages (LRLs). Experimental results show that HLT-MT outperforms various strong baselines on WMT-10 and OPUS-100 benchmarks. Furthermore, the analytic experiments validate the effectiveness of our method in mitigating the negative interference in multilingual training.</details>
+
+
 <!-- - <a href="#yyw-directory">Back to Directory</a> -->
 <!-- - [C1] *Improving Multilingual Neural Machine Translation with Auxiliary Source Languages* (<a href="#yyw-pub-conference-MNMT-auxSource">Jump</a>) -->
 <!-- - [C2] *Multilingual Agreement for Multilingual Neural Machine Translation* (<a href="#yyw-pub-conference-MNMT-multiAgreement">Jump</a>) -->
 
 
-<h3 id="yyw-pub-conference-MNMT-auxSource">[C1] Improving Multilingual Neural Machine Translation with Auxiliary Source Languages</h3>
+<h3 id="yyw-pub-conference-MNMT-auxSource">[C2] Improving Multilingual Neural Machine Translation with Auxiliary Source Languages</h3>
 
 <!-- * <a href="#yyw-directory">Back to Directory</a> -->
 <!-- * <a href="#yyw-pub-conference">Back to Chapter Head</a> -->
@@ -68,18 +90,14 @@ MathJax = {
 - [Detail Page](https://yuweiyin.github.io/publications/2021-11-07-EMNLP-MNMT-auxSource); [ACL Anthology](https://aclanthology.org/2021.findings-emnlp.260/); [PDF Download](https://yuweiyin.github.io/files/publications/2021-11-07-EMNLP-MNMT-auxSource.pdf)
 - <details><summary>Abstract</summary>Multilingual neural machine translation models typically handle one source language at a time. However, prior work has shown that translating from multiple source languages improves translation quality. Different from existing approaches on multi-source translation that are limited to the test scenario where parallel source sentences from multiple languages are available at inference time, we propose to improve multilingual translation in a more common scenario by exploiting synthetic source sentences from auxiliary languages. We train our model on synthetic multi-source corpora and apply random masking to enable flexible inference with single-source or bi-source inputs. Extensive experiments on Chinese/English-Japanese and a large-scale multilingual translation benchmark show that our model outperforms the multilingual baseline significantly by up to +4.0 BLEU with the largest improvements on low-resource or distant language pairs.</details>
 
-<!-- ![picture](https://yuweiyin.github.io/files/publications/2021-11-07-EMNLP-MNMT-auxSource.png) -->
 
-
-<h3 id="yyw-pub-conference-MNMT-multiAgreement">[C2] Multilingual Agreement for Multilingual Neural Machine Translation</h3>
+<h3 id="yyw-pub-conference-MNMT-multiAgreement">[C1] Multilingual Agreement for Multilingual Neural Machine Translation</h3>
 
 <!-- * <a href="#yyw-directory">Back to Directory</a> -->
 <!-- * <a href="#yyw-pub-conference">Back to Chapter Head</a> -->
 - Published in Conference: [ACL-IJCNLP 2021](https://2021.aclweb.org/) (August 2021)
 - [Detail Page](https://yuweiyin.github.io/publications/2021-08-02-ACL-MNMT-multiAgreement); [ACL Anthology](https://aclanthology.org/2021.acl-short.31/); [PDF Download](https://yuweiyin.github.io/files/publications/2021-08-02-ACL-MNMT-multiAgreement.pdf)
 - <details><summary>Abstract</summary>Although multilingual neural machine translation (MNMT) enables multiple language translations, the training process is based on independent multilingual objectives. Most multilingual models can not explicitly exploit different language pairs to assist each other, ignoring the relationships among them. In this work, we propose a novel agreement-based method to encourage multilingual agreement among different translation directions, which minimizes the differences among them. We combine the multilingual training objectives with the agreement term by randomly substituting some fragments of the source language with their counterpart translations of auxiliary languages. To examine the effectiveness of our method, we conduct experiments on the multilingual translation task of 10 language pairs. Experimental results show that our method achieves significant improvements over the previous multilingual baselines.</details>
-
-<!-- ![picture](https://yuweiyin.github.io/files/publications/2021-08-02-ACL-MNMT-multiAgreement.png) -->
 
 
 

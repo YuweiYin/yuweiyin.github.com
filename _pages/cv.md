@@ -43,7 +43,7 @@ MathJax = {
 
 * Nov. 2020 -- Sep. 2021: **Microsoft Research Asia** ([MSRA](https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/))
   * <u>Research Intern</u> (Stars of Tomorrow Internship Program) in Natural Language Computing Group ([NLC](https://www.microsoft.com/en-us/research/group/natural-language-computing/))
-  * Engaged in multilingual neural machine translation research [C1] [C2]
+  * Engaged in multilingual neural machine translation research [C1-C4]
   * Mentor: [Shuming Ma](https://www.microsoft.com/en-us/research/people/shumma/). Advisor: [Haoyang Huang](https://www.microsoft.com/en-us/research/people/haohua/), [Dongdong Zhang](https://www.microsoft.com/en-us/research/people/dozhang/).
 
 * Sep. 2018 -- Jun. 2019: **State Key Lab of Software Development Environment, Beihang University**
@@ -52,8 +52,9 @@ MathJax = {
   * Project manager: [Xiaoming Zhang](https://www.researchgate.net/profile/Xiaoming-Zhang-11).
 
 * Sep. 2017 -- Jun. 2018: **Institute of Software Chinese Academy of Sciences** ([ISCAS](http://english.is.cas.cn/))
-  * <u>Research Intern</u> in Trusted Computing and Information Assurance Group (TCA)
-  * Developed a privacy-protected bicycle-sharing system (Android & Web applications) based on single sign-on
+  * <u>Research Intern</u> in Trusted Computing and Information Assurance Laboratory (TCA)
+  <!-- * Developed a privacy-protected bicycle-sharing system (Android & Web applications) based on single sign-on -->
+  * Developed a privacy-protected system (Android & Web applications) based on single sign-on (SSO)
   * Advisor: [Zhenfeng Zhang](https://people.ucas.ac.cn/~zfzhang?language=en), [Chengxia Liu](https://jsjxy.bistu.edu.cn/sz/jsyl/jsjkxyjsx_7820/201905/t20190506_68373.html).
 
 * Sep. 2015 -- Dec. 2016: **Computer School, Beijing Information Science & Technology University**
@@ -79,17 +80,28 @@ MathJax = {
 
 ### Conference Proceedings
 
-* [C1] *Improving Multilingual Neural Machine Translation with Auxiliary Source Languages* ([EMNLP, 2021](https://aclanthology.org/2021.findings-emnlp.260/))
-  * Weijia Xu, <u>Yuwei Yin</u>, Shuming Ma, Dongdong Zhang, Haoyang Huang
+* [C4] *Unified Multilingual Multiple Teacher-Student Model for Zero-Resource Neural Machine Translation*
+  * Jian Yang\*, <u>Yuwei Yin</u>\*, Shuming Ma, Dongdong Zhang, Shuangzhi Wu, Hongcheng Guo, Zhoujun Li, Furu Wei
+  * To be published in Conference: [IJCAI-ECAI 2022](https://2021.emnlp.org/) (July 2022)
 
-* [C2] *Multilingual Agreement for Multilingual Neural Machine Translation* ([ACL-IJCNLP, 2021](https://aclanthology.org/2021.acl-short.31/))
+* [C3] *High-resource Language-specific Training for Multilingual Neural Machine Translation*
+  * Jian Yang, <u>Yuwei Yin</u>, Shuming Ma, Dongdong Zhang, Zhoujun Li, Furu Wei
+  * To be published in Conference: [IJCAI-ECAI 2022](https://2021.emnlp.org/) (July 2022)
+
+* [C2] *Improving Multilingual Neural Machine Translation with Auxiliary Source Languages*
+  * Weijia Xu, <u>Yuwei Yin</u>, Shuming Ma, Dongdong Zhang, Haoyang Huang
+  * Published in Conference: [EMNLP, 2021](https://aclanthology.org/2021.findings-emnlp.260/)
+
+* [C1] *Multilingual Agreement for Multilingual Neural Machine Translation*
   * Jian Yang, <u>Yuwei Yin</u>, Shuming Ma, Haoyang Huang, Dongdong Zhang, Zhoujun Li, Furu Wei
+  * Published in Conference: [ACL-IJCNLP, 2021](https://aclanthology.org/2021.acl-short.31/)
 
 ### Journal Articles
 
 <!-- * *Design and Implementation of Smart Band System* ([Computer Knowledge and Technology, 2016](https://www.cnki.com.cn/Article/CJFDTotal-DNZS201636043.htm)) -->
-* [J1] *Design and Implementation of Smart Band System* ([Computer Knowledge and Technology, 2016](https://yuweiyin.github.io/files/publications/2016-12-01-Smart-Band-System.pdf))
+* [J1] *Design and Implementation of Smart Band System*
   * Xuping Ma, Jiahao Cai, <u>Yuwei Yin</u>, Shangsu Ding
+  * Published in Journal (China): [Computer Knowledge and Technology, 2016](https://yuweiyin.github.io/files/publications/2016-12-01-Smart-Band-System.pdf)
 
 <!-- ### Preprints -->
 
