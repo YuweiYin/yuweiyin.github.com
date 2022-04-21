@@ -82,11 +82,11 @@ MathJax = {
 
 * [C4] *Unified Multilingual Multiple Teacher-Student Model for Zero-Resource Neural Machine Translation*
   * Jian Yang\*, <u>Yuwei Yin</u>\*, Shuming Ma, Dongdong Zhang, Shuangzhi Wu, Hongcheng Guo, Zhoujun Li, Furu Wei
-  * To be published in Conference: [IJCAI-ECAI 2022](https://2021.emnlp.org/) (July 2022)
+  * To be published in Conference: [IJCAI-ECAI, 2022](https://ijcai-22.org/) (July 2022)
 
 * [C3] *High-resource Language-specific Training for Multilingual Neural Machine Translation*
   * Jian Yang, <u>Yuwei Yin</u>, Shuming Ma, Dongdong Zhang, Zhoujun Li, Furu Wei
-  * To be published in Conference: [IJCAI-ECAI 2022](https://2021.emnlp.org/) (July 2022)
+  * To be published in Conference: [IJCAI-ECAI, 2022](https://ijcai-22.org/) (July 2022)
 
 * [C2] *Improving Multilingual Neural Machine Translation with Auxiliary Source Languages*
   * Weijia Xu, <u>Yuwei Yin</u>, Shuming Ma, Dongdong Zhang, Haoyang Huang
