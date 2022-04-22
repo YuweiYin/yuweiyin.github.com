@@ -90,11 +90,11 @@ MathJax = {
 
 * [C2] *Improving Multilingual Neural Machine Translation with Auxiliary Source Languages*
   * Weijia Xu, <u>Yuwei Yin</u>, Shuming Ma, Dongdong Zhang, Haoyang Huang
-  * Published in Conference: [EMNLP, 2021](https://aclanthology.org/2021.findings-emnlp.260/)
+  * Published in Conference: [EMNLP, 2021](https://aclanthology.org/2021.findings-emnlp.260/) (November 2021)
 
 * [C1] *Multilingual Agreement for Multilingual Neural Machine Translation*
   * Jian Yang, <u>Yuwei Yin</u>, Shuming Ma, Haoyang Huang, Dongdong Zhang, Zhoujun Li, Furu Wei
-  * Published in Conference: [ACL-IJCNLP, 2021](https://aclanthology.org/2021.acl-short.31/)
+  * Published in Conference: [ACL-IJCNLP, 2021](https://aclanthology.org/2021.acl-short.31/) (August 2021)
 
 ### Journal Articles
 
@@ -121,19 +121,6 @@ MathJax = {
 * **Journal & Conference Reviewing**
   * 2022: IEEE/ACM Transactions on Audio, Speech, and Language Processing
 
-## Professional Skills
-
-* **Programming Languages**
-  * Python, C/C++, Java, Bash, HTML & CSS & JavaScript, PHP, SQL
-* **Toolkits & Libraries**
-  * PyTorch, Tensorflow, Keras, Fairseq, scikit-learn, Gensim, NLTK, CoreNLP
-* **Data Analysis**
-  * Crawler (Requests, BeautifulSoup4, Scrapy), Numpy, Pandas, Matplotlib, t-SNE
-* **System Development**
-  * Vue.js, Django, Node.js, Java Web, Android SDK
-* **Office Software**
-  * LaTeX, Markdown, Word, PowerPoint, Excel, Visio, Mind Map, UML Modeling
-
 ## Honours and Awards
 
 * **Award**
@@ -148,6 +135,19 @@ MathJax = {
 * **Competition**
   * 1st Prize in The 32nd National Physics Competition, Beijing District. (top 5%, Provincial level) Dec. 2015
   * 1st Prize in The 9th Mathematics Competition. (top 5%, University level) Jun. 2015
+
+## Professional Skills
+
+* **Programming Languages**
+  * Python, C/C++, Java, Bash, HTML & CSS & JavaScript, PHP, SQL
+* **Toolkits & Libraries**
+  * PyTorch, Tensorflow, Keras, Fairseq, scikit-learn, Gensim, NLTK, CoreNLP
+* **Data Analysis**
+  * Crawler (Requests, BeautifulSoup4, Scrapy), Numpy, Pandas, Matplotlib, t-SNE
+* **System Development**
+  * Vue.js, Django, Node.js, Java Web, Android SDK
+* **Office Software**
+  * LaTeX, Markdown, Word, PowerPoint, Excel, Visio, Mind Map, UML Modeling
 
 ## Miscellaneous
 
