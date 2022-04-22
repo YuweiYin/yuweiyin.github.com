@@ -29,7 +29,7 @@ MathJax = {
 
 ## About Me
 
-Hi! I am Yuwei (/ˈjuːweɪ/), an NLPhile, namely a technophile of natural language processing. My research interest lies in <u>natural language understanding & generation, multilingual NLP, and interpretable NLP</u>. With the help of advanced computing processors and powerful statistical algorithms, dealing with human language is becoming more and more promising. Yet human language is not just about counting, repeating, and probability. Thus in-depth NLP research had better take into account the linguistic factors and refer to the language acquisition process of human beings. This intriguing research will help us better understand ourselves. The finding and explanation of human beings, nature, and the universe deeply motivate me to go on a fascinating lifelong research Odyssey.
+Hi! I am Yuwei (/ˈjuːweɪ/), an NLPhile, namely a technophile of natural language processing. My research interest lies in <u>natural language understanding & generation, multilingual NLP, and interpretable NLP</u>. With the help of advanced computing processors and powerful statistical algorithms, dealing with human language is becoming more and more promising. Human language, however, is more than just counting, repetition, and probability. Thus, in-depth NLP research had better take into account the linguistic factors and refer to the language acquisition process of human beings. This intriguing research will help us better understand ourselves. The discovery and explanation of human beings, nature, and the universe drive me to embark on a fascinating lifelong research Odyssey.
 
 Feel free to [reach out to me](mailto:seckexyin@gmail.com), especially about NLP research.
 

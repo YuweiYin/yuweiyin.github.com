@@ -80,7 +80,7 @@ MathJax = {
 
 ### Conference Proceedings
 
-* [C4] *Unified Multilingual Multiple Teacher-Student Model for Zero-Resource Neural Machine Translation*
+* [C4] *UM4: Unified Multilingual Multiple Teacher-Student Model for Zero-Resource Neural Machine Translation*
   * Jian Yang\*, <u>Yuwei Yin</u>\*, Shuming Ma, Dongdong Zhang, Shuangzhi Wu, Hongcheng Guo, Zhoujun Li, Furu Wei
   * To be published in Conference: [IJCAI-ECAI, 2022](https://ijcai-22.org/) (July 2022)
 
