@@ -40,6 +40,9 @@
       {% if author.github %}
         <li><a href="https://github.com/{{ author.github }}"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
       {% endif %}
+      {% if author.linkedin %}
+        <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+      {% endif %}
       {% if author.googlescholar %}
         <li><a href="{{ author.googlescholar }}"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
       {% endif %}
@@ -53,11 +56,8 @@
         <li><a href="https://www.stackoverflow.com/users/{{ author.stackoverflow }}"><i class="fab fa-fw fa-stack-overflow" aria-hidden="true"></i> Stackoverflow</a></li>
       {% endif %}
       <!-- {% if author.leetcode %}
-        <li><a href="https://leetcode.com/{{ author.leetcode }}/"><i class="fab fa-fw fa-solid fa-code" aria-hidden="true"></i> LeetCode</a></li>
+        <li><a href="https://leetcode.com/{{ author.leetcode }}/"><i class="fab fa-fw fa-regular fa-code" aria-hidden="true"></i> LeetCode</a></li>
       {% endif %} -->
-      {% if author.linkedin %}
-        <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
-      {% endif %}
       {% if author.wechat %}
         <li><i class="fab fa-fw fa-brands fa-weixin" aria-hidden="true"></i> {{ author.wechat }}</li>
       {% endif %}
@@ -128,7 +128,7 @@
   </div>
 
 <!-- Map Widget -->
-<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=ApyO-EZLGsQTGMHMpWtU156dU6z8qktqJ1O6anrhSRk&cl=ffffff&w=a"></script>
+<!-- <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=ApyO-EZLGsQTGMHMpWtU156dU6z8qktqJ1O6anrhSRk&cl=ffffff&w=a"></script> -->
 <!-- <a href="https://clustrmaps.com/site/1bnv0"  title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=ApyO-EZLGsQTGMHMpWtU156dU6z8qktqJ1O6anrhSRk&cl=ffffff" /></a> -->
 
 <!-- Globe Widget -->

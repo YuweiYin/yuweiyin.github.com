@@ -30,7 +30,7 @@ MathJax = {
 - **Authors**: Xuping Ma, Jiahao Cai, <u>Yuwei Yin</u>, Shangsu Ding
 - **Abstract**:
   - Nowadays, health and intelligent medical are hotspot of the society. According to this, here puts forward a design and implementation of smart band system, focus on measuring the heart rate and the sports situation. The first part is about the main technics which are used, including the Photo Plethysmography and acceleration measure; then the second part is the introduction about design of band, the telephone client and the backend server including the design of hardware, client and database, and how to process the data; in the end an instance is used to prove the practicability of the system. Based on this, a conclusion is drawn, and the future direction is put forward.
-- **Key words**: Smart band; Photo Plethysmography; intelligent medical
+- **Key words**: Smart band; Photo Plethysmography; Intelligent Medical
 
 <!-- ![picture](https://yuweiyin.github.io/files/publications/2016-12-01-Smart-Band-System.png) -->
 <!-- ![picture](http://localhost:4000/files/publications/2016-12-01-Smart-Band-System.png) -->

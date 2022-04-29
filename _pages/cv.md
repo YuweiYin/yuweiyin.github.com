@@ -36,7 +36,8 @@ MathJax = {
   * GPA: 91.7 / 100, rank 3rd of 80 in School of Computer Science and Engineering
 
 * Sep. 2014 -- Jun. 2018: **Beijing Information Science & Technology University** ([BISTU](https://english.bistu.edu.cn/)), Beijing, China
-  * <u>Bachelor of Engineering (honours)</u> in Computer Science and Technology
+  <!-- * <u>Bachelor of Engineering (honours)</u> in Computer Science and Technology -->
+  * <u>Bachelor of Engineering</u> in Computer Science and Technology
   * GPA: 92.7 / 100, rank 1st of 202 in Computer Science and Technology, Computer School
 
 ## Research Experience
@@ -82,19 +83,19 @@ MathJax = {
 
 * [C4] *UM4: Unified Multilingual Multiple Teacher-Student Model for Zero-Resource Neural Machine Translation*
   * Jian Yang\*, <u>Yuwei Yin</u>\*, Shuming Ma, Dongdong Zhang, Shuangzhi Wu, Hongcheng Guo, Zhoujun Li, Furu Wei
-  * To be published in Conference: [IJCAI-ECAI, 2022](https://ijcai-22.org/) (July 2022)
+  * To be published in Conference: [IJCAI-ECAI, 2022](https://ijcai-22.org/) (Vienna, Austria. July 2022)
 
 * [C3] *High-resource Language-specific Training for Multilingual Neural Machine Translation*
   * Jian Yang, <u>Yuwei Yin</u>, Shuming Ma, Dongdong Zhang, Zhoujun Li, Furu Wei
-  * To be published in Conference: [IJCAI-ECAI, 2022](https://ijcai-22.org/) (July 2022)
+  * To be published in Conference: [IJCAI-ECAI, 2022](https://ijcai-22.org/) (Vienna, Austria. July 2022)
 
 * [C2] *Improving Multilingual Neural Machine Translation with Auxiliary Source Languages*
   * Weijia Xu, <u>Yuwei Yin</u>, Shuming Ma, Dongdong Zhang, Haoyang Huang
-  * Published in Conference: [EMNLP, 2021](https://aclanthology.org/2021.findings-emnlp.260/) (November 2021)
+  * Published in Conference: [EMNLP, 2021](https://aclanthology.org/2021.findings-emnlp.260/) (Punta Cana, Dominican Republic. November 2021)
 
 * [C1] *Multilingual Agreement for Multilingual Neural Machine Translation*
   * Jian Yang, <u>Yuwei Yin</u>, Shuming Ma, Haoyang Huang, Dongdong Zhang, Zhoujun Li, Furu Wei
-  * Published in Conference: [ACL-IJCNLP, 2021](https://aclanthology.org/2021.acl-short.31/) (August 2021)
+  * Published in Conference: [ACL-IJCNLP, 2021](https://aclanthology.org/2021.acl-short.31/) (Bangkok, Thailand. August 2021)
 
 ### Journal Articles
 
