@@ -26,7 +26,7 @@ MathJax = {
 
 - **Paper URL**: [To be published: IJCAI-ECAI 2022](https://ijcai-22.org/)
 - **Authors**: Jian Yang, <u>Yuwei Yin</u>, Shuming Ma, Dongdong Zhang, Zhoujun Li, Furu Wei
-- [Detail Page](https://yuweiyin.github.io/publications/2022-07-23-IJCAI-MNMT-HLT); [IJCAI Anthology](https://www.ijcai.org/past_proceedings); [PDF Download](https://yuweiyin.github.io/files/publications/2022-07-23-IJCAI-MNMT-HLT.pdf); [Presentation Video](https://www.youtube.com/channel/UCNePN1NOOrODhapYR_-LlHA); [Presentation Slides](https://yuweiyin.github.io/files/publications/2022-07-23-IJCAI-MNMT-HLT-Slides.pdf)
+- [IJCAI Anthology](https://www.ijcai.org/past_proceedings); [PDF Download](https://yuweiyin.github.io/files/publications/2022-07-23-IJCAI-MNMT-HLT.pdf); [Presentation Video](https://www.youtube.com/channel/UCNePN1NOOrODhapYR_-LlHA); [Presentation Slides](https://yuweiyin.github.io/files/publications/2022-07-23-IJCAI-MNMT-HLT-Slides.pdf); [Open Source](https://github.com/YuweiYin/HLT-MT)
 - **Abstract**:
   - Multilingual neural machine translation (MNMT) trained in multiple language pairs has attracted considerable attention due to fewer model parameters and lower training costs by sharing knowledge among multiple languages. Nonetheless, multilingual training is plagued by language interference degeneration in shared parameters because of the negative interference among different translation directions, especially on high-resource languages. In this paper, we propose the multilingual translation model with the high-resource language-specific training (<b>HLT-MT</b>) to alleviate the negative interference, which adopts the two-stage training with the language-specific selection mechanism. Specifically, we first train the multilingual model only with the high-resource pairs and select the language-specific modules at the top of the decoder to enhance the translation quality of high-resource directions. Next, the model is further trained on all available corpora to transfer knowledge from high-resource languages (HRLs) to low-resource languages (LRLs). Experimental results show that HLT-MT outperforms various strong baselines on WMT-10 and OPUS-100 benchmarks. Furthermore, the analytic experiments validate the effectiveness of our method in mitigating the negative interference in multilingual training.
 
@@ -37,7 +37,7 @@ MathJax = {
   -  -->
 
 ```bibtex
-@inproceedings{hlt,
+@inproceedings{hlt-mt,
   title = {High-resource Language-specific Training for Multilingual Neural Machine Translation},
   author = {Jian Yang and Yuwei Yin and Shuming Ma and Dongdong Zhang and Zhoujun Li and Furu Wei}
   booktitle = {IJCAI 2022},

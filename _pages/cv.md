@@ -1,11 +1,13 @@
 ---
 layout: archive
-title: "CV"
+title: "Curriculum Vitae"
 permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume
   - /resume/
+  - /curriculum-vitae
+  - /curriculum-vitae/
 ---
 
 {% include base_path %}
@@ -21,7 +23,7 @@ MathJax = {
 };
 </script>
 
-[PDF CV](https://yuweiyin.github.io/files/cv/CV-YuweiYin-Joey.pdf) (version: April 2022)
+[Curriculum Vitae PDF](https://yuweiyin.github.io/files/cv/CV-YuweiYin-Joey.pdf) (version: April 2022)
 <!-- [PDF CV](http://localhost:4000/files/cv/CV-YuweiYin-Joey.pdf) -->
 
 ## Education

@@ -6,6 +6,8 @@ author_profile: true
 redirect_from:
   - /course
   - /course/
+  - /gpa
+  - /gpa/
 ---
 
 {% include base_path %}
