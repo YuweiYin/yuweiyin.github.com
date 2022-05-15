@@ -26,7 +26,7 @@ MathJax = {
 
 <!-- ## Curriculum Vitae -->
 
-[Curriculum Vitae page](https://yuweiyin.github.io/cv/) ([CV PDF](https://yuweiyin.github.io/files/cv/CV-YuweiYin-Joey.pdf))
+<!-- [Curriculum Vitae page](https://yuweiyin.github.io/cv/) ([CV PDF](https://yuweiyin.github.io/files/cv/CV-YuweiYin-Joey.pdf)) -->
 
 ## Academic & Research Background
 
@@ -50,7 +50,9 @@ After returning to Beijing, I decided to take an internship in the research grou
 
 <!-- However, to my mind, relying on the internship to finish the Ph.D. program is not a long-term solution. Let alone the policy that interns have to check out after 1.5 years at most in Microsoft. To pursue careers in academia, I was determined to reboot my postgraduate journey and get a doctorate degree elsewhere. To pursue careers in academia, I was determined to reboot my postgraduate journey and get a doctorate degree elsewhere. In fact, I planned to apply to programs in the US. Since Beihang University is the top target of the [Presidential Proclamation 10043](https://en.wikipedia.org/wiki/Proclamation_10043) (PP 10043), I chose to forgo the Master's and Ph.D. degree there in order to have a better chance of getting the VISA and admission. Therefore, I left Beijing in September 2021, gave myself one year gap, and applied to oversea postgraduate programs at the end of 2022. -->
 
-However, to my mind, having to rely on the internship to finish the Ph.D. program was unfavorable and precarious. Plus, there were countless unreasonable regulations and lamentable misfortunes owing to the pandemic. Consequently, changing  it was extremely hard distracting. To pursue careers in academia, I was determined to reboot my postgraduate journey and get a doctorate degree elsewhere, such as in America. Since Beihang University is the top target of the [Presidential Proclamation 10043](https://en.wikipedia.org/wiki/Proclamation_10043) (PP 10043), I chose to forgo the M.S. and Ph.D. degree there in order to have a better chance of getting the VISA and admission. Therefore, I left Beijing in September 2021, gave myself one year gap, and applied to oversea postgraduate programs at the end of 2022.
+However, to my mind, having to rely on the internship to finish the Ph.D. program was unfavorable and precarious. Plus, there were countless unreasonable regulations and lamentable misfortunes owing to the pandemic. To pursue careers in academia, I was determined to reboot my postgraduate journey and get a doctorate degree elsewhere, such as in America. Since Beihang University is the top target of the [Presidential Proclamation 10043](https://en.wikipedia.org/wiki/Proclamation_10043) (PP 10043), I chose to forgo the M.S. and Ph.D. degree there in order to have a better chance of getting the VISA and admission. Therefore, I left Beijing in September 2021, gave myself one year gap, and applied to oversea postgraduate programs at the end of 2022.
+
+<!-- Consequently, changing  it was extremely hard distracting. -->
 
 ## Gap Year (2022)
 
