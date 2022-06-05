@@ -34,7 +34,8 @@ MathJax = {
   <!-- * <u>Integrated M.S. & Ph.D. (dropout)</u> in Machine Learning (M.S.) & Natural Language Processing (Ph.D.) -->
   <!-- * <u>Integrated M.S. & Ph.D. (dropout)</u> M.S. in Machine Learning (2018 -- 2019) & Ph.D. in Natural Language Processing (2019 -- 2021) -->
   <!-- * <del>Integrated M.S. & Ph.D.</del> M.S. in Machine Learning (2018 -- 2019) & Ph.D. in Natural Language Processing (2019 -- 2021) -->
-  * <u>Integrated M.S. & Ph.D.</u> in Machine Learning (M.S.) & Natural Language Processing (Ph.D. from 2019)
+  * <u>Integrated M.S. & Ph.D. (dropout)</u> in Machine Learning (M.S.) & Natural Language Processing (Ph.D. from 2019)
+  <!-- * <u>Integrated M.S. & Ph.D.</u> in Machine Learning (M.S.) & Natural Language Processing (Ph.D. from 2019) -->
   * GPA: 91.7 / 100, rank 3rd of 80 in School of Computer Science and Engineering
 
 * Sep. 2014 -- Jun. 2018: **Beijing Information Science & Technology University** ([BISTU](https://english.bistu.edu.cn/)), Beijing, China

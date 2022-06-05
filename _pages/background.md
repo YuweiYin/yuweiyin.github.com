@@ -30,7 +30,7 @@ MathJax = {
 
 ## Academic & Research Background
 
-[Academic Record](https://yuweiyin.github.io/courses/) (academic courses & GPA trajectory)
+[Academic Record](https://yuweiyin.github.io/gpa/) (GPA Trajectory & Academic Courses & Transcript Scores)
 
 ### Undergraduate (2014 - 2018)
 
@@ -41,7 +41,8 @@ I received my B.Eng. degree in Computer Science and Technology from [Beijing Inf
 
 After graduation, I was recommended to the M.S. program at the State Key Laboratory of Software Development Environment, School of Computer Science and Engineering, [Beihang University](https://ev.buaa.edu.cn/) (BUAA). In the first year, we developed a data mining and website system for a funded program. Apart from the lab project and advanced CS courses, I studied machine learning, deep learning, and natural language processing by myself. Then I decided to dive into NLP research and changed my program to Ph.D. in 2019.
 
-In my first doctoral year, I still had to take general CS instead of NLP-specific courses. Meanwhile, I worked as a teaching assistant in Discrete Mathematics and took on the operation and maintenance of a lab system. Back then, I was intrigued by neural machine translation (NMT) research. Unfortunately, the computing resource in the lab was terribly limited. Thus my experiments could hardly run in the basic NLP model settings, let alone conduct smoothly and try various novel ideas. To add insult to injury, [Coronavirus disease 2019](https://en.wikipedia.org/wiki/COVID-19) (COVID-19) forced everyone to stay at home until Fall 2020.
+<!-- In my first doctoral year, I still had to take general CS instead of NLP-specific courses. -->
+In my first doctoral year, I worked as a teaching assistant in Discrete Mathematics and took on the operation and maintenance of a lab project. Back then, I was intrigued by neural machine translation (NMT) research. Unfortunately, the computing resource in the lab was terribly limited. Thus my experiments could hardly run in the basic NLP model settings, let alone conduct smoothly and try various novel ideas. To add insult to injury, [Coronavirus disease 2019](https://en.wikipedia.org/wiki/COVID-19) (COVID-19) forced everyone to stay at home until Fall 2020.
 <!-- Unfortunately, my experiments were hard to conduct smoothly, mainly because the computing resource was rather scarce in the lab. -->
 
 After returning to Beijing, I decided to take an internship in the research group of a technology company with adequate computing resources. Then, I joined the [Natural Language Computing](https://www.microsoft.com/en-us/research/group/natural-language-computing/) (NLC) group of [Microsoft Research Asia](https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/) (MSRA) as a full-time research intern. Since then, I immersed myself in a positive academic atmosphere and focused on NMT research, solving the low- and zero-resource multilingual translation problems. It was extremely enjoyable to design cutting-edge NLP algorithms and to have inspiring and scintillating discussions with so many excellent researchers.
