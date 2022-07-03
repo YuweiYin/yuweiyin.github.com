@@ -16,7 +16,7 @@ redirect_from:
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-<script> 
+<script>
 MathJax = {
   tex: {
     inlineMath: [['$', '$']],
@@ -25,20 +25,36 @@ MathJax = {
 };
 </script>
 
-- **Undergraduate**
-  - Weighted Average Score: 92.7 / 100
-  <!-- - GPA of Required Course: 4.22 -->
-  <!-- - WES GPA: -->
-- **Postgraduate**
-  - Weighted Average Score: 91.7 / 100
-  <!-- - WES GPA: -->
+<!-- ## GPA Trajectory -->
 
-## GPA Trajectory
-
-<!-- ![Academic-Record-Undergraduate](https://yuweiyin.github.io/files/courses/Academic-Record-Undergraduate.png) -->
-<!-- ![Academic-Record-Undergraduate](http://localhost:4000/files/courses/Academic-Record-Undergraduate.png) -->
 <img src="https://yuweiyin.github.io/files/courses/Academic-Record-Undergraduate.png" alt="Academic-Record-Undergraduate" width="60%" height="auto" max-width="60%">
-<!-- <img src="http://localhost:4000/files/courses/Academic-Record-Undergraduate.png" alt="Academic-Record-Undergraduate" width="60%" height="auto" max-width="60%"> -->
+
+- **Undergraduate**: Weighted Average Score: **92.7** / 100
+  - [WES](http://www.wes.org/) GPA: **3.82** / 4 (the last three years: **3.95** / 4)
+  - 2014-2015: A\*11, B\*7, C\*2
+  - 2015-2016: A\*24, B\*2
+  - 2016-2017: A\*19
+  - 2017-2018: A\*4
+- **Postgraduate**: Weighted Average Score: **91.7** / 100
+<!-- - WES ([World Education Services](http://www.wes.org/)) Evaluation Report -->
+  <!-- - U.S. Equivalency: Bachelor's degree from a regionally accredited institution -->
+  <!-- - Total Undergraduate Semester Credits: 154.5 -->
+
+## Mathematics & Science Basis
+
+Semester | Course | Score | Type
+:-: | :-: | :-: | :-:
+1: Fall 2014 | Linear Algebra A / 线性代数 A | 87 | Compulsory
+1: Fall 2014 | Advanced Mathematics A(1) / 高等数学 A(1) | 80 | Compulsory
+2: Spring 2015 | Advanced Mathematics A(2) / 高等数学 A(2) | 93 | Compulsory
+2: Spring 2015 | Discrete Mathematics(1) / 离散数学(1) | 99 | Compulsory
+2: Spring 2015 | University Physics J(1) / 大学物理 J(1) | 83 | Compulsory
+3: Fall 2015 | University Physics J(2) / 大学物理 J(2) | 100 | Compulsory
+3: Fall 2015 | Discrete Mathematics(2) / 离散数学(2) | 100 | Selective
+3: Fall 2015 | Probability and Statistics / 概率论与数理统计 | 99 | Compulsory
+3: Fall 2015 | Physics Experiment J(1) / 物理实验 J(1) | Excellent | Compulsory
+4: Spring 2016 | Physics Experiment J(2) / 物理实验 J(2) | Excellent | Compulsory
+Postgraduate | Mathematical Statistics / 数理统计 | 81 | Compulsory
 
 ## Computer Science - Core Courses
 
@@ -97,22 +113,6 @@ Semester | Course | Score | Type
 Postgraduate | Algorithm Design and Analysis / 算法设计与分析 | 90 | Compulsory
 Postgraduate | Principles of Programming Language / 程序设计语言原理 | 82 | Compulsory
 
-## Mathematics & Science Basis
-
-Semester | Course | Score | Type
-:-: | :-: | :-: | :-:
-1: Fall 2014 | Linear Algebra A / 线性代数 A | 87 | Compulsory
-1: Fall 2014 | Advanced Mathematics A(1) / 高等数学 A(1) | 80 | Compulsory
-2: Spring 2015 | Advanced Mathematics A(2) / 高等数学 A(2) | 93 | Compulsory
-2: Spring 2015 | Discrete Mathematics(1) / 离散数学(1) | 99 | Compulsory
-2: Spring 2015 | University Physics J(1) / 大学物理 J(1) | 83 | Compulsory
-3: Fall 2015 | University Physics J(2) / 大学物理 J(2) | 100 | Compulsory
-3: Fall 2015 | Discrete Mathematics(2) / 离散数学(2) | 100 | Selective
-3: Fall 2015 | Probability and Statistics / 概率论与数理统计 | 99 | Compulsory
-3: Fall 2015 | Physics Experiment J(1) / 物理实验 J(1) | Excellent | Compulsory
-4: Spring 2016 | Physics Experiment J(2) / 物理实验 J(2) | Excellent | Compulsory
-Postgraduate | Mathematical Statistics / 数理统计 | 81 | Compulsory
-
 ## Courses of Interest
 
 Semester | Course | Score | Type
@@ -166,5 +166,3 @@ Postgraduate | Ethic of Computer Profession / 计算机职业素养 | Compulsory
 Postgraduate | Laws and Regulations of Cybersecurity / 网络安全法律法规 | Compulsory
 Postgraduate | Research on Theory and Practice of Socialism with Chinese Characteristics / 中国特色社会主义理论与实践研究 | Compulsory
 Postgraduate | Nature Dialectics / 自然辩证法概论 | Compulsory
-
----

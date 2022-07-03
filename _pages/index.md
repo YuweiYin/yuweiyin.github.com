@@ -18,7 +18,7 @@ redirect_from:
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-<script> 
+<script>
 MathJax = {
   tex: {
     inlineMath: [['$', '$']],
@@ -27,18 +27,22 @@ MathJax = {
 };
 </script>
 
-## About Me (he/him/Mr.)
+*Wir müssen wissen, wir werden wissen!* -- David Hilbert
 
-Hi! I am Yuwei (/ˈjuːweɪ/), an NLPhile, namely a technophile of natural language processing. My research interest lies in <u>natural language understanding & generation, multilingual NLP, and interpretable NLP</u>. With the help of advanced computing processors and powerful statistical algorithms, dealing with human language is becoming more and more promising. Human language, however, is more than just counting, repetition, and probability. Thus in-depth NLP research must thoroughly analyze the linguistic factors and refer to the language acquisition process of human beings. This intriguing research will help us better understand ourselves. The discovery and explanation of human beings, nature, and the universe drive me to embark on a fascinating lifelong research Odyssey.
+## About Me (he/him/his)
 
-Feel free to [contact me by email](mailto:seckexyin@gmail.com), especially about NLP research. ([Curriculum Vitae](https://yuweiyin.github.io/files/cv/CV-YuweiYin-Joey.pdf))
+Hi! I am Yuwei (/ˈjuːweɪ/), an NLPhile -- technophile of natural language processing. My research interest lies in natural language understanding & generation, multilingual NLP, and interpretable NLP.
+
+<!-- With the help of advanced computing processors and powerful statistical algorithms, automatically dealing with human language is becoming more and more promising. Human language, however, is more than just counting, repetition, and probability. Hence, in-depth NLP research must thoroughly analyze the linguistic factors and refer to the language acquisition process of human beings. This intriguing research will help us better understand ourselves. -->
+
+What do we really mean by understanding? How exactly do we human make sentences? How can computers do what we can do in terms of language? What does multilinguality mean to us? How can we break the language barrier to promote peace in the world? The discovery and explanation of human beings, nature, and the universe drive me to embark on a fascinating lifelong research Odyssey.
+
+Feel free to contact me by [email](mailto:seckexyin@gmail.com) (seckexyin [at] gmail [dot] com).
 
 <!-- ## News -->
 
 
 ## About My Name
-
-<!-- ## Etymology of My Name -->
 
 My name is 阴昱为 Yin-Yuwei (/ˈjɪnˌjuːweɪ/).
 
@@ -49,17 +53,9 @@ In Ancient Chinese philosophy, 阴阳 [yin and yang](https://en.wikipedia.org/wi
 As a verb, 昱 means to shine, to light, and to illuminate.
 As an adjective, 昱 means shiny, bright, and glorious.
 
-为 has many meanings and various parts of speech, including the verb, noun, preposition, conjunction, and auxiliary word. Its basic meaning is to do, to act, and to make.
+为 has multiple meanings and different parts of speech, including the verb, noun, preposition, conjunction, and auxiliary word. In general, its basic meaning is to do, to act, and to make.
 
 The right part of 阴 is 月, meaning the moon. Therefore, 阴昱 contains yin and yang, the moon and the sun.
 昱为 can be explained as standing under the sun and making achievements.
 
 Joey has a similar pronunciation to 久湮, which is the name I give myself. 久 means long (time), permanent, and eternal. 湮 means annihilation or to annihilate. Together, it stands for a paradoxical harmony, just like yin and yang.
-
-<!-- ## Miscellaneous -->
-
-<!-- * **Languages**: Mandarin (native), English (fluent), French & German & Japanese (elementary) -->
-<!-- * **Interests**: Philosophy, Mathematics, Physics, Cosmology, Algorithm, Polyglot, Football, Calisthenics -->
-<!-- * **Motto**: Wir müssen wissen, wir werden wissen! -- David Hilbert, 1930 -->
-
-<!-- I have played soccer since elementary school, it was my honor to win the championship with my high school classmates in the soccer competition of about 20 classes. -->

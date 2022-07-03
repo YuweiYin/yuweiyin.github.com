@@ -14,7 +14,7 @@ redirect_from:
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-<script> 
+<script>
 MathJax = {
   tex: {
     inlineMath: [['$', '$']],
@@ -24,48 +24,38 @@ MathJax = {
 </script>
 
 [Curriculum Vitae PDF](https://yuweiyin.github.io/files/cv/CV-YuweiYin-Joey.pdf) (version: April 2022)
-<!-- [PDF CV](http://localhost:4000/files/cv/CV-YuweiYin-Joey.pdf) -->
 
 ## Education
 
 * Sep. 2018 -- Sep. 2021: **Beihang University** ([BUAA](https://ev.buaa.edu.cn/)), Beijing, China
-  <!-- * State Key Lab of Software Development Environment, School of Computer Science and Engineering -->
   * Intelligent Information Process Institute, State Key Lab of Software Development Environment
-  <!-- * <u>Integrated M.S. & Ph.D. (dropout)</u> in Machine Learning (M.S.) & Natural Language Processing (Ph.D.) -->
-  <!-- * <u>Integrated M.S. & Ph.D. (dropout)</u> M.S. in Machine Learning (2018 -- 2019) & Ph.D. in Natural Language Processing (2019 -- 2021) -->
-  <!-- * <del>Integrated M.S. & Ph.D.</del> M.S. in Machine Learning (2018 -- 2019) & Ph.D. in Natural Language Processing (2019 -- 2021) -->
   * <u>Integrated M.S. & Ph.D. (dropout)</u> in Machine Learning (M.S.) & Natural Language Processing (Ph.D. from 2019)
-  <!-- * <u>Integrated M.S. & Ph.D.</u> in Machine Learning (M.S.) & Natural Language Processing (Ph.D. from 2019) -->
-  * GPA: 91.7 / 100, rank 3rd of 80 in School of Computer Science and Engineering
+  * GPA: 91.7 / 100, rank 3rd of 80
 
 * Sep. 2014 -- Jun. 2018: **Beijing Information Science & Technology University** ([BISTU](https://english.bistu.edu.cn/)), Beijing, China
-  <!-- * <u>Bachelor of Engineering (honours)</u> in Computer Science and Technology -->
-  * <u>Bachelor of Engineering</u> in Computer Science and Technology
-  * GPA: 92.7 / 100, rank 1st of 202 in Computer Science and Technology, Computer School
+  * <u>Bachelor of Engineering</u> in Computer Science and Technology (Artificial Intelligence Track)
+  * GPA: 92.7 / 100, rank 1st of 202
 
 ## Research Experience
 
-* Nov. 2020 -- Sep. 2021: **Microsoft Research Asia** ([MSRA](https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/))
-  * <u>Research Intern</u> (Stars of Tomorrow Internship Program) in Natural Language Computing Group ([NLC](https://www.microsoft.com/en-us/research/group/natural-language-computing/))
-  * Engaged in multilingual neural machine translation research [C1-C4]
+* Nov. 2020 -- Sep. 2021: **Microsoft Research (Asia)** ([MSRA](https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/))
+  * <u>Research Intern</u> (Stars of Tomorrow Internship Program) in Natural Language Computing ([NLC](https://www.microsoft.com/en-us/research/group/natural-language-computing/)) group
+  * Researched multilingual neural machine translation [C1-C4]
   * Mentor: [Shuming Ma](https://www.microsoft.com/en-us/research/people/shumma/). Advisor: [Haoyang Huang](https://www.microsoft.com/en-us/research/people/haohua/), [Dongdong Zhang](https://www.microsoft.com/en-us/research/people/dozhang/).
 
-* Sep. 2018 -- Jun. 2019: **State Key Lab of Software Development Environment, Beihang University**
+* Sep. 2018 -- Jun. 2019: **State Key Lab of Software Development Environment, BUAA**, Beijing, China
   * <u>Research Assistant</u> in funding program: Expert Database Management System ([EDMS](https://github.com/gzliuyun/EDMS))
-  * Developed the data mining (crawling, cleaning, and statistical analysis) and website system
+  * Developed a data mining (crawling, cleaning, and statistical analysis) and web system (Vue.js & Django)
   * Project manager: [Xiaoming Zhang](https://www.researchgate.net/profile/Xiaoming-Zhang-11).
 
-* Sep. 2017 -- Jun. 2018: **Institute of Software Chinese Academy of Sciences** ([ISCAS](http://english.is.cas.cn/))
+* Sep. 2017 -- Jun. 2018: **Institute of Software, Chinese Academy of Sciences** ([ISCAS](http://english.is.cas.cn/)), Beijing, China
   * <u>Research Intern</u> in Trusted Computing and Information Assurance Laboratory (TCA)
-  <!-- * Developed a privacy-protected bicycle-sharing system (Android & Web applications) based on single sign-on -->
-  * Developed a privacy-protected system (Android & Web applications) based on single sign-on (SSO)
+  * Developed a privacy-protected system (Android APP & website) based on single sign-on and OAuth & OpenID Connect
   * Advisor: [Zhenfeng Zhang](https://people.ucas.ac.cn/~zfzhang?language=en), [Chengxia Liu](https://jsjxy.bistu.edu.cn/sz/jsyl/jsjkxyjsx_7820/201905/t20190506_68373.html).
 
-* Sep. 2015 -- Dec. 2016: **Computer School, Beijing Information Science & Technology University**
-  <!-- * National Undergraduate Innovation Project, advised by Xuping Ma -->
-  <!-- * Developed a smart band system to measure the heart rate and sports situation (Publication: [CN-Journal](https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CJFD&dbname=CJFDLAST2017&filename=DNZS201636043)) -->
-  * <u>Research Assistant</u> in funding program: National Undergraduate Innovation Project
-  * Developed a smart band system to measure the heart rate and sports situation (Software & Hardware) [J1]
+* Sep. 2015 -- Dec. 2016: **Computer School, BISTU**, Beijing, China
+  * <u>Research Assistant</u> in the Undergraduate Innovation Project (national level)
+  * Developed a smart band system (software & hardware) to measure heart rate and sports situation [J1]
   <!-- * Publication: *Design and Implementation of Smart Band System* ([CN-Journal](https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CJFD&dbname=CJFDLAST2017&filename=DNZS201636043)) -->
   <!-- * Publication: *Design and Implementation of Smart Band System* ([CN-Journal](https://www.cnki.com.cn/Article/CJFDTotal-DNZS201636043.htm)) -->
   <!-- 智能手环系统的设计与实现   马旭平，蔡嘉豪，阴昱为，丁尚甦 -->
@@ -82,27 +72,28 @@ MathJax = {
 
 **Research Interests**: Natural Language Understanding & Generation, Multilingual NLP, Interpretable NLP
 
+(\* indicates equal contribution)
+
 ### Conference Proceedings
 
 * [C4] *UM4: Unified Multilingual Multiple Teacher-Student Model for Zero-Resource Neural Machine Translation*
   * Jian Yang\*, <u>Yuwei Yin</u>\*, Shuming Ma, Dongdong Zhang, Shuangzhi Wu, Hongcheng Guo, Zhoujun Li, Furu Wei
-  * To be published in Conference: [IJCAI-ECAI, 2022](https://ijcai-22.org/) (Vienna, Austria. July 2022)
+  * Published in Conference: [IJCAI-ECAI 2022](https://ijcai-22.org/) (Vienna, Austria. July 2022)
 
 * [C3] *High-resource Language-specific Training for Multilingual Neural Machine Translation*
   * Jian Yang, <u>Yuwei Yin</u>, Shuming Ma, Dongdong Zhang, Zhoujun Li, Furu Wei
-  * To be published in Conference: [IJCAI-ECAI, 2022](https://ijcai-22.org/) (Vienna, Austria. July 2022)
+  * Published in Conference: [IJCAI-ECAI 2022](https://ijcai-22.org/) (Vienna, Austria. July 2022)
 
 * [C2] *Improving Multilingual Neural Machine Translation with Auxiliary Source Languages*
   * Weijia Xu, <u>Yuwei Yin</u>, Shuming Ma, Dongdong Zhang, Haoyang Huang
-  * Published in Conference: [EMNLP, 2021](https://aclanthology.org/2021.findings-emnlp.260/) (Punta Cana, Dominican Republic. November 2021)
+  * Published in Conference: [EMNLP 2021](https://aclanthology.org/2021.findings-emnlp.260/) (Punta Cana, Dominican Republic. November 2021)
 
 * [C1] *Multilingual Agreement for Multilingual Neural Machine Translation*
   * Jian Yang, <u>Yuwei Yin</u>, Shuming Ma, Haoyang Huang, Dongdong Zhang, Zhoujun Li, Furu Wei
-  * Published in Conference: [ACL-IJCNLP, 2021](https://aclanthology.org/2021.acl-short.31/) (Bangkok, Thailand. August 2021)
+  * Published in Conference: [ACL-IJCNLP 2021](https://aclanthology.org/2021.acl-short.31/) (Bangkok, Thailand. August 2021)
 
 ### Journal Articles
 
-<!-- * *Design and Implementation of Smart Band System* ([Computer Knowledge and Technology, 2016](https://www.cnki.com.cn/Article/CJFDTotal-DNZS201636043.htm)) -->
 * [J1] *Design and Implementation of Smart Band System*
   * Xuping Ma, Jiahao Cai, <u>Yuwei Yin</u>, Shangsu Ding
   * Published in Journal (China): [Computer Knowledge and Technology, 2016](https://yuweiyin.github.io/files/publications/2016-12-01-Smart-Band-System.pdf)
@@ -115,17 +106,15 @@ MathJax = {
 ## Teaching and Academic Service
 
 * **Teaching Assistantship**
-  <!-- * Fall 2019: *Discrete Mathematics* (B3I061142), School of Computer Science and Engineering, Beihang University, professor: [Zhoujun Li](https://scholar.google.com/citations?user=e-4LoEcAAAAJ) -->
   * Fall 2019: *Discrete Mathematics* (B3I061142), School of Computer Science and Engineering, Beihang University
 
 * **Research Mentorship**
-  <!-- * 2019 -- 2020: Masters in Beihang University: Caijun Bao, Xinxin Song, Nannan Shi, Yuling Deng -->
   * 2019 -- 2020: M.S. in Beihang University: Caijun Bao, Xinxin Song, Nannan Shi, Yuling Deng
 
 * **Journal & Conference Reviewing**
   * 2022: IEEE/ACM Transactions on Audio, Speech, and Language Processing
 
-## Honours and Awards
+## Honors and Awards
 
 * **Award**
   * Beijing Outstanding Graduate Award. (top 5%, Provincial level) Jul. 2018
