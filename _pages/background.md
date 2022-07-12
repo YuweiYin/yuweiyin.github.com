@@ -28,7 +28,7 @@ MathJax = {
 
 ## Academic & Research Background
 
-[Academic Record](https://yuweiyin.github.io/gpa/) (GPA Trajectory & Academic Courses & Transcript Scores)
+[Academic Record / Transcript / GPA](https://yuweiyin.github.io/gpa/)
 
 ### Undergraduate (2014 - 2018)
 

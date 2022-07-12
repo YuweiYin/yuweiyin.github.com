@@ -38,7 +38,7 @@ MathJax = {
 
 ## Research Experience
 
-* Nov. 2020 -- Sep. 2021: **Microsoft Research (Asia)** ([MSRA](https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/))
+* Nov. 2020 -- Sep. 2021: **Microsoft Research (Asia)** ([MSRA](https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/)), Beijing, China
   * <u>Research Intern</u> (Stars of Tomorrow Internship Program) in Natural Language Computing ([NLC](https://www.microsoft.com/en-us/research/group/natural-language-computing/)) group
   * Researched multilingual neural machine translation [C1-C4]
   * Mentor: [Shuming Ma](https://www.microsoft.com/en-us/research/people/shumma/). Advisor: [Haoyang Huang](https://www.microsoft.com/en-us/research/people/haohua/), [Dongdong Zhang](https://www.microsoft.com/en-us/research/people/dozhang/).
@@ -86,11 +86,11 @@ MathJax = {
 
 * [C2] *Improving Multilingual Neural Machine Translation with Auxiliary Source Languages*
   * Weijia Xu, <u>Yuwei Yin</u>, Shuming Ma, Dongdong Zhang, Haoyang Huang
-  * Published in Conference: [EMNLP 2021](https://aclanthology.org/2021.findings-emnlp.260/) (Punta Cana, Dominican Republic. November 2021)
+  * Published in Conference: [EMNLP 2021](https://2021.emnlp.org/) (Punta Cana, Dominican Republic. November 2021)
 
 * [C1] *Multilingual Agreement for Multilingual Neural Machine Translation*
   * Jian Yang, <u>Yuwei Yin</u>, Shuming Ma, Haoyang Huang, Dongdong Zhang, Zhoujun Li, Furu Wei
-  * Published in Conference: [ACL-IJCNLP 2021](https://aclanthology.org/2021.acl-short.31/) (Bangkok, Thailand. August 2021)
+  * Published in Conference: [ACL-IJCNLP 2021](https://2021.aclweb.org/) (Bangkok, Thailand. August 2021)
 
 ### Journal Articles
 

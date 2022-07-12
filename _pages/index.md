@@ -31,7 +31,7 @@ MathJax = {
 
 ## About Me (he/him/his)
 
-Hi! I am Yuwei (/ˈjuːweɪ/), an NLPhile -- technophile of natural language processing. My research interest lies in natural language understanding & generation, multilingual NLP, and interpretable NLP.
+Hi! I am Yuwei (/ˈjuːweɪ/), an NLPhile -- technophile of natural language processing (NLP). My research interest lies in natural language understanding & generation, multilingual NLP, and interpretable NLP. Accordingly, my research goals are mainly three folds: 1. to improve the understanding and generating ability of general NLP models; 2. to tap the potential of multilingual NLP in a broader scenario; 3. to fathom the essence of NLP models and make them more interpretable, understandable, and controllable.
 
 <!-- With the help of advanced computing processors and powerful statistical algorithms, automatically dealing with human language is becoming more and more promising. Human language, however, is more than just counting, repetition, and probability. Hence, in-depth NLP research must thoroughly analyze the linguistic factors and refer to the language acquisition process of human beings. This intriguing research will help us better understand ourselves. -->
 
