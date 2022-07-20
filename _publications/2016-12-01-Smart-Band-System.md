@@ -33,19 +33,18 @@ MathJax = {
 - **Key words**: Smart band; Photo Plethysmography; Intelligent Medical
 
 <!-- ![picture](https://yuweiyin.github.io/files/publications/2016-12-01-Smart-Band-System.png) -->
-<!-- ![picture](http://localhost:4000/files/publications/2016-12-01-Smart-Band-System.png) -->
 
 <!-- - **Citation**:
   - Xuping Ma, Jiahao Cai, Yuwei Yin, and Shangsu Ding. 2016. Design and Implementation of Smart Band System. Computer Knowledge and Technology, 12(36), pp.98-102. -->
 
 ```bibtex
-@article{ma-etal-2016-smart-band-system,
-  title={Design and Implementation of Smart Band System},
-  author={Xuping Ma, Jiahao Cai, Yuwei Yin, and Shangsu Ding},
-  journal={Computer Knowledge and Technology},
-  volume={12},
-  number={36},
-  pages={98--102},
-  year={2016}
+@article{ma2016smartband,
+  title   = {Design and Implementation of Smart Band System},
+  author  = {Ma, Xuping and Cai, Jiahao and Yin, Yuwei and Ding, Shangsu},
+  journal = {Computer Knowledge and Technology},
+  volume  = {12},
+  number  = {36},
+  pages   = {98--102},
+  year    = {2016}
 }
 ```

@@ -23,7 +23,8 @@ MathJax = {
 };
 </script>
 
-[Curriculum Vitae PDF](https://yuweiyin.github.io/files/cv/CV-YuweiYin-Joey.pdf) (version: April 2022)
+<!-- [Curriculum Vitae PDF](https://yuweiyin.github.io/files/cv/CV-YuweiYin-Joey.pdf) (version: July 2022) -->
+[Curriculum Vitae PDF](https://yuweiyin.github.io/files/cv/CV-YuweiYin-Joey.pdf)
 
 ## Education
 
@@ -103,16 +104,23 @@ MathJax = {
 <!-- * [P1] *XNLP* -->
   <!-- * <u>Yuwei Yin</u> -->
 
-## Teaching and Academic Service
-
-* **Teaching Assistantship**
-  * Fall 2019: *Discrete Mathematics* (B3I061142), School of Computer Science and Engineering, Beihang University
-
-* **Research Mentorship**
-  * 2019 -- 2020: M.S. in Beihang University: Caijun Bao, Xinxin Song, Nannan Shi, Yuling Deng
+## Academic Service
 
 * **Journal & Conference Reviewing**
   * 2022: IEEE/ACM Transactions on Audio, Speech, and Language Processing
+
+## Research Mentorship
+
+* **Master's students at Beihang University** (2020 -- 2021)
+  * Caijun Bao: "Composite Aspect-based Sentiment Analysis Technology Based on Deep Learning"
+  * Xinxin Song: "Sequential Recommendation Algorithm Based on Self-Supervised Learning"
+  * Yuling Deng: "Two-stage Algorithm of Machine Reading Comprehension Based on Extraction and Matching"
+
+## Teaching Experience
+
+* **Teaching Assistantship**
+  * Fall 2019: *Discrete Mathematics*, School of Computer Science and Engineering, Beihang University
+
 
 ## Honors and Awards
 
@@ -142,8 +150,8 @@ MathJax = {
 * **Office Software**
   * LaTeX, Markdown, Word, PowerPoint, Excel, Visio, Mind Map, UML Modeling
 
-## Miscellaneous
+<!-- ## Miscellaneous -->
 
-* **Languages**: Mandarin (native), English (fluent), French & German & Japanese (elementary)
-* **Interests**: Philosophy, Mathematics, Physics, Cosmology, Algorithm, Polyglot, Soccer, Calisthenics
-* **Motto**: Wir müssen wissen, wir werden wissen! -- David Hilbert, 1930
+<!-- * **Languages**: Mandarin (native), English (fluent), French & German & Japanese (elementary) -->
+<!-- * **Interests**: Philosophy, Mathematics, Physics, Cosmology, Algorithm, Polyglot, Soccer, Calisthenics -->
+<!-- * **Motto**: Wir müssen wissen, wir werden wissen! -- David Hilbert, 1930 -->

@@ -24,15 +24,20 @@ MathJax = {
 };
 </script>
 
-*Life is either a daring adventure or nothing at all.* -- Helen Keller
+"*Life is either a daring adventure or nothing at all.*" -- Helen Keller
+
+---
 
 ## Academic & Research Background
 
-[Academic Record / Transcript / GPA](https://yuweiyin.github.io/gpa/)
+<!-- * [Curriculum Vitae](https://yuweiyin.github.io/cv/) ([CV PDF](https://yuweiyin.github.io/files/cv/CV-YuweiYin-Joey.pdf)) (version: July 2022) -->
+* [Curriculum Vitae](https://yuweiyin.github.io/files/cv/CV-YuweiYin-Joey.pdf) (version: July 2022)
+* [Academic Record / Transcript / GPA](https://yuweiyin.github.io/gpa/)
 
 ### Undergraduate (2014 - 2018)
 
-I received my B.Eng. degree in Computer Science and Technology from [Beijing Information Science & Technology University](https://english.bistu.edu.cn/) (BISTU), where I comprehensively studied various computer science (CS) courses and developed a solid foundation in the CS field. In my sophomore year, I participated in the Undergraduate Innovation Project (national level) as an undergraduate research assistant. One year later, we developed a smart band system (software & hardware) to measure heart rate and sports situation. Then in my senior year, I interned at the Trusted Computing and Information Assurance Laboratory (TCA), [Institute of Software, Chinese Academy of Sciences](http://english.is.cas.cn/) (ISCAS), where I finished my graduation project by developing a privacy-protected system (Android APP & website) and won an excellent award.
+I received my B.Eng. degree in Computer Science and Technology from [Beijing Information Science & Technology University](https://english.bistu.edu.cn/) (BISTU), where I comprehensively studied various computer science (CS) courses and developed a solid foundation in this field. In my sophomore year, I participated in a national-level Undergraduate Innovation Project as an undergraduate research assistant. One year later, we developed a smart band system (software & hardware) to measure heart rate and sports situation. Then in my senior year, I interned at the Trusted Computing and Information Assurance Laboratory (TCA), [Institute of Software, Chinese Academy of Sciences](http://english.is.cas.cn/) (ISCAS), where I finished my graduation project by developing a privacy-protected system (Android APP & website).
+<!-- where I finished my graduation project by developing a privacy-protected system (Android APP & website) and won an excellent award -->
 <!-- One year later, we developed a smart band system (software & hardware) to measure the heart rate and sports situation and published a journal paper. -->
 <!-- where I finished my graduation project (excellent award) by developing a privacy-protected system (Android APP & website) based on single sign-on (SSO) and OAuth 2.0 & OpenID Connect. -->
 
@@ -40,10 +45,10 @@ I received my B.Eng. degree in Computer Science and Technology from [Beijing Inf
 
 After graduation, I was recommended to the M.S. program at the State Key Laboratory of Software Development Environment, School of Computer Science and Engineering, [Beihang University](https://ev.buaa.edu.cn/) (BUAA). In the first year, we developed a data mining and web system for a funded program. Apart from the research assistant projects and graduate CS courses, I studied machine learning, deep learning, and natural language processing (NLP) by myself. Then I decided to dive into NLP research and changed my program to Ph.D. in 2019.
 
-In my first doctoral year, I worked as a teaching assistant in Discrete Mathematics and took on some lab projects. Back then, I was intrigued by neural machine translation (NMT). Unfortunately, the computing resource in the lab was limited. Hence, I could hardly experiment on a basic NMT model setting, let alone conduct smoothly and try new ideas. Worse still, [Coronavirus disease 2019](https://en.wikipedia.org/wiki/COVID-19) (COVID-19) forced everyone to stay at home until Fall 2020.
+In my first doctoral year, I worked as a teaching assistant in *Discrete Mathematics* and took on some lab projects. Back then, I was intrigued by neural machine translation (NMT). Unfortunately, the computing resource in the lab was limited. Hence, I could hardly run models in a basic NMT setting, let alone experiment smoothly and try new ideas. Worse still, [COVID-19](https://en.wikipedia.org/wiki/COVID-19) forced everyone to stay at home until Fall 2020.
 
 <!-- I decided to take an internship in the research group of a technology company with adequate computing resources. Then -->
-After returning to Beijing, I joined the [Natural Language Computing](https://www.microsoft.com/en-us/research/group/natural-language-computing/) (NLC) group of [Microsoft Research Asia](https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/) (MSRA) as a full-time research intern. Since then, I immersed myself in a positive academic atmosphere and focused on NMT research, solving challenging multilingual translation problems. It was extremely enjoyable to design cutting-edge NLP algorithms and to have inspiring and scintillating discussions with so many excellent researchers.
+After returning to Beijing, I joined the [Natural Language Computing](https://www.microsoft.com/en-us/research/group/natural-language-computing/) (NLC) Group at [Microsoft Research Asia](https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/) (MSRA) as a full-time research intern. Since then, I immersed myself in a positive academic atmosphere and focused on NMT research, solving challenging multilingual translation problems. It was extremely enjoyable to design cutting-edge NLP algorithms and to have inspiring and scintillating discussions with so many excellent researchers.
 
 ### Watershed (September 2021)
 

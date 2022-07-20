@@ -18,11 +18,14 @@ main:
   # - title: "Portfolio"
   #   url: /portfolio/
 
-  # - title: "Blog Posts"
+  # - title: "Blog"
   #   url: /posts/
 
-  - title: "CV"
-    url: /cv/
+  # - title: "CV"
+  #   url: /cv/
 
-  # - title: "Guide"
-  #   url: /markdown/
+  # - title: "Notes"
+  #   url: /notes/
+
+  # - title: "Vocab"
+  #   url: /vocabulary/

@@ -27,7 +27,9 @@ MathJax = {
 };
 </script>
 
-*Wir müssen wissen, wir werden wissen!* -- David Hilbert
+"*Wir müssen wissen, wir werden wissen!*" -- David Hilbert
+
+---
 
 ## About Me (he/him/his)
 
@@ -36,8 +38,6 @@ Hi! I am Yuwei (/ˈjuːweɪ/), an NLPhile -- technophile of natural language pro
 <!-- With the help of advanced computing processors and powerful statistical algorithms, automatically dealing with human language is becoming more and more promising. Human language, however, is more than just counting, repetition, and probability. Hence, in-depth NLP research must thoroughly analyze the linguistic factors and refer to the language acquisition process of human beings. This intriguing research will help us better understand ourselves. -->
 
 What do we really mean by understanding? How exactly do we human make sentences? How can computers do what we can do in terms of language? What does multilinguality mean to us? How can we break the language barrier to promote peace in the world? The discovery and explanation of human beings, nature, and the universe drive me to embark on a fascinating lifelong research Odyssey.
-
-Feel free to contact me by [email](mailto:seckexyin@gmail.com) (seckexyin [at] gmail [dot] com).
 
 <!-- ## News -->
 
@@ -59,3 +59,7 @@ The right part of 阴 is 月, meaning the moon. Therefore, 阴昱 contains yin a
 昱为 can be explained as standing under the sun and making achievements.
 
 Joey has a similar pronunciation to 久湮, which is the name I give myself. 久 means long (time), permanent, and eternal. 湮 means annihilation or to annihilate. Together, it stands for a paradoxical harmony, just like yin and yang.
+
+## Contact
+
+[E-mail](mailto:seckexyin@gmail.com): seckexyin [at] gmail [dot] com
