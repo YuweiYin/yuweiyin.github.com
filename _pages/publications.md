@@ -94,7 +94,7 @@ MathJax = {
 
 - Xuping Ma, Jiahao Cai, <u>Yuwei Yin</u>, Shangsu Ding
 - Published in Journal: Computer Knowledge and Technology (December 2016, China)
-- [Detail Page](https://yuweiyin.github.io/publications/2016-12-01-Smart-Band-System) \| [Anthology](https://www.cnki.com.cn/Article/CJFDTotal-DNZS201636043.htm) \| [PDF](https://yuweiyin.github.io/files/publications/2016-12-01-Smart-Band-System.pdf)
+- [Detail Page](https://yuweiyin.github.io/publications/2016-12-01-Smart-Band-System) \| [Anthology](https://www.cnki.net/kcms/doi/10.14004/j.cnki.ckt.2016.4822.html) \| [PDF](https://yuweiyin.github.io/files/publications/2016-12-01-Smart-Band-System.pdf)
 - <details><summary>Abstract</summary>Nowadays, health and intelligent medical are hotspot of the society. According to this, here puts forward a design and implementation of smart band system, focus on measuring the heart rate and the sports situation. The first part is about the main technics which are used, including the Photo Plethysmography and acceleration measure; then the second part is the introduction about design of band, the telephone client and the backend server including the design of hardware, client and database, and how to process the data; in the end an instance is used to prove the practicability of the system. Based on this, a conclusion is drawn, and the future direction is put forward.</details>
 
 

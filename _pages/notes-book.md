@@ -265,6 +265,7 @@ MathJax = {
 
 <!-- <details><summary>Novel</summary></details> -->
 
+- [\<jump to Directory\>](#yyw-directory)
 - **Adam Smith** [1723 -- 1790]
   - *<u>An Inquiry into the Nature and Causes of the Wealth of Nations</u>*. Adam Smith.
 - **Aesop** [c. 620 -- 564 BC]
