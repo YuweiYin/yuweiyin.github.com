@@ -41,6 +41,10 @@ MathJax = {
 
 **Research Interests**: Natural Language Understanding & Generation, Multilingual NLP, Interpretable NLP
 
+---
+
+**Published Research**
+
 - [[C]](#yyw-pub-conference) **Conference Proceedings**
   - [[C4]](#yyw-pub-conference-MNMT-UM4) *UM4: Unified Multilingual Multiple Teacher-Student Model for Zero-Resource Neural Machine Translation*
   - [[C3]](#yyw-pub-conference-MNMT-HLT) *HLT-MT: High-resource Language-specific Training for Multilingual Neural Machine Translation*
@@ -48,10 +52,21 @@ MathJax = {
   - [[C1]](#yyw-pub-conference-MNMT-multiAgreement) *Multilingual Agreement for Multilingual Neural Machine Translation*
 - [[J]](#yyw-pub-journal) **Journal Articles**
   - [[J1]](#yyw-pub-journal-Smart-Band-System) *Design and Implementation of Smart Band System*
-<!-- - [[P]](#yyw-pub-preprints) **Preprints** -->
-  <!-- - [[P1]](#yyw-pub-preprints-XNLP) *XNLP* -->
 
 <!-- --- -->
+
+<!-- **Unpublished Research** -->
+
+- [[P]](#yyw-pub-preprints) **Preprints**
+  - [[P1]](#yyw-pub-preprints-gtrans) *GTrans: Grouping and Fusing Transformer Layers for Neural Machine Translation*
+
+---
+
+- **Under Review** (double-blind peer review)
+  - **Conference**: COLING 2022, EMNLP 2022
+  - **Journal**: IEEE T-ASLP
+
+---
 
 <h2 id="yyw-pub-conference">Conference Proceedings</h2>
 
@@ -75,7 +90,7 @@ MathJax = {
 
 - Weijia Xu, <u>Yuwei Yin</u>, Shuming Ma, Dongdong Zhang, Haoyang Huang
 - Published in Conference: [EMNLP 2021](https://2021.emnlp.org/) (Punta Cana, Dominican Republic. November 2021)
-- [Detail Page](https://yuweiyin.github.io/publications/2021-11-07-EMNLP-MNMT-auxSource) \| [Anthology](https://aclanthology.org/2021.findings-emnlp.260/) \| [PDF](https://aclanthology.org/2021.findings-emnlp.260.pdf)
+- [Detail Page](https://yuweiyin.github.io/publications/2021-11-07-EMNLP-MNMT-auxSource) \| [Anthology](https://aclanthology.org/2021.findings-emnlp.260/) \| [PDF](https://aclanthology.org/2021.findings-emnlp.260.pdf) \| [Code](https://github.com/YuweiYin/MNMT_Aux_Src_Lang)
 - <details><summary>Abstract</summary>Multilingual neural machine translation models typically handle one source language at a time. However, prior work has shown that translating from multiple source languages improves translation quality. Different from existing approaches on multi-source translation that are limited to the test scenario where parallel source sentences from multiple languages are available at inference time, we propose to improve multilingual translation in a more common scenario by exploiting synthetic source sentences from auxiliary languages. We train our model on synthetic multi-source corpora and apply random masking to enable flexible inference with single-source or bi-source inputs. Extensive experiments on Chinese/English-Japanese and a large-scale multilingual translation benchmark show that our model outperforms the multilingual baseline significantly by up to +4.0 BLEU with the largest improvements on low-resource or distant language pairs.</details>
 
 
@@ -83,7 +98,7 @@ MathJax = {
 
 - Jian Yang, <u>Yuwei Yin</u>, Shuming Ma, Haoyang Huang, Dongdong Zhang, Zhoujun Li, Furu Wei
 - Published in Conference: [ACL-IJCNLP 2021](https://2021.aclweb.org/) (Bangkok, Thailand. August 2021)
-- [Detail Page](https://yuweiyin.github.io/publications/2021-08-02-ACL-MNMT-multiAgreement) \| [Anthology](https://aclanthology.org/2021.acl-short.31/) \| [PDF](https://aclanthology.org/2021.acl-short.31.pdf)
+- [Detail Page](https://yuweiyin.github.io/publications/2021-08-02-ACL-MNMT-multiAgreement) \| [Anthology](https://aclanthology.org/2021.acl-short.31/) \| [PDF](https://aclanthology.org/2021.acl-short.31.pdf) \| [Code](https://github.com/YuweiYin/MNMT_Agreement)
 - <details><summary>Abstract</summary>Although multilingual neural machine translation (MNMT) enables multiple language translations, the training process is based on independent multilingual objectives. Most multilingual models can not explicitly exploit different language pairs to assist each other, ignoring the relationships among them. In this work, we propose a novel agreement-based method to encourage multilingual agreement among different translation directions, which minimizes the differences among them. We combine the multilingual training objectives with the agreement term by randomly substituting some fragments of the source language with their counterpart translations of auxiliary languages. To examine the effectiveness of our method, we conduct experiments on the multilingual translation task of 10 language pairs. Experimental results show that our method achieves significant improvements over the previous multilingual baselines.</details>
 
 
@@ -99,6 +114,12 @@ MathJax = {
 
 
 
-<!-- <h2 id="yyw-pub-preprints">Preprints</h2> -->
+<h2 id="yyw-pub-preprints">Preprints</h2>
 
-<!-- <h3 id="yyw-pub-preprints-XNLP">[P1] XNLP</h3> -->
+<h3 id="yyw-pub-preprints-gtrans">[P1] GTrans: Grouping and Fusing Transformer Layers for Neural Machine Translation</h3>
+
+- Jian Yang, <u>Yuwei Yin</u>, Shuming Ma, Haoyang Huang, Dongdong Zhang, Furu Wei and Zhoujun Li
+- [arXiv](https://arxiv.org/abs/2207.14467) \| [PDF](https://arxiv.org/pdf/2207.14467.pdf) \| [Code](https://github.com/YuweiYin/GTrans)
+- <details><summary>Abstract</summary>Transformer structure, stacked by a sequence of encoder and decoder network layers, achieves significant development in neural machine translation. However, vanilla Transformer mainly exploits the top-layer representation, assuming the lower layers provide trivial or redundant information and thus ignoring the bottom-layer feature that is potentially valuable. In this work, we propose the Group-Transformer model (GTrans) that flexibly divides multi-layer representations of both encoder and decoder into different groups and then fuses these group features to generate target words. To corroborate the effectiveness of the proposed method, extensive experiments and analytic experiments are conducted on three bilingual translation benchmarks and two multilingual translation tasks, including the IWLST-14, IWLST-17, LDC, WMT-14 and OPUS-100 benchmark. Experimental and analytical results demonstrate that our model outperforms its Transformer counterparts by a consistent gain. Furthermore, it can be successfully scaled up to 60 encoder layers and 36 decoder layers.</details>
+
+---

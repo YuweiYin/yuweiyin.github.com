@@ -26,7 +26,7 @@ MathJax = {
 
 <!-- ## Multilingual Agreement for Multilingual Neural Machine Translation -->
 
-- **Paper Info**: [Anthology](https://aclanthology.org/2021.acl-short.31/) \| [PDF](https://aclanthology.org/2021.acl-short.31.pdf)
+- **Paper Info**: [Anthology](https://aclanthology.org/2021.acl-short.31/) \| [PDF](https://aclanthology.org/2021.acl-short.31.pdf) \| [Code](https://github.com/YuweiYin/MNMT_Agreement)
 - **Authors**: Jian Yang, <u>Yuwei Yin</u>, Shuming Ma, Haoyang Huang, Dongdong Zhang, Zhoujun Li, Furu Wei
 - **Abstract**:
   - Although multilingual neural machine translation (MNMT) enables multiple language translations, the training process is based on independent multilingual objectives. Most multilingual models can not explicitly exploit different language pairs to assist each other, ignoring the relationships among them. In this work, we propose a novel agreement-based method to encourage multilingual agreement among different translation directions, which minimizes the differences among them. We combine the multilingual training objectives with the agreement term by randomly substituting some fragments of the source language with their counterpart translations of auxiliary languages. To examine the effectiveness of our method, we conduct experiments on the multilingual translation task of 10 language pairs. Experimental results show that our method achieves significant improvements over the previous multilingual baselines.

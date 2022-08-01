@@ -31,7 +31,7 @@ MathJax = {
 ## Academic & Research Background
 
 <!-- * [Curriculum Vitae](https://yuweiyin.github.io/cv/) ([CV PDF](https://yuweiyin.github.io/files/cv/CV-YuweiYin-Joey.pdf)) (version: July 2022) -->
-* [Curriculum Vitae](https://yuweiyin.github.io/files/cv/CV-YuweiYin-Joey.pdf) (version: July 2022)
+* [Curriculum Vitae](https://yuweiyin.github.io/files/cv/CV-YuweiYin-Joey.pdf) (version: August 2022)
 * [Academic Record / Transcript / GPA](https://yuweiyin.github.io/gpa/)
 
 ### Undergraduate (2014 - 2018)

@@ -39,13 +39,16 @@ MathJax = {
 
 ## Research Experience
 
+* Sep. 2022 -- Fall 2023 (expected): **[HKU NLP](https://nlp.cs.hku.hk/) group, The University of Hong Kong**, Hong Kong
+  * <u>Research Assistant</u> in funding project on Anti-Money Laundering research based on Graph Neural Networks
+
 * Nov. 2020 -- Sep. 2021: **Microsoft Research (Asia)** ([MSRA](https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/)), Beijing, China
   * <u>Research Intern</u> (Stars of Tomorrow Internship Program) in Natural Language Computing ([NLC](https://www.microsoft.com/en-us/research/group/natural-language-computing/)) group
   * Researched multilingual neural machine translation [C1-C4]
   * Mentor: [Shuming Ma](https://www.microsoft.com/en-us/research/people/shumma/). Advisor: [Haoyang Huang](https://www.microsoft.com/en-us/research/people/haohua/), [Dongdong Zhang](https://www.microsoft.com/en-us/research/people/dozhang/).
 
 * Sep. 2018 -- Jun. 2019: **State Key Lab of Software Development Environment, BUAA**, Beijing, China
-  * <u>Research Assistant</u> in funding program: Expert Database Management System ([EDMS](https://github.com/gzliuyun/EDMS))
+  * <u>Research Assistant</u> in funding project: Expert Database Management System ([EDMS](https://github.com/gzliuyun/EDMS))
   * Developed a data mining (crawling, cleaning, and statistical analysis) and web system (Vue.js & Django)
   * Project manager: [Xiaoming Zhang](https://www.researchgate.net/profile/Xiaoming-Zhang-11).
 
@@ -99,10 +102,19 @@ MathJax = {
   * Xuping Ma, Jiahao Cai, <u>Yuwei Yin</u>, Shangsu Ding
   * Published in Journal (China): [Computer Knowledge and Technology, 2016](https://yuweiyin.github.io/files/publications/2016-12-01-Smart-Band-System.pdf)
 
-<!-- ### Preprints -->
 
-<!-- * [P1] *XNLP* -->
-  <!-- * <u>Yuwei Yin</u> -->
+## Unpublished Works
+
+### Preprints
+
+* [P1] *GTrans: Grouping and Fusing Transformer Layers for Neural Machine Translation*
+  * Jian Yang, <u>Yuwei Yin</u>, Shuming Ma, Haoyang Huang, Dongdong Zhang, Furu Wei and Zhoujun Li
+  * arXiv: [arxiv.org/abs/2207.14467](https://arxiv.org/abs/2207.14467)
+
+<!-- ### Under Review -->
+
+<!-- * 1 * *COLING* 2022; 2 * *EMNLP* 2022; 1 * *IEEE-TASLP* -->
+
 
 ## Academic Service
 
@@ -137,18 +149,20 @@ MathJax = {
   * 1st Prize in The 32nd National Physics Competition, Beijing District. (top 5%, Provincial level) Dec. 2015
   * 1st Prize in The 9th Mathematics Competition. (top 5%, University level) Jun. 2015
 
-## Professional Skills
 
-* **Programming Languages**
-  * Python, C/C++, Java, Bash, HTML & CSS & JavaScript, PHP, SQL
-* **Toolkits & Libraries**
-  * PyTorch, Tensorflow, Keras, Fairseq, scikit-learn, Gensim, NLTK, CoreNLP
-* **Data Analysis**
-  * Crawler (Requests, BeautifulSoup4, Scrapy), Numpy, Pandas, Matplotlib, t-SNE
-* **System Development**
-  * Vue.js, Django, Node.js, Java Web, Android SDK
-* **Office Software**
-  * LaTeX, Markdown, Word, PowerPoint, Excel, Visio, Mind Map, UML Modeling
+<!-- ## Technical Skills -->
+
+<!-- * **Programming Languages** -->
+  <!-- * Python, C/C++, Java, Bash, HTML & CSS & JavaScript, PHP, SQL -->
+<!-- * **Toolkits & Libraries** -->
+  <!-- * PyTorch, Tensorflow, Keras, Fairseq, scikit-learn, Gensim, NLTK, CoreNLP -->
+<!-- * **Data Analysis** -->
+  <!-- * Crawler (Requests, BeautifulSoup4, Scrapy), Numpy, Pandas, Matplotlib, t-SNE -->
+<!-- * **System Development** -->
+  <!-- * Vue.js, Django, Node.js, Java Web, Android SDK -->
+<!-- * **Office Software** -->
+  <!-- * LaTeX, Markdown, Word, PowerPoint, Excel, Visio, Mind Map, UML Modeling -->
+
 
 <!-- ## Miscellaneous -->
 
