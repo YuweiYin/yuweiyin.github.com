@@ -98,18 +98,23 @@ MathJax = {
 
 ### Journal Articles
 
+* [J2] *GTrans: Grouping and Fusing Transformer Layers for Neural Machine Translation*
+  * Jian Yang, <u>Yuwei Yin</u>, Shuming Ma, Haoyang Huang, Dongdong Zhang, Furu Wei and Zhoujun Li
+  * arXiv: [arxiv.org/abs/2207.14467](https://arxiv.org/abs/2207.14467)
+  * Acceptance in Journal: IEEE T-ASLP (2022)
+
 * [J1] *Design and Implementation of Smart Band System*
   * Xuping Ma, Jiahao Cai, <u>Yuwei Yin</u>, Shangsu Ding
   * Published in Journal (China): [Computer Knowledge and Technology, 2016](https://yuweiyin.github.io/files/publications/2016-12-01-Smart-Band-System.pdf)
 
 
-## Unpublished Works
+<!-- ## Unpublished Works -->
 
-### Preprints
+<!-- ### Preprints -->
 
-* [P1] *GTrans: Grouping and Fusing Transformer Layers for Neural Machine Translation*
-  * Jian Yang, <u>Yuwei Yin</u>, Shuming Ma, Haoyang Huang, Dongdong Zhang, Furu Wei and Zhoujun Li
-  * arXiv: [arxiv.org/abs/2207.14467](https://arxiv.org/abs/2207.14467)
+<!-- * [P1] *GTrans: Grouping and Fusing Transformer Layers for Neural Machine Translation* -->
+  <!-- * Jian Yang, <u>Yuwei Yin</u>, Shuming Ma, Haoyang Huang, Dongdong Zhang, Furu Wei and Zhoujun Li -->
+  <!-- * arXiv: [arxiv.org/abs/2207.14467](https://arxiv.org/abs/2207.14467) -->
 
 <!-- ### Under Review -->
 
@@ -136,15 +141,15 @@ MathJax = {
 
 ## Honors and Awards
 
-* **Award**
-  * Beijing Outstanding Graduate Award. (top 5%, Provincial level) Jul. 2018
-  * Outstanding Graduate Award. (top 5%, University level) Jul. 2018
-  * Diligent Study & Research Pioneer Award. (top 3%, University level) Dec. 2017
 * **Scholarship**
   * China National Scholarship. (top 1%, National level) twice: Nov. 2016 & Nov. 2017
   * Excellent Academic Scholarship. (top 10%, University level) thrice: Jan. 2016 & Jan. 2017 & Jan. 2018
   * Research and Innovative Scholarship. (University level) twice: Jan. 2016 & Jan. 2017
   * Social Contribution Scholarship. (University level) twice: Jan. 2017 & Jan. 2018
+* **Award**
+  * Beijing Outstanding Graduate Award. (top 5%, Provincial level) Jul. 2018
+  * Outstanding Graduate Award. (top 5%, University level) Jul. 2018
+  * Diligent Study & Research Pioneer Award. (top 3%, University level) Dec. 2017
 * **Competition**
   * 1st Prize in The 32nd National Physics Competition, Beijing District. (top 5%, Provincial level) Dec. 2015
   * 1st Prize in The 9th Mathematics Competition. (top 5%, University level) Jun. 2015
