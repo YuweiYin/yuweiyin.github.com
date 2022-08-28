@@ -35,7 +35,7 @@ MathJax = {
 
 Hi! I am Yuwei (/ˈjuːweɪ/), an NLPhile -- technophile of natural language processing (NLP).
 
-Currently, I am applying to the PhD program for Fall 2023 admission.
+<!-- Currently, I am applying to the PhD program for Fall 2023 admission. -->
 <!-- I will join the [HKU NLP](https://nlp.cs.hku.hk/) group as a research assistant from Fall 2022 to Fall 2023. -->
 
 My research interest lies in natural language understanding & generation, multilingual NLP, and interpretable NLP. Accordingly, my research goals are mainly three folds: 1. to improve the understanding and generating ability of general NLP models; 2. to tap the potential of multilingual NLP in a broader scenario; 3. to fathom the essence of NLP models and make them more interpretable, understandable, and controllable.
@@ -44,7 +44,14 @@ My research interest lies in natural language understanding & generation, multil
 
 What do we really mean by understanding? How exactly do we human make sentences? How can computers do what we can do in terms of language? What does multilinguality mean to us? How can we break the language barrier to promote peace in the world? The discovery and explanation of human beings, nature, and the universe drive me to embark on a fascinating lifelong research Odyssey.
 
+
 <!-- ## News -->
+
+
+## Academic & Research Background
+
+* [Curriculum Vitae](https://yuweiyin.github.io/files/cv/CV-YuweiYin-Joey.pdf) (version: August 2022)
+* [Academic Record / Transcript / GPA](https://yuweiyin.github.io/gpa/)
 
 
 ## About My Name
