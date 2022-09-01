@@ -43,16 +43,16 @@ MathJax = {
 
 ---
 
-**Published Research**
+<!-- **Published Research** -->
 
-- [[C]](#yyw-pub-conference) **Conference Proceedings**
-  - [[C4]](#yyw-pub-conference-MNMT-UM4) *UM4: Unified Multilingual Multiple Teacher-Student Model for Zero-Resource Neural Machine Translation*
-  - [[C3]](#yyw-pub-conference-MNMT-HLT) *HLT-MT: High-resource Language-specific Training for Multilingual Neural Machine Translation*
-  - [[C2]](#yyw-pub-conference-MNMT-auxSource) *Improving Multilingual Neural Machine Translation with Auxiliary Source Languages*
-  - [[C1]](#yyw-pub-conference-MNMT-multiAgreement) *Multilingual Agreement for Multilingual Neural Machine Translation*
-- [[J]](#yyw-pub-journal) **Journal Articles**
-  - [[J2]](#yyw-pub-journal-gtrans) *GTrans: Grouping and Fusing Transformer Layers for Neural Machine Translation*
-  - [[J1]](#yyw-pub-journal-Smart-Band-System) *Design and Implementation of Smart Band System*
+<!-- - [[C]](#yyw-pub-conference) **Conference Proceedings** -->
+  <!-- - [[C4]](#yyw-pub-conference-MNMT-UM4) *UM4: Unified Multilingual Multiple Teacher-Student Model for Zero-Resource Neural Machine Translation* -->
+  <!-- - [[C3]](#yyw-pub-conference-MNMT-HLT) *HLT-MT: High-resource Language-specific Training for Multilingual Neural Machine Translation* -->
+  <!-- - [[C2]](#yyw-pub-conference-MNMT-auxSource) *Improving Multilingual Neural Machine Translation with Auxiliary Source Languages* -->
+  <!-- - [[C1]](#yyw-pub-conference-MNMT-multiAgreement) *Multilingual Agreement for Multilingual Neural Machine Translation* -->
+<!-- - [[J]](#yyw-pub-journal) **Journal Articles** -->
+  <!-- - [[J2]](#yyw-pub-journal-gtrans) *GTrans: Grouping and Fusing Transformer Layers for Neural Machine Translation* -->
+  <!-- - [[J1]](#yyw-pub-journal-Smart-Band-System) *Design and Implementation of Smart Band System* -->
 
 <!-- --- -->
 
@@ -61,13 +61,13 @@ MathJax = {
 <!-- - [[P]](#yyw-pub-preprints) **Preprints** -->
   <!-- - [[P1]](#yyw-pub-preprints-gtrans) *GTrans: Grouping and Fusing Transformer Layers for Neural Machine Translation* -->
 
----
+<!-- --- -->
 
-- **Under Review** (double-blind peer review)
-  - **Conference**: EMNLP 2022
+<!-- - **Under Review** (double-blind peer review) -->
+  <!-- - **Conference**: EMNLP 2022 -->
   <!-- - **Journal**: IEEE T-ASLP -->
 
----
+<!-- --- -->
 
 <h2 id="yyw-pub-conference">Conference Proceedings</h2>
 

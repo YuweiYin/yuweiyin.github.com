@@ -23,7 +23,7 @@ MathJax = {
 };
 </script>
 
-<!-- [Curriculum Vitae PDF](https://yuweiyin.github.io/files/cv/CV-YuweiYin-Joey.pdf) (version: July 2022) -->
+<!-- [Curriculum Vitae PDF](https://yuweiyin.github.io/files/cv/CV-YuweiYin-Joey.pdf) (version: September 2022) -->
 [Curriculum Vitae PDF](https://yuweiyin.github.io/files/cv/CV-YuweiYin-Joey.pdf)
 
 ## Education
@@ -35,7 +35,7 @@ MathJax = {
 
 * Sep. 2014 -- Jun. 2018: **Beijing Information Science & Technology University** ([BISTU](https://english.bistu.edu.cn/)), Beijing, China
   * <u>Bachelor of Engineering</u> in Computer Science and Technology (Artificial Intelligence Track)
-  * GPA: 92.7 / 100, rank 1st of 202
+  * GPA: 92.7 / 100, rank 1st of 202 (the last three years: 95.4 / 100)
 
 ## Research Experience
 
@@ -44,7 +44,7 @@ MathJax = {
 
 * Nov. 2020 -- Sep. 2021: **Microsoft Research (Asia)** ([MSRA](https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/)), Beijing, China
   * <u>Research Intern</u> (Stars of Tomorrow Internship Program) in Natural Language Computing ([NLC](https://www.microsoft.com/en-us/research/group/natural-language-computing/)) group
-  * Researched multilingual neural machine translation [C1-C4]
+  * Researched multilingual neural machine translation [C1-C4, J2]
   * Mentor: [Shuming Ma](https://www.microsoft.com/en-us/research/people/shumma/). Advisor: [Haoyang Huang](https://www.microsoft.com/en-us/research/people/haohua/), [Dongdong Zhang](https://www.microsoft.com/en-us/research/people/dozhang/).
 
 * Sep. 2018 -- Jun. 2019: **State Key Lab of Software Development Environment, BUAA**, Beijing, China

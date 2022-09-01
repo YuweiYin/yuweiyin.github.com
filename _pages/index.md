@@ -50,7 +50,7 @@ What do we really mean by understanding? How exactly do we human make sentences?
 
 ## Academic & Research Background
 
-* [Curriculum Vitae](https://yuweiyin.github.io/files/cv/CV-YuweiYin-Joey.pdf) (version: August 2022)
+* [Curriculum Vitae](https://yuweiyin.github.io/files/cv/CV-YuweiYin-Joey.pdf) (version: September 2022)
 * [Academic Record / Transcript / GPA](https://yuweiyin.github.io/gpa/)
 
 

@@ -29,12 +29,16 @@ MathJax = {
 
 <img src="https://yuweiyin.github.io/files/courses/Academic-Record-Undergraduate.png" alt="Academic-Record-Undergraduate" width="60%" height="auto" max-width="60%">
 
-- **Undergraduate**: Weighted Average Score: **92.7** / 100
-  - [WES](http://www.wes.org/) GPA: **3.82** / 4 (the last three years: **3.95** / 4)
-  - 2014-2015: A\*11, B\*7, C\*2
-  - 2015-2016: A\*24, B\*2
-  - 2016-2017: A\*19
-  - 2017-2018: A\*4
+2014-2015 | 2015-2016 | 2016-2017 | 2017-2018
+:-: | :-: | :-: | :-:
+A\*11, B\*7, C\*2 | A\*24, B\*2 | A\*19 | A\*4
+
+- **Undergraduate**: Weighted Average Score: **92.7** / 100 ([WES](http://www.wes.org/) GPA: **3.82** / 4)
+  - the last three years: **95.4** / 100 (WES GPA: **3.95** / 4)
+  <!-- - 2014-2015: A\*11, B\*7, C\*2 -->
+  <!-- - 2015-2016: A\*24, B\*2 -->
+  <!-- - 2016-2017: A\*19 -->
+  <!-- - 2017-2018: A\*4 -->
 - **Postgraduate**: Weighted Average Score: **91.7** / 100
 <!-- - WES ([World Education Services](http://www.wes.org/)) Evaluation Report -->
   <!-- - U.S. Equivalency: Bachelor's degree from a regionally accredited institution -->
