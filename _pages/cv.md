@@ -40,7 +40,7 @@ MathJax = {
 ## Research Experience
 
 * Sep. 2022 -- Fall 2023 (expected): **[HKU NLP](https://nlp.cs.hku.hk/) group, The University of Hong Kong**, Hong Kong
-  * <u>Research Assistant</u> in funding project on Anti-Money Laundering research based on Graph Neural Networks
+  * <u>Research Assistant</u> in funded project on Anti-Money Laundering research based on Graph Neural Networks
 
 * Nov. 2020 -- Sep. 2021: **Microsoft Research (Asia)** ([MSRA](https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/)), Beijing, China
   * <u>Research Intern</u> (Stars of Tomorrow Internship Program) in Natural Language Computing ([NLC](https://www.microsoft.com/en-us/research/group/natural-language-computing/)) group
@@ -48,7 +48,7 @@ MathJax = {
   * Mentor: [Shuming Ma](https://www.microsoft.com/en-us/research/people/shumma/). Advisor: [Haoyang Huang](https://www.microsoft.com/en-us/research/people/haohua/), [Dongdong Zhang](https://www.microsoft.com/en-us/research/people/dozhang/).
 
 * Sep. 2018 -- Jun. 2019: **State Key Lab of Software Development Environment, BUAA**, Beijing, China
-  * <u>Research Assistant</u> in funding project: Expert Database Management System ([EDMS](https://github.com/gzliuyun/EDMS))
+  * <u>Research Assistant</u> in funded project: Expert Database Management System ([EDMS](https://github.com/gzliuyun/EDMS))
   * Developed a data mining (crawling, cleaning, and statistical analysis) and web system (Vue.js & Django)
   * Project manager: [Xiaoming Zhang](https://www.researchgate.net/profile/Xiaoming-Zhang-11).
 
@@ -128,7 +128,7 @@ MathJax = {
 
 ## Research Mentorship
 
-* **Master's students at Beihang University** (2020 -- 2021)
+* **Mentored Master's students** (2020 -- 2021)
   * Caijun Bao: "Composite Aspect-based Sentiment Analysis Technology Based on Deep Learning"
   * Xinxin Song: "Sequential Recommendation Algorithm Based on Self-Supervised Learning"
   * Yuling Deng: "Two-stage Algorithm of Machine Reading Comprehension Based on Extraction and Matching"
