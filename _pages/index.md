@@ -33,7 +33,8 @@ MathJax = {
 
 ## About Me (he/him/his)
 
-Hi! I am Yuwei (/ˈjuːweɪ/), an NLPhile -- technophile of natural language processing (NLP).
+<!-- Hi, I am Yuwei (/ˈjuːweɪ/), an NLPhile -- technophile of natural language processing (NLP). -->
+Hi, I am Yuwei (/ˈjuːweɪ/), a natural language processing (NLP) researcher. Currently, I am a research assistant in the [HKU NLP](https://hkunlp.github.io/) Group at Department of Computer Science, The University of Hong Kong.
 
 <!-- Currently, I am applying to the PhD program for Fall 2023 admission. -->
 <!-- I will join the [HKU NLP](https://nlp.cs.hku.hk/) group as a research assistant from Fall 2022 to Fall 2023. -->

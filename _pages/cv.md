@@ -30,31 +30,32 @@ MathJax = {
 
 * Sep. 2018 -- Sep. 2021: **Beihang University** ([BUAA](https://ev.buaa.edu.cn/)), Beijing, China
   * Intelligent Information Process Institute, State Key Lab of Software Development Environment
-  * <u>Integrated M.S. & Ph.D. (dropout)</u> in Machine Learning (M.S.) & Natural Language Processing (Ph.D. from 2019)
-  * GPA: 91.7 / 100, rank 3rd of 80
+  * GPA: 91.7 / 100, rank 3rd of 80 (Voluntary Withdrawal: chose to forgo the *Integrated M.S. & Ph.D.* degree)
 
 * Sep. 2014 -- Jun. 2018: **Beijing Information Science & Technology University** ([BISTU](https://english.bistu.edu.cn/)), Beijing, China
   * <u>Bachelor of Engineering</u> in Computer Science and Technology (Artificial Intelligence Track)
-  * GPA: 92.7 / 100, rank 1st of 202 (the last three years: 95.4 / 100)
+  * GPA: 92.7 / 100, rank 1st of 202 (The last three years: 95.4 / 100)
 
 ## Research Experience
 
-* Sep. 2022 -- Fall 2023 (expected): **[HKU NLP](https://nlp.cs.hku.hk/) group, The University of Hong Kong**, Hong Kong
-  * <u>Research Assistant</u> in funded project on Anti-Money Laundering research based on Graph Neural Networks
+<!-- https://nlp.cs.hku.hk/  https://hkunlp.github.io/ -->
+* Sep. 2022 -- Aug. 2023 (Present): **The University of Hong Kong**, Hong Kong SAR
+  * <u>Research Assistant</u> in the [HKU NLP](https://hkunlp.github.io/) Group, Department of Computer Science
+  * Leading the funded project on Anti-Money Laundering research based on Graph Neural Networks
 
 * Nov. 2020 -- Sep. 2021: **Microsoft Research (Asia)** ([MSRA](https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/)), Beijing, China
-  * <u>Research Intern</u> (Stars of Tomorrow Internship Program) in Natural Language Computing ([NLC](https://www.microsoft.com/en-us/research/group/natural-language-computing/)) group
+  * <u>Research Intern</u> (Stars of Tomorrow Internship Program) in Natural Language Computing ([NLC](https://www.microsoft.com/en-us/research/group/natural-language-computing/)) Group
   * Researched multilingual neural machine translation [C1-C4, J2]
   * Mentor: [Shuming Ma](https://www.microsoft.com/en-us/research/people/shumma/). Advisor: [Haoyang Huang](https://www.microsoft.com/en-us/research/people/haohua/), [Dongdong Zhang](https://www.microsoft.com/en-us/research/people/dozhang/).
 
 * Sep. 2018 -- Jun. 2019: **State Key Lab of Software Development Environment, BUAA**, Beijing, China
   * <u>Research Assistant</u> in funded project: Expert Database Management System ([EDMS](https://github.com/gzliuyun/EDMS))
-  * Developed a data mining (crawling, cleaning, and statistical analysis) and web system (Vue.js & Django)
+  * Developed a data mining and web system (Vue.js & Django) ([EDMS](https://github.com/YuweiYin/EDMS_web))
   * Project manager: [Xiaoming Zhang](https://www.researchgate.net/profile/Xiaoming-Zhang-11).
 
 * Sep. 2017 -- Jun. 2018: **Institute of Software, Chinese Academy of Sciences** ([ISCAS](http://english.is.cas.cn/)), Beijing, China
   * <u>Research Intern</u> in Trusted Computing and Information Assurance Laboratory (TCA)
-  * Developed a privacy-protected system (Android APP & website) based on single sign-on and OAuth & OpenID Connect
+  * Developed a privacy-protected system (Android & Web) based on single sign-on and OAuth & OpenID Connect
   * Advisor: [Zhenfeng Zhang](https://people.ucas.ac.cn/~zfzhang?language=en), [Chengxia Liu](https://jsjxy.bistu.edu.cn/sz/jsyl/jsjkxyjsx_7820/201905/t20190506_68373.html).
 
 * Sep. 2015 -- Dec. 2016: **Computer School, BISTU**, Beijing, China

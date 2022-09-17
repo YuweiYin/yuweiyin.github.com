@@ -59,7 +59,7 @@ locale                   : "en-US"
 title                    : "Yuwei Yin (Joey)"
 title_separator          : "-"
 name                     : &name "Yuwei Yin (Joey)"
-description              : &description "NLPhile - Technophile of NLP"
+description              : &description "NLP Researcher @ HKU NLP"
 url                      : "https://yuweiyin.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 github_url               : "https://github.com/YuweiYin"
@@ -132,9 +132,9 @@ analytics:
 author:
   name             : "Yuwei Yin (Joey)"
   avatar           : "profile.png"
-  bio              : "NLPhile - Technophile of NLP"
-  location         : "Chengdu, China (UTC+8)" # "Beijing, China (UTC+8)"
-  employer         :
+  bio              : "NLP Researcher @ HKU NLP"
+  location         : "Hong Kong SAR (UTC+8)" # "Beijing, China (UTC+8)" "Chengdu, China (UTC+8)"
+  employer         : # "The University of Hong Kong"
   email            : "seckexyin@gmail.com"
   # email            : "yuweiyin@buaa.edu.cn" "yuwei_yin@163.com" "18708154662@163.com" "yuwei_yin@outlook.com"
   github           : "YuweiYin"
@@ -149,7 +149,7 @@ author:
   uri              :
   bitbucket        :
   codepen          :
-  linkedin         : "yuwei-yin-792a75186/"
+  linkedin         : "yuwei-yin/"
   wechat           : "-Sic-Parvis-Magna-"
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   dribbble         :
