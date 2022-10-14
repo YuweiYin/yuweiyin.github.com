@@ -6,6 +6,10 @@ author_profile: true
 redirect_from:
   - /note
   - /note/
+  - /reading
+  - /reading/
+  - /readings
+  - /readings/
 ---
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>

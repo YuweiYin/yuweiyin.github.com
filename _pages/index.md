@@ -29,12 +29,12 @@ MathJax = {
 
 "*Wir müssen wissen, wir werden wissen!*" -- David Hilbert
 
----
+<!-- --- -->
 
-## About Me (he/him/his)
+## About Me (he/him/his/Mr.)
 
 <!-- Hi, I am Yuwei (/ˈjuːweɪ/), an NLPhile -- technophile of natural language processing (NLP). -->
-Hi, I am Yuwei (/ˈjuːweɪ/), a natural language processing (NLP) researcher. Currently, I am a research assistant in the [HKU NLP](https://hkunlp.github.io/) Group at Department of Computer Science, The University of Hong Kong.
+Hi, I am Yuwei (/ˈjuːweɪ/), a natural language processing (NLP) researcher. Currently, I am a full-time research assistant in the [HKU NLP](https://hkunlp.github.io/) Group at the Department of Computer Science, The University of Hong Kong ([HKU CS](https://www.cs.hku.hk/)).
 
 <!-- Currently, I am applying to the PhD program for Fall 2023 admission. -->
 <!-- I will join the [HKU NLP](https://nlp.cs.hku.hk/) group as a research assistant from Fall 2022 to Fall 2023. -->
@@ -43,16 +43,16 @@ My research interest lies in natural language understanding & generation, multil
 
 <!-- With the help of advanced computing processors and powerful statistical algorithms, automatically dealing with human language is becoming more and more promising. Human language, however, is more than just counting, repetition, and probability. Hence, in-depth NLP research must thoroughly analyze the linguistic factors and refer to the language acquisition process of human beings. This intriguing research will help us better understand ourselves. -->
 
-What do we really mean by understanding? How exactly do we human make sentences? How can computers do what we can do in terms of language? What does multilinguality mean to us? How can we break the language barrier to promote peace in the world? The discovery and explanation of human beings, nature, and the universe drive me to embark on a fascinating lifelong research Odyssey.
+What do we really mean by understanding? How exactly do we humans make sentences? How can computers do what we can do in terms of language? What does multilinguality mean to us? How can we break the language barrier to promote peace in the world? The discovery and explanation of human beings, nature, and the universe drive me to embark on a fascinating lifelong research Odyssey.
 
 
 <!-- ## News -->
 
 
-## Academic & Research Background
+<!-- ## Academic & Research Background -->
 
-* [Curriculum Vitae](https://yuweiyin.github.io/files/cv/CV-YuweiYin-Joey.pdf) (version: September 2022)
-* [Academic Record / Transcript / GPA](https://yuweiyin.github.io/gpa/)
+<!-- * [Curriculum Vitae](https://yuweiyin.github.io/files/cv/CV-YuweiYin-Joey.pdf) (version: October 2022) -->
+<!-- * [Academic Record / Transcript / GPA](https://yuweiyin.github.io/gpa/) -->
 
 
 ## About My Name
@@ -73,6 +73,8 @@ The right part of 阴 is 月, meaning the moon. Therefore, 阴昱 contains yin a
 
 Joey has a similar pronunciation to 久湮, which is the name I give myself. 久 means long (time), permanent, and eternal. 湮 means annihilation or to annihilate. Together, it stands for a paradoxical harmony, just like yin and yang.
 
-## Contact
+<!-- ## Contact -->
 
-[E-mail](mailto:seckexyin@gmail.com): seckexyin [at] gmail [dot] com
+<!-- [E-mail](mailto:seckexyin@gmail.com): seckexyin [at] gmail [dot] com -->
+
+---

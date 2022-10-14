@@ -4,6 +4,10 @@ title: "Publications"
 permalink: /publications/
 author_profile: true
 redirect_from:
+  - /pub
+  - /pub/
+  - /pubs
+  - /pubs/
   - /publication
   - /publication/
   - /paper
@@ -25,7 +29,7 @@ MathJax = {
 
 "*If at first the idea is not absurd, then there is no hope for it.*" -- Albert Einstein
 
----
+<!-- --- -->
 
 <!-- {% if author.googlescholar %}
   You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
@@ -39,13 +43,15 @@ MathJax = {
 
 <!-- <h2 id="yyw-directory">Directory</h2> -->
 
-**Research Interests**: Natural Language Understanding & Generation, Multilingual NLP, Interpretable NLP
+**Research Interests**: Artificial Intelligence, Natural Language Processing, Multilingual NLP, Interpretable NLP, Graph Mining ([Google Scholar](https://scholar.google.com/citations?user=DPAmfKEAAAAJ))
+<!-- Understanding & Generation -->
 
----
+<!-- --- -->
 
 <!-- **Published Research** -->
 
 <!-- - [[C]](#yyw-pub-conference) **Conference Proceedings** -->
+  <!-- - [[C5]](#yyw-pub-conference-CROP) *CROP: Zero-shot Cross-lingual Named Entity Recognition with Multilingual Labeled Sequence Translation* -->
   <!-- - [[C4]](#yyw-pub-conference-MNMT-UM4) *UM4: Unified Multilingual Multiple Teacher-Student Model for Zero-Resource Neural Machine Translation* -->
   <!-- - [[C3]](#yyw-pub-conference-MNMT-HLT) *HLT-MT: High-resource Language-specific Training for Multilingual Neural Machine Translation* -->
   <!-- - [[C2]](#yyw-pub-conference-MNMT-auxSource) *Improving Multilingual Neural Machine Translation with Auxiliary Source Languages* -->
@@ -70,6 +76,14 @@ MathJax = {
 <!-- --- -->
 
 <h2 id="yyw-pub-conference">Conference Proceedings</h2>
+
+<h3 id="yyw-pub-conference-CROP">[C5] CROP: Zero-shot Cross-lingual Named Entity Recognition with Multilingual Labeled Sequence Translation</h3>
+
+- Jian Yang, Shaohan Huang, Shuming Ma, <u>Yuwei Yin</u>, Li Dong, Dongdong Zhang, Hongcheng Guo, Zhoujun Li and Furu Wei
+- Acceptance in Conference: [EMNLP 2022](https://2022.emnlp.org/) (Abu Dhabi, United Arab Emirates. December 2022)
+- [Detail Page](https://yuweiyin.github.io/publications/2022-12-09-EMNLP-CROP) \| [arXiv](https://arxiv.org/abs/2210.07022) \| <!-- [Anthology](https://aclanthology.org/) \| --> [PDF](https://arxiv.org/pdf/2210.07022.pdf) \| [Code](https://github.com/YuweiYin/CROP)
+- <details><summary>Abstract</summary>Named entity recognition (NER) suffers from the scarcity of annotated training data, especially for low-resource languages without labeled data. Cross-lingual NER has been proposed to alleviate this issue by transferring knowledge from high-resource languages to low-resource languages via aligned cross-lingual representations or machine translation results. However, the performance of cross-lingual NER methods is severely affected by the unsatisfactory quality of translation or label projection. To address these problems, we propose a <b>Cro</b>ss-lingual Entity <b>P</b>rojection framework (<b>CROP</b>) to enable zero-shot cross-lingual NER with the help of a multilingual labeled sequence translation model. Specifically, the target sequence is first translated into the source language and then tagged by a source NER model. We further adopt a labeled sequence translation model to project the tagged sequence back to the target language and label the target raw sentence. Ultimately, the whole pipeline is integrated into an end-to-end model by the way of self-training. Experimental results on two benchmarks demonstrate that our method substantially outperforms the previous strong baseline by a large margin of +3 ~ 7 F1 scores and achieves state-of-the-art performance.</details>
+
 
 <h3 id="yyw-pub-conference-MNMT-UM4">[C4] UM4: Unified Multilingual Multiple Teacher-Student Model for Zero-Resource Neural Machine Translation</h3>
 
@@ -110,7 +124,7 @@ MathJax = {
 
 - Jian Yang, <u>Yuwei Yin</u>, Shuming Ma, Haoyang Huang, Dongdong Zhang, Furu Wei and Zhoujun Li
 - Acceptance in Journal: IEEE T-ASLP (2022)
-- [arXiv](https://arxiv.org/abs/2207.14467) \| [PDF](https://arxiv.org/pdf/2207.14467.pdf) \| [Code](https://github.com/YuweiYin/GTrans)
+- [Detail Page](https://yuweiyin.github.io/publications/2022-07-29-IEEE-TASLP-GTrans) \| [arXiv](https://arxiv.org/abs/2207.14467) \| [PDF](https://arxiv.org/pdf/2207.14467.pdf) \| [Code](https://github.com/YuweiYin/GTrans)
 - <details><summary>Abstract</summary>Transformer structure, stacked by a sequence of encoder and decoder network layers, achieves significant development in neural machine translation. However, vanilla Transformer mainly exploits the top-layer representation, assuming the lower layers provide trivial or redundant information and thus ignoring the bottom-layer feature that is potentially valuable. In this work, we propose the Group-Transformer model (GTrans) that flexibly divides multi-layer representations of both encoder and decoder into different groups and then fuses these group features to generate target words. To corroborate the effectiveness of the proposed method, extensive experiments and analytic experiments are conducted on three bilingual translation benchmarks and two multilingual translation tasks, including the IWLST-14, IWLST-17, LDC, WMT-14 and OPUS-100 benchmark. Experimental and analytical results demonstrate that our model outperforms its Transformer counterparts by a consistent gain. Furthermore, it can be successfully scaled up to 60 encoder layers and 36 decoder layers.</details>
 
 <h3 id="yyw-pub-journal-Smart-Band-System">[J1] Design and Implementation of Smart Band System</h3>

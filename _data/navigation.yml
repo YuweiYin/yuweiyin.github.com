@@ -1,6 +1,10 @@
 # main links links
 main:
-  - title: "Publications"
+  - title: "CV"
+    url: /cv/
+
+  # - title: "Publications"
+  - title: "Pub"
     url: /publications/
 
   # - title: "Background"
@@ -21,8 +25,8 @@ main:
   # - title: "Blog"
   #   url: /blog/
 
-  # - title: "CV"
-  #   url: /cv/
+  - title: "Contact"
+    url: /contact/
 
   # - title: "Notes"
   #   url: /notes/

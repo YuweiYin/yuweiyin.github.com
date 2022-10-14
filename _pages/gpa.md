@@ -8,8 +8,14 @@ redirect_from:
   - /course/
   - /courses
   - /courses/
+  - /grade
+  - /grade/
+  - /grades
+  - /grades/
   - /transcript
   - /transcript/
+  - /transcripts
+  - /transcripts/
 ---
 
 {% include base_path %}
@@ -34,7 +40,7 @@ MathJax = {
 A\*11, B\*7, C\*2 | A\*24, B\*2 | A\*19 | A\*4
 
 - **Undergraduate**: Weighted Average Score: **92.7** / 100 ([WES](http://www.wes.org/) GPA: **3.82** / 4)
-  - the last three years: **95.4** / 100 (WES GPA: **3.95** / 4)
+  - The last three years: **95.4** / 100 (WES GPA: **3.95** / 4)
   <!-- - 2014-2015: A\*11, B\*7, C\*2 -->
   <!-- - 2015-2016: A\*24, B\*2 -->
   <!-- - 2016-2017: A\*19 -->
@@ -170,3 +176,5 @@ Postgraduate | Ethic of Computer Profession / 计算机职业素养 | Compulsory
 Postgraduate | Laws and Regulations of Cybersecurity / 网络安全法律法规 | Compulsory
 Postgraduate | Research on Theory and Practice of Socialism with Chinese Characteristics / 中国特色社会主义理论与实践研究 | Compulsory
 Postgraduate | Nature Dialectics / 自然辩证法概论 | Compulsory
+
+---
