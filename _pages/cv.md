@@ -40,13 +40,13 @@ MathJax = {
 
 * Sep. 2018 -- Sep. 2021: **Beihang University** ([BUAA](https://ev.buaa.edu.cn/)), Haidian, Beijing, China
   * Intelligent Information Process Institute, State Key Lab of Software Development Environment
-  * GPA: 91.7 / 100, rank 3rd of 80 (Graduate Course Only, No Degree Expected)
+  * GPA: 91.7 / 100; Rank 3rd of 80 (Graduate Course Only, No Degree Expected)
 
 ### Undergraduate
 
 * Sep. 2014 -- Jun. 2018: **Beijing Information Science & Technology University** ([BISTU](https://english.bistu.edu.cn/)), Chaoyang, Beijing, China
   * <u>Bachelor of Engineering</u> in Computer Science and Technology (Artificial Intelligence Track)
-  * GPA: 92.7 / 100, rank 1st of 202 (The last three years: 95.4 / 100) ([Transcript](https://yuweiyin.github.io/gpa/))
+  * GPA: 92.7 / 100; Rank 1st of 202 (The last three years: 95.4 / 100) ([Transcript](https://yuweiyin.github.io/gpa/))
 
 ### Before College
 
