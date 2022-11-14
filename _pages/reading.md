@@ -1,15 +1,15 @@
 ---
 layout: archive
-title: "Book Notes"
-permalink: /notes/book/
+title: "Reading"
+permalink: /reading/
 author_profile: true
-# redirect_from:
-#   - /note-book
-#   - /note-book/
-#   - /book-notes
-#   - /book-notes/
-#   - /book-note
-#   - /book-note/
+redirect_from:
+  - /readings
+  - /readings/
+  - /book
+  - /book/
+  - /books
+  - /books/
 ---
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
@@ -23,21 +23,21 @@ MathJax = {
 };
 </script>
 
-<!-- "*A reader lives a thousand lives before he dies. The man who never reads lives only one.*" -- George R. R. Martin -->
+*A reader lives a thousand lives before s/he dies. The man who never reads lives only one.* -- George R.R. Martin
 
 <h2 id="yyw-directory">Directory</h2>
 
-- [1. Mathematics](#yyw-notes-book-math)
-- [2. Computer Science](#yyw-notes-book-cs)
-- [3. Artificial Intelligence](#yyw-notes-book-ai)
-- [4. Polymath](#yyw-notes-book-polymath)
-- [5. Literature](#yyw-notes-book-literature)
+1. [Mathematics](#yyw-reading-book-math)
+2. [Computer Science](#yyw-reading-book-cs)
+3. [Artificial Intelligence](#yyw-reading-book-ai)
+4. [Polymath](#yyw-reading-book-polymath)
+5. [Literature](#yyw-reading-book-literature)
 
 ---
 
-<h2 id="yyw-notes-book-math">1. Book Notes - Mathematics</h2>
+<h2 id="yyw-reading-book-math">1. Mathematics</h2>
 
-- [\<jump to Directory\>](#yyw-directory)
+- [[BACK]](#yyw-directory)
 - **1.1. Mathematics for Computer Science**
   - *<u>Proofs and Fundamentals: A First Course in Abstract Mathematics</u>*. Ethan D. Bloch.
   - *<u>Mathematics for Computer Science</u>*. Eric Lehman, F Thomson Leighton, Albert R Meyer.
@@ -163,9 +163,9 @@ MathJax = {
   62. Kargapolov, Merlzjakov. *<u>Fundamentals of the Theory of Groups</u>*.
   63. Bollobas. *<u>Graph Theory</u>*.
 
-<h2 id="yyw-notes-book-cs">2. Book Notes - Computer Science</h2>
+<h2 id="yyw-reading-book-cs">2. Computer Science</h2>
 
-- [\<jump to Directory\>](#yyw-directory)
+- [[BACK]](#yyw-directory)
 - **2.1. Computer Organization & Architecture**
   - *<u>Computer Systems: A Programmer's Perspective</u>*. Randal E. Bryant, David R. O'Hallaron.
 - **2.2. Operating System**
@@ -202,9 +202,9 @@ MathJax = {
     - *<u>Volume 4 Fascicle 6, Satisfiability</u>*. Addison-Wesley, 2015.
 
 
-<h2 id="yyw-notes-book-ai">3. Book Notes - Artificial Intelligence</h2>
+<h2 id="yyw-reading-book-ai">3. Artificial Intelligence</h2>
 
-- [\<jump to Directory\>](#yyw-directory)
+- [[BACK]](#yyw-directory)
 - *<u>Artificial Intelligence: A Modern Approach</u>*. Stuart Russell, Peter Norvig.
 - *<u>Programming Collective Intelligence: Building Smart Web 2.0 Applications</u>*. Toby Segaran.
 - *<u>Machine Learning</u>*. Tom M. Mitchell.
@@ -217,9 +217,9 @@ MathJax = {
 - *<u>Reinforcement Learning: An Introduction</u>*. Richard S. Sutton, Andrew G. Barto.
 - *<u>Interpretable Machine Learning: A Guide for Making Black Box Models Explainable.</u>* Christoph Molnar.
 
-<h2 id="yyw-notes-book-polymath">4. Book Notes - Polymath</h2>
+<h2 id="yyw-reading-book-polymath">4. Polymath</h2>
 
-- [\<jump to Directory\>](#yyw-directory)
+- [[BACK]](#yyw-directory)
 - **4.1. Biology**
   - *<u>Campbell Biology</u>*. Lisa A. Urry, Michael L. Cain, Steven A. Wasserman, Peter V. Minorsky, Rebecca B. Orr.
   - *<u>Complete Book of the Human Body</u>*. Anna Claybourne.
@@ -261,11 +261,11 @@ MathJax = {
   - *<u>Introduction to Psychology</u>*. [ebook](https://ocw.mit.edu/ans7870/9/9.00SC/MIT9_00SCF11_text.pdf).
 
 
-<h2 id="yyw-notes-book-literature">5. Book Notes - Literature</h2>
+<h2 id="yyw-reading-book-literature">5. Literature</h2>
 
 <!-- <details><summary>Novel</summary></details> -->
 
-- [\<jump to Directory\>](#yyw-directory)
+- [[BACK]](#yyw-directory)
 - **Adam Smith** [1723 -- 1790]
   - *<u>An Inquiry into the Nature and Causes of the Wealth of Nations</u>*. Adam Smith.
 - **Aesop** [c. 620 -- 564 BC]

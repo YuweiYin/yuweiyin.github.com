@@ -33,7 +33,7 @@ MathJax = {
 
 <!-- ## GPA Trajectory -->
 
-<img src="https://yuweiyin.github.io/files/courses/Academic-Record-Undergraduate.png" alt="Academic-Record-Undergraduate" width="60%" height="auto" max-width="60%">
+<img src="https://yuweiyin.github.io/files/img/Academic-Record-GPA.png" alt="Academic-Record-GPA" width="60%" height="auto" max-width="60%">
 
 2014-2015 | 2015-2016 | 2016-2017 | 2017-2018
 :-: | :-: | :-: | :-:
