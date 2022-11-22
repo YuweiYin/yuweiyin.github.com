@@ -21,8 +21,6 @@ MathJax = {
 
 {% include base_path %}
 
----
-
 - **Office Address**
   - HW335A, 3/F, Haking Wong Building, The University of Hong Kong, Pokfulam Road, Hong Kong
 
