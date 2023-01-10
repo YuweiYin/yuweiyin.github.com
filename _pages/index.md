@@ -29,6 +29,8 @@ MathJax = {
 
 <!-- "*Wir müssen wissen, wir werden wissen!*" -- David Hilbert -->
 
+<b>Note</b>: My Gmail seckexyin@gmail.com is temporarily out of use. Please contact me via yuwei_yin@163.com
+
 Hi, I am Yuwei Yin, a natural language processing (NLP) researcher in the HKU NLP Group at the Department of Computer Science, The University of Hong Kong ([Academic Homepage](https://www.yuweiyin.com/)). I enjoy a life of adventure, both mentally and physically. This website includes my traveling, thinking, reading, and writing. I hope you can find something inspiring here.
 
 ![Quest](https://yuweiyin.github.io/files/img/Quest.jpeg)
