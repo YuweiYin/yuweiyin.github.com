@@ -45,7 +45,7 @@ A\*11, B\*7, C\*2 | A\*24, B\*2 | A\*19 | A\*4
   <!-- - 2015-2016: A\*24, B\*2 -->
   <!-- - 2016-2017: A\*19 -->
   <!-- - 2017-2018: A\*4 -->
-- **Postgraduate**: Weighted Average Score: **91.7** / 100
+<!-- - **Postgraduate**: Weighted Average Score: **91.7** / 100 -->
 <!-- - WES ([World Education Services](http://www.wes.org/)) Evaluation Report -->
   <!-- - U.S. Equivalency: Bachelor's degree from a regionally accredited institution -->
   <!-- - Total Undergraduate Semester Credits: 154.5 -->
@@ -64,7 +64,7 @@ Semester | Course | Score | Type
 3: Fall 2015 | Probability and Statistics / 概率论与数理统计 | 99 | Compulsory
 3: Fall 2015 | Physics Experiment J(1) / 物理实验 J(1) | Excellent | Compulsory
 4: Spring 2016 | Physics Experiment J(2) / 物理实验 J(2) | Excellent | Compulsory
-Postgraduate | Mathematical Statistics / 数理统计 | 81 | Compulsory
+<!-- Postgraduate | Mathematical Statistics / 数理统计 | 81 | Compulsory -->
 
 ## Computer Science - Core Courses
 
@@ -95,19 +95,19 @@ Semester | Course | Score | Type
 7: Fall 2017 | Professional Fieldwork / 专业实习 | 95 | Compulsory
 7: Fall 2017 | Enterprise Work Practice / 企业工作实践 | 95 | Selective
 8: Spring 2018 | Graduating Project / 毕业设计 | Excellent | Compulsory
-Postgraduate | Principles and Applications of Artificial Intelligence / 人工智能原理与应用 | 98 | Compulsory
-Postgraduate | Machine Learning Principles / 机器学习概论 | 99 | Compulsory
-Postgraduate | Machine Learning / 机器学习 | 93 | Compulsory
-Postgraduate | Pattern Recognition / 模式识别 | 89 | Compulsory
-Postgraduate | Information Retrieval Principles / 信息检索原理 | 89 | Compulsory
-Postgraduate | Intelligent Information Processing / 智能信息处理 | 88 | Compulsory
-Postgraduate | Computational Theory / 计算理论 | 84 | Compulsory
-Postgraduate | Operating System Analysis / 操作系统结构分析 | 93 | Compulsory
-Postgraduate | Software Architecture / 软件体系结构 | 76 | Compulsory
-Postgraduate | Advanced Computer Network / 高等计算机网络 | 90 | Compulsory
-Postgraduate | Computer Network Experiments / 计算机网络与通信实验 | 91 | Compulsory
-Postgraduate | Web Security / Web 安全 | 90 | Compulsory
-Postgraduate | Network Content Security / 网络内容安全 | 90 | Compulsory
+<!-- Postgraduate | Principles and Applications of Artificial Intelligence / 人工智能原理与应用 | 98 | Compulsory -->
+<!-- Postgraduate | Machine Learning Principles / 机器学习概论 | 99 | Compulsory -->
+<!-- Postgraduate | Machine Learning / 机器学习 | 93 | Compulsory -->
+<!-- Postgraduate | Pattern Recognition / 模式识别 | 89 | Compulsory -->
+<!-- Postgraduate | Information Retrieval Principles / 信息检索原理 | 89 | Compulsory -->
+<!-- Postgraduate | Intelligent Information Processing / 智能信息处理 | 88 | Compulsory -->
+<!-- Postgraduate | Computational Theory / 计算理论 | 84 | Compulsory -->
+<!-- Postgraduate | Operating System Analysis / 操作系统结构分析 | 93 | Compulsory -->
+<!-- Postgraduate | Software Architecture / 软件体系结构 | 76 | Compulsory -->
+<!-- Postgraduate | Advanced Computer Network / 高等计算机网络 | 90 | Compulsory -->
+<!-- Postgraduate | Computer Network Experiments / 计算机网络与通信实验 | 91 | Compulsory -->
+<!-- Postgraduate | Web Security / Web 安全 | 90 | Compulsory -->
+<!-- Postgraduate | Network Content Security / 网络内容安全 | 90 | Compulsory -->
 
 ## Programming Language & Algorithm
 
@@ -120,8 +120,8 @@ Semester | Course | Score | Type
 3: Fall 2015 | Data Structure (C) / 数据结构(C) | 99 | Compulsory
 4: Spring 2016 | Comprehensive Design of Data Structures (C) / 数据结构综合设计(C) | 91 | Compulsory
 6: Spring 2017 | Algorithm Analysis and Design / 算法分析与设计 | 92 | Compulsory
-Postgraduate | Algorithm Design and Analysis / 算法设计与分析 | 90 | Compulsory
-Postgraduate | Principles of Programming Language / 程序设计语言原理 | 82 | Compulsory
+<!-- Postgraduate | Algorithm Design and Analysis / 算法设计与分析 | 90 | Compulsory -->
+<!-- Postgraduate | Principles of Programming Language / 程序设计语言原理 | 82 | Compulsory -->
 
 ## Courses of Interest
 
@@ -143,8 +143,8 @@ Semester | Course | Score | Type
 1: Fall 2014 | College English I / 大学英语(1) | 73 | Compulsory
 2: Spring 2015 | College English II / 大学英语(2) | 82 | Compulsory
 3: Fall 2015 | College English III / 大学英语(3) | 83 | Compulsory
-Postgraduate | Academic English (Master) / 学术英语(硕) | 84 | Compulsory
-Postgraduate | Advanced Academic English Writing (Ph.D.) / 高级学术英语写作(博) | 90 | Compulsory
+<!-- Postgraduate | Academic English (Master) / 学术英语(硕) | 84 | Compulsory -->
+<!-- Postgraduate | Advanced Academic English Writing (Ph.D.) / 高级学术英语写作(博) | 90 | Compulsory -->
 
 ## Physical Education
 
@@ -171,10 +171,10 @@ Semester | Course | Type
 5: Fall 2016 | An Introduction to Mao Zedong Thought and the Theoretical System of Socialism with Chinese Characteristics | Compulsory
 5: Fall 2016 | Labor / 公益劳动 | Compulsory
 6: Spring 2017 | Comprehensive Practice of Ideological and Political Theory / 思想政治理论课综合实践 | Compulsory
-Postgraduate | Engineering Ethic / 工程伦理 | Compulsory
-Postgraduate | Ethic of Computer Profession / 计算机职业素养 | Compulsory
-Postgraduate | Laws and Regulations of Cybersecurity / 网络安全法律法规 | Compulsory
-Postgraduate | Research on Theory and Practice of Socialism with Chinese Characteristics / 中国特色社会主义理论与实践研究 | Compulsory
-Postgraduate | Nature Dialectics / 自然辩证法概论 | Compulsory
+<!-- Postgraduate | Engineering Ethic / 工程伦理 | Compulsory -->
+<!-- Postgraduate | Ethic of Computer Profession / 计算机职业素养 | Compulsory -->
+<!-- Postgraduate | Laws and Regulations of Cybersecurity / 网络安全法律法规 | Compulsory -->
+<!-- Postgraduate | Research on Theory and Practice of Socialism with Chinese Characteristics / 中国特色社会主义理论与实践研究 | Compulsory -->
+<!-- Postgraduate | Nature Dialectics / 自然辩证法概论 | Compulsory -->
 
 ---
