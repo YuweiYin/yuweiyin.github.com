@@ -12,5 +12,5 @@ main:
   - title: "Contact"
     url: /contact/
 
-  - title: "Calendar"
-    url: /calendar/
+  # - title: "Calendar"
+  #   url: /calendar/
