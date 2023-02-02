@@ -21,7 +21,7 @@ MathJax = {
 };
 </script>
 
-Please find a time slot and send me the Google meeting invitation via seckexyin@gmail.com
+Please find a time slot and send me the Google meeting invitation via  `seckexyin@gmail.com`
 
 <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Asia%2FHong_Kong&showTitle=0&showNav=1&showTz=1&showCalendars=0&showTabs=0&showPrint=0&mode=WEEK&title=Yuwei%20Yin&src=c2Vja2V4eWluQGdtYWlsLmNvbQ&color=%23039BE5" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
