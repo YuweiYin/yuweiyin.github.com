@@ -34,10 +34,12 @@ MathJax = {
   - Misc: [yuweiyin.github.io](https://yuweiyin.github.io/)
 
 - **Social Media**
-  - GitHub: `@YuweiYin` [github.com/YuweiYin](https://github.com/YuweiYin)
-  - Twitter: `@SeckexYIN` [twitter.com/SeckexYIN](https://twitter.com/SeckexYIN)
-  - LinkedIn: `@yuwei-yin` [linkedin.com/in/yuwei-yin/](https://www.linkedin.com/in/yuwei-yin/)
-  - LeetCode: `@YuweiYin` [leetcode.com/YuweiYin/](https://leetcode.com/YuweiYin/)
+  - GitHub: `YuweiYin` [GitHub/YuweiYin](https://github.com/YuweiYin)
+  - Twitter: `SeckexYIN` [Twitter/SeckexYIN](https://twitter.com/SeckexYIN)
+  - Facebook: `seckexyin` [Facebook/seckexyin](https://www.facebook.com/seckexyin/)
+  - LinkedIn: `yuwei-yin` [LinkedIn/yuwei-yin](https://www.linkedin.com/in/yuwei-yin/)
+  - YouTube: `@yuweiyin` [YouTube/@yuweiyin](https://www.youtube.com/@yuweiyin)
+  - LeetCode: `YuweiYin` [LeetCode/YuweiYin/](https://leetcode.com/YuweiYin/)
 
 - **Instant Messaging**
   - WeChat ID: `SeckexYin`

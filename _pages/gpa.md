@@ -116,38 +116,4 @@ Semester | Course | Score | Type
 6: Spring 2017 | Mathematical Way of Thinking / 数学的思维方式 | 100 | Public Elective
 6: Spring 2017 | Expanding Overseas Engineering Practice / 境外工程实践 | 95 | Public Elective
 
-## Language Courses
-
-Semester | Course | Score | Type
-:-: | :-: | :-: | :-:
-1: Fall 2014 | College English I / 大学英语(1) | 73 | Compulsory
-2: Spring 2015 | College English II / 大学英语(2) | 82 | Compulsory
-3: Fall 2015 | College English III / 大学英语(3) | 83 | Compulsory
-
-## Physical Education
-
-Semester | Course | Score | Type
-:-: | :-: | :-: | :-:
-1: Fall 2014 | Physical Education (1) / 大学体育(1) | 87 | Compulsory
-2: Spring 2015 | Physical Education (2) / 大学体育(2) | 97 | Compulsory
-3: Fall 2015 | Physical Education (3) / 大学体育(3) | 96 | Compulsory
-4: Spring 2016 | Physical Education (4) / 大学体育(4) | 100 | Compulsory
-
-## Other Courses
-
-Semester | Course | Type
-:-: | :-: | :-:
-1: Fall 2014 | China Ancient History / 中国古代史 | Public Elective
-1: Fall 2014 | Foundation of Human Resource Management / 人力资源管理 | Public Elective
-1: Fall 2014 | Ethical and Legal Foundations / 思想道理修养与法律基础 | Compulsory
-3: Fall 2015 | Introduction to Professional Development / 专业发展概论 | Compulsory
-3: Fall 2015 | An Introduction to the Fundamentals of Marxism / 马克思主义基本原理概论 | Compulsory
-3: Fall 2015 | Military Training / 军训 | Compulsory
-3: Fall 2015 | Military Doctrine / 军事理论 | Compulsory
-4: Spring 2016 | The Outline of Modern History of China / 中国近现代史纲要 | Compulsory
-4: Spring 2016 | Comparison of Chinese and Western Cultures / 中西文化比较 | Public Elective
-5: Fall 2016 | An Introduction to Mao Zedong Thought and the Theoretical System of Socialism with Chinese Characteristics | Compulsory
-5: Fall 2016 | Labor / 公益劳动 | Compulsory
-6: Spring 2017 | Comprehensive Practice of Ideological and Political Theory / 思想政治理论课综合实践 | Compulsory
-
 ---
