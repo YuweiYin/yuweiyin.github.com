@@ -50,17 +50,19 @@ MathJax = {
 - **1.2. Information Theory**
   - *<u>Information Theory, Inference, and Learning Algorithms</u>*. David J.C. MacKay.
 - **1.3. Analysis**
+  - *<u>Princeton Lectures in Analysis - I - Complex Analysis</u>*. Elias M. Stein, Rami Shakarchi.
+  - *<u>Princeton Lectures in Analysis - II - Fourier Analysis - An Introduction</u>*. Elias M. Stein, Rami Shakarchi.
+  - *<u>Princeton Lectures in Analysis - III - Real Analysis- Measure Theory, Integration, and Hilbert Spaces</u>*. Elias M. Stein, Rami Shakarchi.
+  - *<u>Princeton Lectures in Analysis - IV - Functional Analysis- Introduction to Further Topics in Analysis</u>*. Elias M. Stein, Rami Shakarchi.
   - *<u>Analysis I</u>*. Terence Tao.
   - *<u>Analysis II</u>*. Terence Tao.
+  - *<u>Calculus: An Intuitive and Physical Approach</u>*. Morris Kline.
   - *<u>Principles of Mathematical Analysis</u>*. Walter Rudin.
   - *<u>Real and Complex Analysis</u>*. Walter Rudin.
-  - *<u>Calculus: An Intuitive and Physical Approach</u>*. Morris Kline.
-  - *<u>Real Analysis: Measure Theory, Integration, and Hilbert Spaces</u>*. Elias M. Stein, Rami Shakarchi.
-  - *<u>Complex Analysis</u>*. Elias M. Stein, Rami Shakarchi.
   - *<u>Complex Analysis</u>*. Ian Steward, David Tall.
   - *<u>Fourier Analysis</u>*. David Morin. Harvard University.
-  - *<u>Fourier Analysis: An Introduction</u>*. Elias M. Stein, Rami Shakarchi.
-  - *<u>Functional Analysis: Introduction to Further Topics in Analysis</u>*. Elias M. Stein, Rami Shakarchi.
+  - *<u>Fourier Analysis on Groups</u>*. Walter Rudin.
+  - *<u>Functional Analysis</u>*. Walter Rudin.
   - *<u>Poincarés legacies: pages from year two of a mathematical blog</u>*. Terence Tao.
   - *<u>An epsilon of room: pages from year three of a mathematical blog</u>*. Terence Tao.
   - *<u>The Mathematical Principles of Natural Philosophy</u>*. Sir Isaac Newton. [ebook](https://www.globalgreyebooks.com/philosophiae-naturalis-principia-mathematica-ebook.html), 1846. (First published on the 5th July 1687)
@@ -73,6 +75,9 @@ MathJax = {
   - *<u>Linear Algebra</u>*. Kenneth Hoffman, Ray Kunze.
   - *<u>The Matrix Cookbook</u>*. Kaare Brandt Petersen, Michael Syskind Pedersen. [ebook](http://matrixcookbook.com/).
 - **1.5. Probability Theory and Statistics**
+  - *<u>The Elements of Statistical Learning - Data Mining, Inference, and Prediction</u>*. Trevor Hastie, Robert Tibshirani, Jerome Friedman.
+  - *<u>All of Statistics: A Concise Course in Statistical Inference</u>*. Larry Wasserman.
+  - *<u>Bayesian Data Analysis</u>*. Andrew Gelman, John B. Carlin, Hal S. Stern, David B. Dunson, Aki Vehtari, Donald B. Rubin.
   - *<u>Introduction to Probability</u>*. Dimitri P. Bertsekas, John N. Tsitsiklis.
   - *<u>The Practice of Statistics</u>*. Daren S. Starnes, Josh Tabor, Daniel S. Yates, David S. Moore.
   - *<u>A First Course in Probability</u>*. Sheldon Ross.

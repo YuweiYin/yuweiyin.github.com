@@ -34,29 +34,12 @@ MathJax = {
   - Misc: [yuweiyin.github.io](https://yuweiyin.github.io/)
 
 - **Social Media**
+  - WeChat: [ID] `SeckexYin`
   - GitHub: `YuweiYin` [GitHub/YuweiYin](https://github.com/YuweiYin)
   - Twitter: `SeckexYIN` [Twitter/SeckexYIN](https://twitter.com/SeckexYIN)
   - Facebook: `seckexyin` [Facebook/seckexyin](https://www.facebook.com/seckexyin/)
   - LinkedIn: `yuwei-yin` [LinkedIn/yuwei-yin](https://www.linkedin.com/in/yuwei-yin/)
   - YouTube: `@yuweiyin` [YouTube/@yuweiyin](https://www.youtube.com/@yuweiyin)
   - LeetCode: `YuweiYin` [LeetCode/YuweiYin/](https://leetcode.com/YuweiYin/)
-
-- **Instant Messaging**
-  - WeChat ID: `SeckexYin`
-  - WhatsApp (Mobile Phone): Please run the following Python3 program with the correct key.
-
-```python
-#!/usr/bin/env python3
-# -*- coding:utf-8 -*-
-
-# pip install pycrypto
-from Crypto.Cipher import AES
-from binascii import a2b_hex
-
-key = "YuweiYin" + "yyyymmdd"  # TODO: replace "yyyymmdd" with my birthday
-msg = "c373dd8641878b1fc4938a95b7e8165d"  # encrypted phone number
-aes = AES.new(key.encode(), AES.MODE_CBC, b'0000000000000000')
-print(aes.decrypt(a2b_hex(msg.encode())).rstrip(b'\0').decode())
-```
 
 ---
