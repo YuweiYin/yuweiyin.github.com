@@ -39,8 +39,10 @@ MathJax = {
 :-: | :-: | :-: | :-:
 A\*11, B\*7, C\*2 | A\*24, B\*2 | A\*19 | A\*4
 
-- **Undergraduate**: Weighted Average Score: **92.7** / 100 ([WES](http://www.wes.org/) GPA: **3.82** / 4)
-  - The last three years: **95.4** / 100 (WES GPA: **3.95** / 4)
+- **Undergraduate**: Weighted Average Score: **92.7** / 100 (The last three years: **95.4** / 100)
+
+<!-- - **Undergraduate**: Weighted Average Score: **92.7** / 100 ([WES](http://www.wes.org/) GPA: **3.82** / 4) -->
+  <!-- - The last three years: **95.4** / 100 (WES GPA: **3.95** / 4) -->
   <!-- - 2014-2015: A\*11, B\*7, C\*2 -->
   <!-- - 2015-2016: A\*24, B\*2 -->
   <!-- - 2016-2017: A\*19 -->
@@ -95,7 +97,7 @@ Semester | Course | Score | Type
 
 Semester | Course | Score | Type
 :-: | :-: | :-: | :-:
-1: Fall 2014 | Fundamentals of Programming Programming (C) / 程序设计基础(C 语言) | 90 | Compulsory
+1: Fall 2014 | Fundamentals of Programming (C) / 程序设计基础(C 语言) | 90 | Compulsory
 2: Spring 2015 | Programming Practice (C++) / 程序设计实践(C++) | 87 | Compulsory
 2: Spring 2015 | Object-oriented Technologies (C++) / 面向对象技术(C++) | 92 | Compulsory
 3: Fall 2015 | Programming in C++ / C++ 程序设计 | 91 | Selective
