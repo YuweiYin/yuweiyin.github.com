@@ -26,7 +26,7 @@ MathJax = {
 
 - **Email Address**
   - [Gmail](mailto:seckexyin@gmail.com): seckexyin [at] gmail [dot] com
-  - [UBC CS](mailto:yuweiyin@hku.hk): yuweiyin [at] cs [dot] ubc [dot] ca
+  - [UBC CS](mailto:yuweiyin@cs.ubc.ca): yuweiyin [at] cs [dot] ubc [dot] ca
 
 - **Homepage**
   - Academic: [yuweiyin.com](https://www.yuweiyin.com/)
