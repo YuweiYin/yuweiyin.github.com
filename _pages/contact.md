@@ -22,11 +22,12 @@ MathJax = {
 {% include base_path %}
 
 - **Office Address**
-  - ICICS, 2366 Main Mall, The University of British Columbia, Vancouver, BC V6T 1Z4, Canada
+  - Room 335A, Floor 3, Haking Wong Building, The University of Hong Kong, Pokfulam, Hong Kong
 
 - **Email Address**
   - [Gmail](mailto:seckexyin@gmail.com): seckexyin [at] gmail [dot] com
-  - [UBC CS](mailto:yuweiyin@cs.ubc.ca): yuweiyin [at] cs [dot] ubc [dot] ca
+  - [HKU](mailto:yuweiyin@hku.hk): yuweiyin [at] hku [dot] hk
+  - [HKU CS](mailto:ywyin@cs.hku.hk): ywyin [at] cs [dot] hku [dot] hk
 
 - **Homepage**
   - Academic: [yuweiyin.com](https://www.yuweiyin.com/)
@@ -35,9 +36,9 @@ MathJax = {
 - **Social Media**
   - WeChat: [ID] `SeckexYin`
   - GitHub: `YuweiYin` [GitHub/YuweiYin](https://github.com/YuweiYin)
+  - LinkedIn: `yuwei-yin` [LinkedIn/yuwei-yin](https://www.linkedin.com/in/yuwei-yin/)
   - Twitter: `SeckexYIN` [Twitter/SeckexYIN](https://twitter.com/SeckexYIN)
   - Facebook: `seckexyin` [Facebook/seckexyin](https://www.facebook.com/seckexyin/)
-  - LinkedIn: `yuwei-yin` [LinkedIn/yuwei-yin](https://www.linkedin.com/in/yuwei-yin/)
   - YouTube: `@yuweiyin` [YouTube/@yuweiyin](https://www.youtube.com/@yuweiyin)
   - LeetCode: `YuweiYin` [LeetCode/YuweiYin/](https://leetcode.com/YuweiYin/)
 
