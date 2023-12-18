@@ -3,11 +3,14 @@ main:
   - title: "About"
     url: /about/
 
+  - title: "Reading"
+    url: /reading/
+
   # - title: "Blog"
   #   url: /blog/
 
-  - title: "Reading"
-    url: /reading/
+  # - title: "Travel"
+  #   url: /travel/
 
   - title: "Contact"
     url: /contact/
