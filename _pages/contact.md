@@ -22,12 +22,13 @@ MathJax = {
 {% include base_path %}
 
 - **Office Address**
-  - Room 335A, Floor 3, Haking Wong Building, The University of Hong Kong, Pokfulam, Hong Kong
+  - Room 201, ICICS/CS Building, 2366 Main Mall, Vancouver, BC Canada V6T 1Z4
 
 - **Email Address**
   - [Gmail](mailto:seckexyin@gmail.com): seckexyin [at] gmail [dot] com
-  - [HKU](mailto:yuweiyin@hku.hk): yuweiyin [at] hku [dot] hk
-  - [HKU CS](mailto:ywyin@cs.hku.hk): ywyin [at] cs [dot] hku [dot] hk
+  - [UBC](mailto:yuweiyin@cs.ubc.ca): yuweiyin [at] cs [dot] ubc [dot] ca
+  <!-- - [HKU](mailto:yuweiyin@hku.hk): yuweiyin [at] hku [dot] hk -->
+  <!-- - [HKU CS](mailto:ywyin@cs.hku.hk): ywyin [at] cs [dot] hku [dot] hk -->
 
 - **Homepage**
   - Academic: [yuweiyin.com](https://www.yuweiyin.com/)
