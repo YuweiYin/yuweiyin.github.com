@@ -21,7 +21,7 @@ MathJax = {
 
 {% include base_path %}
 
-- **Office Address**
+- **Office Address** ([Book an appointment](https://yuweiyin.github.io/calendar/))
   - Room X460, ICICS Building, 2366 Main Mall, Vancouver, BC V6T 1Z4, Canada
 
 - **Email Address**
