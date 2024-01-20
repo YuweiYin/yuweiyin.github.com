@@ -33,7 +33,7 @@ MathJax = {
   * What do we really mean by knowing or understanding something?
   * How exactly do we humans think in our brains? (Can we think without languages?)
   * What is the purpose of language? (The existence of language seems unnatural.)
-  * Is there a thing that only a specific language can talk about?
+  * Is there anything that only one specific language can talk about?
     * (Regardless of factors like region, culture, religion, country, etc.)
     * If so, find a true example. If not, is multilingualism necessary?
     * Why not speak the same language if we are talking the same thing?
@@ -43,9 +43,11 @@ MathJax = {
   * How exactly do children acquire (not learn) their first language?
   * Can we reimplement first language acquisition in computer programs?
 
+---
+
 * **Human beings (Ego/Self, Self-consciousness, and Free Will)**:
   * What are we? Where do we come from? Who/what created us in the first place?
-  * Who am I? (The question implies the existence of reincarnation)
+  * Who am I? (The question implies that I may not be me.)
   * What is ego/self? Do we have an ego/self?
     * Is there a boundary between you and me or the stone and me?
     * If so, am I still me, since both inside and outside of me keep changing? (> Ship of Theseus)
@@ -55,7 +57,7 @@ MathJax = {
   * What is free will? Do we have free will?
     * Is there any decision we can make regardless of all external factors? (We may think we can.)
     * Back to the very moment that a decision to be made, would the result ever change? (> Determinism)
-    * Yet we can always think we have ego/self, self-consciousness, and free will, as in idealism.
+    * (Yet we can always think we have ego/self, self-consciousness, and free will, as in idealism.)
   * If free will exists, can we program it to enable spontaneity and initiative in AI systems?
     * Otherwise, what is the difference between humans and programmed robots?
     * Are we another kind of robot designed by some superior beings?
@@ -64,6 +66,8 @@ MathJax = {
     * We could only sense what our sensors tell us. Yet, we call it the truth.
     * Or we call a commonly sensed thing as objective/truth. But most of us may be lied to by the sensors.
     * Are we humans just slaves of our sensors? What will happen if all the sensors are shut down? (Can we output without input?)
+
+---
 
 * **The Society (Culture, Religion, and Countries)**:
   * What is culture? What is religion?
@@ -86,7 +90,7 @@ MathJax = {
   * What is life or being alive?
     * What is the relationship between life and time?
     * Is time only an artifact for us to measure life?
-    * Is there no life if there is no time or time limit? (Eternal life means no lived.)
+    * Is there no life if there is no time or time limit? (Eternal life means never lived.)
   * What is death or being dead?
     * Does death exist? There may not be a thing as death if we do not have an ego/self.
     * Are we humans, together with the whole universe, a whole self? If so, no death.
@@ -101,6 +105,8 @@ MathJax = {
   * Is there any so-called "alien" in the universe?
     * If human exists, why not aliens? We might lack the ability to identify them.
     * Why is a rock, a tree, the sun, a black hole, or an atom not being deemed as a life? Why not?
+
+---
 
 * AND MORE...
 
