@@ -29,7 +29,7 @@ MathJax = {
 
 <!-- "*Wir müssen wissen, wir werden wissen!*" -- David Hilbert -->
 
-Hi, I am Yuwei Yin, enjoying a life of adventure. I hope you can find something that resonates here. Feel free to [reach out](./contact/). ([BLOG](./blog/) \| [Academic](https://www.yuweiyin.com/))
+Hi, I am Yuwei Yin, enjoying a life of adventure. I hope you can find something that resonates here. ([BLOG](./blog/) \| [Academic](https://www.yuweiyin.com/))
 
 ![Quest](https://yuweiyin.github.io/files/img/Quest.jpeg)
 
