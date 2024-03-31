@@ -39,7 +39,7 @@ MathJax = {
   - GitHub: `YuweiYin` [GitHub/YuweiYin](https://github.com/YuweiYin)
   - LinkedIn: `yuwei-yin` [LinkedIn/yuwei-yin](https://www.linkedin.com/in/yuwei-yin/)
   - Twitter: `SeckexYIN` [Twitter/SeckexYIN](https://twitter.com/SeckexYIN)
-  <!-- - Facebook: `seckexyin` [Facebook/seckexyin](https://www.facebook.com/seckexyin/) -->
+  - Facebook: `seckexyin` [Facebook/seckexyin](https://www.facebook.com/seckexyin/)
   <!-- - YouTube: `@yuweiyin` [YouTube/@yuweiyin](https://www.youtube.com/@yuweiyin) -->
   <!-- - LeetCode: `YuweiYin` [LeetCode/YuweiYin/](https://leetcode.com/YuweiYin/) -->
 
