@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "About Me (he/him/his/Mr.)"
+title: "About Yuwei"
 permalink: /about/
 author_profile: true
 # redirect_from:
