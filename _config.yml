@@ -132,7 +132,7 @@ analytics:
 author:
   name             : "Yuwei (Joey) Yin"
   avatar           : "profile.png"
-  bio              : "Temet Nosce"
+  bio              : "Adventurer | Seeker" # "Temet Nosce"
   location         : "Vancouver" # "Vancouver, BC, Canada" # "Hong Kong (UTC+8)" # "Beijing, China (UTC+8)" "Chengdu, China (UTC+8)"
   # employer         : "University of British Columbia" # "University of Hong Kong"
   email            : "seckexyin@gmail.com"
