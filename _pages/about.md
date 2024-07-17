@@ -30,4 +30,4 @@ Joey has a similar pronunciation to 久湮, which is the name I give myself. 久
 
 MBTI: [Advocate (INFJ-A)](https://www.16personalities.com/profiles/51bd741779989)
 
-![MBTI](https://yuweiyin.github.io/files/img/Yuwei_MBTI.png)
+![MBTI](https://yuweiyin.github.io/files/img/Yuwei_MBTI_INFJ_A.png)
