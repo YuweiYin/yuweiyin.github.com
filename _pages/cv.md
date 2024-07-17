@@ -8,6 +8,7 @@ redirect_from:
   - /resume/
   - /curriculum-vitae
   - /curriculum-vitae/
+# - [Curriculum Vitae](https://www.yuweiyin.com/files/pdf/CV-Yuwei_Yin.pdf) \| [Academic Homepage](https://www.yuweiyin.com/)
 ---
 
 {% include base_path %}
@@ -27,6 +28,6 @@ MathJax = {
 
 <!-- {% include base_path %} -->
 
-- [Curriculum Vitae](https://www.yuweiyin.com/files/pdf/CV-Yuwei_Yin.pdf) \| [Academic Homepage](https://www.yuweiyin.com/)
+- [Résumé](https://www.yuweiyin.com/files/pdf/Resume-Yuwei_Yin.pdf) \| [Academic Homepage](https://www.yuweiyin.com/)
 
 ---

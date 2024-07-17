@@ -25,3 +25,9 @@ The right part of 阴 is 月, meaning the moon. Therefore, 阴昱 contains yin a
 昱为 can be explained as standing under the sun and making achievements.
 
 Joey has a similar pronunciation to 久湮, which is the name I give myself. 久 means long (time), permanent, and eternal. 湮 means annihilation or to annihilate. Together, it stands for a paradoxical harmony, just like yin and yang.
+
+## Personality
+
+MBTI: [Advocate (INFJ-A)](https://www.16personalities.com/profiles/51bd741779989)
+
+![MBTI](https://yuweiyin.github.io/files/img/Yuwei_MBTI.png)
