@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 # layout: home
 layout: archive
-title: "YuweiYin"
+title: "Yuwei Yin"
 permalink: /
 author_profile: true
 redirect_from:
@@ -29,7 +29,9 @@ MathJax = {
 
 <!-- "*Wir müssen wissen, wir werden wissen!*" -- David Hilbert -->
 
-Hi, I am Yuwei Yin. I hope you can find something that resonates here. ([BLOG](./blog/) \| [Academic](https://www.yuweiyin.com/))
+<!-- Hi, I am Yuwei Yin. I hope you can find something that resonates here. ([BLOG](./blog/) \| [Academic](https://www.yuweiyin.com/)) -->
+
+Temet Nosce \| Carpe Diem \| Memento Mori
 
 ![Quest](https://yuweiyin.github.io/files/img/Quest.jpeg)
 
