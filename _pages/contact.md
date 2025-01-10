@@ -38,6 +38,7 @@ MathJax = {
   - WeChat: [ID] `SeckexYin`
   - GitHub: `YuweiYin` [GitHub/YuweiYin](https://github.com/YuweiYin)
   - LinkedIn: `yuwei-yin` [LinkedIn/yuwei-yin](https://www.linkedin.com/in/yuwei-yin/)
+  - Bluesky: `yuweiyin` [yuweiyin.bsky.social](https://bsky.app/profile/yuweiyin.bsky.social)
   - Twitter: `SeckexYIN` [Twitter/SeckexYIN](https://twitter.com/SeckexYIN)
   - Facebook: `seckexyin` [Facebook/seckexyin](https://www.facebook.com/seckexyin/)
   - Instagram: `seckexyin` [Instagram/seckexyin](https://www.instagram.com/seckexyin/)
