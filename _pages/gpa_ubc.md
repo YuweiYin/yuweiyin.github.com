@@ -4,18 +4,18 @@ title: "Academic Record"
 permalink: /gpa_ubc/
 author_profile: true
 redirect_from:
-  - /course
-  - /course/
-  - /courses
-  - /courses/
-  - /grade
-  - /grade/
-  - /grades
-  - /grades/
-  - /transcript
-  - /transcript/
-  - /transcripts
-  - /transcripts/
+  - /course_ubc
+  - /course_ubc/
+  - /courses_ubc
+  - /courses_ubc/
+  - /grade_ubc
+  - /grade_ubc/
+  - /grades_ubc
+  - /grades_ubc/
+  - /transcript_ubc
+  - /transcript_ubc/
+  - /transcripts_ubc
+  - /transcripts_ubc/
 ---
 
 {% include base_path %}

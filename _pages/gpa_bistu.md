@@ -31,6 +31,8 @@ MathJax = {
 };
 </script>
 
+- **Undergraduate Study at BISTU** (Beijing, China): Weighted Average Grade: **93** / 100 (The last three years: **95** / 100)
+
 <!-- ## GPA Trajectory -->
 
 <img src="https://yuweiyin.github.io/files/img/Academic-Record-GPA.png" alt="Academic-Record-GPA" width="60%" height="auto" max-width="60%">
@@ -38,8 +40,6 @@ MathJax = {
 2014-2015 | 2015-2016 | 2016-2017 | 2017-2018
 :-: | :-: | :-: | :-:
 A\*11, B\*7, C\*2 | A\*24, B\*2 | A\*19 | A\*4
-
-- **Undergraduate Study at BISTU** (Beijing, China): Weighted Average Grade: **93** / 100 (The last three years: **95** / 100)
 
 ## Mathematics & Science Basis
 
