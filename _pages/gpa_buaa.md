@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Academic Record at BUAA (Graduate)"
+title: "Academic Record"
 permalink: /gpa_buaa/
 author_profile: true
 redirect_from:
@@ -31,11 +31,11 @@ MathJax = {
 };
 </script>
 
-- **Graduate Study at BUAA**: Weighted Average Score: **92** / 100
+- **Graduate Study at BUAA** (Beijing, China): Weighted Average Grade: **92** / 100
 
 ## Artificial Intelligence
 
-Course | 课程 | Score
+Course | 课程 | Grade
 :-: | :-: | :-:
 Artificial Intelligence: Theory and Application | 人工智能原理与应用 | 98
 Introduction To Machine Learning | 机器学习概论 | 99
@@ -46,7 +46,7 @@ Intelligent Information Processing | 智能信息处理 | 88
 
 ## Computer Science & Science Basis
 
-Course | 课程 | Score
+Course | 课程 | Grade
 :-: | :-: | :-:
 Design and Analysis of Algorithms | 算法设计与分析 | 90
 Analysis of Operating System Architecture | 操作系统结构分析 | 93

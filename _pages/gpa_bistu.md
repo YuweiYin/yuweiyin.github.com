@@ -1,21 +1,21 @@
 ---
 layout: archive
-title: "Academic Record at BISTU (Undergraduate)"
+title: "Academic Record"
 permalink: /gpa_bistu/
 author_profile: true
 redirect_from:
-  - /course
-  - /course/
-  - /courses
-  - /courses/
-  - /grade
-  - /grade/
-  - /grades
-  - /grades/
-  - /transcript
-  - /transcript/
-  - /transcripts
-  - /transcripts/
+  - /course_bistu
+  - /course_bistu/
+  - /courses_bistu
+  - /courses_bistu/
+  - /grade_bistu
+  - /grade_bistu/
+  - /grades_bistu
+  - /grades_bistu/
+  - /transcript_bistu
+  - /transcript_bistu/
+  - /transcripts_bistu
+  - /transcripts_bistu/
 ---
 
 {% include base_path %}
@@ -39,11 +39,11 @@ MathJax = {
 :-: | :-: | :-: | :-:
 A\*11, B\*7, C\*2 | A\*24, B\*2 | A\*19 | A\*4
 
-- **Undergraduate Study at BISTU**: Weighted Average Score: **93** / 100 (The last three years: **95** / 100)
+- **Undergraduate Study at BISTU** (Beijing, China): Weighted Average Grade: **93** / 100 (The last three years: **95** / 100)
 
 ## Mathematics & Science Basis
 
-Semester | Course | Score | Type
+Semester | Course | Grade | Type
 :-: | :-: | :-: | :-:
 1: Fall 2014 | Linear Algebra A / 线性代数 A | 87 | Compulsory
 1: Fall 2014 | Advanced Mathematics A(1) / 高等数学 A(1) | 80 | Compulsory
@@ -58,7 +58,7 @@ Semester | Course | Score | Type
 
 ## Computer Science - Core Courses
 
-Semester | Course | Score | Type
+Semester | Course | Grade | Type
 :-: | :-: | :-: | :-:
 1: Fall 2014 | Introduction to Computer / 计算机科学导论 | 79 | Compulsory
 2: Spring 2015 | Basis of Computer Circuit / 计算机电路基础 | 98 | Compulsory
@@ -88,7 +88,7 @@ Semester | Course | Score | Type
 
 ## Programming Language & Algorithm
 
-Semester | Course | Score | Type
+Semester | Course | Grade | Type
 :-: | :-: | :-: | :-:
 1: Fall 2014 | Fundamentals of Programming (C) / 程序设计基础(C 语言) | 90 | Compulsory
 2: Spring 2015 | Programming Practice (C++) / 程序设计实践(C++) | 87 | Compulsory
@@ -100,7 +100,7 @@ Semester | Course | Score | Type
 
 ## Courses of Interest
 
-Semester | Course | Score | Type
+Semester | Course | Grade | Type
 :-: | :-: | :-: | :-:
 1: Fall 2014 | Football / 足球 | 80 | Public Elective
 2: Spring 2015 | Japanese II / 日语(2) | 83 | Public Elective
