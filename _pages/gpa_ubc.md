@@ -35,13 +35,13 @@ MathJax = {
 
 ## Artificial Intelligence
 
-Term | Code | Course | Grade | Website
-:-: | :-: | :-: | :-: | :-:
-Spring 2024 | CPSC 532V | Commonsense Reasoning in NLP | 100 | [URL](https://www.cs.ubc.ca/~vshwartz/courses/CPSC532V-23/index.html)
-Spring 2024 | CPSC 533V | Learning to Move | 96 | [URL](https://www.cs.ubc.ca/~van/cpsc533V/index.html?)
-Fall 2024 | CPSC 532G | NLP meets HCI | 92 | [URL](https://www.cs.ubc.ca/course-section/cpsc-v-532g-g-101-2024w)
-Fall 2024 | CPSC 532P | Synthetic Data in Generative AI | 90 | [URL](https://sites.google.com/view/532p2024w1/home)
-Fall 2024 | CPSC 536M | Convex Analysis and Optimization | 100 | [URL](https://friedlander.io/teaching/)
-Fall 2024 | CPSC 540 | Machine Learning and Data Mining | 98 | [URL](https://www.students.cs.ubc.ca/~cs-340/)
+Term | Code | Course | Grade | Instructor | Website
+:-: | :-: | :-: | :-: | :-: | :-:
+Spring 2024 | CPSC 532V | Commonsense Reasoning in NLP | 100 | [Vered Shwartz](https://www.cs.ubc.ca/~vshwartz/) | [URL](https://www.cs.ubc.ca/~vshwartz/courses/CPSC532V-23/index.html)
+Spring 2024 | CPSC 533V | Learning to Move | 96 | [Michiel van de Panne](https://www.cs.ubc.ca/~van/) | [URL](https://www.cs.ubc.ca/~van/cpsc533V/index.html?)
+Fall 2024 | CPSC 532G | NLP meets HCI | 92 | [Giuseppe Carenini](https://www.cs.ubc.ca/~carenini/) | [URL](https://www.cs.ubc.ca/course-section/cpsc-v-532g-g-101-2024w)
+Fall 2024 | CPSC 532P | Synthetic Data in Generative AI | 90 | [Mi Jung Park](https://www.cs.ubc.ca/~mijungp/) | [URL](https://sites.google.com/view/532p2024w1/home)
+Fall 2024 | CPSC 536M | Convex Analysis and Optimization | 100 | [Michael Friedlander](https://www.cs.ubc.ca/people/michael-friedlander) | [URL](https://friedlander.io/teaching/)
+Fall 2024 | CPSC 540 | Machine Learning and Data Mining | 98 | [Jeff Clune](https://www.cs.ubc.ca/people/jeff-clune) | [URL](https://www.students.cs.ubc.ca/~cs-340/)
 
 ---
