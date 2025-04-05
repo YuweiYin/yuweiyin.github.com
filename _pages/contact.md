@@ -35,11 +35,10 @@ MathJax = {
   - Misc: [yuweiyin.github.io](https://yuweiyin.github.io/)
 
 - **Social Media**
-  - WeChat: [ID] `SeckexYin`
-  - GitHub: `YuweiYin` [GitHub/YuweiYin](https://github.com/YuweiYin)
   - LinkedIn: `yuwei-yin` [LinkedIn/yuwei-yin](https://www.linkedin.com/in/yuwei-yin/)
-  - Bluesky: `yuweiyin` [yuweiyin.bsky.social](https://bsky.app/profile/yuweiyin.bsky.social)
   - Twitter: `SeckexYIN` [Twitter/SeckexYIN](https://twitter.com/SeckexYIN)
+  - Bluesky: `yuweiyin` [yuweiyin.bsky.social](https://bsky.app/profile/yuweiyin.bsky.social)
+  - GitHub: `YuweiYin` [GitHub/YuweiYin](https://github.com/YuweiYin)
   - Facebook: `seckexyin` [Facebook/seckexyin](https://www.facebook.com/seckexyin/)
   - Instagram: `seckexyin` [Instagram/seckexyin](https://www.instagram.com/seckexyin/)
   <!-- - YouTube: `@yuweiyin` [YouTube/@yuweiyin](https://www.youtube.com/@yuweiyin) -->
