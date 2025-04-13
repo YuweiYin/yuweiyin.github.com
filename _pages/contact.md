@@ -39,8 +39,8 @@ MathJax = {
   - Twitter: `SeckexYIN` [Twitter/SeckexYIN](https://twitter.com/SeckexYIN)
   - Bluesky: `yuweiyin` [yuweiyin.bsky.social](https://bsky.app/profile/yuweiyin.bsky.social)
   - GitHub: `YuweiYin` [GitHub/YuweiYin](https://github.com/YuweiYin)
-  - Facebook: `seckexyin` [Facebook/seckexyin](https://www.facebook.com/seckexyin/)
-  - Instagram: `seckexyin` [Instagram/seckexyin](https://www.instagram.com/seckexyin/)
+  <!-- - Facebook: `seckexyin` [Facebook/seckexyin](https://www.facebook.com/seckexyin/) -->
+  <!-- - Instagram: `seckexyin` [Instagram/seckexyin](https://www.instagram.com/seckexyin/) -->
   <!-- - YouTube: `@yuweiyin` [YouTube/@yuweiyin](https://www.youtube.com/@yuweiyin) -->
   <!-- - LeetCode: `YuweiYin` [LeetCode/YuweiYin/](https://leetcode.com/YuweiYin/) -->
 
