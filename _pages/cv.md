@@ -28,6 +28,6 @@ MathJax = {
 
 <!-- {% include base_path %} -->
 
-- [Résumé](https://www.yuweiyin.com/files/pdf/Resume-Yuwei_Yin.pdf) \| [Academic Homepage](https://www.yuweiyin.com/)
+- [CV](https://www.yuweiyin.com/files/pdf/CV-Yuwei_Yin.pdf) \| [Academic Homepage](https://www.yuweiyin.com/)
 
 ---

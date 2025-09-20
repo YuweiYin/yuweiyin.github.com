@@ -56,10 +56,10 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Yuwei (Joey) Yin"
+title                    : "Yuwei Yin"
 title_separator          : "-"
-name                     : &name "Yuwei (Joey) Yin"
-description              : &description "Adventurer | Seeker" # "Temet Nosce" # "Truth Seeker" # "AI/NLP Researcher"
+name                     : &name "Yuwei Yin"
+description              : &description "CS PhD at UBC" # "Adventurer | Seeker" # "Temet Nosce"
 url                      : "https://yuweiyin.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 github_url               : "https://github.com/YuweiYin"
@@ -83,7 +83,7 @@ comments:
 staticman:
   allowedFields          : ['name', 'email', 'url', 'message']
   branch                 : "gh-pages" # "master", "gh-pages"
-  commitMessage          : "Yuwei Yin (Joey) Homepage"
+  commitMessage          : "Yuwei Yin"
   filename               : comment-{@timestamp}
   format                 : "yml"
   moderation             : true
@@ -130,14 +130,14 @@ analytics:
 
 # Site Author
 author:
-  name             : "Yuwei (Joey) Yin"
+  name             : "Yuwei Yin"
   avatar           : "profile.png"
-  bio              : "Adventurer | Seeker" # "Temet Nosce"
+  bio              : "CS PhD at UBC" # "Adventurer | Seeker" # "Temet Nosce"
   location         : "Vancouver" # "Vancouver, BC, Canada" # "Hong Kong (UTC+8)" # "Beijing, China (UTC+8)" "Chengdu, China (UTC+8)"
   # employer         : "University of British Columbia" # "University of Hong Kong"
-  email            : "seckexyin@gmail.com"
-  # email            : "yuwei_yin@163.com" "seckexyin@gmail.com" "yuweiyin@hku.hk" "18708154662@163.com" "yuwei_yin@outlook.com"
-  # github           : "YuweiYin"
+  email            : "yuweiyin@cs.ubc.ca"
+  # email            : "seckexyin@gmail.com" "yuwei_yin@outlook.com" "yuwei_yin@163.com" "yuweiyin@hku.hk"
+  github           : "YuweiYin"
   googlescholar    : # "https://scholar.google.com/citations?user=DPAmfKEAAAAJ"
   researchgate     : # "https://www.researchgate.net/profile/Yuwei_Yin4"
   orcid            : # "https://orcid.org/0000-0002-5022-6468"
@@ -146,14 +146,14 @@ author:
   # openreview       : "https://openreview.net/profile?id=~Yuwei_Yin1"
   stackoverflow    : # "17863938/yuweiyin-joey"
   # leetcode         : "YuweiYin" # "https://leetcode.com/YuweiYin/"  # "https://leetcode-cn.com/u/yuweiyin/"
-  uri              :
+  uri              : "https://www.yuweiyin.com/"
   bitbucket        :
   codepen          :
   # linkedin         : "yuwei-yin/"
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   dribbble         :
   flickr           :
-  # twitter          : "SeckexYIN"
+  twitter          : "SeckexYIN"
   facebook         : # "profile.php?id=100010788164430"
   foursquare       :
   google_plus      :
